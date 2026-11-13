@@ -402,8 +402,7 @@ function buildHellGatePair(hell){
  if(queue.length)next();
  // The Hell-side portal surface is kept clickable even if its Java gate structure has unsupported block states.
  for(let x=-1;x<=1;x++)for(let y=1;y<=4;y++)placeBlock(hell,x,40+y,-20,"tensura:hell_portal");
- // A broad ceiling hides the generated arena boundary; glowstone ribs illuminate the otherwise dark realm.
- for(let x=-radius;x<=radius;x+=1)for(let z=-radius;z<=radius;z+=1)if(x*x+z*z<=radius*radius)placeBlock(hell,x,70,z,"minecraft:polished_blackstone");
+ // Broad glowstone columns provide a visible light source beneath the ceiling built with the terrain batches.
  for(const [lx,lz] of [[0,0],[-24,-24],[24,-24],[-24,24],[24,24]])for(let y=66;y<=69;y++)placeBlock(hell,lx,y,lz,"minecraft:glowstone");
 }
 
