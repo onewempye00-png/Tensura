@@ -968,7 +968,7 @@ function itemUse(ev){
   if(!oldIds.length)oldIds=list(p,DP.skills).filter(x=>pool.includes(x));
   const candidates=pool.filter(x=>SKILL_BY_ID.has(x)&&!oldIds.includes(x));if(!candidates.length){say(p,"No eligible replacement Unique Skills remain.");return;}
   if(!consumeHeld(p,id))return;const next=candidates[Math.floor(Math.random()*candidates.length)];
-  const skills=list(p,DP.skills).filter(x=>!oldIds.includes(x));skills.push(next);saveList(p,DP.skills,skills);set(p,DP.unique,next);if(oldIds.includes(get(p,DP.equipped,"")))set(p,DP.equipped,next);for(let i=0;i<9;i++)if(oldIds.includes(get(p,`ts26_horn_${i}`,"")))set(p,`ts26_horn_${i}`,next);set(p,"ts26_start_unique_rerolls_used",used+1);
+  const skills=list(p,DP.skills).filter(x=>!oldIds.includes(x));skills.push(next);saveList(p,DP.skills,skills);set(p,DP.unique,next);if(oldIds.includes(get(p,DP.equipped,"")))set(p,DP.equipped,next);if(oldIds.includes(get(p,DP.equippedMagic,"")))set(p,DP.equippedMagic,next);for(let i=0;i<9;i++)if(oldIds.includes(get(p,`ts26_horn_${i}`,"")))set(p,`ts26_horn_${i}`,next);set(p,"ts26_start_unique_rerolls_used",used+1);
   say(p,`§dStarting Unique Skill rerolled: ${skillName(next)}. ${2-used} rerolls remain.§r`);return;
  }
 
