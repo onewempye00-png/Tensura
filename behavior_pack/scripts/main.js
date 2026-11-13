@@ -124,6 +124,7 @@ function n(p,k,d=0){const v=Number(get(p,k,d));return Number.isFinite(v)?v:d;}
 function list(p,k){try{const v=JSON.parse(get(p,k,"[]"));return Array.isArray(v)?v:[];}catch{return [];}}
 function saveList(p,k,a){set(p,k,JSON.stringify([...new Set(a)]));}
 function say(p,s){try{p.sendMessage(`§b[TENSURA]§r ${s}`);}catch{}}
+function feedback(p,s){try{p.onScreenDisplay.setActionBar(`§c${s}§r`);}catch{}}
 function inv(p){try{return p.getComponent("minecraft:inventory")?.container;}catch{return undefined;}}
 function consumeHeld(p,id){const c=inv(p);if(!c)return false;const slot=p.selectedSlotIndex;const it=c.getItem(slot);if(!it||it.typeId!==id)return false;c.setItem(slot,it.amount>1?new ItemStack(id,it.amount-1):undefined);return true;}
 function give(p,id,count=1){try{const c=inv(p);if(c){const rem=c.addItem(new ItemStack(id,count));if(rem)p.dimension.spawnItem(rem,p.location);}else p.dimension.spawnItem(new ItemStack(id,count),p.location);}catch{}}
@@ -230,7 +231,7 @@ function applyRaceBody(p){
  const raceHp=Number(get(p,DP.hp,hpMap[race]||20))||hpMap[race]||20;const boost=Math.max(0,Math.ceil((raceHp-20)/4)-1);
  try{if(raceHp>20)p.addEffect("health_boost",40,{amplifier:boost,showParticles:false});else p.removeEffect("health_boost");const hc=p.getComponent("minecraft:health");if(hc&&hc.currentValue>hc.effectiveMax)hc.setCurrentValue(hc.effectiveMax);}catch{}
  // Refresh short-duration effects every second so racial traits remain continuously active.
- const racial={slime:[["resistance",40,0],["regeneration",40,0],["slow_falling",40,0]],goblin:[["speed",40,0]],ogre:[["strength",40,1]],orc:[["resistance",40,0],["strength",40,0]],lizardman:[["water_breathing",40,0],["strength",40,0]],dwarf:[["haste",40,0],["resistance",40,0]],elf:[["night_vision",40,0]],demon:[["fire_resistance",40,0],["strength",40,0]],spirit:[["resistance",40,0],["night_vision",40,0]],beastman:[["speed",40,0],["jump_boost",40,0]],vampire:[["night_vision",40,0],["regeneration",40,0]],dragon:[["fire_resistance",40,0],["strength",40,1],["slow_falling",40,0]],true_dragon:[["fire_resistance",40,1],["strength",40,2],["slow_falling",40,0],["resistance",40,1]]};
+ const racial={slime:[["resistance",40,0],["regeneration",40,0]],goblin:[["speed",40,0]],ogre:[["strength",40,1]],orc:[["resistance",40,0],["strength",40,0]],lizardman:[["water_breathing",40,0],["strength",40,0]],dwarf:[["haste",40,0],["resistance",40,0]],elf:[["night_vision",40,0]],demon:[["fire_resistance",40,0],["strength",40,0]],spirit:[["resistance",40,0],["night_vision",40,0]],beastman:[["speed",40,0],["jump_boost",40,0]],vampire:[["night_vision",40,0],["regeneration",40,0]],dragon:[["fire_resistance",40,0],["strength",40,1],["slow_falling",40,0]],true_dragon:[["fire_resistance",40,1],["strength",40,2],["resistance",40,1]]};
  for(const [id,duration,amp] of (racial[race]||[]))effect(p,id,duration,amp);
 }
 function applyRace(p,race,reset){
@@ -495,6 +496,7 @@ function classMenu(p){
 }
 
 function skillCost(id){const map={magic_bolt:5,fireball:12,water_blade:10,wind_blade:10,lightning_spear:18,ice_lance:14,earth_spike:14,healing:18,arcane_barrier:16,black_flame:28,acid_rain:22,spatial_motion:25,physical_enhancement:12,aura_slash:18,aura_shield:14,battlewill:10,aura_sword:16,heavy_slash:20,instant_move:15};return map[id]||16;}
+function skillLearnMagiculeCost(id){const node=TREE.find(x=>x.id===id);return Math.max(10,Math.floor((node?.cost??5)*10+(node?.ep??0)*0.02));}
 function getTarget(p,range=18,includePlayers=false){
  // Never allow the acting player to become their own target. The old nearby-entity
  // fallback did exactly that when includePlayers=true because the player is at distance 0.
@@ -532,11 +534,11 @@ function scanTargetSkill(p,target,baseChance=0.9){
  say(p,`§dSuccessful analysis: ${skillName(skill)} acquired from ${type}. This creature cannot grant you another skill.`);return true;
 }
 
-const SPIRITUAL_SKILL_IDS=new Set(["spirit_burst","spirit_blast","spiritual_burst","summon_greater_elemental","summon_medium_elemental","elemental_domination","spirit_fusion"]);
+const BATTLEWILL_SKILL_IDS=new Set(["physical_enhancement","aura_slash","aura_shield","battlewill","aura_sword","heavy_slash","instant_move","earthshatter_kick","ogre_sword_guillotine","roaring_lion_punch","five_petals_thrust","eight_petals_flash","dark_eight_palms","death_march_dance","elephant_stampede","magic_bullet","maximum_magic_bullet","ogre_flame","ogre_sword_cannon","air_flight","diamond_path","formhide","haze","violent_break"]);
 function castSkill(p,id){
  if(!p?.isValid||!hasSkill(p,id)){say(p,"You have not learned that skill yet.");return;}
- const cost=skillCost(id),resource=isMagicSkill(id)?"MP":SPIRITUAL_SKILL_IDS.has(id)?"SP":"AP",resourceKey=resource==="MP"?DP.mp:resource==="SP"?DP.sp:DP.ap,current=n(p,resourceKey);
- if(current<cost){say(p,`Not enough ${resource}. Need ${cost}, have ${current}.`);return;}
+ const cost=skillCost(id),resource=BATTLEWILL_SKILL_IDS.has(id)?"AP":"MP",resourceKey=resource==="AP"?DP.ap:DP.mp,current=n(p,resourceKey);
+ if(current<cost){feedback(p,`Not enough ${resource}. Need ${cost}, have ${current}.`);return;}
  let cds={};try{cds=JSON.parse(get(p,DP.cooldowns,"{}"));}catch{}
  const now=system.currentTick||0,cd=cds[id]||0;if(now<cd){say(p,`Skill recovering: ${Math.ceil((cd-now)/20)}s.`);return;}
  set(p,resourceKey,current-cost);const mastered=masteryLevel(p,id);const cooldownTicks=Math.max(20,Math.round(80-mastered*0.6));cds[id]=now+cooldownTicks;set(p,DP.cooldowns,JSON.stringify(cds));
@@ -667,12 +669,12 @@ function openSkillNode(p,id){
  const form=new CustomForm(p,"TENSURA • SKILL NODE");
  form.header(`${skillName(id).toUpperCase()}  •  ${treeBranch(id)}`);
  const owned=hasSkill(p,id),retired=list(p,"ts26_retired_skills").includes(id),mastery=masteryLevel(p,id),req=node.req.length?node.req.map(skillName).join(" + "):"No prerequisites";
- const desc=SKILL_BY_ID.get(id)?.description||"A learnable Tensura ability.";
- form.label(`${desc}\n\nSTATUS: ${owned?"UNLOCKED":retired?"EVOLVED / RETIRED":"LOCKED"}\nMASTERY: ${mastery} uses\nCOST: ${node.cost} Skill Points  •  ${node.ep} EP\nREQUIRES: ${req}`);
+ const desc=SKILL_BY_ID.get(id)?.description||"A learnable Tensura ability.";const magiculeCost=skillLearnMagiculeCost(id);
+ form.label(`${desc}\n\nSTATUS: ${owned?"UNLOCKED":retired?"EVOLVED / RETIRED":"LOCKED"}\nMASTERY: ${mastery} uses\nCOST: ${node.cost} Skill Points  •  ${node.ep} EP  •  ${magiculeCost} Magicules\nREQUIRES: ${req}`);
  if(owned&&PASSIVE_SKILLS.has(id))form.button("ASSIGN TO PASSIVE SLOT",()=>{try{form.close();}catch{}openPassiveSkillSlotPicker(p,id);},skillIcon(id));
  else if(owned&&get(p,DP.equipped,"")===id)form.button("UNEQUIP THIS SKILL",()=>{try{form.close();}catch{}set(p,DP.equipped,"");say(p,`${skillName(id)} unequipped. Select another learned skill to equip it.`);});
  else if(owned)form.button("EQUIP THIS SKILL",()=>{try{form.close();}catch{}set(p,DP.equipped,id);say(p,`${skillName(id)} equipped. Use Skill Horn normally to activate it.`);},skillIcon(id));
- else if(retired)form.label("This evolution stage has been permanently replaced. It cannot be learned or equipped again.");else form.button("UNLOCK SKILL",()=>{try{form.close();}catch{}if(!node.req.every(x=>hasSkill(p,x))){say(p,`Locked: unlock ${req} first.`);return;}if(n(p,DP.skillPoints)<node.cost||n(p,DP.ep)<node.ep){say(p,`Insufficient requirements: ${node.cost} Skill Points and ${node.ep} EP needed.`);return;}set(p,DP.skillPoints,n(p,DP.skillPoints)-node.cost);if(id==="raphael"&&hasSkill(p,"great_sage"))evolveSkill(p,"great_sage","raphael");else if(id==="beelzebuth"&&hasSkill(p,"gluttony"))evolveSkill(p,"gluttony","beelzebuth");else if(id==="ciel"&&hasSkill(p,"raphael"))evolveSkill(p,"raphael","ciel");else addSkill(p,id);say(p,`§a${skillName(id)} unlocked!§r Open the node again to equip it.`);openSkillTree(p);});
+ else if(retired)form.label("This evolution stage has been permanently replaced. It cannot be learned or equipped again.");else form.button("UNLOCK SKILL",()=>{try{form.close();}catch{}if(!node.req.every(x=>hasSkill(p,x))){say(p,`Locked: unlock ${req} first.`);return;}const magicules=skillLearnMagiculeCost(id);if(n(p,DP.skillPoints)<node.cost||n(p,DP.ep)<node.ep||n(p,DP.mp)<magicules){feedback(p,`Learning ${skillName(id)} requires ${magicules} MP, ${node.cost} Skill Points and ${node.ep} EP.`);return;}set(p,DP.skillPoints,n(p,DP.skillPoints)-node.cost);set(p,DP.mp,n(p,DP.mp)-magicules);if(id==="raphael"&&hasSkill(p,"great_sage"))evolveSkill(p,"great_sage","raphael");else if(id==="beelzebuth"&&hasSkill(p,"gluttony"))evolveSkill(p,"gluttony","beelzebuth");else if(id==="ciel"&&hasSkill(p,"raphael"))evolveSkill(p,"raphael","ciel");else addSkill(p,id);say(p,`§a${skillName(id)} unlocked!§r Open the node again to equip it.`);openSkillTree(p);});
  form.button("BACK TO SKILL TREE",()=>{try{form.close();}catch{}openSkillTree(p);});form.closeButton();form.show().catch(()=>{});
 }
 function openSkillTree(p){if(!initPlayer(p)){showRaceSelection(p);return;}const form=new CustomForm(p,"TENSURA • SKILL TREE");try{form.image("textures/gui/background/tr_menu.png","tensura");}catch{}const groups=[["ROOT • CORE",TREE.filter(x=>x.tier===0)],["ELEMENTAL ARTS",TREE.filter(x=>treeBranch(x.id)==="ELEMENTAL ARTS")],["SUPPORT & DEFENCE",TREE.filter(x=>treeBranch(x.id)==="SUPPORT & DEFENCE")],["COMBAT & BODY",TREE.filter(x=>treeBranch(x.id)==="COMBAT & BODY")],["UNIQUE & ANALYSIS",TREE.filter(x=>treeBranch(x.id)==="UNIQUE & ANALYSIS")],["ULTIMATE SKILLS",TREE.filter(x=>treeBranch(x.id)==="ULTIMATE SKILLS")],["GENERAL / SPECIAL",TREE.filter(x=>x.tier!==0&&treeBranch(x.id)==="GENERAL / SPECIAL")]];const flat=[];for(const [title,nodes] of groups)for(const node of nodes)if(!PASSIVE_SKILLS.has(node.id)&&!isMagicSkill(node.id)&&!list(p,"ts26_retired_skills").includes(node.id))flat.push({title,node});const size=20,total=Math.ceil(flat.length/size),page=Math.max(0,Math.min(total-1,n(p,"ts26_skill_page",0))),slice=flat.slice(page*size,(page+1)*size);form.header(`✦ SKILL TREE • ${page+1}/${Math.max(1,total)} ✦`);form.button("MANAGE PASSIVE SKILL SLOTS",()=>{try{form.close();}catch{}passiveMenu(p);});form.label(`Skill Points: ${n(p,DP.skillPoints)} • EP: ${n(p,DP.ep)} • Equipped: ${get(p,DP.equipped,"")?skillName(get(p,DP.equipped,"")):"None"}
@@ -744,10 +746,10 @@ function ensureVillageChurch(p){
  }
  for(let dx=-5;dx<=5;dx++)for(let dz=-5;dz<=5;dz++)placeBlock(d,x+dx,y+5,z+dz,"minecraft:spruce_planks");
  for(let yy=1;yy<=6;yy++)placeBlock(d,x,y+yy,z-2,"minecraft:spruce_planks");
- placeBlock(d,x,y+1,z-2,"minecraft:lectern");placeBlock(d,x+2,y+1,z-2,"minecraft:bell");
+ placeBlock(d,x,y+1,z-2,"minecraft:enchanting_table");placeBlock(d,x+2,y+1,z-2,"minecraft:bell");
  churches.push({dimension:p.dimension.id,x,y:y+1,z:z-2});
  world.setDynamicProperty("ts27_village_churches",JSON.stringify(churches.slice(-128)));
- say(p,"§eA village chapel has been built nearby. Bring a Spirit Prayer Seal and pray at its lectern to receive a spirit.§r");
+ say(p,"§eA village chapel and Spirit Prayer Altar have been built nearby. Bring a Spirit Prayer Seal and interact with the altar.§r");
 }
 function openSpiritPrayer(p){
  if(!isNearVillageChurch(p)){say(p,"Spirits can only be acquired by praying at a village church altar. Bring a Spirit Prayer Seal to a chapel in a naturally generated village.");return;}
@@ -769,18 +771,19 @@ function evolutionMenu(p){
  form.header("EVOLUTION & AWAKENING");form.label(`Current form: ${race}\nOrigin lineage: ${base}\nLevel ${level} • EP ${ep.toLocaleString()} • Souls ${souls.toLocaleString()}\nDemon Lord Seed: ${get(p,"ts26_seed_awarded",false)?"Acquired":"Not yet acquired"}`);
  const paths={goblin:["hobgoblin",5,1000,["agility"]],ogre:["kijin",12,8000,["steel_strength","body_armor"]],orc:["high_orc",10,6000,["berserker"]],lizardman:["dragonewt",12,9000,["water_blade"]],dwarf:["high_dwarf",12,7000,["absorb_and_dissolve"]],elf:["high_elf",15,10000,["universal_perception"]],demon:["arch_demon",20,20000,["shadow_motion"]],spirit:["elemental_lord",20,20000,["healing","universal_perception"]],beastman:["high_beastman",12,8000,["agility"]],vampire:["noble_vampire",18,15000,["ultraspeed_regeneration"]],slime:["demon_slime",30,100000,["gluttony"]],high_orc:["orc_king",25,50000,["starved"]],kijin:["oni",25,50000,["chosen_one"]]};
  const path=paths[race];if(path){const [next,lv,need,skills]=path;form.button(`EVOLVE → ${next.toUpperCase()}  •  Lv ${lv} / ${need.toLocaleString()} EP`,()=>{try{form.close();}catch{}if(level<lv||ep<need){say(p,`Evolution requires level ${lv} and ${need.toLocaleString()} EP.`);return;}evolveRace(p,next,skills);});}
- if((base==="demon"||["orc","ogre","slime","vampire","beastman"].includes(base))&&ep>=200000&&!get(p,"ts26_seed_awarded",false))form.button("CLAIM DEMON LORD SEED",()=>{try{form.close();}catch{}set(p,"ts26_seed_awarded",true);give(p,"tensura:demon_lord_seed");say(p,"§5Demon Lord Seed acquired.§r Gather 10,000 souls and begin the Harvest Festival from the Seed.");});
+ if((base==="demon"||["orc","ogre","slime","vampire","beastman"].includes(base))&&ep>=200000&&!get(p,"ts26_seed_awarded",false))form.button("AWAKENING POTENTIAL • DEMON LORD SEED",()=>{try{form.close();}catch{}set(p,"ts26_seed_awarded",true);say(p,"§5Demon Lord Seed awakened within your soul.§r It is an internal potential, not an inventory item. Gather 10,000 souls (EP also contributes) and begin the Harvest Festival.");});
  form.button("TRUE DEMON LORD • HARVEST FESTIVAL",()=>{try{form.close();}catch{}if(!get(p,"ts26_seed_awarded",false)){say(p,"You need to qualify for and claim a Demon Lord Seed first.");return;}startDemonRitual(p);});
- form.button("TRUE HERO AWAKENING",()=>{try{form.close();}catch{}const spirits=list(p,DP.spiritRanks).filter(x=>/^(Greater|Lord):/.test(x));const unique=new Set(spirits.map(x=>x.split(":")[1]));if(unique.size>=7){set(p,DP.trueHero,true);set(p,DP.maxMp,n(p,DP.maxMp)+300);set(p,DP.mp,n(p,DP.maxMp));set(p,DP.maxAp,n(p,DP.maxAp)+300);set(p,DP.ap,n(p,DP.maxAp));set(p,DP.maxSp,n(p,DP.maxSp)+300);set(p,DP.sp,n(p,DP.maxSp));set(p,DP.ep,n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp));addSkill(p,"chosen_one");say(p,"§eTRUE HERO AWAKENING!§r Seven Great Spirits recognize your will. Chosen One has been awakened.");}else say(p,`True Hero requirement: seven distinct Greater/Lord spirits. You have ${unique.size}/7.`);});
+ form.button("TRUE HERO AWAKENING",()=>{try{form.close();}catch{}if(get(p,DP.trueHero,false)){say(p,"You have already awakened as a True Hero.");return;}const spirits=list(p,DP.spiritRanks).filter(x=>/^Greater:/.test(x));const unique=new Set(spirits.map(x=>x.split(":")[1]));if(unique.size>=7){set(p,DP.trueHero,true);set(p,DP.maxMp,n(p,DP.maxMp)+300);set(p,DP.mp,n(p,DP.maxMp));set(p,DP.maxAp,n(p,DP.maxAp)+300);set(p,DP.ap,n(p,DP.maxAp));set(p,DP.maxSp,n(p,DP.maxSp)+300);set(p,DP.sp,n(p,DP.maxSp));set(p,DP.ep,n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp));addSkill(p,"chosen_one");say(p,"§eTRUE HERO AWAKENING!§r Seven Great Spirits recognize your will. Chosen One has been awakened.");}else say(p,`True Hero requirement: seven distinct Greater/Lord spirits. You have ${unique.size}/7.`);});
  form.button("TRUE DRAGON EVOLUTION",()=>{try{form.close();}catch{}if(level<50||ep<1000000){say(p,"True Dragon evolution requires level 50 and 1,000,000 EP. Every starting race can pursue this path.");return;}if(get(p,DP.trueDragon,false)){say(p,"You have already awakened as a True Dragon.");return;}set(p,DP.trueDragon,true);set(p,DP.race,"true_dragon");set(p,DP.hp,Math.max(120,Math.ceil(n(p,DP.hp,20)*1.8)));set(p,DP.maxMp,n(p,DP.maxMp)+1000);set(p,DP.mp,n(p,DP.maxMp));set(p,DP.maxAp,n(p,DP.maxAp)+800);set(p,DP.ap,n(p,DP.maxAp));set(p,DP.maxSp,n(p,DP.maxSp)+800);set(p,DP.sp,n(p,DP.maxSp));set(p,DP.ep,n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp));applyRaceBody(p);try{const h=p.getComponent("minecraft:health");if(h)h.setCurrentValue(h.effectiveMax);}catch{}addSkill(p,"spatial_motion");say(p,"§5TRUE DRAGON EVOLUTION!§r Your origin lineage remains recorded; your current form is True Dragon.");});
  form.closeButton();form.show().catch(()=>{});
 }
 
+function soulTotal(p){return n(p,DP.souls)+Math.max(0,Math.floor(n(p,DP.ep)/100)-n(p,"ts26_ep_souls_spent",0));}
 function startDemonRitual(p){
- if(n(p,DP.souls)<10000){say(p,`Demon Lord Seed requires 10,000 souls. You have ${n(p,DP.souls)}.`);return;}
+ const total=soulTotal(p);if(total<10000){say(p,`Demon Lord awakening requires 10,000 souls. You have ${total} including EP conversion (100 EP = 1 soul).`);return;}
  if(get(p,DP.demonRitual,false)){say(p,"Your awakening ritual is already in progress.");return;}
- if(!consumeHeld(p,"tensura:demon_lord_seed")){say(p,"Hold the Demon Lord Seed in your hand.");return;}
- set(p,DP.souls,n(p,DP.souls)-10000);set(p,DP.demonRitual,3600);
+ const stored=Math.min(10000,n(p,DP.souls)),fromEp=10000-stored;set(p,DP.souls,n(p,DP.souls)-stored);if(fromEp)set(p,"ts26_ep_souls_spent",n(p,"ts26_ep_souls_spent",0)+fromEp);
+ set(p,DP.demonRitual,3600);
  effect(p,"slowness",3600,255);effect(p,"blindness",3600,0);effect(p,"darkness",3600,0);
  say(p,"§5DEMON LORD AWAKENING RITUAL BEGUN.§r You must survive three minutes of paralysis and darkness. Do not leave the world.");
 }
@@ -789,8 +792,8 @@ function useSkillTome(p,id){
  const sid=id.substring(prefix.length);
  if(!SKILL_BY_ID.has(sid)){say(p,"This tome's skill record is not recognized.");return;}
  if(hasSkill(p,sid)){say(p,`You already know ${skillName(sid)}.`);return;}
- if(!consumeHeld(p,id))return;
- addSkill(p,sid);say(p,`§dSkill learned: ${skillName(sid)}§r. Equip it through the Skill Horn tree or use it from the Magic Horn if it is a magic art.`);
+ const magiculeCost=skillLearnMagiculeCost(sid);if(n(p,DP.mp)<magiculeCost){feedback(p,`Learning ${skillName(sid)} requires ${magiculeCost} MP.`);return;}if(!consumeHeld(p,id))return;
+ set(p,DP.mp,n(p,DP.mp)-magiculeCost);addSkill(p,sid);say(p,`§dSkill learned: ${skillName(sid)}§r. ${magiculeCost} magicules consumed. Equip it through the Skill Horn tree or use it from the Magic Horn if it is a magic art.`);
 }
 
 function countItem(p,id){const c=inv(p);if(!c)return 0;let total=0;for(let i=0;i<c.size;i++){const it=c.getItem(i);if(it?.typeId===id)total+=it.amount;}return total;}
@@ -955,7 +958,7 @@ function itemUse(ev){
  if(id.startsWith("tensura:lesser_spirit_")||id.startsWith("tensura:medium_spirit_")||id.startsWith("tensura:greater_spirit_")||id.startsWith("tensura:great_spirit_")){summonElementalSpirit(p,id);return;}
  if(id==="tensura:spirit_codex"){openSpiritPrayer(p);return;}
  if(id==="tensura:spirit_prayer"){say(p,"Take the Spirit Prayer Seal to a village church and interact with its altar to pray.");return;}
- if(id==="tensura:demon_lord_seed"){startDemonRitual(p);return;}
+ 
  if(id==="tensura:spirit_integration"){const ranks=list(p,DP.spiritRanks);if(!ranks.length){say(p,"You need to acquire a spirit through prayer first.");return;}const selected=ranks[ranks.length-1];set(p,"ts26_integrated_spirit",selected);if(consumeHeld(p,id))say(p,`Integrated with ${selected.replace(":"," ")} Spirit. Use Magic Horn to invoke your spirit arts.`);return;}
  if(id==="tensura:elemental_essence"){
   set(p,DP.mp,Math.min(n(p,DP.maxMp),n(p,DP.mp)+40));set(p,DP.ap,Math.min(n(p,DP.maxAp),n(p,DP.ap)+20));set(p,DP.sp,Math.min(n(p,DP.maxSp),n(p,DP.sp)+20));set(p,DP.ep,n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp));say(p,"Elemental Essence nourished your magicules, aura and spirit health.");return;
@@ -1162,7 +1165,7 @@ function addLootForKill(killer,dead){
  let chance=boss?0.75:otherworlder?0.45:elemental?0.35:creature?0.08:0.025;
  if(Math.random()<chance){const pool=otherworlder?DROP_SKILLS.filter(s=>["great_sage","chosen_one","survivor","degenerate","greed","guardian","investigator","usurper","traveler","raphael"].includes(s)):boss?DROP_SKILLS.filter(s=>["gluttony","beelzebuth","raphael","uriel","michael","azathoth","absolute_severance","multilayer_barrier","black_flame"].includes(s)):elemental?DROP_SKILLS.filter(s=>["fireball","water_blade","wind_blade","lightning_spear","ice_lance","earth_spike","healing","universal_perception","spatial_motion"].includes(s)):DROP_SKILLS;
   const skill=pool[Math.floor(Math.random()*pool.length)];give(killer,`tensura:skill_book_${skill}`);say(killer,`§dSkill Tome dropped: ${skillName(skill)}§r.`);}
- if(boss){set(killer,"ts26_last_boss_defeated",id.replace("tensura:",""));const defeated=list(killer,"ts26_defeated_bosses");const defeatedId=id.replace("tensura:","");if(!defeated.includes(defeatedId)){defeated.push(defeatedId);saveList(killer,"ts26_defeated_bosses",defeated);give(killer,"tensura:companion_contract");say(killer,"§dA Demon Lord Companion Contract was acquired. You may now summon this defeated boss as an ally.§r");}set(killer,DP.souls,n(killer,DP.souls)+100);set(killer,DP.ep,n(killer,DP.ep)+1500);set(killer,DP.skillPoints,n(killer,DP.skillPoints)+5);set(killer,DP.bossKills,n(killer,DP.bossKills)+1);say(killer,"§6Boss defeated!§r +100 souls, +1500 EP, +5 Skill Points.");if(id.includes("orc_disaster")&&!get(killer,"ts26_orc_disaster_seed",false)){give(killer,"tensura:demon_lord_seed");set(killer,"ts26_orc_disaster_seed",true);say(killer,"§5The Orc Disaster yielded a Demon Lord Seed.§r");}else if(Math.random()<0.25)give(killer,"tensura:demon_lord_seed");}
+ if(boss){set(killer,"ts26_last_boss_defeated",id.replace("tensura:",""));const defeated=list(killer,"ts26_defeated_bosses");const defeatedId=id.replace("tensura:","");if(!defeated.includes(defeatedId)){defeated.push(defeatedId);saveList(killer,"ts26_defeated_bosses",defeated);give(killer,"tensura:companion_contract");say(killer,"§dA Demon Lord Companion Contract was acquired. You may now summon this defeated boss as an ally.§r");}set(killer,DP.souls,n(killer,DP.souls)+100);set(killer,DP.ep,n(killer,DP.ep)+1500);set(killer,DP.skillPoints,n(killer,DP.skillPoints)+5);set(killer,DP.bossKills,n(killer,DP.bossKills)+1);say(killer,"§6Boss defeated!§r +100 souls, +1500 EP, +5 Skill Points.");if(id.includes("orc_disaster")&&!get(killer,"ts26_orc_disaster_seed",false)){set(killer,"ts26_orc_disaster_seed",true);set(killer,"ts26_seed_awarded",true);say(killer,"§5The Orc Disaster awakened a Demon Lord Seed within your soul.§r");}else if(Math.random()<0.25&&!get(killer,"ts26_seed_awarded",false)){set(killer,"ts26_seed_awarded",true);say(killer,"§5A Demon Lord Seed awakened within your soul.§r");}}
  else if(otherworlder){set(killer,DP.souls,n(killer,DP.souls)+10);set(killer,DP.ep,n(killer,DP.ep)+250);}
  else if(elemental&&Math.random()<0.22){give(killer,"tensura:spirit_prayer");say(killer,"An elemental dropped a Spirit Prayer Seal.");}
  if(!boss){const soulGain=Math.max(1,Math.floor((Number(get(dead,"ts26_ep_value",50))||50)/1000));set(killer,DP.souls,n(killer,DP.souls)+soulGain);}
@@ -1217,7 +1220,7 @@ world.afterEvents.itemUse.subscribe(itemUse);
 const craftingMenuTick=new Map();
 world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{
  const p=ev.player,b=ev.block;if(!p?.isValid||!b)return;
- if(b.typeId==="minecraft:lectern"&&isVillageChurchAltar(p,b)){openSpiritPrayer(p);return;}
+ if(b.typeId==="minecraft:enchanting_table"&&isVillageChurchAltar(p,b)){openSpiritPrayer(p);return;}
  
 }catch(e){try{ev.player?.sendMessage(`§cPortal error: ${String(e).slice(0,120)}`);}catch{}}});
 
@@ -1239,6 +1242,7 @@ world.afterEvents.entityHurt.subscribe(ev=>{
   return;
  }
  if(attacker?.typeId==="minecraft:player"&&victim?.isValid){try{const h=victim.getComponent("minecraft:health");if(h){const cur=Math.ceil(h.currentValue),max=Math.ceil(h.effectiveMax);attacker.onScreenDisplay.setActionBar(`§c${victim.nameTag||victim.typeId} ${cur}/${max} HP§r\n${statsText(attacker)}`);}}catch{}}
+ if(victim?.typeId==="minecraft:player"&&ev.damageSource?.cause===EntityDamageCause.fall&&["slime","dragon","true_dragon"].includes(get(victim,DP.race,get(victim,DP.baseRace,"")))){try{const h=victim.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,h.currentValue+Number(ev.damage||0)*0.48));}catch{}}
  if(victim?.typeId==="minecraft:player"&&n(victim,DP.reflector)>system.currentTick&&attacker?.isValid){try{attacker.applyDamage(Math.max(1,Math.floor(ev.damage*0.65)),{cause:EntityDamageCause.magic,damagingEntity:victim});}catch{}}
 });
 
@@ -1263,15 +1267,7 @@ system.runInterval(()=>{
   if(p.dimension.id==="tensura:hell"){travelOverworld(p);say(p,"Hell has been removed from this build. You have been returned to the Overworld.");continue;}
   if(!get(p,DP.raceChosen,false)){if(!raceFormsOpen.has(p.id))showRaceSelection(p);continue;}
   initPlayer(p);
-  const magicules=n(p,DP.mp);
-  if(magicules>0){if(n(p,"ts26_mp_zero_since",-1)>=0){set(p,"ts26_mp_zero_since",-1);p.removeEffect("slowness");p.removeEffect("blindness");p.removeEffect("weakness");say(p,"§bMagicules restored. The depletion stun has ended.§r");}}
-  else {
-   let zeroSince=n(p,"ts26_mp_zero_since",-1);
-   if(zeroSince<0){zeroSince=system.currentTick;set(p,"ts26_mp_zero_since",zeroSince);say(p,"§cMAGICULES DEPLETED!§r You are stunned for 30 seconds. Restore magicules or your life will be lost.");}
-   const elapsed=system.currentTick-Number(zeroSince);
-   if(elapsed<600){try{p.addEffect("slowness",Math.min(40,600-elapsed),{amplifier:10,showParticles:true});p.addEffect("blindness",Math.min(40,600-elapsed),{amplifier:0,showParticles:false});p.addEffect("weakness",Math.min(40,600-elapsed),{amplifier:4,showParticles:false});}catch{}}
-   else {set(p,"ts26_mp_zero_since",-1);try{const health=p.getComponent("minecraft:health");if(health)health.setCurrentValue(0);else p.applyDamage(100000,{cause:EntityDamageCause.magic});}catch{try{p.applyDamage(100000,{cause:EntityDamageCause.magic});}catch{}}say(p,"§4Your magicules remained depleted for 30 seconds. Your spiritual body collapsed.§r");}
-  }
+  const magicules=n(p,DP.mp);if(magicules<=0){try{const health=p.getComponent("minecraft:health");if(health)health.setCurrentValue(0);else p.applyDamage(100000,{cause:EntityDamageCause.magic});}catch{try{p.applyDamage(100000,{cause:EntityDamageCause.magic});}catch{}}say(p,"§4Your magicules reached zero. Your spiritual body collapsed.§r");continue;}
   if(system.currentTick%20===0){try{const ownerTag=`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`;const owned=p.dimension.getEntities({location:p.location,maxDistance:96}).filter(e=>e.isValid&&safeTag(e,"tensura_companion")&&safeTag(e,ownerTag));for(const pet of owned){const d=dist(p.location,pet.location);if(d>12){const rot=p.getRotation(),yaw=rot.y*Math.PI/180;const pos={x:p.location.x-Math.sin(yaw)*2,y:p.location.y,z:p.location.z+Math.cos(yaw)*2};try{pet.teleport(pos,{dimension:p.dimension,keepVelocity:false});}catch{}}}const allies=p.dimension.getEntities({location:p.location,maxDistance:24}).filter(e=>e.isValid&&safeTag(e,"tensura_companion"));for(const ally of allies){if(n(ally,"ts26_companion_attack_tick",0)>system.currentTick)continue;const candidates=ally.dimension.getEntities({location:ally.location,maxDistance:10}).filter(e=>e.isValid&&e.id!==ally.id&&e.typeId!=="minecraft:player"&&e.typeId!=="minecraft:item"&&e.typeId!=="minecraft:xp_orb"&&!safeTag(e,"tensura_companion")&&!safeTag(e,"tensura_vessel")&&!safeTag(e,"tensura_boss")&&(e.typeId.startsWith("tensura:")||/minecraft:(zombie|skeleton|creeper|spider|witch|pillager|vindicator|ravager|guardian|drowned|husk|stray|phantom|slime|magma_cube|enderman|blaze|ghast|wither_skeleton|warden|silverfish|endermite)/.test(e.typeId)));const target=candidates.sort((a,b)=>dist(ally.location,a.location)-dist(ally.location,b.location))[0];if(target){try{target.applyDamage(22,{cause:EntityDamageCause.entityAttack,damagingEntity:ally});}catch{try{target.applyDamage(22);}catch{}}set(ally,"ts26_companion_attack_tick",system.currentTick+20);}}}catch{}}
   if(system.currentTick%20===0)applyRaceBody(p);
   if(system.currentTick%200===0&&p.dimension.id==="minecraft:overworld"){try{ensureVillageChurch(p);}catch{}}
@@ -1282,14 +1278,15 @@ system.runInterval(()=>{
    const coords=({veldora:[1500,1500],tree:[1000,1000],demon:[3000,3000],spirit:[4000,4000],charybdis:[5000,5000],dwarf:[6000,6000]}[pending]);
    if(coords&&Math.hypot(p.location.x-coords[0],p.location.z-coords[1])<90){set(p,"ts26_pending_landmark","");if(pending==="veldora")enterCustomRealm(p,"tensura:veldora_cave","Veldora’s Cave",2);else if(pending==="tree")buildWorldTreeSite(p);else if(pending==="demon")buildDemonRealmSite(p);else if(pending==="spirit")buildSpiritSanctuarySite(p);else if(pending==="charybdis")enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);else if(pending==="dwarf")buildStructureLandmark(p,"tensura:dwarf_village/complete",6000,6000,"Dwarven Village",0);}
   }
-  if(system.currentTick%40===0&&n(p,DP.sp)<n(p,DP.maxSp)&&n(p,DP.mp)>=1){set(p,DP.sp,n(p,DP.sp)+1);set(p,DP.mp,n(p,DP.mp)-1);}
-  if(system.currentTick%100===0&&n(p,DP.mp)<n(p,DP.maxMp)&&n(p,"ts26_mp_zero_since",-1)<0){set(p,DP.mp,n(p,DP.mp)+1);}
+  if(system.currentTick%40===0&&n(p,DP.sp)<n(p,DP.maxSp)&&n(p,DP.mp)>1){set(p,DP.sp,n(p,DP.sp)+1);set(p,DP.mp,n(p,DP.mp)-1);}
+  if(system.currentTick%20===0&&n(p,DP.mp)>0&&n(p,DP.mp)<n(p,DP.maxMp))set(p,DP.mp,Math.min(n(p,DP.maxMp),n(p,DP.mp)+1));
+  if(system.currentTick%40===0&&n(p,DP.ap)<n(p,DP.maxAp))set(p,DP.ap,Math.min(n(p,DP.maxAp),n(p,DP.ap)+1));
   if(String(get(p,DP.baseRace,""))==="slime"){
    const lv=n(p,DP.level,1), milestones=[[5,"water_blade"],[10,"magic_sense"],[15,"universal_perception"],[20,"thought_acceleration"],[25,"gluttony"],[30,"degenerate"],[35,"raphael"],[40,"black_flame"],[45,"spatial_motion"],[50,"beelzebuth"],[55,"multilayer_barrier"],[60,"ciel"],[65,"uriel"],[70,"azathoth"],[80,"shub_niggurath"]];
    for(const [req,skill] of milestones){const flag=`ts26_slime_milestone_${skill}`;if(lv>=req&&!get(p,flag,false)){let acquired=false;if(skill==="raphael"&&hasSkill(p,"great_sage"))acquired=evolveSkill(p,"great_sage","raphael");else if(skill==="beelzebuth"&&hasSkill(p,"gluttony"))acquired=evolveSkill(p,"gluttony","beelzebuth");else if(skill==="ciel"&&hasSkill(p,"raphael"))acquired=evolveSkill(p,"raphael","ciel");else acquired=addSkill(p,skill);if(acquired){set(p,flag,true);say(p,`§bSlime evolution milestone reached: ${skillName(skill)} acquired.§r`);}}}
   }
   if(system.currentTick%20===0){
-   try{const eq=p.getComponent("minecraft:equippable");if(eq){let gearEP=0;for(const slot of [EquipmentSlot.Head,EquipmentSlot.Chest,EquipmentSlot.Legs,EquipmentSlot.Feet,EquipmentSlot.Mainhand,EquipmentSlot.Offhand]){const it=eq.getEquipment(slot);if(it?.typeId?.startsWith("tensura:")){gearEP+=Number(it.getDynamicProperty("ts26_equipment_ep")||0);}}if(gearEP>=50000)effect(p,"resistance",30,2);else if(gearEP>=25000)effect(p,"resistance",30,1);else if(gearEP>=10000)effect(p,"resistance",30,0);}}catch{}
+   try{const eq=p.getComponent("minecraft:equippable");if(eq){let gearEP=0;for(const slot of [EquipmentSlot.Head,EquipmentSlot.Chest,EquipmentSlot.Legs,EquipmentSlot.Feet,EquipmentSlot.Mainhand,EquipmentSlot.Offhand]){const it=eq.getEquipment(slot);if(it?.typeId?.startsWith("tensura:")){gearEP+=Number(it.getDynamicProperty("ts26_equipment_ep")||0);}}if(gearEP>=500000)effect(p,"resistance",30,6);else if(gearEP>=250000)effect(p,"resistance",30,5);else if(gearEP>=100000)effect(p,"resistance",30,4);else if(gearEP>=50000)effect(p,"resistance",30,3);else if(gearEP>=25000)effect(p,"resistance",30,2);else if(gearEP>=10000)effect(p,"resistance",30,1);}}catch{}
    // EP is derived from the three combat pools; the display and progression use the same value.
    set(p,"ts26_max_ep",Math.max(1,Math.floor(n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp))));
    set(p,DP.ep,Math.floor(n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp)));
