@@ -740,7 +740,7 @@ function isNearVillageChurch(p){return getVillageChurches().some(c=>c.dimension=
 function ensureVillageChurch(p){
  if(!p?.isValid||p.dimension.id!=="minecraft:overworld")return;
  const villagers=p.dimension.getEntities({location:p.location,maxDistance:80}).filter(e=>e.typeId==="minecraft:villager");
- if(villagers.length<3)return;
+ if(villagers.length<2)return;
  const x=Math.floor(villagers.reduce((a,e)=>a+e.location.x,0)/villagers.length)+12;
  const z=Math.floor(villagers.reduce((a,e)=>a+e.location.z,0)/villagers.length)+12;
  const y=findSurfaceY(p.dimension,x,z),churches=getVillageChurches();
@@ -765,7 +765,7 @@ function openSpiritPrayer(p){
  const form=new CustomForm(p,"TENSURA • SPIRIT PRAYER");
  try{form.image("textures/gui/magic/summoning_magic_button.png","tensura");}catch{}
  form.header("CALL A GREAT ELEMENTAL SPIRIT");
- form.label("Prayer seal odds: 5% Greater Spirit • 30% Medium Spirit • 60% Lesser Spirit • 5% no response. Spirits are attuned to Light, Darkness, Fire, Spatial, Wind, Earth, Water or Gravity.");
+ form.label("Prayer seal odds: 1% Great Spirit • 5% Greater Spirit • 30% Medium Spirit • 59% Lesser Spirit • 5% no response. Elves and Spirits have improved odds. Spirits are attuned to Light, Darkness, Fire, Spatial, Wind, Earth, Water or Gravity.");
  form.button("OFFER PRAYER SEAL",()=>{try{form.close();}catch{}if(!consumeHeld(p,"tensura:spirit_prayer")){say(p,"Hold the Spirit Prayer Seal in your hand to pray.");return;}const roll=Math.random(),affinity=["elf","spirit"].includes(get(p,DP.baseRace,get(p,DP.race,"")));if(roll<(affinity?0.025:0.05)){say(p,"The prayer received no answer. The seal is spent.");return;}const rank=roll>(affinity?0.97:0.99)?"Great":roll<(affinity?0.15:0.10)?"Greater":roll<(affinity?0.50:0.40)?"Medium":"Lesser";const elements=["Light","Darkness","Fire","Spatial","Wind","Earth","Water","Gravity"];const element=elements[Math.floor(Math.random()*elements.length)];const a=list(p,DP.spiritRanks);a.push(`${rank}:${element}`);saveList(p,DP.spiritRanks,a);give(p,`tensura:${rank.toLowerCase()}_spirit_${element.toLowerCase()}`);say(p,`A ${rank} ${element} Spirit answered your prayer. Spirit contracts: ${a.length}.`);});
  form.closeButton();form.show().catch(()=>{});
 }
