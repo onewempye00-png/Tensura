@@ -62,6 +62,7 @@ const RACES = [
   { id:"dragon", name:"Dragon", desc:"A mighty dragon lineage with a larger physical form, immense vitality, natural scales and aerial dominance.", art:"dragon", hp:60, mp:220, ap:210, sp:170, ep:500, jewels:[1200,8000], skills:["dragon_skin","dragon_eye","dragon_ear","flame_breath","air_flight"] }
 ];
 const RACE_BY_ID = new Map(RACES.map(r=>[r.id,r]));
+const STARTING_UNIQUE_BY_RACE={ogre:"berserker",orc:"survivor",lizardman:"guardian",dwarf:"creator",elf:"seeker",demon:"usurper",spirit:"healer",beastman:"royal_beast",vampire:"greed",dragon:"chosen_one"};
 const SKILL_BY_ID = new Map(SKILL_CATALOG.map(s=>[s.id,s]));
 
 const CORE_TREE = [
@@ -222,14 +223,14 @@ function applyRace(p,race,reset){
  set(p,DP.race,race.id);set(p,DP.baseRace,race.id);set(p,DP.raceChosen,true);if(!reset){set(p,"ts26_start_unique_rerolls",3);set(p,"ts26_start_unique_rerolls_used",0);}
  set(p,DP.hp,race.hp);set(p,DP.mp,race.mp);set(p,DP.maxMp,race.mp);set(p,DP.ap,race.ap);set(p,DP.maxAp,race.ap);set(p,DP.sp,race.sp);set(p,DP.maxSp,race.sp);set(p,"ts26_max_ep",race.mp+race.ap+race.sp);set(p,DP.ep,race.mp+race.ap+race.sp);
  set(p,DP.jewels,Math.floor(race.jewels[0]+Math.random()*(race.jewels[1]-race.jewels[0]+1)));
- if(reset){saveList(p,DP.skills,[...list(p,DP.skills),"magic_bolt",...race.skills]);set(p,DP.unique,race.skills.find(x=>!["magic_bolt"].includes(x))||"");}
+ if(reset){const unique=STARTING_UNIQUE_BY_RACE[race.id]||"";saveList(p,DP.skills,[...list(p,DP.skills),"magic_bolt",...race.skills,...(unique?[unique]:[])]);set(p,DP.unique,unique);}
  else {
   let startSkills=["magic_bolt",...race.skills];
-  let startUnique=race.id==="slime"?(Math.random()<0.01?"both":Math.random()<0.52?"great_sage":"gluttony"):( ["human","goblin"].includes(race.id)?"":(race.skills[0]||"") );
+  let startUnique=race.id==="slime"?(Math.random()<0.01?"both":Math.random()<0.52?"great_sage":"gluttony"):(["human","goblin"].includes(race.id)?"":(STARTING_UNIQUE_BY_RACE[race.id]||""));
   if(race.id==="slime"){
    startSkills=startSkills.filter(x=>x!=="great_sage"&&x!=="gluttony");
    if(startUnique==="both")startSkills.push("great_sage","gluttony");else startSkills.push(startUnique);
-  }
+  }else if(startUnique&&!startSkills.includes(startUnique))startSkills.push(startUnique);
   saveList(p,DP.skills,startSkills);set(p,DP.unique,startUnique==="both"?"Great Sage + Gluttony":startUnique);
  }
  set(p,DP.equipped,race.skills.find(x=>!isMagicSkill(x)&&!PASSIVE_SKILLS.has(x))||"");set(p,DP.treeMode,false);set(p,DP.treeIndex,0);
