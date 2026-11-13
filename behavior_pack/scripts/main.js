@@ -146,8 +146,9 @@ function compassBearing(p){const kind=get(p,"ts26_active_compass","");let t=LAND
 function statsText(p){
  const h=p.getComponent("minecraft:health"),hp=h?Math.ceil(h.currentValue):n(p,DP.hp,20),hm=h?Math.ceil(h.effectiveMax):20;
  const mp=n(p,DP.mp),mm=n(p,DP.maxMp,100),ap=n(p,DP.ap),am=n(p,DP.maxAp,100),sp=n(p,DP.sp),sm=n(p,DP.maxSp,100),ep=n(p,DP.ep),epMax=Math.max(1,n(p,"ts26_max_ep",n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp)));
- const box=(label,v,m,color)=>{const width=8,ratio=Math.max(0,Math.min(1,m>0?v/m:0)),fill=Math.round(ratio*width),digits=`${Math.floor(v)}/${Math.floor(m)}`,left=Math.max(0,Math.floor((width-digits.length)/2)),right=Math.max(0,width-digits.length-left);return `§7[§f${label} §7|${color}${"━".repeat(fill)}§8${"━".repeat(width-fill)} §f${digits}§7]`;};
- return [box("HP",hp,hm,"§c"),box("MP",mp,mm,"§b"),box("AP",ap,am,"§6"),box("SP",sp,sm,"§a"),box("EP",ep,epMax,"§d"),compassBearing(p)].filter(Boolean).join("\n");
+ const box=(label,v,m,color)=>{const width=8,ratio=Math.max(0,Math.min(1,m>0?v/m:0)),fill=Math.round(ratio*width),digits=`${Math.floor(v)}/${Math.floor(m)}`;return `§7[§f${label} §7|${color}${"━".repeat(fill)}§8${"━".repeat(width-fill)} §f${digits}§7]`;};
+ const bearing=compassBearing(p);
+ return [`${box("HP",hp,hm,"§c")}  ${box("MP",mp,mm,"§b")}  ${box("AP",ap,am,"§6")}`,`${box("SP",sp,sm,"§a")}  ${box("EP",ep,epMax,"§d")}`,bearing].filter(Boolean).join("\n");
 }
 function skillName(id){return SKILL_BY_ID.get(id)?.name||id.replaceAll("_"," ");}
 const SKILL_ICON_IDS=new Set(["abnormal_condition_nullification","abnormal_condition_resistance","absolute_severance","absorb_and_dissolve","air_flight","all_seeing_eye","analyst","analytical_appraisal","anti_skill","aura_shield","aura_slash","aura_sword","battlewill","beast_transformation","berserk","berserker","bewilder","black_flame","black_lightning","blood_mist","body_armor","body_double","chant_annulment","charm","chef","chosen_one","coercion","cold_nullification","cold_resistance","commander","cook","corrosion","corrosion_nullification","corrosion_resistance","creator","danger_sense","dark_eight_palms","darkness_attack_nullification","darkness_attack_resistance","darkness_transform","death_march_dance","degenerate","demon_lord_haki","diamond_path","divine_berserker","divine_ki_release","dragon_ear","dragon_eye","dragon_mode","dragon_skin","drain","earth_attack_nullification","earth_attack_resistance","earth_domination","earth_manipulation","earth_transform","earthshatter_kick","eight_petals_flash","electricity_nullification","electricity_resistance","elephant_stampede","engorger","envy","eye_of_truth","falsifier","farsight","fighter","five_petals_thrust","flame_attack_nullification","flame_attack_resistance","flame_breath","flame_domination","flame_manipulation","flame_transform","formhide","fusionist","giantification","gluttony","godly_craftsman","godwolf_sense","gourmand","gourmet","gravity_attack_nullification","gravity_attack_resistance","gravity_domination","gravity_field","gravity_flight","gravity_manipulation","great_sage","greed","guardian","haki","haze","healer","heat_nullification","heat_resistance","heat_wave","heavenly_eye","heavy_slash","hero_haki","holy_attack_nullification","holy_attack_resistance","hydraulic_propulsion","ice_breath","infinite_regeneration","infinity_prison","instant_move","law_manipulation","light_attack_nullification","light_attack_resistance","light_transform","lightning_domination","lightning_manipulation","lust","magic_aura","magic_bullet","magic_darkness_transform","magic_earth_transform","magic_flame_transform","magic_jamming","magic_light_transform","magic_manipulation","magic_nullification","magic_resistance","magic_sense","magic_space_transform","magic_water_transform","magic_wind_transform","majesty","mana_manipulation","martial_master","mathematician","maximum_magic_bullet","merciless","molecular_manipulation","mortal_fear","multilayer_barrier","murderer","musician","observer","ogre_berserker","ogre_flame","ogre_sword_cannon","ogre_sword_guillotine","oppressor","pain_nullification","pain_resistance","paralysing_breath","paralysis","paralysis_nullification","paralysis_resistance","physical_attack_nullification","physical_attack_resistance","pierce_nullification","pierce_resistance","poison","poison_nullification","poison_resistance","poisonous_breath","possession","predator","pride","ranged_barrier","reaper","reflector","researcher","reverser","roaring_lion_punch","royal_beast","sacred_haki","sage","scale_armor","seeker","seer","self_regeneration","sense_heat_source","sense_soundwave","severer","shadow_motion","shadow_striker","sloth","snake_eye","sniper","sound_domination","sound_manipulation","space_transform","spatial_attack_nullification","spatial_attack_resistance","spatial_domination","spatial_manipulation","spatial_motion","spearhead","spiritual_attack_nullification","spiritual_attack_resistance","starved","steel_strength","sticky_steel_thread","strength","strengthen_body","suppressor","survivor","telepathy","thermal_fluctuation_nullification","thermal_fluctuation_resistance","thought_acceleration","thought_communication","thrower","thunder_breath","titanification","traveler","tuner","ultra_instinct","ultrasonic_waves","ultraspeed_regeneration","universal_perception","unpredictability","unyielding","usurper","villain","violent_break","voice_cannon","water_attack_nullification","water_attack_resistance","water_blade","water_breathing","water_current_control","water_domination","water_manipulation","water_transform","weather_domination","weather_manipulation","wind_attack_nullification","wind_attack_resistance","wind_domination","wind_manipulation","wind_transform","wrath"]);
@@ -179,7 +180,7 @@ function initPlayer(p){
  if(!get(p,"ts26_menu_migrated",false)){
   removeItemById(p,"tensura:reincarnation_compass");removeItemById(p,"tensura:menu_crystal");
   const c=inv(p);let hasMenu=false,hasMagic=false,hasSkill=false,hasNaming=false,hasTable=false;if(c){for(let i=0;i<c.size;i++){const id=c.getItem(i)?.typeId;if(id==="tensura:tensura_compass")hasMenu=true;if(id==="tensura:magic_horn")hasMagic=true;if(id==="tensura:skill_horn")hasSkill=true;if(id==="tensura:naming_horn")hasNaming=true;if(id==="minecraft:crafting_table")hasTable=true;}}
-  if(!hasMenu)give(p,"tensura:tensura_compass");if(!hasMagic)give(p,"tensura:magic_horn");if(!hasSkill)give(p,"tensura:skill_horn");if(!hasNaming)give(p,"tensura:naming_horn");if(!hasTable)give(p,"minecraft:crafting_table");
+  if(!hasMenu)give(p,"tensura:tensura_compass");if(!hasMagic)give(p,"tensura:magic_horn");if(!hasSkill)give(p,"tensura:skill_horn");if(!hasNaming)give(p,"tensura:naming_horn");if(!invCount(p,"tensura:battlewill_horn"))give(p,"tensura:battlewill_horn");if(!hasTable)give(p,"minecraft:crafting_table");
   set(p,"ts26_menu_migrated",true);
  }
  return true;
@@ -235,7 +236,7 @@ function applyRace(p,race,reset){
  }
  set(p,DP.equipped,race.skills.find(x=>!isMagicSkill(x)&&!PASSIVE_SKILLS.has(x))||"");set(p,DP.treeMode,false);set(p,DP.treeIndex,0);
  removeItemById(p,"tensura:reincarnation_compass");
- if(!get(p,"ts26_starter_items",false)){removeItemById(p,"tensura:menu_crystal");give(p,"tensura:tensura_compass");give(p,"tensura:magic_horn");give(p,"tensura:skill_horn");give(p,"tensura:naming_horn");give(p,"minecraft:crafting_table");set(p,"ts26_starter_items",true);}
+ if(!get(p,"ts26_starter_items",false)){removeItemById(p,"tensura:menu_crystal");give(p,"tensura:tensura_compass");give(p,"tensura:magic_horn");give(p,"tensura:skill_horn");give(p,"tensura:naming_horn");give(p,"tensura:battlewill_horn");give(p,"minecraft:crafting_table");set(p,"ts26_starter_items",true);}
  try{p.removeEffect("health_boost");const boost=Math.max(0,Math.ceil((race.hp-20)/4)-1);if(race.hp>20)p.addEffect("health_boost",999999,{amplifier:boost,showParticles:false});p.addEffect("regeneration",200,{amplifier:0,showParticles:false});if(race.id==="slime")p.addEffect("resistance",200,{amplifier:0,showParticles:false});if(race.id==="ogre"||race.id==="orc")p.addEffect("strength",200,{amplifier:0,showParticles:false});}catch{}
  say(p,`§aReincarnation complete. You are now a §d${race.name}§a. Your race choice is permanent. Tensura Menu opens your character profile; sneak-use Magic Horn to equip spells; sneak-use Skill Horn to open the skill tree.`);
  try{p.dimension.playSound("random.levelup",p.location);}catch{}
@@ -374,7 +375,7 @@ function buildCustomRealm(dim,kind){
     const top=39+relief;
     const ground=kind===0?(Math.sin(x*.19+z*.11)>0.79?"minecraft:soul_sand":Math.cos(z*.17-x*.09)>0.82?"minecraft:magma_block":floor):floor;
     placeBlock(dim,x,top-2,z,kind===0?"minecraft:netherrack":floor);placeBlock(dim,x,top-1,z,ground);placeBlock(dim,x,top,z,ground);
-    if(kind===0&&r>12&&r<radius-6&&Math.sin(x*.13)*Math.cos(z*.12)>0.78)placeBlock(dim,x,top+1,z,"minecraft:lava");
+    if(kind===0&&r>10&&r<radius-5&&Math.sin(x*.13)*Math.cos(z*.12)>0.34)placeBlock(dim,x,top+1,z,"minecraft:lava");
     if(kind===0)placeBlock(dim,x,70,z,"minecraft:polished_blackstone");
     if(r>=radius-2)for(let y=40;y<=58;y++)placeBlock(dim,x,y,z,wall);
     if(kind===0&&r>20&&r<radius-4&&((x*17+z*31)%97===0)){for(let y=top+1;y<top+7;y++)placeBlock(dim,x,y,z,"minecraft:basalt");}
@@ -813,7 +814,8 @@ function startDemonRitual(p){
  say(p,"§5DEMON LORD AWAKENING RITUAL BEGUN.§r You must survive three minutes of paralysis and darkness. Do not leave the world.");
 }
 function useSkillTome(p,id){
- const sid=id.substring("tensura:skill_book_".length);
+ const prefix=id.startsWith("tensura:skill_icon_")?"tensura:skill_icon_":"tensura:skill_book_";
+ const sid=id.substring(prefix.length);
  if(!SKILL_BY_ID.has(sid)){say(p,"This tome's skill record is not recognized.");return;}
  if(hasSkill(p,sid)){say(p,`You already know ${skillName(sid)}.`);return;}
  if(!consumeHeld(p,id))return;
@@ -934,10 +936,20 @@ const SPIRIT_ENTITY_BY_ELEMENT={light:"spirit_light",darkness:"spirit_darkness",
 function summonElementalSpirit(p,itemId){
  const m=itemId.match(/^tensura:(lesser|medium|greater|great)_spirit_(light|darkness|fire|spatial|wind|earth|water|gravity)$/);if(!m)return false;const rank=m[1],element=m[2],costs={lesser:{mp:60,ep:1000,hp:100},medium:{mp:160,ep:5000,hp:250},greater:{mp:400,ep:20000,hp:600},great:{mp:900,ep:50000,hp:1000}},cost=costs[rank];if(n(p,DP.mp)<cost.mp||n(p,DP.ep)<cost.ep){say(p,`${rank.toUpperCase()} ${element.toUpperCase()} SPIRIT CONTRACT requires ${cost.mp} MP and ${cost.ep} EP.`);return true;}if(!consumeHeld(p,itemId))return true;const entityId=SPIRIT_ENTITY_BY_ELEMENT[element]||"elemental_colossus",yaw=(p.getRotation?.().y||0)*Math.PI/180,loc={x:p.location.x-Math.sin(yaw)*3,y:p.location.y+1,z:p.location.z+Math.cos(yaw)*3};try{const spirit=p.dimension.spawnEntity(`tensura:${entityId}`,loc);spirit.addTag("tensura_companion");spirit.addTag("tensura_spirit");spirit.addTag(`tensura_spirit_${element}`);spirit.addTag(`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`);spirit.nameTag=`${rank[0].toUpperCase()+rank.slice(1)} ${element[0].toUpperCase()+element.slice(1)} Spirit`;spirit.setDynamicProperty("ts26_spirit_rank",rank);spirit.setDynamicProperty("ts26_spirit_element",element);const h=spirit.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,cost.hp));const amp={lesser:0,medium:1,greater:2,great:3}[rank];spirit.addEffect("strength",120000,{amplifier:amp,showParticles:false});spirit.addEffect("resistance",120000,{amplifier:Math.max(0,amp-1),showParticles:false});if(rank==="great")spirit.addEffect("regeneration",120000,{amplifier:1,showParticles:false});set(p,DP.mp,n(p,DP.mp)-cost.mp);set(p,DP.ep,Math.max(0,n(p,DP.ep)-cost.ep));const contracts=list(p,DP.spiritRanks);contracts.push(`${rank}:${element}:summoned`);saveList(p,DP.spiritRanks,contracts);say(p,`${spirit.nameTag} has answered your contract and will follow you.`);showHud(p);}catch(e){give(p,itemId);say(p,`The ${rank} ${element} spirit could not manifest here. Your contract item was returned.`);}return true;
 }
+function openBattlewillHorn(p){
+ if(!initPlayer(p)){showRaceSelection(p);return;}
+ const learned=[...BATTLEWILL_SKILLS].filter(id=>hasSkill(p,id)).sort((a,b)=>skillName(a).localeCompare(skillName(b)));
+ const form=new CustomForm(p,"TENSURA • BATTLEWILL HORN");
+ form.header("AURA TECHNIQUES");
+ form.label(`Select a learned Battlewill technique. Every technique consumes AP. Current AP: ${n(p,DP.ap)}/${n(p,DP.maxAp)}.`);
+ if(!learned.length)form.label("No Battlewill techniques learned yet. Study a Battlewill Manual to learn one.");
+ for(const id of learned)form.button(`${skillName(id)} • ${skillCost(id)} AP`,()=>{try{form.close();}catch{}castSkill(p,id);});
+ form.closeButton();form.show().catch(()=>{});
+}
 function itemUse(ev){
  const p=ev.source;if(!p||p.typeId!=="minecraft:player")return;
  const id=ev.itemStack?.typeId||"";
- if(["tensura:tensura_compass","tensura:skill_horn","tensura:magic_horn","tensura:naming_horn"].includes(id)){
+ if(["tensura:tensura_compass","tensura:skill_horn","tensura:magic_horn","tensura:naming_horn","tensura:battlewill_horn"].includes(id)){
   const key=`ts27_item_use_${id.replace(/[^a-z0-9]/gi,"_")}`,last=Number(get(p,key,0));
   if(system.currentTick-last<10)return;set(p,key,system.currentTick);
  }
@@ -958,7 +970,8 @@ function itemUse(ev){
  if(id==="tensura:magic_horn"){magicHornUse(p);return;}
  if(id==="tensura:naming_horn"){nameTargetWithHorn(p);return;}
  if(id==="tensura:skill_horn"){skillHornUse(p);return;}
- if(id.startsWith("tensura:skill_book_")){useSkillTome(p,id);return;}
+ if(id==="tensura:battlewill_horn"){openBattlewillHorn(p);return;}
+ if(id.startsWith("tensura:skill_book_")||id.startsWith("tensura:skill_icon_")){useSkillTome(p,id);return;}
  if(id==="tensura:character_reset_scroll"){resetCharacterWithScroll(p);return;}
  if(id.startsWith("tensura:lesser_spirit_")||id.startsWith("tensura:medium_spirit_")||id.startsWith("tensura:greater_spirit_")||id.startsWith("tensura:great_spirit_")){summonElementalSpirit(p,id);return;}
  if(id==="tensura:spirit_codex"){openSpiritPrayer(p);return;}
@@ -1158,7 +1171,8 @@ function addLootForKill(killer,dead){
  const creature=/tensura:|slime|orc|ogre|goblin|lizard|direwolf|bear|spider|rabbit|monster/i.test(id);
  if(elemental&&Math.random()<0.25)give(killer,"tensura:spiritual_essence",1);
  // Rare material recovery from creatures supplements missing ore generation without flooding inventories.
- if(creature&&Math.random()<0.045)give(killer,"tensura:magic_ore_shard",1);
+ if(boss)give(killer,"tensura:magic_ore_shard",3+Math.floor(Math.random()*4));
+ else if(creature&&Math.random()<0.025)give(killer,"tensura:magic_ore_shard",1);
  if(/dwarf|armorsaurus|orc_lord|orc_disaster|golem/i.test(id+" "+tag)&&Math.random()<0.035)give(killer,"tensura:raw_mithril",1);
  if(/lizard|serpent|dragon|megalodon|charybdis/i.test(id+" "+tag)&&Math.random()<0.04)give(killer,"tensura:raw_silver",1);
  if(id.includes("sky_wyvern")||id.includes("dragon_peacock")||id.includes("veldora")){give(killer,"tensura:dragon_scale",Math.random()<0.4?3:1);}
@@ -1187,14 +1201,14 @@ function chestReward(ev){
  const c=b.getComponent("minecraft:inventory")?.container;if(!c)return;
  const roll=Math.random();let reward;
  if(roll<0.04)reward="tensura:battlewill_manual";
- else if(roll<0.16){const sid=DROP_SKILLS[Math.floor(Math.random()*DROP_SKILLS.length)];reward=`tensura:skill_book_${sid}`;}
+ else if(roll<0.16){const pool=DROP_SKILLS.filter(s=>SKILL_ICON_IDS.has(s));if(!pool.length)return;const sid=pool[Math.floor(Math.random()*pool.length)];reward=`tensura:skill_icon_${sid}`;}
  else if(roll<0.26)reward="tensura:magicule_crystal";
  else if(roll<0.32)reward="tensura:spirit_prayer";
  else if(roll<0.35)reward="tensura:unique_skill_reroll";
  else if(roll<0.37)reward="tensura:demon_possession_seal";
  else if(roll<0.40)reward="tensura:magicule_potion";
  else if(roll<0.43)reward="tensura:healing_potion";
- else if(roll<0.42)reward="tensura:spirit_potion";
+ else if(roll<0.46)reward="tensura:spirit_potion";
  else return;
  const rem=c.addItem(new ItemStack(reward,1));if(!rem){seen.push(key);if(seen.length>400)seen=seen.slice(-250);world.setDynamicProperty("ts26_chest_rewards",JSON.stringify(seen));say(p,`§6Tensura treasure found: ${reward.replace("tensura:","").replaceAll("_"," ")}§r.`);}
 }
