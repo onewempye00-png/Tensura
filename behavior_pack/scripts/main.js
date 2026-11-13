@@ -1021,11 +1021,19 @@ const JAR_NAMEABLE_ENTITY_IDS=new Set([
  "minecraft:guardian","minecraft:squid","minecraft:cod","minecraft:salmon","minecraft:cat","minecraft:donkey","minecraft:horse","minecraft:llama","minecraft:mule","minecraft:parrot","minecraft:skeleton_horse","minecraft:trader_llama","minecraft:wolf","minecraft:zombie_horse","minecraft:allay","minecraft:fox","minecraft:ocelot",
  ...["aqua_frog","arch_daemon","armorsaurus","army_wasp","barghest","basilisk","beast_gnome","black_spider","blade_tiger","cattledeer","direwolf","dragon_peacock","evil_centipede","feathered_serpent","giant_ant","giant_bat","giant_bear","giant_cod","giant_salmon","goblin","greater_daemon","hell_caterpillar","hell_moth","horned_bear","horned_rabbit","hound_dog","hover_lizard","knight_spider","landfish","leech_lizard","lesser_daemon","lizardman","megalodon","one_eyed_owl","orc","pegasus","pegacorn","phantaspore","slime","metal_slime","salamander","sissie","spear_toro","tempest_serpent","winged_cat","akash","ifrit","sylphide","undine","unicorn","war_gnome","skeleton","zombie"].map(id=>`tensura:${id}`)
 ]);
-function getNamingTarget(p,range=16,includePlayers=true){
- const valid=e=>e&&e.isValid&&e.id!==p.id&&e.typeId!=="minecraft:item"&&e.typeId!=="minecraft:xp_orb"&&(includePlayers||e.typeId!=="minecraft:player");
- try{const hits=p.getEntitiesFromViewDirection({maxDistance:range});for(const hit of hits){if(valid(hit.entity))return hit.entity;}}catch{}
- try{const rot=p.getRotation(),yaw=rot.y*Math.PI/180,pitch=rot.x*Math.PI/180;const dir={x:-Math.sin(yaw)*Math.cos(pitch),y:-Math.sin(pitch),z:Math.cos(yaw)*Math.cos(pitch)};
-  return p.dimension.getEntities({location:p.location,maxDistance:range}).filter(valid).map(e=>{const dx=e.location.x-p.location.x,dy=(e.location.y+0.5)-p.location.y,dz=e.location.z-p.location.z,d=Math.hypot(dx,dy,dz)||1;return {e,d,dot:(dx*dir.x+dy*dir.y+dz*dir.z)/d};}).filter(x=>x.dot>0.35).sort((a,b)=>a.d-b.d)[0]?.e;
+function getNamingTarget(p,range=16,includePlayers=true,eligible=null){
+ const valid=e=>e&&e.isValid&&e.id!==p.id&&e.typeId!=="minecraft:item"&&e.typeId!=="minecraft:xp_orb"&&(includePlayers||e.typeId!=="minecraft:player")&&(!eligible||eligible(e));
+ try{
+  const hits=p.getEntitiesFromViewDirection({maxDistance:range});
+  // Do not let an unnameable foreground mob block a valid nameable mob behind it.
+  for(const hit of hits){if(valid(hit.entity))return hit.entity;}
+ }catch{}
+ try{
+  const rot=p.getRotation(),yaw=rot.y*Math.PI/180,pitch=rot.x*Math.PI/180,dir={x:-Math.sin(yaw)*Math.cos(pitch),y:-Math.sin(pitch),z:Math.cos(yaw)*Math.cos(pitch)};
+  return p.dimension.getEntities({location:p.location,maxDistance:range}).filter(valid).map(e=>{
+   const dx=e.location.x-p.location.x,dy=(e.location.y+0.5)-p.location.y,dz=e.location.z-p.location.z,d=Math.hypot(dx,dy,dz)||1;
+   return {e,d,dot:(dx*dir.x+dy*dir.y+dz*dir.z)/d};
+  }).filter(x=>x.dot>0.35).sort((a,b)=>a.d-b.d)[0]?.e;
  }catch{return undefined;}
 }
 async function nameTargetWithHorn(p){
@@ -1037,7 +1045,7 @@ async function nameTargetWithHorn(p){
   say(p,`Player naming ${enabled?"enabled":"disabled"}. ${enabled?"Other players may now submit a naming offer.":"Other players can no longer name you."}`);
   return;
  }
- const target=getNamingTarget(p,16,true);
+ const target=getNamingTarget(p,16,true,e=>e.typeId==="minecraft:player"||(JAR_NAMEABLE_ENTITY_IDS.has(e.typeId)&&!!e.getComponent("minecraft:health")));
  if(!target){say(p,"No valid target. Aim at a living mob or a consenting player within 16 blocks, then use the Naming Horn.");return;}
  const isPlayer=target.typeId==="minecraft:player";
  if(isPlayer&&target.id===p.id){say(p,"You cannot name yourself.");return;}
