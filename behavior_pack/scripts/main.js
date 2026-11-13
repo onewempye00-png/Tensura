@@ -125,6 +125,7 @@ function list(p,k){try{const v=JSON.parse(get(p,k,"[]"));return Array.isArray(v)
 function saveList(p,k,a){set(p,k,JSON.stringify([...new Set(a)]));}
 function say(p,s){try{p.sendMessage(`§b[TENSURA]§r ${s}`);}catch{}}
 function feedback(p,s){try{p.onScreenDisplay.setActionBar(`§c${s}§r`);}catch{}}
+function grantFeatherFalling(p,ticks){set(p,"ts26_feather_fall_until",system.currentTick+ticks);}
 function inv(p){try{return p.getComponent("minecraft:inventory")?.container;}catch{return undefined;}}
 function consumeHeld(p,id){const c=inv(p);if(!c)return false;const slot=p.selectedSlotIndex;const it=c.getItem(slot);if(!it||it.typeId!==id)return false;c.setItem(slot,it.amount>1?new ItemStack(id,it.amount-1):undefined);return true;}
 function give(p,id,count=1){try{const c=inv(p);if(c){const rem=c.addItem(new ItemStack(id,count));if(rem)p.dimension.spawnItem(rem,p.location);}else p.dimension.spawnItem(new ItemStack(id,count),p.location);}catch{}}
@@ -231,7 +232,7 @@ function applyRaceBody(p){
  const raceHp=Number(get(p,DP.hp,hpMap[race]||20))||hpMap[race]||20;const boost=Math.max(0,Math.ceil((raceHp-20)/4)-1);
  try{if(raceHp>20)p.addEffect("health_boost",40,{amplifier:boost,showParticles:false});else p.removeEffect("health_boost");const hc=p.getComponent("minecraft:health");if(hc&&hc.currentValue>hc.effectiveMax)hc.setCurrentValue(hc.effectiveMax);}catch{}
  // Refresh short-duration effects every second so racial traits remain continuously active.
- const racial={slime:[["resistance",40,0],["regeneration",40,0]],goblin:[["speed",40,0]],ogre:[["strength",40,1]],orc:[["resistance",40,0],["strength",40,0]],lizardman:[["water_breathing",40,0],["strength",40,0]],dwarf:[["haste",40,0],["resistance",40,0]],elf:[["night_vision",40,0]],demon:[["fire_resistance",40,0],["strength",40,0]],spirit:[["resistance",40,0],["night_vision",40,0]],beastman:[["speed",40,0],["jump_boost",40,0]],vampire:[["night_vision",40,0],["regeneration",40,0]],dragon:[["fire_resistance",40,0],["strength",40,1],["slow_falling",40,0]],true_dragon:[["fire_resistance",40,1],["strength",40,2],["resistance",40,1]]};
+ const racial={slime:[["resistance",40,0],["regeneration",40,0]],goblin:[["speed",40,0]],ogre:[["strength",40,1]],orc:[["resistance",40,0],["strength",40,0]],lizardman:[["water_breathing",40,0],["strength",40,0]],dwarf:[["haste",40,0],["resistance",40,0]],elf:[["night_vision",40,0]],demon:[["fire_resistance",40,0],["strength",40,0]],spirit:[["resistance",40,0],["night_vision",40,0]],beastman:[["speed",40,0],["jump_boost",40,0]],vampire:[["night_vision",40,0],["regeneration",40,0]],dragon:[["fire_resistance",40,0],["strength",40,1]],true_dragon:[["fire_resistance",40,1],["strength",40,2],["resistance",40,1]]};
  for(const [id,duration,amp] of (racial[race]||[]))effect(p,id,duration,amp);
 }
 function applyRace(p,race,reset){
@@ -369,7 +370,7 @@ function enterCustomRealm(p,id,label,kind){
      };
      loadCharybdisPart();
     }
-    p.teleport({x:0.5,y:42,z:0.5},{dimension:dim,keepVelocity:false});effect(p,"slow_falling",100,0);
+    p.teleport({x:0.5,y:42,z:0.5},{dimension:dim,keepVelocity:false});grantFeatherFalling(p,100);
     say(p,`Entered ${label}. This is its own custom dimension, independent of the Nether and End.`);
    }catch(e){say(p,`${label} build failed: ${String(e).slice(0,180)}`);}
   },20);
@@ -439,11 +440,11 @@ function buildWorldTree(p,discoverOnly=false){
   for(let dx=-2;dx<=2;dx++)for(let dz=-2;dz<=2;dz++)placeBlock(dim,cx+7+dx,ground+36,cz+dz,"tensura:world_tree_log");
   world.setDynamicProperty("ts26_world_tree_y",ground);world.setDynamicProperty("ts26_world_tree_built",true);try{p.dimension.playSound("tensura.phase3.spirit_grove",{x:cx,y:ground+20,z:cz});}catch{}
  }
- if(!discoverOnly){p.teleport({x:cx+7.5,y:ground+38,z:cz+0.5},{dimension:dim,keepVelocity:false});effect(p,"slow_falling",200,0);say(p,"You have reached the Great World Tree. Its branches form a sanctuary above the Overworld.");}
+ if(!discoverOnly){p.teleport({x:cx+7.5,y:ground+38,z:cz+0.5},{dimension:dim,keepVelocity:false});grantFeatherFalling(p,200);say(p,"You have reached the Great World Tree. Its branches form a sanctuary above the Overworld.");}
 }
 function travelGreatWorldTree(p){
  if(!p?.isValid)return;
- try{const dim=world.getDimension("minecraft:overworld");p.teleport({x:1000,y:100,z:1000},{dimension:dim,keepVelocity:false});effect(p,"slow_falling",400,0);system.runTimeout(()=>{if(p.isValid)buildWorldTree(p);},60);}catch{say(p,"The Great World Tree gate could not open.");}
+ try{const dim=world.getDimension("minecraft:overworld");p.teleport({x:1000,y:100,z:1000},{dimension:dim,keepVelocity:false});grantFeatherFalling(p,400);system.runTimeout(()=>{if(p.isValid)buildWorldTree(p);},60);}catch{say(p,"The Great World Tree gate could not open.");}
 }
 function buildVeldoraCave(p,discoverOnly=false){
  const dim=world.getDimension("minecraft:overworld"),cx=1500,cz=1500,baseY=40;
@@ -482,7 +483,7 @@ function buildVeldoraCave(p,discoverOnly=false){
 }
 function travelVeldoraCave(p){
  if(!p?.isValid)return;
- try{const dim=world.getDimension("minecraft:overworld");p.teleport({x:1500,y:220,z:1500},{dimension:dim,keepVelocity:false});effect(p,"slow_falling",500,0);system.runTimeout(()=>{if(p.isValid)buildVeldoraCave(p);},40);}catch{say(p,"The gate to Veldora's Cave could not open.");}
+ try{const dim=world.getDimension("minecraft:overworld");p.teleport({x:1500,y:220,z:1500},{dimension:dim,keepVelocity:false});grantFeatherFalling(p,500);system.runTimeout(()=>{if(p.isValid)buildVeldoraCave(p);},40);}catch{say(p,"The gate to Veldora's Cave could not open.");}
 }
 function classMenu(p){
  const form=new CustomForm(p,"TENSURA • HUMAN CAREER");
@@ -553,7 +554,7 @@ function castSkill(p,id){
   case "black_flame": if(t){hurt(p,t,15);try{t.setOnFire(8,true);}catch{}effect(t,"wither",100,1);say(p,"Black Flame engulfed the target.");}else say(p,"No target in range.");break;
   case "ultraspeed_regeneration": effect(p,"regeneration",240,2);effect(p,"absorption",240,1);say(p,"Ultraspeed Regeneration activated.");break;
   case "universal_perception": effect(p,"night_vision",400,0);near.forEach(e=>effect(e,"glowing",160,0));say(p,`Universal Perception revealed ${near.length} nearby entities.`);break;
-  case "spatial_motion": forwardTeleport(p,7);effect(p,"slow_falling",80,0);say(p,"Spatial Motion — space folded around you.");break;
+  case "spatial_motion": forwardTeleport(p,7);grantFeatherFalling(p,80);say(p,"Spatial Motion — space folded around you.");break;
   case "physical_enhancement": case "steel_strength": effect(p,"strength",300,2);effect(p,"resistance",160,0);say(p,`${skillName(id)} reinforced your body with aura. AP consumed.`);break;
   case "aura_shield": effect(p,"resistance",240,2);effect(p,"absorption",160,1);say(p,"Aura Shield condensed your aura into a defensive shell.");break;
   case "aura_slash": case "heavy_slash": if(t){hurt(p,t,id==="heavy_slash"?22:16);say(p,`${skillName(id)} struck with concentrated aura.`);}else say(p,"No target in range.");break;
@@ -571,7 +572,7 @@ function castSkill(p,id){
   case "ogre_flame": if(t){hurt(p,t,18);try{t.setOnFire(8,true);}catch{}say(p,"Ogre Flame engulfed the target.");}else effect(p,"fire_resistance",180,0);break;
   case "diamond_path": effect(p,"resistance",260,1);effect(p,"strength",180,1);effect(p,"speed",120,0);say(p,"Diamond Path hardened your aura and sharpened your movement.");break;
   case "formhide": effect(p,"resistance",320,2);effect(p,"absorption",180,1);say(p,"Formhide condensed aura around your body as armor.");break;
-  case "haze": effect(p,"invisibility",180,0);effect(p,"speed",180,1);effect(p,"slow_falling",180,0);say(p,"Haze concealed your body in a shifting aura veil.");break;
+  case "haze": effect(p,"invisibility",180,0);effect(p,"speed",180,1);grantFeatherFalling(p,180);say(p,"Haze concealed your body in a shifting aura veil.");break;
   case "violent_break": if(t){hurt(p,t,32);effect(t,"slowness",60,1);say(p,"Violent Break shattered the target's guard.");}else say(p,"No target in range.");break;
   case "body_armor": effect(p,"resistance",240,1);say(p,"Body Armor formed around you.");break;
   case "thought_acceleration": effect(p,"haste",240,2);effect(p,"speed",240,0);say(p,"Thought Acceleration heightened your reactions.");break;
@@ -580,7 +581,7 @@ function castSkill(p,id){
   case "absolute_severance": if(t){hurt(p,t,22);say(p,"Absolute Severance struck with a cutting wave.");}else say(p,"No target in range.");break;
   case "acid_rain": near.forEach(e=>{hurt(p,e,3);effect(e,"poison",120,1);});say(p,`Acid Rain corroded ${near.length} nearby enemies.`);break;
   case "agility": effect(p,"speed",300,2);effect(p,"jump_boost",200,1);say(p,"Agility enhanced your movement.");break;
-  case "air_flight": effect(p,"slow_falling",220,0);effect(p,"jump_boost",220,2);effect(p,"speed",220,1);say(p,"Air Flight lifted your body.");break;
+  case "air_flight": grantFeatherFalling(p,220);effect(p,"jump_boost",220,2);effect(p,"speed",220,1);say(p,"Air Flight lifted your body.");break;
   case "lightning_spear": if(t){hurt(p,t,16);effect(t,"weakness",100,1);say(p,"Lightning Spear pierced the target.");}else say(p,"No target in range.");break;
   case "ice_lance": if(t){hurt(p,t,10);effect(t,"slowness",160,3);say(p,"Ice Lance froze the target's movement.");}else say(p,"No target in range.");break;
   case "earth_spike": if(t){hurt(p,t,12);effect(t,"levitation",25,0);say(p,"Earth Spike launched the target upwards.");}else say(p,"No target in range.");break;
@@ -607,7 +608,7 @@ function castSkill(p,id){
   case "creator": if(n(p,DP.jewels)>=100){set(p,DP.jewels,n(p,DP.jewels)-100);give(p,"tensura:magicule_crystal",1);say(p,"Creator shaped 100 jewels into a Magicule Crystal.");}else say(p,"Creator requires 100 magic jewels.");break;
   case "commander": near.filter(e=>e.typeId==="minecraft:player").forEach(e=>effect(e,"strength",180,0));effect(p,"strength",180,0);say(p,"Commander rallied nearby allies.");break;
   case "falsifier": if(t){effect(t,"blindness",100,0);effect(p,"invisibility",120,0);say(p,"Falsifier distorted the target's perception.");}else say(p,"No target to deceive.");break;
-  case "traveler": forwardTeleport(p,10);effect(p,"slow_falling",80,0);say(p,"Traveler crossed space in a single step.");break;
+  case "traveler": forwardTeleport(p,10);grantFeatherFalling(p,80);say(p,"Traveler crossed space in a single step.");break;
   case "envy": if(t){effect(p,"strength",160,0);effect(p,"resistance",160,0);effect(t,"weakness",100,0);say(p,"Envy mirrored the target's combat advantage.");}else say(p,"No target to mirror.");break;
   case "pride": effect(p,"strength",260,1);effect(p,"resistance",260,1);say(p,"Pride asserted your authority.");break;
   case "sloth": near.forEach(e=>{effect(e,"slowness",180,2);effect(e,"weakness",120,0);});say(p,"Sloth suppressed the movement of nearby enemies.");break;
@@ -632,7 +633,7 @@ function castSkill(p,id){
   case "abnormal_condition_resistance": effect(p,"resistance",260,1);effect(p,"fire_resistance",260,0);effect(p,"water_breathing",260,0);say(p,"Abnormal Condition Resistance fortified your body against hostile effects.");break;
   case "absorb_and_dissolve": if(t){hurt(p,t,7);set(p,DP.mp,Math.min(n(p,DP.maxMp),n(p,DP.mp)+20));set(p,DP.jewels,n(p,DP.jewels)+15);say(p,"Absorb and Dissolve converted the target's matter into magicules.");}else say(p,"No target to absorb.");break;
   case "acid_shell": effect(p,"resistance",220,1);near.forEach(e=>{if(dist(e.location,p.location)<3)effect(e,"poison",100,0);});say(p,"Acid Shell coated your body and corroded close attackers.");break;
-  case "aerial_blade": if(t){hurt(p,t,11);try{t.applyImpulse({x:0,y:0.8,z:0});}catch{}say(p,"Aerial Blade carved upward through the target.");}else effect(p,"slow_falling",120,0);break;
+  case "aerial_blade": if(t){hurt(p,t,11);try{t.applyImpulse({x:0,y:0.8,z:0});}catch{}say(p,"Aerial Blade carved upward through the target.");}else grantFeatherFalling(p,120);break;
   case "airflow_shut": if(t){effect(t,"slowness",180,3);effect(t,"weakness",180,1);hurt(p,t,4);say(p,"Airflow Shut deprived the target of movement.");}else say(p,"No target in range.");break;
   case "all_seeing_eye": effect(p,"night_vision",360,0);near.forEach(e=>effect(e,"glowing",300,0));say(p,"All-Seeing Eye revealed every nearby presence.");break;
   case "analyst": if(t){const h=t.getComponent("minecraft:health");say(p,`Analyst: ${t.nameTag||t.typeId} • HP ${h?Math.ceil(h.currentValue)+"/"+Math.ceil(h.effectiveMax):"?"} • ${dist(p.location,t.location).toFixed(1)}m`);}effect(p,"haste",120,1);break;
@@ -1242,7 +1243,7 @@ world.afterEvents.entityHurt.subscribe(ev=>{
   return;
  }
  if(attacker?.typeId==="minecraft:player"&&victim?.isValid){try{const h=victim.getComponent("minecraft:health");if(h){const cur=Math.ceil(h.currentValue),max=Math.ceil(h.effectiveMax);attacker.onScreenDisplay.setActionBar(`§c${victim.nameTag||victim.typeId} ${cur}/${max} HP§r\n${statsText(attacker)}`);}}catch{}}
- if(victim?.typeId==="minecraft:player"&&ev.damageSource?.cause===EntityDamageCause.fall&&["slime","dragon","true_dragon"].includes(get(victim,DP.race,get(victim,DP.baseRace,"")))){try{const h=victim.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,h.currentValue+Number(ev.damage||0)*0.48));}catch{}}
+ if(victim?.typeId==="minecraft:player"&&ev.damageSource?.cause===EntityDamageCause.fall&&(["slime","dragon","true_dragon"].includes(get(victim,DP.race,get(victim,DP.baseRace,"")))||n(victim,"ts26_feather_fall_until",0)>system.currentTick)){try{const h=victim.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,h.currentValue+Number(ev.damage||0)*0.48));}catch{}}
  if(victim?.typeId==="minecraft:player"&&n(victim,DP.reflector)>system.currentTick&&attacker?.isValid){try{attacker.applyDamage(Math.max(1,Math.floor(ev.damage*0.65)),{cause:EntityDamageCause.magic,damagingEntity:victim});}catch{}}
 });
 
