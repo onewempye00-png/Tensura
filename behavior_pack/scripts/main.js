@@ -141,7 +141,7 @@ function evolveSkill(p,from,to){
 }
 function bar(v,m,color){const width=12,ratio=Math.max(0,Math.min(1,m>0?v/m:0)),fill=Math.round(ratio*width);return `${color}┌${"─".repeat(width)}┐\n│${color}${"━".repeat(fill)}§8${"━".repeat(width-fill)}§r│`; }
 const PASSIVE_SKILLS = new Set(["great_sage","raphael","ciel","sariel","raguel","gabriel","azrael","astarte","haniel","ultraspeed_regeneration","guardian","universal_perception","thought_acceleration","steel_strength","agility","body_armor","survivor","healer","observer","anti_magic_area","anti_shock_area","poison_resistance","fire_resistance","water_resistance","physical_resistance","mental_resistance","abnormal_condition_nullification","abnormal_condition_resistance","cold_nullification","cold_resistance","corrosion_nullification","corrosion_resistance","danger_sense","darkness_attack_nullification","darkness_attack_resistance","demon_lord_haki","dragon_ear","dragon_eye","dragon_skin","earth_attack_nullification","earth_attack_resistance","electricity_nullification","electricity_resistance","farsight","flame_attack_nullification","flame_attack_resistance","giantification","gravity_attack_nullification","gravity_attack_resistance","haki","heat_nullification","heat_resistance","hero_haki","holy_attack_nullification","holy_attack_resistance","infinite_regeneration","light_attack_nullification","light_attack_resistance","magic_nullification","magic_resistance","magic_sense","majesty","pain_nullification","pain_resistance","paralysis_nullification","paralysis_resistance","physical_attack_nullification","physical_attack_resistance","pierce_nullification","pierce_resistance","poison_nullification","poison_resistance","sacred_haki","self_regeneration","spatial_attack_nullification","spatial_attack_resistance","spiritual_attack_nullification","spiritual_attack_resistance","thermal_fluctuation_nullification","thermal_fluctuation_resistance","titanification","water_attack_nullification","water_attack_resistance","water_breathing","wind_attack_nullification","wind_attack_resistance"]);
-const LANDMARKS = {veldora:{name:"Veldora's Cave",x:1500,z:1500},labyrinth:{name:"Great Spirit Labyrinth",x:2200,z:2200},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
+const LANDMARKS = {veldora:{name:"Veldora's Cave",x:1500,z:1500},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
 function compassBearing(p){const kind=get(p,"ts26_active_compass","");let t=LANDMARKS[kind];if(kind==="hell_gate"){const sp=world.getDefaultSpawnLocation();t={name:"Hell Gate",x:sp.x+120,z:sp.z+120};}if(!t)return "";const dx=t.x-p.location.x,dz=t.z-p.location.z;const deg=((Math.atan2(dx,dz)*180/Math.PI)+360)%360;const dirs=["N","NE","E","SE","S","SW","W","NW"];return `§e${t.name} ${dirs[Math.round(deg/45)%8]} ${Math.round(Math.hypot(dx,dz))}m§r`;}
 function statsText(p){
  const h=p.getComponent("minecraft:health"),hp=h?Math.ceil(h.currentValue):n(p,DP.hp,20),hm=h?Math.ceil(h.effectiveMax):20;
@@ -241,7 +241,7 @@ function applyRace(p,race,reset){
  say(p,`§aReincarnation complete. You are now a §d${race.name}§a. Your race choice is permanent. Tensura Menu opens your character profile; sneak-use Magic Horn to equip spells; sneak-use Skill Horn to open the skill tree.`);
  try{p.dimension.playSound("random.levelup",p.location);}catch{}
  applyRaceBody(p);showHud(p);
- if(!reset&&race.id==="spirit")system.runTimeout(()=>{if(p?.isValid)travelSpiritLabyrinth(p);},40);
+
  if(!reset&&race.id==="demon")system.runTimeout(()=>{if(p?.isValid)enterCustomRealm(p,"tensura:hell","Hell",0);},40);
 }
 
@@ -315,19 +315,18 @@ function primordialSummonMenu(p){
 }
 function explorationMapMenu(p){
  const f=new CustomForm(p,"TENSURA • EXPLORATION ATLAS");f.header("JAVA-DERIVED LANDMARKS");f.label("Choose a landmark. The compass bearing points you toward the Overworld site; the structure is placed when you arrive.");
- for(const [label,key] of [["Veldora's Cave","veldora"],["Great Spirit Labyrinth","labyrinth"],["Charybdis Cave","charybdis"],["Dwarven Village","dwarf"],["Great World Tree","tree"],["Spirit Sanctuary","spirit"],["Demon Realm Ruins","demon"]])f.button(label,()=>{try{f.close();}catch{}mapDiscovery(p,key);});
+ for(const [label,key] of [["Veldora's Cave","veldora"],["Charybdis Cave","charybdis"],["Dwarven Village","dwarf"],["Great World Tree","tree"],["Spirit Sanctuary","spirit"],["Demon Realm Ruins","demon"]])f.button(label,()=>{try{f.close();}catch{}mapDiscovery(p,key);});
  f.closeButton();f.show().catch(()=>{});
 }
 function landmarkCompassMenu(p){
- const f=new CustomForm(p,"TENSURA • CARTOGRAPHER'S COMPASS");f.header("JAVA-DERIVED LANDMARKS");f.label("Choose a destination. Your compass bearing will guide you to the Overworld entrance; Veldora's Cave, Charybdis Cave and the Great Spirit Labyrinth open in their own dimensions.");
- for(const [label,key] of [["Hell Gate","hell_gate"],["Veldora's Cave","veldora"],["Great Spirit Labyrinth","labyrinth"],["Charybdis Cave","charybdis"],["Dwarven Village","dwarf"]])f.button(label,()=>{try{f.close();}catch{}mapDiscovery(p,key);});f.closeButton();f.show().catch(()=>{});
+ const f=new CustomForm(p,"TENSURA • CARTOGRAPHER'S COMPASS");f.header("JAVA-DERIVED LANDMARKS");f.label("Choose a destination. Your compass bearing guides you to the Overworld entrance; Veldora's Cave and Charybdis Cave open in their own dimensions.");
+ for(const [label,key] of [["Hell Gate","hell_gate"],["Veldora's Cave","veldora"],["Charybdis Cave","charybdis"],["Dwarven Village","dwarf"]])f.button(label,()=>{try{f.close();}catch{}mapDiscovery(p,key);});f.closeButton();f.show().catch(()=>{});
 }
 function worldGateMenu(p){
  const form=new CustomForm(p,"TENSURA • DIMENSIONAL GATES");
  form.header("FOUR INDEPENDENT JAVA-INSPIRED REALMS");
  form.label("These destinations are separate custom Bedrock dimensions. None uses the Nether or End dimension or their texture overrides. Each realm is generated and assembled inside its own void dimension.");
  form.button("HELL • UNDERWORLD",()=>{try{form.close();}catch{}enterCustomRealm(p,"tensura:hell","Hell",0);});
- form.button("GREAT SPIRIT LABYRINTH",()=>{try{form.close();}catch{}travelSpiritLabyrinth(p);});
  form.button("CHARYBDIS CAVE",()=>{try{form.close();}catch{}enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);});
  form.button("VELDORA'S CAVE",()=>{try{form.close();}catch{}enterCustomRealm(p,"tensura:veldora_cave","Veldora's Cave",2);});
  form.button("RETURN TO OVERWORLD",()=>{try{form.close();}catch{}travelOverworld(p);});
@@ -441,52 +440,6 @@ function buildVeldoraVoidCave(dim,p){
   system.runTimeout(()=>{let tries=0;const spawn=()=>{try{const dragon=dim.spawnEntity("tensura:veldora",{x:0.5,y:42,z:0.5});dragon.addTag("tensura_boss");dragon.nameTag="Veldora • Storm Dragon";}catch(e){if(++tries<8)system.runTimeout(spawn,40);else if(p?.isValid)say(p,`Veldora could not manifest: ${String(e).slice(0,120)}`);}};spawn();},40);
  };
  batch();
-}
-
-function travelSpiritLabyrinth(p){
- if(!p?.isValid)return;
- let dim;try{dim=world.getDimension("tensura:great_spirit_labyrinth");}catch(e){say(p,`Great Spirit Labyrinth dimension unavailable: ${String(e).slice(0,160)}`);return;}
- if(get(p,"ts26_labyrinth_loading",false)){say(p,"The Great Spirit Labyrinth is already being assembled. Please wait.");return;}
- try{
-  p.teleport({x:0.5,y:251,z:-166.5},{dimension:dim,keepVelocity:false});
-  makeLanding(dim,0,250,-166,"minecraft:polished_deepslate");buildSpiritExitPortal(dim);
-  if(world.getDynamicProperty("ts27_spirit_labyrinth_built")){
-   spawnLabyrinthResidents(dim,p);say(p,"You have entered the Great Spirit Labyrinth. Its Java-derived sections are assembled.");return;
-  }
-  set(p,"ts26_labyrinth_loading",true);
-  let segment=Math.max(0,Number(world.getDynamicProperty("ts27_spirit_labyrinth_segment")||0));
-  const origin={x:-55,y:0,z:-158};
-  const fail=(err)=>{set(p,"ts26_labyrinth_loading",false);try{dim.runCommand("tickingarea remove ts27_labyrinth_half_a");dim.runCommand("tickingarea remove ts27_labyrinth_half_b");}catch{}if(p?.isValid)say(p,`Labyrinth assembly stopped at section ${segment+1}/10: ${String(err).slice(0,180)}. Your progress is saved; re-enter to resume.`);};
-  let labyrinthAttempts=0;const loadHalf=(half)=>{
-   if(segment>=10){
-    world.setDynamicProperty("ts27_spirit_labyrinth_built",true);set(p,"ts26_labyrinth_loading",false);spawnLabyrinthResidents(dim,p);
-    if(p?.isValid)say(p,"The Great Spirit Labyrinth is ready. All ten original Java sections have been assembled.");return;
-   }
-   try{
-    const z=origin.z+segment*32,x=half===0?origin.x:0,name=`segment_${String(segment).padStart(2,"0")}_${half===0?"a":"b"}`;
-    const area=half===0?"ts27_labyrinth_half_a":"ts27_labyrinth_half_b";
-    try{dim.runCommand(`tickingarea add circle ${x+27} 120 ${z+16} 4 ${area} true`);}catch{}
-    const result=dim.runCommand(`structure load tensura:labyrinth/${name} ${x} 0 ${z}`);
-    if(result&&typeof result.successCount==="number"&&result.successCount===0)throw new Error(`Bedrock rejected ${name}`);
-    try{dim.runCommand(`tickingarea remove ${area}`);}catch{}
-    labyrinthAttempts=0;if(half===0){system.runTimeout(()=>loadHalf(1),10);return;}
-    segment++;world.setDynamicProperty("ts27_spirit_labyrinth_segment",segment);system.runTimeout(()=>loadHalf(0),10);
-   }catch(e){labyrinthAttempts++;if(labyrinthAttempts<20){system.runTimeout(()=>loadHalf(half),Math.min(100,10+labyrinthAttempts*5));}else fail(e);}
-  };
-  system.runTimeout(()=>loadHalf(0),20);
- }catch(e){set(p,"ts26_labyrinth_loading",false);say(p,`The Great Spirit Labyrinth gate failed: ${String(e).slice(0,180)}`);}
-}
-function buildSpiritExitPortal(dim){
- for(let x=-2;x<=2;x++)for(let y=0;y<=5;y++)placeBlock(dim,x,248+y,-184,(Math.abs(x)===2||y===0||y===5)?"minecraft:amethyst_block":"tensura:hell_portal");
-}
-function spawnLabyrinthResidents(dim,p){
- if(!world.getDynamicProperty("ts27_spirit_labyrinth_residents")){
-  const spawns=[["tensura:spirit_light",-8,249,-170],["tensura:spirit_darkness",8,249,-170],["tensura:spirit_fire",-10,249,-154],["tensura:spirit_water",10,249,-154],["tensura:spirit_wind",-15,249,-166],["tensura:spirit_earth",15,249,-166],["tensura:spirit_spatial",0,249,-180],["tensura:spirit_gravity",0,249,-150]];
-  let count=0;for(const [id,x,y,z] of spawns)try{const e=dim.spawnEntity(id,{x,y,z});e.addTag("tensura_labyrinth_resident");count++;}catch{}
-  try{const g=dim.spawnEntity("tensura:elemental_colossus",{x:-3.5,y:249,z:-166.5});g.addTag("tensura_boss");g.nameTag="Great Spirit Labyrinth Guardian";count++;}catch{}
-  try{const h=dim.spawnEntity("tensura:hound_dog",{x:4.5,y:249,z:-166.5});h.nameTag="Grid Spirit Labyrinth Hound";h.addTag("tensura_labyrinth_guardian");count++;}catch{}
-  if(count>=8)world.setDynamicProperty("ts27_spirit_labyrinth_residents",true);
- }
 }
 
 function placeBlock(dim,x,y,z,type){try{const b=dim.getBlock({x,y,z});if(b)b.setType(type);}catch{}}
@@ -779,7 +732,34 @@ function assignSkillToHeldHorn(p){
  for(const id of list(p,DP.skills).filter(x=>!PASSIVE_SKILLS.has(x)&&!isMagicSkill(x)&&!list(p,"ts26_retired_skills").includes(x)))form.button(`${id===current?"§a◆":"§f◇"} ${skillName(id)} • M${masteryLevel(p,id)}`,()=>{try{form.close();}catch{}set(p,key,id);say(p,`This Skill Horn is now assigned to ${skillName(id)}.`);},skillIcon(id));
  form.closeButton();form.show().catch(()=>{});
 }
+function getVillageChurches(){try{return JSON.parse(world.getDynamicProperty("ts27_village_churches")||"[]");}catch{return [];}}
+function isVillageChurchAltar(p,b){const x=b.location.x,y=b.location.y,z=b.location.z;return getVillageChurches().some(c=>c.dimension===p.dimension.id&&c.x===x&&c.y===y&&c.z===z);}
+function isNearVillageChurch(p){return getVillageChurches().some(c=>c.dimension===p.dimension.id&&Math.hypot(p.location.x-(c.x+0.5),p.location.y-c.y,p.location.z-(c.z+0.5))<=8);}
+function ensureVillageChurch(p){
+ if(!p?.isValid||p.dimension.id!=="minecraft:overworld")return;
+ const villagers=p.dimension.getEntities({location:p.location,maxDistance:80}).filter(e=>e.typeId==="minecraft:villager");
+ if(villagers.length<3)return;
+ const x=Math.floor(villagers.reduce((a,e)=>a+e.location.x,0)/villagers.length)+12;
+ const z=Math.floor(villagers.reduce((a,e)=>a+e.location.z,0)/villagers.length)+12;
+ const y=findSurfaceY(p.dimension,x,z),churches=getVillageChurches();
+ if(churches.some(c=>c.dimension===p.dimension.id&&Math.hypot(c.x-x,c.z-z)<64))return;
+ const d=p.dimension;
+ for(let dx=-4;dx<=4;dx++)for(let dz=-4;dz<=4;dz++)placeBlock(d,x+dx,y,z+dz,"minecraft:stone_bricks");
+ for(let yy=1;yy<=4;yy++)for(let dx=-4;dx<=4;dx++)for(let dz=-4;dz<=4;dz++){
+  if(Math.abs(dx)!==4&&Math.abs(dz)!==4)continue;
+  if(dz===4&&dx===0&&yy<=2)continue;
+  const window=(Math.abs(dx)===4&&yy===2&&Math.abs(dz)===1)||(Math.abs(dz)===4&&yy===2&&Math.abs(dx)===2);
+  placeBlock(d,x+dx,y+yy,z+dz,window?"minecraft:glass_pane":"minecraft:spruce_planks");
+ }
+ for(let dx=-5;dx<=5;dx++)for(let dz=-5;dz<=5;dz++)placeBlock(d,x+dx,y+5,z+dz,"minecraft:spruce_planks");
+ for(let yy=1;yy<=6;yy++)placeBlock(d,x,y+yy,z-2,"minecraft:spruce_planks");
+ placeBlock(d,x,y+1,z-2,"minecraft:lectern");placeBlock(d,x+2,y+1,z-2,"minecraft:bell");
+ churches.push({dimension:p.dimension.id,x,y:y+1,z:z-2});
+ world.setDynamicProperty("ts27_village_churches",JSON.stringify(churches.slice(-128)));
+ say(p,"§eA village chapel has been built nearby. Bring a Spirit Prayer Seal and pray at its lectern to receive a spirit.§r");
+}
 function openSpiritPrayer(p){
+ if(!isNearVillageChurch(p)){say(p,"Spirits can only be acquired by praying at a village church altar. Bring a Spirit Prayer Seal to a chapel in a naturally generated village.");return;}
  const form=new CustomForm(p,"TENSURA • SPIRIT PRAYER");
  try{form.image("textures/gui/magic/summoning_magic_button.png","tensura");}catch{}
  form.header("CALL A GREAT ELEMENTAL SPIRIT");
@@ -825,7 +805,7 @@ function useSkillTome(p,id){
 function countItem(p,id){const c=inv(p);if(!c)return 0;let total=0;for(let i=0;i<c.size;i++){const it=c.getItem(i);if(it?.typeId===id)total+=it.amount;}return total;}
 function takeItems(p,id,amount){const c=inv(p);if(!c||countItem(p,id)<amount)return false;let left=amount;for(let i=0;i<c.size&&left>0;i++){const it=c.getItem(i);if(it?.typeId!==id)continue;const take=Math.min(left,it.amount);left-=take;c.setItem(i,it.amount>take?new ItemStack(id,it.amount-take):undefined);}return left===0;}
 function mapDiscovery(p,kind){
- const sp=world.getDefaultSpawnLocation();const targets={hell_gate:{name:"Hell Gate",x:sp.x+120,z:sp.z+120},veldora:{name:"Veldora's Cave",x:1500,z:1500},labyrinth:{name:"Spirit Labyrinth",x:2200,z:2200},tree:{name:"Great World Tree",x:1000,z:1000},demon:{name:"Demon Realm Ruins",x:3000,z:3000},spirit:{name:"Spirit Sanctuary",x:4000,z:4000},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
+ const sp=world.getDefaultSpawnLocation();const targets={hell_gate:{name:"Hell Gate",x:sp.x+120,z:sp.z+120},veldora:{name:"Veldora's Cave",x:1500,z:1500},tree:{name:"Great World Tree",x:1000,z:1000},demon:{name:"Demon Realm Ruins",x:3000,z:3000},spirit:{name:"Spirit Sanctuary",x:4000,z:4000},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
  const t=targets[kind];if(!t)return;if(p.dimension.id!=="minecraft:overworld"){say(p,"These exploration maps are charted from the Overworld. Return there to read the map.");return;}
  set(p,"ts26_pending_landmark",kind);set(p,"ts26_active_compass",kind);if(kind==="hell_gate"){try{const hd=world.getDimension("tensura:hell");try{hd.runCommand("tickingarea add circle 0 40 0 4 ts27_0_build true");}catch{}buildCustomRealm(hd,0);}catch{}}give(p,"minecraft:compass");try{p.dimension.playSound("tensura.phase3.cave_rumble",p.location);}catch{}say(p,`§eA ${t.name} compass bearing is now active. Follow the direction beneath your status bars.§r`);const dx=t.x-p.location.x,dz=t.z-p.location.z,dist=Math.round(Math.sqrt(dx*dx+dz*dz));const bearing=((Math.atan2(dx,dz)*180/Math.PI)+360)%360;
  say(p,`§6EXPLORATION MAP: ${t.name}§r\nBearing ${Math.round(bearing)}° • approximately ${dist} blocks away. Travel there on foot. The landmark will form when you reach the site; the map does not teleport you.`);
@@ -844,28 +824,6 @@ function buildStructureLandmark(p,structure,x,z,label,entranceOffset=0){
  try{d.runCommand(`structure load ${structure} ${x-50} ${originY} ${z-50}`);world.setDynamicProperty(key,true);say(p,`${label} has been assembled from the original Java structure templates.`);}catch(e){say(p,`${label} could not be placed here: ${String(e).slice(0,140)}. Revisit the site to retry.`);}
 }
 
-function buildLabyrinthSite(p){
- const d=world.getDimension("minecraft:overworld"),cx=2200,cz=2200,y=64;if(world.getDynamicProperty("ts26_labyrinth_v3"))return;
- // Three walkable wings, central hub, boss chamber, and a continuous floor/ceiling.
- for(let x=-32;x<=32;x++)for(let z=-32;z<=32;z++){placeBlock(d,cx+x,y-1,cz+z,"minecraft:deepslate_bricks");placeBlock(d,cx+x,y+9,cz+z,"minecraft:stone_bricks");}
- const wall=(x1,z1,x2,z2,h=5,mat="minecraft:prismarine_bricks")=>{if(x1===x2){for(let z=Math.min(z1,z2);z<=Math.max(z1,z2);z++)for(let yy=0;yy<h;yy++)placeBlock(d,cx+x1,y+yy,cz+z,mat);}else{for(let x=Math.min(x1,x2);x<=Math.max(x1,x2);x++)for(let yy=0;yy<h;yy++)placeBlock(d,cx+x,y+yy,cz+z1,mat);}};
- // Outer ring and four internal districts, with intentional door gaps.
- wall(-30,-30,30,-30,7);wall(-30,30,30,30,7);wall(-30,-30,-30,30,7);wall(30,-30,30,30,7);
- wall(-20,-26,-20,26);wall(20,-26,20,26);wall(-26,-20,26,-20);wall(-26,20,26,20);
- for(const z of [-12,0,12]){wall(-18,z,-4,z);wall(4,z,18,z);}for(const x of [-12,0,12]){wall(x,-18,x,-4);wall(x,4,x,18);}
- // Pillars and lamps mark room junctions; four wings have themed floors.
- for(const [x,z,block] of [[-14,-14,"minecraft:moss_block"],[14,-14,"minecraft:blue_ice"],[-14,14,"minecraft:amethyst_block"],[14,14,"minecraft:polished_blackstone"]]){
-  for(let dx=-5;dx<=5;dx++)for(let dz=-5;dz<=5;dz++)placeBlock(d,cx+x+dx,y,cz+z+dz,block);
-  for(const [px,pz] of [[-4,-4],[4,-4],[-4,4],[4,4]]){for(let yy=1;yy<=4;yy++)placeBlock(d,cx+x+px,y+yy,cz+z+pz,"minecraft:prismarine_bricks");placeBlock(d,cx+x+px,y+5,cz+z+pz,"minecraft:sea_lantern");}
- }
- for(const [x,z] of [[0,-27],[0,27],[-27,0],[27,0],[0,0]]){placeBlock(d,cx+x,y+1,cz+z,"minecraft:sea_lantern");placeBlock(d,cx+x,y+2,cz+z,"minecraft:amethyst_block");}
- // central boss sanctum
- for(let x=-7;x<=7;x++)for(let z=-7;z<=7;z++)placeBlock(d,cx+x,y,cz+z,"minecraft:polished_deepslate");
- for(let a=0;a<4;a++){const ang=a*Math.PI/2,x=Math.round(Math.cos(ang)*6),z=Math.round(Math.sin(ang)*6);for(let yy=1;yy<=6;yy++)placeBlock(d,cx+x,y+yy,cz+z,"minecraft:crying_obsidian");}
- world.setDynamicProperty("ts26_labyrinth_v3",true);try{p.dimension.playSound("tensura.phase3.labyrinth_echo",p.location);}catch{}
- try{const boss=d.spawnEntity("tensura:elemental_colossus",{x:cx+0.5,y:y+1,z:cz+0.5});boss.addTag("tensura_boss");boss.nameTag="Labyrinth Guardian • Elemental Colossus";}catch{}
- say(p,"The Spirit Labyrinth has been charted: a multi-wing dungeon with four elemental halls and a central guardian sanctum. Its guardian has awakened. Explore on foot.");
-}
 function buildWorldTreeSite(p){buildWorldTree(p,true);}
 function buildDemonRealmSite(p){
  const d=world.getDimension("minecraft:overworld"),cx=3000,cz=3000,y=70;if(world.getDynamicProperty("ts26_demon_ruins_v1"))return;
@@ -885,13 +843,12 @@ function buildSpiritSanctuarySite(p){
 function cartographerTrade(ev){
  const p=ev.player,e=ev.target;if(!p||!e||!e.isValid||e.typeId!=="minecraft:villager"||!initPlayer(p))return;
  const form=new CustomForm(p,"TENSURA • CARTOGRAPHER");form.header("EXPLORATION MAPS");form.label("Cartographers exchange emeralds for hand-drawn Tensura landmark maps. Maps reveal bearings and build the landmark in the world; they never teleport you.");
- const options=[["Veldora's Cave","veldora",18],["Spirit Labyrinth","labyrinth",24],["Great World Tree","tree",16],["Demon Realm Ruins","demon",20],["Spirit Sanctuary","spirit",16],["Charybdis Cave","charybdis",28],["Dwarven Village","dwarf",24]];
+ const options=[["Veldora's Cave","veldora",18],["Great World Tree","tree",16],["Demon Realm Ruins","demon",20],["Spirit Sanctuary","spirit",16],["Charybdis Cave","charybdis",28],["Dwarven Village","dwarf",24]];
  for(const [name,key,cost] of options)form.button(`${name} • ${cost} emeralds`,()=>{try{form.close();}catch{}if(!takeItems(p,"minecraft:emerald",cost)){say(p,`You need ${cost} emeralds for this map.`);return;}give(p,`tensura:${key}_exploration_map`);say(p,`${name} exploration map purchased. Use it to chart the route.`);});
  form.button("Raw Mithril • 12 emeralds",()=>{try{form.close();}catch{}if(!takeItems(p,"minecraft:emerald",12))return;give(p,"tensura:raw_mithril");say(p,"Raw Mithril purchased.");});
  form.button("Magic Ore Shard • 8 emeralds",()=>{try{form.close();}catch{}if(!takeItems(p,"minecraft:emerald",8))return;give(p,"tensura:magic_ore_shard");say(p,"Magic Ore Shard purchased.");});
  form.button("Raw Silver • 6 emeralds",()=>{try{form.close();}catch{}if(!takeItems(p,"minecraft:emerald",6))return;give(p,"tensura:raw_silver");say(p,"Raw Silver purchased.");});
  form.button("Veldora Cave Compass • 8 emeralds",()=>{try{form.close();}catch{}if(!takeItems(p,"minecraft:emerald",8))return;say(p,"A Veldora Cave compass has been purchased.");give(p,"minecraft:compass");});
- form.button("Spirit Labyrinth Compass • 10 emeralds",()=>{try{form.close();}catch{}if(!takeItems(p,"minecraft:emerald",10))return;say(p,"A Spirit Labyrinth compass has been purchased.");give(p,"minecraft:compass");});
  form.closeButton();form.show().catch(()=>{});
 }
 
@@ -965,7 +922,7 @@ function itemUse(ev){
  if(id==="tensura:charybdis_core_fusion"){if(n(p,DP.ep)<30000||n(p,DP.mp)<5000||invCount(p,"tensura:charybdis_core")<1||invCount(p,"tensura:sea_king_scale")<3){say(p,"Charybdis fusion requires 30,000 EP, 5,000 MP, one Charybdis Core and three Sea King Scales.");return;}if(!consumeHeld(p,id)||!invConsume(p,"tensura:charybdis_core",1)||!invConsume(p,"tensura:sea_king_scale",3))return;set(p,DP.mp,n(p,DP.mp)-5000);if(Math.random()<0.65){addSkill(p,"water_domination");addSkill(p,"spatial_domination");give(p,"tensura:charybdis_scalemail_chestplate");try{p.dimension.playSound("tensura.phase3.fusion",p.location);}catch{}say(p,"§bCHARYBDIS CORE FUSION SUCCESSFUL!§r The abyssal core has fused with your soul. New domination skills awakened.");}else{set(p,DP.mp,n(p,DP.mp)+2500);say(p,"§cCharybdis fusion failed. The core shattered; half the MP cost was refunded.§r");}return;}
  if(id==="tensura:spirit_fusion_seal"){const ranks=list(p,DP.spiritRanks);const elements=[...new Set(ranks.map(x=>x.split(":").slice(1).join(":").toLowerCase()))];if(elements.length<2||n(p,DP.ep)<5000||n(p,DP.mp)<1200){say(p,"Spirit fusion requires contracts with two different elemental spirits, 5,000 EP and 1,200 MP.");return;}if(!consumeHeld(p,id))return;set(p,DP.mp,n(p,DP.mp)-1200);if(Math.random()<0.72){const fused=`Fused:${elements.slice(-2).join("+")}`;set(p,"ts26_integrated_spirit",fused);addSkill(p,"elemental_domination");addSkill(p,"magic_sense");try{p.dimension.playSound("tensura.phase3.fusion",p.location);}catch{}say(p,`§bSPIRIT FUSION SUCCESSFUL!§r You fused ${elements.slice(-2).join(" and ")} into a dual-element contract.`);}else{const next=ranks.slice(0,-1);saveList(p,DP.spiritRanks,next);say(p,"§cSpirit fusion failed. The newest spirit contract dissipated.§r");}return;}
  if(id==="tensura:demon_lord_summoning_seal"){primordialSummonMenu(p);return;}
- if(id==="tensura:veldora_compass"||id==="tensura:labyrinth_compass"||id==="minecraft:compass"){const kind=id.includes("veldora")?"veldora":(id.includes("labyrinth")?"labyrinth":get(p,"ts26_active_compass","veldora"));set(p,"ts26_active_compass",kind);say(p,`§e${LANDMARKS[kind].name} compass activated. Direction and distance are displayed beneath your status bars.§r`);showHud(p);return;}
+ if(id==="tensura:veldora_compass"||id==="minecraft:compass"){const kind=id.includes("veldora")?"veldora":get(p,"ts26_active_compass","veldora");set(p,"ts26_active_compass",kind);say(p,`§e${LANDMARKS[kind].name} compass activated. Direction and distance are displayed beneath your status bars.§r`);showHud(p);return;}
  if(id.endsWith("_exploration_map")){const kind=id.slice("tensura:".length).replace("_exploration_map","");if(consumeHeld(p,id))mapDiscovery(p,kind);return;}
  if(id==="tensura:magic_horn"){magicHornUse(p);return;}
  if(id==="tensura:naming_horn"){nameTargetWithHorn(p);return;}
@@ -975,7 +932,7 @@ function itemUse(ev){
  if(id==="tensura:character_reset_scroll"){resetCharacterWithScroll(p);return;}
  if(id.startsWith("tensura:lesser_spirit_")||id.startsWith("tensura:medium_spirit_")||id.startsWith("tensura:greater_spirit_")||id.startsWith("tensura:great_spirit_")){summonElementalSpirit(p,id);return;}
  if(id==="tensura:spirit_codex"){openSpiritPrayer(p);return;}
- if(id==="tensura:spirit_prayer"){openSpiritPrayer(p);return;}
+ if(id==="tensura:spirit_prayer"){say(p,"Take the Spirit Prayer Seal to a village church and interact with its altar to pray.");return;}
  if(id==="tensura:demon_lord_seed"){startDemonRitual(p);return;}
  if(id==="tensura:spirit_integration"){const ranks=list(p,DP.spiritRanks);if(!ranks.length){say(p,"You need to acquire a spirit through prayer first.");return;}const selected=ranks[ranks.length-1];set(p,"ts26_integrated_spirit",selected);if(consumeHeld(p,id))say(p,`Integrated with ${selected.replace(":"," ")} Spirit. Use Magic Horn to invoke your spirit arts.`);return;}
  if(id==="tensura:elemental_essence"){
@@ -1016,7 +973,6 @@ function itemUse(ev){
  if(id==="tensura:naming_scroll"){const target=getTarget(p,8);if(target&&target.typeId!=="minecraft:player"){if(!consumeHeld(p,id))return;const h=target.getComponent("minecraft:health"),cost=Math.max(25,Math.ceil((h?.effectiveMax||100)*0.8));if(n(p,DP.mp)<cost){give(p,id);say(p,`Naming this creature requires ${cost} MP. Your current MP is ${n(p,DP.mp)}.`);return;}set(p,DP.mp,n(p,DP.mp)-cost);try{target.addTag("tensura_named");target.addTag("tensura_companion");target.addTag(`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`);target.nameTag=`Named ${target.typeId.replace("tensura:","").replaceAll("_"," ")}`;const hp=target.getComponent("minecraft:health");if(hp)hp.setCurrentValue(Math.min(hp.effectiveMax*1.5,hp.currentValue+hp.effectiveMax*0.5));target.addEffect("strength",12000,{amplifier:0,showParticles:false});target.addEffect("resistance",12000,{amplifier:0,showParticles:false});}catch{}set(p,DP.ep,n(p,DP.ep)+cost);say(p,`§dNAMING SUCCESSFUL§r. ${target.nameTag} has received a name and a strengthened soul.`);return;}openNamingMenu(p);return;}
  if(id==="tensura:demon_possession_seal"){
   const race=get(p,DP.race,get(p,DP.baseRace,"human")),baseRace=get(p,DP.baseRace,race);
-  if(baseRace==="spirit"&&!get(p,"ts26_spirit_escaped",false)){say(p,"As a Spirit, first find the Spirit Portal in the Great Spirit Labyrinth and cross into the Overworld.");return;}
   if(baseRace==="demon"&&!get(p,"ts26_demon_escaped",false)&&!get(p,"ts26_named_by","")){say(p,"As a Demon, first find a Hell Gate and escape to the Overworld, or receive a name from a master.");return;}
   const target=getTarget(p,6);if(!target){say(p,"Look directly at a nearby creature to bind it as your vessel.");return;}if(target.typeId==="minecraft:player"){say(p,"Player possession requires explicit consent and is not available through the vessel seal.");return;}
   if(!consumeHeld(p,id))return;const h=target.getComponent("minecraft:health"),vesselHp=Math.max(20,Math.min(400,Math.ceil(h?.effectiveMax||40)));let vesselScale=1;try{vesselScale=target.getComponent("minecraft:scale")?.value||1;}catch{}
@@ -1235,10 +1191,16 @@ try{world.beforeEvents.playerInteractWithEntity.subscribe(ev=>{
 
 world.afterEvents.itemUse.subscribe(itemUse);
 const craftingMenuTick=new Map();
-world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{const p=ev.player,b=ev.block;if(!p?.isValid||b?.typeId!=="tensura:hell_portal")return;const now=system.currentTick,last=Number(get(p,"ts27_gate_cooldown",0));if(now-last<40)return;set(p,"ts27_gate_cooldown",now);if(p.dimension.id==="tensura:hell"||p.dimension.id==="tensura:great_spirit_labyrinth"||p.dimension.id==="tensura:veldora_cave"||p.dimension.id==="tensura:charybdis_cave"){
-   const from=p.dimension.id;if(from==="tensura:great_spirit_labyrinth")set(p,"ts26_spirit_escaped",true);if(from==="tensura:hell")set(p,"ts26_demon_escaped",true);
-   const d=world.getDimension("minecraft:overworld"),sp=world.getDefaultSpawnLocation();p.teleport({x:sp.x+8.5,y:sp.y+2,z:sp.z+8.5},{dimension:d,keepVelocity:false});say(p,from==="tensura:great_spirit_labyrinth"?"You crossed the Spirit Portal into the Overworld. Find a vessel to possess.":"The Hell Gate returned you to the Overworld.");
-  }else{const d=world.getDimension("tensura:hell");p.teleport({x:0.5,y:42,z:-38.5},{dimension:d,keepVelocity:false});say(p,"The Hell Gate carried you into the Underworld.");}}catch(e){try{ev.player?.sendMessage(`§cHell Gate error: ${String(e).slice(0,120)}`);}catch{}}});
+world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{
+ const p=ev.player,b=ev.block;if(!p?.isValid||!b)return;
+ if(b.typeId==="minecraft:lectern"&&isVillageChurchAltar(p,b)){openSpiritPrayer(p);return;}
+ if(b.typeId!=="tensura:hell_portal")return;
+ const now=system.currentTick,last=Number(get(p,"ts27_gate_cooldown",0));if(now-last<40)return;set(p,"ts27_gate_cooldown",now);
+ if(p.dimension.id==="tensura:hell"||p.dimension.id==="tensura:veldora_cave"||p.dimension.id==="tensura:charybdis_cave"){
+  const from=p.dimension.id;if(from==="tensura:hell")set(p,"ts26_demon_escaped",true);
+  const d=world.getDimension("minecraft:overworld"),sp=world.getDefaultSpawnLocation();p.teleport({x:sp.x+8.5,y:sp.y+2,z:sp.z+8.5},{dimension:d,keepVelocity:false});say(p,from==="tensura:hell"?"The Hell Gate returned you to the Overworld.":"You returned to the Overworld.");
+ }else{const d=world.getDimension("tensura:hell");p.teleport({x:0.5,y:42,z:-38.5},{dimension:d,keepVelocity:false});say(p,"The Hell Gate carried you into the Underworld.");}
+}catch(e){try{ev.player?.sendMessage(`§cPortal error: ${String(e).slice(0,120)}`);}catch{}}});
 
 world.afterEvents.entityDie.subscribe(ev=>{
  const source=ev.damageSource?.damagingEntity,dead=ev.deadEntity;
@@ -1282,18 +1244,15 @@ system.runInterval(()=>{
     if(p.dimension.id==="tensura:hell"){
      const nearby=p.dimension.getEntities({location:p.location,maxDistance:48}).filter(e=>["tensura:greater_daemon","tensura:lesser_daemon","tensura:hell_moth","tensura:hell_caterpillar"].includes(e.typeId));
      if(nearby.length<8){const pool=["tensura:greater_daemon","tensura:lesser_daemon","tensura:hell_moth","tensura:hell_caterpillar"];const id=pool[Math.floor(Math.random()*pool.length)],a=Math.random()*Math.PI*2,r=12+Math.random()*20;try{const sx=Math.floor(p.location.x+Math.cos(a)*r),sz=Math.floor(p.location.z+Math.sin(a)*r),sy=findSurfaceY(p.dimension,sx,sz);p.dimension.spawnEntity(id,{x:sx+0.5,y:sy+0.2,z:sz+0.5});}catch{}}
-    }else if(p.dimension.id==="tensura:great_spirit_labyrinth"){
-     const nearby=p.dimension.getEntities({location:p.location,maxDistance:48}).filter(e=>e.typeId.startsWith("tensura:spirit_"));
-     if(nearby.length<10){const pool=["tensura:spirit_light","tensura:spirit_darkness","tensura:spirit_fire","tensura:spirit_water","tensura:spirit_wind","tensura:spirit_earth","tensura:spirit_spatial","tensura:spirit_gravity"];const id=pool[Math.floor(Math.random()*pool.length)],a=Math.random()*Math.PI*2,r=10+Math.random()*22;try{p.dimension.spawnEntity(id,{x:p.location.x+Math.cos(a)*r,y:249,z:p.location.z+Math.sin(a)*r});}catch{}}
-    }
+    }else if(p.dimension.id==="minecraft:overworld"){ensureVillageChurch(p);}
    }catch{}
   }
   set(p,"ts26_max_ep",Math.max(1,Math.floor(n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp))));
   set(p,DP.ep,Math.max(0,Math.floor(n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp))));
   const pending=get(p,"ts26_pending_landmark","");
   if(pending&&p.dimension.id==="minecraft:overworld"){
-   const sp=world.getDefaultSpawnLocation();const coords=pending==="hell_gate"?[sp.x+120,sp.z+120]:({veldora:[1500,1500],labyrinth:[2200,2200],tree:[1000,1000],demon:[3000,3000],spirit:[4000,4000],charybdis:[5000,5000],dwarf:[6000,6000]}[pending]);
-   if(coords&&Math.hypot(p.location.x-coords[0],p.location.z-coords[1])<90){set(p,"ts26_pending_landmark","");if(pending==="hell_gate")say(p,"You found the Java-derived Hell Gate. Interact with the glowing portal blocks to enter the Underworld.");else if(pending==="veldora")enterCustomRealm(p,"tensura:veldora_cave","Veldora’s Cave",2);else if(pending==="labyrinth")travelSpiritLabyrinth(p);else if(pending==="tree")buildWorldTreeSite(p);else if(pending==="demon")buildDemonRealmSite(p);else if(pending==="spirit")buildSpiritSanctuarySite(p);else if(pending==="charybdis")enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);else if(pending==="dwarf")buildStructureLandmark(p,"tensura:dwarf_village/complete",6000,6000,"Dwarven Village",0);}
+   const sp=world.getDefaultSpawnLocation();const coords=pending==="hell_gate"?[sp.x+120,sp.z+120]:({veldora:[1500,1500],tree:[1000,1000],demon:[3000,3000],spirit:[4000,4000],charybdis:[5000,5000],dwarf:[6000,6000]}[pending]);
+   if(coords&&Math.hypot(p.location.x-coords[0],p.location.z-coords[1])<90){set(p,"ts26_pending_landmark","");if(pending==="hell_gate")say(p,"You found the Java-derived Hell Gate. Interact with the glowing portal blocks to enter the Underworld.");else if(pending==="veldora")enterCustomRealm(p,"tensura:veldora_cave","Veldora’s Cave",2);else if(pending==="tree")buildWorldTreeSite(p);else if(pending==="demon")buildDemonRealmSite(p);else if(pending==="spirit")buildSpiritSanctuarySite(p);else if(pending==="charybdis")enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);else if(pending==="dwarf")buildStructureLandmark(p,"tensura:dwarf_village/complete",6000,6000,"Dwarven Village",0);}
   }
   if(system.currentTick%40===0&&n(p,DP.sp)<n(p,DP.maxSp)&&n(p,DP.mp)>=1){set(p,DP.sp,n(p,DP.sp)+1);set(p,DP.mp,n(p,DP.mp)-1);}
   if(system.currentTick%100===0&&n(p,DP.mp)<n(p,DP.maxMp)&&n(p,"ts26_mp_zero_since",-1)<0){set(p,DP.mp,n(p,DP.mp)+1);}
