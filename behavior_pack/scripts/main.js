@@ -1123,7 +1123,7 @@ function openNamingMenu(p){
 
 function addLootForKill(killer,dead){
  const id=dead?.typeId||"",tag=(dead?.nameTag||"").toLowerCase();
- const boss=/boss|orc_disaster|orc_lord|charybdis|elemental_colossus|ifrit|veldora|primordial/i.test(id+" "+tag)||safeTag(dead,"tensura_boss");
+ const boss=dead?.typeId==="tensura:greater_daemon"?false:(/boss|orc_disaster|orc_lord|charybdis|elemental_colossus|ifrit|veldora|primordial/i.test(id+" "+tag)||safeTag(dead,"tensura_boss"));
  const elemental=/elemental|undine|sylphide|ifrit|spirit|gnome/i.test(id+" "+tag);
  const otherworlder=/otherworlder|summoned_human|mercenary/i.test(id+" "+tag)||safeTag(dead,"tensura_otherworlder");
  const creature=/tensura:|slime|orc|ogre|goblin|lizard|direwolf|bear|spider|rabbit|monster/i.test(id);
@@ -1217,7 +1217,7 @@ world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{chestReward(ev);}ca
 world.afterEvents.playerInteractWithEntity.subscribe(ev=>{try{cartographerTrade(ev);}catch{}});
 world.afterEvents.entityHurt.subscribe(ev=>{
  const victim=ev.hurtEntity,attacker=ev.damageSource?.damagingEntity;
- if(victim?.isValid&&safeTag(victim,"tensura_boss")&&attacker?.typeId!=="minecraft:player"){
+ if(victim?.isValid&&victim.typeId!=="tensura:greater_daemon"&&safeTag(victim,"tensura_boss")&&attacker?.typeId!=="minecraft:player"){
   try{const h=victim.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,h.currentValue+Number(ev.damage||0)));}catch{}
   return;
  }
@@ -1319,7 +1319,7 @@ system.runInterval(()=>{
    if(remaining===1200)say(p,"§cWarning: your spirit body has one minute remaining in the Overworld. Secure a vessel or a naming bond.");
    if(remaining===0){try{p.applyDamage(4,{cause:EntityDamageCause.magic});}catch{}say(p,"§cYour unanchored spirit body is collapsing in the Overworld.");}
   }else if(p.dimension.id!=="minecraft:overworld"||get(p,DP.named,false)||get(p,"ts26_physical_body",false)){set(p,DP.spiritBodyTime,12000);}
-  if(system.currentTick%20===0){showHud(p);try{const target=getTarget(p,18);if(target){const h=target.getComponent("minecraft:health");if(h&&safeTag(target,"tensura_boss")){p.onScreenDisplay.setTitle(`§4${target.nameTag||target.typeId}  §c${Math.ceil(h.currentValue)}/${Math.ceil(h.effectiveMax)} HP`,{fadeInDuration:0,stayDuration:22,fadeOutDuration:0});}}}catch{}}
+  if(system.currentTick%20===0){showHud(p);try{const target=getTarget(p,18);if(target){const h=target.getComponent("minecraft:health");if(h&&target.typeId!=="tensura:greater_daemon"&&safeTag(target,"tensura_boss")){p.onScreenDisplay.setTitle(`§4${target.nameTag||target.typeId}  §c${Math.ceil(h.currentValue)}/${Math.ceil(h.effectiveMax)} HP`,{fadeInDuration:0,stayDuration:22,fadeOutDuration:0});}}}catch{}}
   if(system.currentTick%6000===0){
    const c=inv(p);if(c){for(let i=0;i<c.size;i++){const it=c.getItem(i);if(it?.typeId?.startsWith("tensura:"))c.setItem(i,repairTensuraGear(it));}}
    try{const eq=p.getComponent("minecraft:equippable");if(eq)for(const slot of [EquipmentSlot.Head,EquipmentSlot.Chest,EquipmentSlot.Legs,EquipmentSlot.Feet,EquipmentSlot.Mainhand,EquipmentSlot.Offhand]){const it=eq.getEquipment(slot);if(it?.typeId?.startsWith("tensura:"))eq.setEquipment(slot,repairTensuraGear(it));}}catch{}
