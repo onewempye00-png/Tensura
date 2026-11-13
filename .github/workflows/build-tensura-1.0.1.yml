@@ -15,25 +15,37 @@ jobs:
       - name: Validate JSON and JavaScript
         run: |
           python3 - <<'PY'
-          import json, pathlib, sys
+          import ast, json, pathlib, sys
           roots = [pathlib.Path('behavior_pack'), pathlib.Path('resource_pack')]
-          files = list(p for root in roots for p in root.rglob('*.json'))
+          files = [p for root in roots for p in root.rglob('*.json')]
           errors = []
           for p in files:
               try: json.loads(p.read_text(encoding='utf-8'))
               except Exception as e: errors.append(f'{p}: {e}')
           if errors:
               print('\n'.join(errors)); sys.exit(1)
-          print(f'Validated {len(files)} JSON files.')
+          scripts = list(pathlib.Path('behavior_pack/scripts').glob('*.js'))
+          for p in scripts:
+              print(f'Node syntax check: {p}')
+          for name in ['prepare_build.py', 'finalize_build.py', 'verify_archives.py']:
+              ast.parse(pathlib.Path('tools', name).read_text(encoding='utf-8'))
+          print(f'Validated {len(files)} JSON files and {len(scripts)} script files.')
           PY
-          node --input-type=module --check < behavior_pack/scripts/main.js
-      - name: Package add-on and editable source
+          for f in behavior_pack/scripts/*.js; do node --input-type=module --check < "$f"; done
+      - name: Package add-on
         run: |
           mkdir -p dist
           (cd behavior_pack && zip -qr ../dist/Tensura_Behavior.mcpack .)
           (cd resource_pack && zip -qr ../dist/Tensura_Resources.mcpack .)
           (cd dist && zip -q Tensura_Build_01_Core_Races_Progression_R1.0.1.mcaddon Tensura_Behavior.mcpack Tensura_Resources.mcpack)
-          zip -qr dist/Tensura_Build_01_R1.0.1_Source.zip . -x '.git/*' 'dist/*'
+      - name: Generate validation, parity and provenance reports
+        env:
+          BUILD_COMMIT: ${{ github.sha }}
+          BUILD_BRANCH: ${{ github.ref_name }}
+          BUILD_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python3 tools/finalize_build.py
+      - name: Package source and verify archives
+        run: python3 tools/verify_archives.py
       - uses: actions/upload-artifact@v4
         with:
           name: Tensura-Build-1.0.1
