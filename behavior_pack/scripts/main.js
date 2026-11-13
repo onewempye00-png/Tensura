@@ -168,6 +168,8 @@ function treeBranch(id){
 function showHud(p){try{p.onScreenDisplay.setActionBar(statsText(p));}catch{}}
 function initPlayer(p){
  if(!get(p,DP.raceChosen,false))return false;
+ if(!get(p,"ts27_battlewill_horn_granted",false)){if(invCount(p,"tensura:battlewill_horn")===0)give(p,"tensura:battlewill_horn");set(p,"ts27_battlewill_horn_granted",true);}
+ if(!get(p,"ts27_crafting_bench_granted",false)){if(invCount(p,"tensura:crafting_bench")===0)give(p,"tensura:crafting_bench");set(p,"ts27_crafting_bench_granted",true);}
  if(get(p,DP.skills,null)===null)set(p,DP.skills,JSON.stringify(["magic_bolt"]));
  if(get(p,DP.level,null)===null)set(p,DP.level,1);
  if(get(p,DP.xp,null)===null)set(p,DP.xp,0);

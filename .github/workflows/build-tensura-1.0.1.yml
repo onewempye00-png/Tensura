@@ -26,7 +26,7 @@ jobs:
               print('\n'.join(errors)); sys.exit(1)
           print(f'Validated {len(files)} JSON files.')
           PY
-          node --check behavior_pack/scripts/main.js
+          node --input-type=module --check < behavior_pack/scripts/main.js
       - name: Package add-on and editable source
         run: |
           mkdir -p dist
