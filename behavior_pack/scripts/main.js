@@ -296,6 +296,7 @@ function openTensuraMenu(p){
  try{form.image("textures/gui/background/tr_menu.png","tensura");}catch{}
  form.header("TENSURA MENU");
  form.label(`Race / Form: ${get(p,DP.race,"Unknown")}\nLevel ${n(p,DP.level,1)}  •  EP ${n(p,DP.ep)}  •  Souls ${n(p,DP.souls)}\nHP ${Math.ceil(p.getComponent("minecraft:health")?.currentValue||n(p,DP.hp))}  •  MP ${n(p,DP.mp)}  •  AP ${n(p,DP.ap)}  •  SP ${n(p,DP.sp)}\nMagic Jewels ${n(p,DP.jewels)}  •  Skill Points ${n(p,DP.skillPoints)}`);
+ if(p.dimension.id==="tensura:veldora_cave"||p.dimension.id==="tensura:charybdis_cave")form.button("RETURN TO OVERWORLD",()=>{try{form.close();}catch{}travelOverworld(p);});
  form.button("CHARACTER STATS & ATTRIBUTES",()=>{try{form.close();}catch{}const f=new CustomForm(p,"TENSURA • CHARACTER STATS");f.header("STATUS & ATTRIBUTES");f.label(statsText(p));f.label(`Race: ${get(p,DP.race,"Unknown")}\nBase race: ${get(p,DP.baseRace,"Unknown")}\nClass: ${get(p,DP.class,"None")}\nUnique Skill: ${get(p,DP.unique,"None")||"None"}`);f.closeButton();f.show().catch(()=>{});});
  form.button("RACE & EVOLUTION",()=>{try{form.close();}catch{}evolutionMenu(p);});
  form.button("SKILL TREE & MASTERY",()=>{try{form.close();}catch{}openSkillTree(p);});
@@ -398,7 +399,7 @@ function buildVeldoraVoidCave(dim,p){
   }
   if(z<=radius){system.runTimeout(batch,1);return;}
   for(const [px,pz] of [[-18,-18],[18,-18],[-18,18],[18,18]]){for(let y=40;y<=49;y++)placeBlock(dim,px,y,pz,"minecraft:amethyst_block");placeBlock(dim,px,50,pz,"minecraft:glowstone");}
-  buildCaveExitGate(dim);
+  // The Tensura Compass provides a direct Overworld return; Hell portal blocks are removed.
   world.setDynamicProperty(key,true);try{dim.runCommand("tickingarea remove ts27_2_build");}catch{}
   system.runTimeout(()=>{let tries=0;const spawn=()=>{try{const dragon=dim.spawnEntity("tensura:veldora",{x:0.5,y:42,z:0.5});dragon.addTag("tensura_boss");dragon.nameTag="Veldora • Storm Dragon";}catch(e){if(++tries<8)system.runTimeout(spawn,40);else if(p?.isValid)say(p,`Veldora could not manifest: ${String(e).slice(0,120)}`);}};spawn();},40);
  };
