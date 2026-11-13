@@ -269,6 +269,7 @@ function assignMagicToHeldHorn(p){
  const form=new CustomForm(p,"TENSURA • MAGIC HORN CONFIGURATION");
  form.header(`MAGIC HORN IN HOTBAR SLOT ${p.selectedSlotIndex+1}`);
  form.label(`This Magic Horn has its own spell assignment. Current: ${skillName(current)}. Each horn slot is independent.`);
+ form.button("✧ SPIRIT CONTRACTS • VIEW / SUMMON",()=>{try{form.close();}catch{}openSpiritHornMenu(p);},"textures/gui/magic/summoning_magic_button.png");
  const known=[...MAGIC_SKILL_IDS].filter(id=>hasSkill(p,id)&&isMagicSkill(id));
  for(const id of known)form.button(`${id===current?"§a◆ EQUIPPED":"§f◇"} ${skillName(id)} • ${skillCost(id)} MP`,()=>{try{form.close();}catch{}set(p,key,id);say(p,`Magic Horn in slot ${p.selectedSlotIndex+1} is now assigned to ${skillName(id)}.`);},skillIcon(id));
  form.closeButton();form.show().catch(()=>{});
@@ -880,8 +881,26 @@ function resetCharacterWithScroll(p){
  form.closeButton();form.show().catch(()=>{});
 }
 const SPIRIT_ENTITY_BY_ELEMENT={light:"spirit_light",darkness:"spirit_darkness",fire:"spirit_fire",spatial:"spirit_spatial",wind:"spirit_wind",earth:"spirit_earth",water:"spirit_water",gravity:"spirit_gravity"};
-function summonElementalSpirit(p,itemId){
- const m=itemId.match(/^tensura:(lesser|medium|greater|great)_spirit_(light|darkness|fire|spatial|wind|earth|water|gravity)$/);if(!m)return false;const rank=m[1],element=m[2],costs={lesser:{mp:60,ep:1000,hp:100},medium:{mp:160,ep:5000,hp:250},greater:{mp:400,ep:20000,hp:600},great:{mp:900,ep:50000,hp:1000}},cost=costs[rank];if(n(p,DP.mp)<cost.mp||n(p,DP.ep)<cost.ep){say(p,`${rank.toUpperCase()} ${element.toUpperCase()} SPIRIT CONTRACT requires ${cost.mp} MP and ${cost.ep} EP.`);return true;}if(!consumeHeld(p,itemId))return true;const entityId=SPIRIT_ENTITY_BY_ELEMENT[element]||"spirit_light",yaw=(p.getRotation?.().y||0)*Math.PI/180,loc={x:p.location.x-Math.sin(yaw)*3,y:p.location.y+1,z:p.location.z+Math.cos(yaw)*3};try{const spirit=p.dimension.spawnEntity(`tensura:${entityId}`,loc);spirit.addTag("tensura_companion");spirit.addTag("tensura_spirit");spirit.addTag(`tensura_spirit_${element}`);spirit.addTag(`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`);spirit.nameTag=`${rank[0].toUpperCase()+rank.slice(1)} ${element[0].toUpperCase()+element.slice(1)} Spirit`;spirit.setDynamicProperty("ts26_spirit_rank",rank);spirit.setDynamicProperty("ts26_spirit_element",element);const h=spirit.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,cost.hp));const amp={lesser:0,medium:1,greater:2,great:3}[rank];spirit.addEffect("strength",120000,{amplifier:amp,showParticles:false});spirit.addEffect("resistance",120000,{amplifier:Math.max(0,amp-1),showParticles:false});if(rank==="great")spirit.addEffect("regeneration",120000,{amplifier:1,showParticles:false});set(p,DP.mp,n(p,DP.mp)-cost.mp);set(p,DP.ep,Math.max(0,n(p,DP.ep)-cost.ep));const contracts=list(p,DP.spiritRanks);contracts.push(`${rank}:${element}:summoned`);saveList(p,DP.spiritRanks,contracts);say(p,`${spirit.nameTag} has answered your contract and will follow you.`);showHud(p);}catch(e){give(p,itemId);say(p,`The ${rank} ${element} spirit could not manifest here. Your contract item was returned.`);}return true;
+function openSpiritHornMenu(p){
+ const form=new CustomForm(p,"TENSURA • MAGIC HORN • SPIRITS");
+ const contracts=list(p,DP.spiritRanks);
+ const unique=[...new Set(contracts.map(x=>{const m=String(x).match(/^(lesser|medium|greater|great|Lesser|Medium|Greater|Great):([A-Za-z]+)(?::summoned)?$/i);return m?{rank:m[1].toLowerCase(),element:m[2].toLowerCase()}:null;}).filter(Boolean).map(x=>x.rank+":"+x.element))];
+ form.header("YOUR ELEMENTAL SPIRIT CONTRACTS");
+ form.label("Choose a spirit contract to manifest it. Summoning consumes its contract item and costs MP + EP. Spirits already summoned remain bound to you.");
+ if(!unique.length)form.label("No spirits contracted yet. Pray at a village chapel with a Spirit Prayer Seal to receive your first spirit.");
+ for(const key of unique){
+  const [rank,element]=key.split(":");
+  const itemId=`tensura:${rank}_spirit_${element}`;
+  const available=invCount(p,itemId)>0;
+  const summoned=contracts.some(x=>String(x).toLowerCase()===`${rank}:${element}:summoned`);
+  const cost={lesser:"60 MP / 1,000 EP",medium:"160 MP / 5,000 EP",greater:"400 MP / 20,000 EP",great:"900 MP / 50,000 EP"}[rank];
+  form.button(`${available?"§aSUMMON":"§7BOUND"} • ${rank.toUpperCase()} ${element.toUpperCase()} • ${available?cost:(summoned?"Already manifested":"Contract item not in inventory")}`,()=>{try{form.close();}catch{}if(available)summonElementalSpirit(p,itemId,true);else say(p,summoned?"This spirit has already been manifested. Keep it nearby; its contract is bound to you.":"Your contract item is not in your inventory.");});
+ }
+ form.button("← BACK TO MAGIC ARTS",()=>{try{form.close();}catch{}openMagicMenu(p);});
+ form.closeButton();form.show().catch(()=>{});
+}
+function summonElementalSpirit(p,itemId,fromHorn=false){
+ const m=itemId.match(/^tensura:(lesser|medium|greater|great)_spirit_(light|darkness|fire|spatial|wind|earth|water|gravity)$/);if(!m)return false;const rank=m[1],element=m[2],costs={lesser:{mp:60,ep:1000,hp:100},medium:{mp:160,ep:5000,hp:250},greater:{mp:400,ep:20000,hp:600},great:{mp:900,ep:50000,hp:1000}},cost=costs[rank];if(n(p,DP.mp)<cost.mp||n(p,DP.ep)<cost.ep){say(p,`${rank.toUpperCase()} ${element.toUpperCase()} SPIRIT CONTRACT requires ${cost.mp} MP and ${cost.ep} EP.`);return true;}if(!(fromHorn?invConsume(p,itemId,1):consumeHeld(p,itemId)))return true;const entityId=SPIRIT_ENTITY_BY_ELEMENT[element]||"spirit_light",yaw=(p.getRotation?.().y||0)*Math.PI/180,loc={x:p.location.x-Math.sin(yaw)*3,y:p.location.y+1,z:p.location.z+Math.cos(yaw)*3};try{const spirit=p.dimension.spawnEntity(`tensura:${entityId}`,loc);spirit.addTag("tensura_companion");spirit.addTag("tensura_spirit");spirit.addTag(`tensura_spirit_${element}`);spirit.addTag(`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`);spirit.nameTag=`${rank[0].toUpperCase()+rank.slice(1)} ${element[0].toUpperCase()+element.slice(1)} Spirit`;spirit.setDynamicProperty("ts26_spirit_rank",rank);spirit.setDynamicProperty("ts26_spirit_element",element);const h=spirit.getComponent("minecraft:health");if(h)h.setCurrentValue(Math.min(h.effectiveMax,cost.hp));const amp={lesser:0,medium:1,greater:2,great:3}[rank];spirit.addEffect("strength",120000,{amplifier:amp,showParticles:false});spirit.addEffect("resistance",120000,{amplifier:Math.max(0,amp-1),showParticles:false});if(rank==="great")spirit.addEffect("regeneration",120000,{amplifier:1,showParticles:false});set(p,DP.mp,n(p,DP.mp)-cost.mp);set(p,DP.ep,Math.max(0,n(p,DP.ep)-cost.ep));const contracts=list(p,DP.spiritRanks);contracts.push(`${rank}:${element}:summoned`);saveList(p,DP.spiritRanks,contracts);say(p,`${spirit.nameTag} has answered your contract and will follow you.`);showHud(p);}catch(e){give(p,itemId);say(p,`The ${rank} ${element} spirit could not manifest here. Your contract item was returned.`);}return true;
 }
 function openBattlewillHorn(p){
  if(!initPlayer(p)){showRaceSelection(p);return;}
