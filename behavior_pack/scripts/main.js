@@ -990,8 +990,10 @@ function itemUse(ev){
  if(id==="tensura:unique_skill_reroll"){
   const used=n(p,"ts26_start_unique_rerolls_used",0),remaining=Math.max(0,3-used);
   if(remaining<=0){say(p,"Your three starting Unique Skill rerolls have been used. No further rerolls are available.");return;}
-  const old=get(p,DP.unique,"");const oldIds=old.includes("+")?old.split("+").map(x=>x.trim().toLowerCase().replaceAll(" ","_")):[old].filter(Boolean);
   const pool=["predator","great_sage","gluttony","degenerate","chosen_one","survivor","starved","berserker","royal_beast","greed","guardian","healer","seeker","shadow_striker","investigator","usurper","traveler","reflector","creator","commander","falsifier","envy","pride","sloth","lust","reaper","sniper","martial_master","merciless","observer","suppressor","unyielding"];
+  const old=get(p,DP.unique,"");let oldIds=old.includes("+")?old.split("+").map(x=>x.trim().toLowerCase().replaceAll(" ","_")):[old].filter(Boolean);
+  // Recover the previous Unique Skill from ownership when older saves have an empty unique-skill property.
+  if(!oldIds.length)oldIds=list(p,DP.skills).filter(x=>pool.includes(x));
   const candidates=pool.filter(x=>SKILL_BY_ID.has(x)&&!oldIds.includes(x));if(!candidates.length){say(p,"No eligible replacement Unique Skills remain.");return;}
   if(!consumeHeld(p,id))return;const next=candidates[Math.floor(Math.random()*candidates.length)];
   const skills=list(p,DP.skills).filter(x=>!oldIds.includes(x));skills.push(next);saveList(p,DP.skills,skills);set(p,DP.unique,next);if(oldIds.includes(get(p,DP.equipped,"")))set(p,DP.equipped,next);for(let i=0;i<9;i++)if(oldIds.includes(get(p,`ts26_horn_${i}`,"")))set(p,`ts26_horn_${i}`,next);set(p,"ts26_start_unique_rerolls_used",used+1);
