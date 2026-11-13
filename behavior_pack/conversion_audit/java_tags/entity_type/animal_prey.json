@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:cow",
+    "minecraft:pig",
+    "minecraft:sheep",
+    "minecraft:mule",
+    "minecraft:donkey",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "tensura:goblin",
+    "tensura:dwarf"
+  ]
+}

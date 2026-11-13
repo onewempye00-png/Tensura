@@ -1,0 +1,103 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tensura:one_eyed_owl",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "tensura",
+          "monster"
+        ]
+      },
+      "minecraft:health": {
+        "value": 70,
+        "max": 70
+      },
+      "minecraft:movement": {
+        "value": 0.34
+      },
+      "minecraft:collision_box": {
+        "width": 2.4,
+        "height": 2.8
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/one_eyed_owl.json"
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:attack": {
+        "damage": 12
+      },
+      "minecraft:follow_range": {
+        "value": 24
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 20,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 20
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "track_target": true,
+        "reach_multiplier": 1.5
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:can_fly": {},
+      "minecraft:movement.fly": {},
+      "minecraft:navigation.fly": {
+        "can_pass_doors": true,
+        "can_path_over_water": false
+      },
+      "minecraft:behavior.random_fly": {
+        "priority": 6,
+        "speed_multiplier": 1,
+        "xz_dist": 12,
+        "y_dist": 8,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:ambient_sound_interval": {
+        "event_name": "tensura.phase3.sky_wind",
+        "range": 24,
+        "value": 6
+      }
+    }
+  }
+}

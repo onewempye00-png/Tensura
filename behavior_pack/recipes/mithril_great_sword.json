@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:mithril_great_sword"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " M ",
+      " M ",
+      " M "
+    ],
+    "key": {
+      "M": "tensura:mithril_ingot"
+    },
+    "result": {
+      "item": "tensura:mithril_great_sword",
+      "count": 1
+    }
+  }
+}

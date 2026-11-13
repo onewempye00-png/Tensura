@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "c:is_savanna",
+      "required": false
+    },
+    "#minecraft:has_structure/village_savanna"
+  ]
+}

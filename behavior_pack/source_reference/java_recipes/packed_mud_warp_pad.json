@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "packed_mud_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:mud_bricks"
+    },
+    "S": {
+      "item": "minecraft:packed_mud"
+    }
+  },
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:packed_mud_warp_pad"
+  }
+}

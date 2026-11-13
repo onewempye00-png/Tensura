@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:landfish",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/landfish/landfish_blue"
+      },
+      "geometry": {
+        "default": "geometry.landfish"
+      },
+      "animations": {
+        "idle": "animation.landfish.idle",
+        "walk": "animation.landfish.walk",
+        "swim": "animation.landfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

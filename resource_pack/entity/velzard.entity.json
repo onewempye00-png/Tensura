@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:velzard",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/feathered_serpent/feathered_serpent"
+      },
+      "geometry": {
+        "default": "geometry.feathered_serpent"
+      },
+      "animations": {},
+      "scripts": {},
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

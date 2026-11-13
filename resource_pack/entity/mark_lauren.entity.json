@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:mark_lauren",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/otherworlder/mark_lauren"
+      },
+      "geometry": {
+        "default": "geometry.tensura_goblin"
+      },
+      "animations": {},
+      "scripts": {},
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

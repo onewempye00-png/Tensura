@@ -1,0 +1,13 @@
+{
+  "values": [
+    {
+      "id": "c:is_plains",
+      "required": false
+    },
+    "#minecraft:has_structure/village_plains",
+    "#minecraft:is_forest",
+    "#minecraft:is_taiga",
+    "#minecraft:is_nether",
+    "tensura:miasmic_plains"
+  ]
+}

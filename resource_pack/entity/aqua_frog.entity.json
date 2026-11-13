@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:aqua_frog",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/aqua_frog/aqua_frog"
+      },
+      "geometry": {
+        "default": "geometry.aqua_frog"
+      },
+      "animations": {
+        "idle": "animation.aqua_frog.idle",
+        "walk": "animation.aqua_frog.walk",
+        "swim": "animation.aqua_frog.swim"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

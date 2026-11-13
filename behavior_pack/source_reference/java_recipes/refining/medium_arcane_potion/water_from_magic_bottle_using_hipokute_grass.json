@@ -1,0 +1,17 @@
+{
+  "type": "tensura:refining",
+  "input": {
+    "count": 1,
+    "id": "tensura:magic_bottle"
+  },
+  "input1": {
+    "item": "tensura:hipokute_grass"
+  },
+  "input2": {
+    "item": "tensura:daemon_essence"
+  },
+  "output": {
+    "count": 1,
+    "id": "tensura:medium_arcane_potion"
+  }
+}

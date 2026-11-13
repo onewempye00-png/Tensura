@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:golden_odachi",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/golden_odachi",
+      "minecraft:display_name": {
+        "value": "Golden Odachi"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1200
+      }
+    }
+  }
+}

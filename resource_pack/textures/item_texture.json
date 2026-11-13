@@ -1,0 +1,4056 @@
+{
+  "resource_pack_name": "tensura",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "tensura:item/adamantite_axe": {
+      "textures": "textures/item/adamantite_axe"
+    },
+    "tensura:item/adamantite_bone_golem": {
+      "textures": "textures/item/adamantite_bone_golem"
+    },
+    "tensura:item/adamantite_boots": {
+      "textures": "textures/item/adamantite_boots"
+    },
+    "tensura:item/adamantite_chestplate": {
+      "textures": "textures/item/adamantite_chestplate"
+    },
+    "tensura:item/adamantite_gear_schematic": {
+      "textures": "textures/item/adamantite_gear_schematic"
+    },
+    "tensura:item/adamantite_great_sword": {
+      "textures": "textures/item/adamantite_great_sword"
+    },
+    "tensura:item/adamantite_helmet": {
+      "textures": "textures/item/adamantite_helmet"
+    },
+    "tensura:item/adamantite_hoe": {
+      "textures": "textures/item/adamantite_hoe"
+    },
+    "tensura:item/adamantite_ingot": {
+      "textures": "textures/item/adamantite_ingot"
+    },
+    "tensura:item/adamantite_katana": {
+      "textures": "textures/item/adamantite_katana"
+    },
+    "tensura:item/adamantite_kodachi": {
+      "textures": "textures/item/adamantite_kodachi"
+    },
+    "tensura:item/adamantite_leggings": {
+      "textures": "textures/item/adamantite_leggings"
+    },
+    "tensura:item/adamantite_long_sword": {
+      "textures": "textures/item/adamantite_long_sword"
+    },
+    "tensura:item/adamantite_nugget": {
+      "textures": "textures/item/adamantite_nugget"
+    },
+    "tensura:item/adamantite_odachi": {
+      "textures": "textures/item/adamantite_odachi"
+    },
+    "tensura:item/adamantite_pickaxe": {
+      "textures": "textures/item/adamantite_pickaxe"
+    },
+    "tensura:item/adamantite_scythe": {
+      "textures": "textures/item/adamantite_scythe"
+    },
+    "tensura:item/adamantite_short_sword": {
+      "textures": "textures/item/adamantite_short_sword"
+    },
+    "tensura:item/adamantite_shovel": {
+      "textures": "textures/item/adamantite_shovel"
+    },
+    "tensura:item/adamantite_sickle": {
+      "textures": "textures/item/adamantite_sickle"
+    },
+    "tensura:item/adamantite_spear": {
+      "textures": "textures/item/adamantite_spear"
+    },
+    "tensura:item/adamantite_sword": {
+      "textures": "textures/item/adamantite_sword"
+    },
+    "tensura:item/adamantite_tachi": {
+      "textures": "textures/item/adamantite_tachi"
+    },
+    "tensura:item/angry_pierrot_mask": {
+      "textures": "textures/item/angry_pierrot_mask"
+    },
+    "tensura:item/ant_carapace_boots": {
+      "textures": "textures/item/ant_carapace_boots"
+    },
+    "tensura:item/ant_carapace_chestplate": {
+      "textures": "textures/item/ant_carapace_chestplate"
+    },
+    "tensura:item/ant_carapace_gear_schematic": {
+      "textures": "textures/item/ant_carapace_gear_schematic"
+    },
+    "tensura:item/ant_carapace_helmet": {
+      "textures": "textures/item/ant_carapace_helmet"
+    },
+    "tensura:item/ant_carapace_leggings": {
+      "textures": "textures/item/ant_carapace_leggings"
+    },
+    "tensura:item/ant_crossbow_arrow": {
+      "textures": "textures/item/ant_crossbow_arrow"
+    },
+    "tensura:item/ant_crossbow_firework": {
+      "textures": "textures/item/ant_crossbow_firework"
+    },
+    "tensura:item/ant_crossbow_pulling_0": {
+      "textures": "textures/item/ant_crossbow_pulling_0"
+    },
+    "tensura:item/ant_crossbow_pulling_1": {
+      "textures": "textures/item/ant_crossbow_pulling_1"
+    },
+    "tensura:item/ant_crossbow_pulling_2": {
+      "textures": "textures/item/ant_crossbow_pulling_2"
+    },
+    "tensura:item/ant_crossbow_speared_fin": {
+      "textures": "textures/item/ant_crossbow_speared_fin"
+    },
+    "tensura:item/ant_crossbow_spectral_arrow": {
+      "textures": "textures/item/ant_crossbow_spectral_arrow"
+    },
+    "tensura:item/ant_crossbow_standby": {
+      "textures": "textures/item/ant_crossbow_standby"
+    },
+    "tensura:item/ant_crossbow_unicorn_horn": {
+      "textures": "textures/item/ant_crossbow_unicorn_horn"
+    },
+    "tensura:item/anti_magic_mask": {
+      "textures": "textures/item/anti_magic_mask"
+    },
+    "tensura:item/anti_magic_mask_schematic": {
+      "textures": "textures/item/anti_magic_mask_schematic"
+    },
+    "tensura:item/armorsaurus_boots": {
+      "textures": "textures/item/armorsaurus_boots"
+    },
+    "tensura:item/armorsaurus_chestplate": {
+      "textures": "textures/item/armorsaurus_chestplate"
+    },
+    "tensura:item/armorsaurus_gauntlet": {
+      "textures": "textures/item/armorsaurus_gauntlet"
+    },
+    "tensura:item/armorsaurus_gauntlet_model": {
+      "textures": "textures/item/armorsaurus_gauntlet_model"
+    },
+    "tensura:item/armorsaurus_helmet": {
+      "textures": "textures/item/armorsaurus_helmet"
+    },
+    "tensura:item/armorsaurus_leggings": {
+      "textures": "textures/item/armorsaurus_leggings"
+    },
+    "tensura:item/armorsaurus_scale": {
+      "textures": "textures/item/armorsaurus_scale"
+    },
+    "tensura:item/armorsaurus_scalemail_boots": {
+      "textures": "textures/item/armorsaurus_scalemail_boots"
+    },
+    "tensura:item/armorsaurus_scalemail_chestplate": {
+      "textures": "textures/item/armorsaurus_scalemail_chestplate"
+    },
+    "tensura:item/armorsaurus_scalemail_gear_schematic": {
+      "textures": "textures/item/armorsaurus_scalemail_gear_schematic"
+    },
+    "tensura:item/armorsaurus_scalemail_helmet": {
+      "textures": "textures/item/armorsaurus_scalemail_helmet"
+    },
+    "tensura:item/armorsaurus_scalemail_leggings": {
+      "textures": "textures/item/armorsaurus_scalemail_leggings"
+    },
+    "tensura:item/armorsaurus_shell": {
+      "textures": "textures/item/armorsaurus_shell"
+    },
+    "tensura:item/armorsaurus_shield": {
+      "textures": "textures/item/armorsaurus_shield"
+    },
+    "tensura:item/armorsaurus_shield_model": {
+      "textures": "textures/item/armorsaurus_shield_model"
+    },
+    "tensura:item/basic_bows_schematic": {
+      "textures": "textures/item/basic_bows_schematic"
+    },
+    "tensura:item/bat_glider": {
+      "textures": "textures/item/bat_glider"
+    },
+    "tensura:item/battlewill_manual": {
+      "textures": "textures/item/battlewill_manual"
+    },
+    "tensura:item/beast_horn": {
+      "textures": "textures/item/beast_horn"
+    },
+    "tensura:item/beast_horn_spear": {
+      "textures": "textures/item/beast_horn_spear"
+    },
+    "tensura:item/black_fire_charge": {
+      "textures": "textures/item/black_fire_charge"
+    },
+    "tensura:item/blade_tiger_scythe": {
+      "textures": "textures/item/blade_tiger_scythe"
+    },
+    "tensura:item/blade_tiger_steak": {
+      "textures": "textures/item/blade_tiger_steak"
+    },
+    "tensura:item/blade_tiger_stew": {
+      "textures": "textures/item/blade_tiger_stew"
+    },
+    "tensura:item/blade_tiger_tail": {
+      "textures": "textures/item/blade_tiger_tail"
+    },
+    "tensura:item/bronze_coin": {
+      "textures": "textures/item/bronze_coin"
+    },
+    "tensura:item/bucket_of_cattledeer_milk": {
+      "textures": "textures/item/bucket_of_cattledeer_milk"
+    },
+    "tensura:item/bucket_of_holy_milk": {
+      "textures": "textures/item/bucket_of_holy_milk"
+    },
+    "tensura:item/cattledeer_beef": {
+      "textures": "textures/item/cattledeer_beef"
+    },
+    "tensura:item/cattledeer_steak": {
+      "textures": "textures/item/cattledeer_steak"
+    },
+    "tensura:item/centipede_dagger": {
+      "textures": "textures/item/centipede_dagger"
+    },
+    "tensura:item/centipede_stinger": {
+      "textures": "textures/item/centipede_stinger"
+    },
+    "tensura:item/character_reset_scroll": {
+      "textures": "textures/item/character_reset_scroll"
+    },
+    "tensura:item/charybdis_core": {
+      "textures": "textures/item/charybdis_core"
+    },
+    "tensura:item/charybdis_meat": {
+      "textures": "textures/item/charybdis_meat"
+    },
+    "tensura:item/charybdis_scale": {
+      "textures": "textures/item/charybdis_scale"
+    },
+    "tensura:item/charybdis_scalemail_boots": {
+      "textures": "textures/item/charybdis_scalemail_boots"
+    },
+    "tensura:item/charybdis_scalemail_chestplate": {
+      "textures": "textures/item/charybdis_scalemail_chestplate"
+    },
+    "tensura:item/charybdis_scalemail_gear_schematic": {
+      "textures": "textures/item/charybdis_scalemail_gear_schematic"
+    },
+    "tensura:item/charybdis_scalemail_helmet": {
+      "textures": "textures/item/charybdis_scalemail_helmet"
+    },
+    "tensura:item/charybdis_scalemail_leggings": {
+      "textures": "textures/item/charybdis_scalemail_leggings"
+    },
+    "tensura:item/chilled_slime": {
+      "textures": "textures/item/chilled_slime"
+    },
+    "tensura:item/cooked_armorsaurus_meat": {
+      "textures": "textures/item/cooked_armorsaurus_meat"
+    },
+    "tensura:item/cooked_blade_tiger_meat": {
+      "textures": "textures/item/cooked_blade_tiger_meat"
+    },
+    "tensura:item/cooked_charybdis_meat": {
+      "textures": "textures/item/cooked_charybdis_meat"
+    },
+    "tensura:item/cooked_giant_ant_leg": {
+      "textures": "textures/item/cooked_giant_ant_leg"
+    },
+    "tensura:item/cooked_giant_bat_meat": {
+      "textures": "textures/item/cooked_giant_bat_meat"
+    },
+    "tensura:item/cooked_knight_spider_leg": {
+      "textures": "textures/item/cooked_knight_spider_leg"
+    },
+    "tensura:item/cooked_megalodon_meat": {
+      "textures": "textures/item/cooked_megalodon_meat"
+    },
+    "tensura:item/cooked_megolodon_meat": {
+      "textures": "textures/item/cooked_megolodon_meat"
+    },
+    "tensura:item/cooked_serpent_meat": {
+      "textures": "textures/item/cooked_serpent_meat"
+    },
+    "tensura:item/cooked_sissie_fin": {
+      "textures": "textures/item/cooked_sissie_fin"
+    },
+    "tensura:item/cooked_sissie_meat": {
+      "textures": "textures/item/cooked_sissie_meat"
+    },
+    "tensura:item/cooked_spear_toro_fin": {
+      "textures": "textures/item/cooked_spear_toro_fin"
+    },
+    "tensura:item/cooked_spear_toro_meat": {
+      "textures": "textures/item/cooked_spear_toro_meat"
+    },
+    "tensura:item/copper_shell": {
+      "textures": "textures/item/copper_shell"
+    },
+    "tensura:item/crazy_pierrot_mask": {
+      "textures": "textures/item/crazy_pierrot_mask"
+    },
+    "tensura:item/crossbow_speared_fin": {
+      "textures": "textures/item/crossbow_speared_fin"
+    },
+    "tensura:item/crossbow_spectral_arrow": {
+      "textures": "textures/item/crossbow_spectral_arrow"
+    },
+    "tensura:item/crossbow_unicorn_horn": {
+      "textures": "textures/item/crossbow_unicorn_horn"
+    },
+    "tensura:item/daemon_core": {
+      "textures": "textures/item/daemon_core"
+    },
+    "tensura:item/daemon_essence": {
+      "textures": "textures/item/daemon_essence"
+    },
+    "tensura:item/dark_boots": {
+      "textures": "textures/item/dark_boots"
+    },
+    "tensura:item/dark_jacket": {
+      "textures": "textures/item/dark_jacket"
+    },
+    "tensura:item/dark_leggings": {
+      "textures": "textures/item/dark_leggings"
+    },
+    "tensura:item/dark_set_schematic": {
+      "textures": "textures/item/dark_set_schematic"
+    },
+    "tensura:item/dead_end_rainbow": {
+      "textures": "textures/item/dead_end_rainbow"
+    },
+    "tensura:item/dead_end_rainbow_model": {
+      "textures": "textures/item/dead_end_rainbow_model"
+    },
+    "tensura:item/diamond_gear_schematic": {
+      "textures": "textures/item/diamond_gear_schematic"
+    },
+    "tensura:item/diamond_great_sword": {
+      "textures": "textures/item/diamond_great_sword"
+    },
+    "tensura:item/diamond_katana": {
+      "textures": "textures/item/diamond_katana"
+    },
+    "tensura:item/diamond_kodachi": {
+      "textures": "textures/item/diamond_kodachi"
+    },
+    "tensura:item/diamond_long_sword": {
+      "textures": "textures/item/diamond_long_sword"
+    },
+    "tensura:item/diamond_odachi": {
+      "textures": "textures/item/diamond_odachi"
+    },
+    "tensura:item/diamond_scythe": {
+      "textures": "textures/item/diamond_scythe"
+    },
+    "tensura:item/diamond_short_sword": {
+      "textures": "textures/item/diamond_short_sword"
+    },
+    "tensura:item/diamond_sickle": {
+      "textures": "textures/item/diamond_sickle"
+    },
+    "tensura:item/diamond_spear": {
+      "textures": "textures/item/diamond_spear"
+    },
+    "tensura:item/diamond_tachi": {
+      "textures": "textures/item/diamond_tachi"
+    },
+    "tensura:item/dragon_essence": {
+      "textures": "textures/item/dragon_essence"
+    },
+    "tensura:item/dragon_knuckle": {
+      "textures": "textures/item/dragon_knuckle"
+    },
+    "tensura:item/dragon_knuckle_model": {
+      "textures": "textures/item/dragon_knuckle_model"
+    },
+    "tensura:item/dragon_peacock_feather": {
+      "textures": "textures/item/dragon_peacock_feather"
+    },
+    "tensura:item/dubious_food": {
+      "textures": "textures/item/dubious_food"
+    },
+    "tensura:item/dwargon_banner_pattern": {
+      "textures": "textures/item/dwargon_banner_pattern"
+    },
+    "tensura:item/earth_elemental_shard": {
+      "textures": "textures/item/earth_elemental_shard"
+    },
+    "tensura:item/element_core_earth": {
+      "textures": "textures/item/element_core_earth"
+    },
+    "tensura:item/element_core_empty": {
+      "textures": "textures/item/element_core_empty"
+    },
+    "tensura:item/element_core_fire": {
+      "textures": "textures/item/element_core_fire"
+    },
+    "tensura:item/element_core_space": {
+      "textures": "textures/item/element_core_space"
+    },
+    "tensura:item/element_core_water": {
+      "textures": "textures/item/element_core_water"
+    },
+    "tensura:item/element_core_wind": {
+      "textures": "textures/item/element_core_wind"
+    },
+    "tensura:item/elemental_essence": {
+      "textures": "textures/item/elemental_essence"
+    },
+    "tensura:item/enchanted_silver_apple": {
+      "textures": "textures/item/enchanted_silver_apple"
+    },
+    "tensura:item/fire_elemental_shard": {
+      "textures": "textures/item/fire_elemental_shard"
+    },
+    "tensura:item/full_potion": {
+      "textures": "textures/item/full_potion"
+    },
+    "tensura:item/gehenna_moth_silk": {
+      "textures": "textures/item/gehenna_moth_silk"
+    },
+    "tensura:item/giant_ant_carapace": {
+      "textures": "textures/item/giant_ant_carapace"
+    },
+    "tensura:item/giant_ant_leg": {
+      "textures": "textures/item/giant_ant_leg"
+    },
+    "tensura:item/giant_bat_wing": {
+      "textures": "textures/item/giant_bat_wing"
+    },
+    "tensura:item/goblin_club": {
+      "textures": "textures/item/goblin_club"
+    },
+    "tensura:item/gold_coin": {
+      "textures": "textures/item/gold_coin"
+    },
+    "tensura:item/gold_gear_schematic": {
+      "textures": "textures/item/gold_gear_schematic"
+    },
+    "tensura:item/golden_great_sword": {
+      "textures": "textures/item/golden_great_sword"
+    },
+    "tensura:item/golden_katana": {
+      "textures": "textures/item/golden_katana"
+    },
+    "tensura:item/golden_kodachi": {
+      "textures": "textures/item/golden_kodachi"
+    },
+    "tensura:item/golden_long_sword": {
+      "textures": "textures/item/golden_long_sword"
+    },
+    "tensura:item/golden_odachi": {
+      "textures": "textures/item/golden_odachi"
+    },
+    "tensura:item/golden_scythe": {
+      "textures": "textures/item/golden_scythe"
+    },
+    "tensura:item/golden_short_sword": {
+      "textures": "textures/item/golden_short_sword"
+    },
+    "tensura:item/golden_sickle": {
+      "textures": "textures/item/golden_sickle"
+    },
+    "tensura:item/golden_spear": {
+      "textures": "textures/item/golden_spear"
+    },
+    "tensura:item/golden_tachi": {
+      "textures": "textures/item/golden_tachi"
+    },
+    "tensura:item/great_sword_schematic": {
+      "textures": "textures/item/great_sword_schematic"
+    },
+    "tensura:item/greater_holy_water": {
+      "textures": "textures/item/greater_holy_water"
+    },
+    "tensura:item/grimoire_a": {
+      "textures": "textures/item/grimoire_a"
+    },
+    "tensura:item/grimoire_a_item": {
+      "textures": "textures/item/grimoire_a_item"
+    },
+    "tensura:item/grimoire_b": {
+      "textures": "textures/item/grimoire_b"
+    },
+    "tensura:item/grimoire_b_item": {
+      "textures": "textures/item/grimoire_b_item"
+    },
+    "tensura:item/grimoire_c": {
+      "textures": "textures/item/grimoire_c"
+    },
+    "tensura:item/grimoire_c_item": {
+      "textures": "textures/item/grimoire_c_item"
+    },
+    "tensura:item/grimoire_d": {
+      "textures": "textures/item/grimoire_d"
+    },
+    "tensura:item/grimoire_d_item": {
+      "textures": "textures/item/grimoire_d_item"
+    },
+    "tensura:item/grimoire_special_a": {
+      "textures": "textures/item/grimoire_special_a"
+    },
+    "tensura:item/grimoire_special_a_item": {
+      "textures": "textures/item/grimoire_special_a_item"
+    },
+    "tensura:item/hell_moth_silk": {
+      "textures": "textures/item/hell_moth_silk"
+    },
+    "tensura:item/high_arcane_potion": {
+      "textures": "textures/item/high_arcane_potion"
+    },
+    "tensura:item/high_magic_staff": {
+      "textures": "textures/item/high_magic_staff"
+    },
+    "tensura:item/high_magic_staff_item": {
+      "textures": "textures/item/high_magic_staff_item"
+    },
+    "tensura:item/high_magisteel_axe": {
+      "textures": "textures/item/high_magisteel_axe"
+    },
+    "tensura:item/high_magisteel_bone_golem": {
+      "textures": "textures/item/high_magisteel_bone_golem"
+    },
+    "tensura:item/high_magisteel_boots": {
+      "textures": "textures/item/high_magisteel_boots"
+    },
+    "tensura:item/high_magisteel_chestplate": {
+      "textures": "textures/item/high_magisteel_chestplate"
+    },
+    "tensura:item/high_magisteel_gear_schematic": {
+      "textures": "textures/item/high_magisteel_gear_schematic"
+    },
+    "tensura:item/high_magisteel_great_sword": {
+      "textures": "textures/item/high_magisteel_great_sword"
+    },
+    "tensura:item/high_magisteel_helmet": {
+      "textures": "textures/item/high_magisteel_helmet"
+    },
+    "tensura:item/high_magisteel_hoe": {
+      "textures": "textures/item/high_magisteel_hoe"
+    },
+    "tensura:item/high_magisteel_ingot": {
+      "textures": "textures/item/high_magisteel_ingot"
+    },
+    "tensura:item/high_magisteel_katana": {
+      "textures": "textures/item/high_magisteel_katana"
+    },
+    "tensura:item/high_magisteel_kodachi": {
+      "textures": "textures/item/high_magisteel_kodachi"
+    },
+    "tensura:item/high_magisteel_leggings": {
+      "textures": "textures/item/high_magisteel_leggings"
+    },
+    "tensura:item/high_magisteel_long_sword": {
+      "textures": "textures/item/high_magisteel_long_sword"
+    },
+    "tensura:item/high_magisteel_nugget": {
+      "textures": "textures/item/high_magisteel_nugget"
+    },
+    "tensura:item/high_magisteel_odachi": {
+      "textures": "textures/item/high_magisteel_odachi"
+    },
+    "tensura:item/high_magisteel_pickaxe": {
+      "textures": "textures/item/high_magisteel_pickaxe"
+    },
+    "tensura:item/high_magisteel_scythe": {
+      "textures": "textures/item/high_magisteel_scythe"
+    },
+    "tensura:item/high_magisteel_short_sword": {
+      "textures": "textures/item/high_magisteel_short_sword"
+    },
+    "tensura:item/high_magisteel_shovel": {
+      "textures": "textures/item/high_magisteel_shovel"
+    },
+    "tensura:item/high_magisteel_sickle": {
+      "textures": "textures/item/high_magisteel_sickle"
+    },
+    "tensura:item/high_magisteel_spear": {
+      "textures": "textures/item/high_magisteel_spear"
+    },
+    "tensura:item/high_magisteel_sword": {
+      "textures": "textures/item/high_magisteel_sword"
+    },
+    "tensura:item/high_magisteel_tachi": {
+      "textures": "textures/item/high_magisteel_tachi"
+    },
+    "tensura:item/high_potion": {
+      "textures": "textures/item/high_potion"
+    },
+    "tensura:item/high_quality_magic_crystal": {
+      "textures": "textures/item/high_quality_magic_crystal"
+    },
+    "tensura:item/hihiirokane_axe": {
+      "textures": "textures/item/hihiirokane_axe"
+    },
+    "tensura:item/hihiirokane_axe_inactive": {
+      "textures": "textures/item/hihiirokane_axe_inactive"
+    },
+    "tensura:item/hihiirokane_bone_golem": {
+      "textures": "textures/item/hihiirokane_bone_golem"
+    },
+    "tensura:item/hihiirokane_boots": {
+      "textures": "textures/item/hihiirokane_boots"
+    },
+    "tensura:item/hihiirokane_chestplate": {
+      "textures": "textures/item/hihiirokane_chestplate"
+    },
+    "tensura:item/hihiirokane_gear_schematic": {
+      "textures": "textures/item/hihiirokane_gear_schematic"
+    },
+    "tensura:item/hihiirokane_great_sword": {
+      "textures": "textures/item/hihiirokane_great_sword"
+    },
+    "tensura:item/hihiirokane_great_sword_inactive": {
+      "textures": "textures/item/hihiirokane_great_sword_inactive"
+    },
+    "tensura:item/hihiirokane_helmet": {
+      "textures": "textures/item/hihiirokane_helmet"
+    },
+    "tensura:item/hihiirokane_hoe": {
+      "textures": "textures/item/hihiirokane_hoe"
+    },
+    "tensura:item/hihiirokane_hoe_inactive": {
+      "textures": "textures/item/hihiirokane_hoe_inactive"
+    },
+    "tensura:item/hihiirokane_ingot": {
+      "textures": "textures/item/hihiirokane_ingot"
+    },
+    "tensura:item/hihiirokane_katana": {
+      "textures": "textures/item/hihiirokane_katana"
+    },
+    "tensura:item/hihiirokane_katana_inactive": {
+      "textures": "textures/item/hihiirokane_katana_inactive"
+    },
+    "tensura:item/hihiirokane_kodachi": {
+      "textures": "textures/item/hihiirokane_kodachi"
+    },
+    "tensura:item/hihiirokane_kodachi_inactive": {
+      "textures": "textures/item/hihiirokane_kodachi_inactive"
+    },
+    "tensura:item/hihiirokane_leggings": {
+      "textures": "textures/item/hihiirokane_leggings"
+    },
+    "tensura:item/hihiirokane_long_sword": {
+      "textures": "textures/item/hihiirokane_long_sword"
+    },
+    "tensura:item/hihiirokane_long_sword_inactive": {
+      "textures": "textures/item/hihiirokane_long_sword_inactive"
+    },
+    "tensura:item/hihiirokane_nugget": {
+      "textures": "textures/item/hihiirokane_nugget"
+    },
+    "tensura:item/hihiirokane_odachi": {
+      "textures": "textures/item/hihiirokane_odachi"
+    },
+    "tensura:item/hihiirokane_odachi_inactive": {
+      "textures": "textures/item/hihiirokane_odachi_inactive"
+    },
+    "tensura:item/hihiirokane_pickaxe": {
+      "textures": "textures/item/hihiirokane_pickaxe"
+    },
+    "tensura:item/hihiirokane_pickaxe_inactive": {
+      "textures": "textures/item/hihiirokane_pickaxe_inactive"
+    },
+    "tensura:item/hihiirokane_scythe": {
+      "textures": "textures/item/hihiirokane_scythe"
+    },
+    "tensura:item/hihiirokane_scythe_inactive": {
+      "textures": "textures/item/hihiirokane_scythe_inactive"
+    },
+    "tensura:item/hihiirokane_short_sword": {
+      "textures": "textures/item/hihiirokane_short_sword"
+    },
+    "tensura:item/hihiirokane_short_sword_inactive": {
+      "textures": "textures/item/hihiirokane_short_sword_inactive"
+    },
+    "tensura:item/hihiirokane_shovel": {
+      "textures": "textures/item/hihiirokane_shovel"
+    },
+    "tensura:item/hihiirokane_shovel_inactive": {
+      "textures": "textures/item/hihiirokane_shovel_inactive"
+    },
+    "tensura:item/hihiirokane_sickle": {
+      "textures": "textures/item/hihiirokane_sickle"
+    },
+    "tensura:item/hihiirokane_sickle_inactive": {
+      "textures": "textures/item/hihiirokane_sickle_inactive"
+    },
+    "tensura:item/hihiirokane_spear": {
+      "textures": "textures/item/hihiirokane_spear"
+    },
+    "tensura:item/hihiirokane_spear_inactive": {
+      "textures": "textures/item/hihiirokane_spear_inactive"
+    },
+    "tensura:item/hihiirokane_sword": {
+      "textures": "textures/item/hihiirokane_sword"
+    },
+    "tensura:item/hihiirokane_sword_inactive": {
+      "textures": "textures/item/hihiirokane_sword_inactive"
+    },
+    "tensura:item/hihiirokane_tachi": {
+      "textures": "textures/item/hihiirokane_tachi"
+    },
+    "tensura:item/hihiirokane_tachi_inactive": {
+      "textures": "textures/item/hihiirokane_tachi_inactive"
+    },
+    "tensura:item/hipokute_flower": {
+      "textures": "textures/item/hipokute_flower"
+    },
+    "tensura:item/hipokute_grass": {
+      "textures": "textures/item/hipokute_grass"
+    },
+    "tensura:item/hipokute_seeds": {
+      "textures": "textures/item/hipokute_seeds"
+    },
+    "tensura:item/holy_armaments_boots": {
+      "textures": "textures/item/holy_armaments_boots"
+    },
+    "tensura:item/holy_armaments_chestplate": {
+      "textures": "textures/item/holy_armaments_chestplate"
+    },
+    "tensura:item/holy_armaments_leggings": {
+      "textures": "textures/item/holy_armaments_leggings"
+    },
+    "tensura:item/holy_fire_charge": {
+      "textures": "textures/item/holy_fire_charge"
+    },
+    "tensura:item/holy_milk": {
+      "textures": "textures/item/holy_milk"
+    },
+    "tensura:item/holy_milk_bucket": {
+      "textures": "textures/item/holy_milk_bucket"
+    },
+    "tensura:item/holy_water": {
+      "textures": "textures/item/holy_water"
+    },
+    "tensura:item/hot_spring_water_bucket": {
+      "textures": "textures/item/hot_spring_water_bucket"
+    },
+    "tensura:item/hunting_knife_schematic": {
+      "textures": "textures/item/hunting_knife_schematic"
+    },
+    "tensura:item/ice_blade": {
+      "textures": "textures/item/ice_blade"
+    },
+    "tensura:item/ice_blade_model": {
+      "textures": "textures/item/ice_blade_model"
+    },
+    "tensura:item/insectar_carapace": {
+      "textures": "textures/item/insectar_carapace"
+    },
+    "tensura:item/invisible_arrow": {
+      "textures": "textures/item/invisible_arrow"
+    },
+    "tensura:item/invisible_feather": {
+      "textures": "textures/item/invisible_feather"
+    },
+    "tensura:item/iron_gear_schematic": {
+      "textures": "textures/item/iron_gear_schematic"
+    },
+    "tensura:item/iron_great_sword": {
+      "textures": "textures/item/iron_great_sword"
+    },
+    "tensura:item/iron_katana": {
+      "textures": "textures/item/iron_katana"
+    },
+    "tensura:item/iron_kodachi": {
+      "textures": "textures/item/iron_kodachi"
+    },
+    "tensura:item/iron_long_sword": {
+      "textures": "textures/item/iron_long_sword"
+    },
+    "tensura:item/iron_odachi": {
+      "textures": "textures/item/iron_odachi"
+    },
+    "tensura:item/iron_scythe": {
+      "textures": "textures/item/iron_scythe"
+    },
+    "tensura:item/iron_short_sword": {
+      "textures": "textures/item/iron_short_sword"
+    },
+    "tensura:item/iron_sickle": {
+      "textures": "textures/item/iron_sickle"
+    },
+    "tensura:item/iron_spear": {
+      "textures": "textures/item/iron_spear"
+    },
+    "tensura:item/iron_tachi": {
+      "textures": "textures/item/iron_tachi"
+    },
+    "tensura:item/japanese_sword_schematic": {
+      "textures": "textures/item/japanese_sword_schematic"
+    },
+    "tensura:item/kanabo": {
+      "textures": "textures/item/kanabo"
+    },
+    "tensura:item/knight_spider_carapace": {
+      "textures": "textures/item/knight_spider_carapace"
+    },
+    "tensura:item/knight_spider_carapace_boots": {
+      "textures": "textures/item/knight_spider_carapace_boots"
+    },
+    "tensura:item/knight_spider_carapace_chestplate": {
+      "textures": "textures/item/knight_spider_carapace_chestplate"
+    },
+    "tensura:item/knight_spider_carapace_gear_schematic": {
+      "textures": "textures/item/knight_spider_carapace_gear_schematic"
+    },
+    "tensura:item/knight_spider_carapace_helmet": {
+      "textures": "textures/item/knight_spider_carapace_helmet"
+    },
+    "tensura:item/knight_spider_carapace_leggings": {
+      "textures": "textures/item/knight_spider_carapace_leggings"
+    },
+    "tensura:item/knight_spider_leg": {
+      "textures": "textures/item/knight_spider_leg"
+    },
+    "tensura:item/kunai": {
+      "textures": "textures/item/kunai"
+    },
+    "tensura:item/kunai_schematic": {
+      "textures": "textures/item/kunai_schematic"
+    },
+    "tensura:item/leather_gear_schematic": {
+      "textures": "textures/item/leather_gear_schematic"
+    },
+    "tensura:item/long_bow": {
+      "textures": "textures/item/long_bow"
+    },
+    "tensura:item/long_bow_pulling_0": {
+      "textures": "textures/item/long_bow_pulling_0"
+    },
+    "tensura:item/long_bow_pulling_1": {
+      "textures": "textures/item/long_bow_pulling_1"
+    },
+    "tensura:item/long_bow_pulling_2": {
+      "textures": "textures/item/long_bow_pulling_2"
+    },
+    "tensura:item/long_spider_bow": {
+      "textures": "textures/item/long_spider_bow"
+    },
+    "tensura:item/long_spider_bow_pulling_0": {
+      "textures": "textures/item/long_spider_bow_pulling_0"
+    },
+    "tensura:item/long_spider_bow_pulling_1": {
+      "textures": "textures/item/long_spider_bow_pulling_1"
+    },
+    "tensura:item/long_spider_bow_pulling_2": {
+      "textures": "textures/item/long_spider_bow_pulling_2"
+    },
+    "tensura:item/long_sword_schematic": {
+      "textures": "textures/item/long_sword_schematic"
+    },
+    "tensura:item/low_arcane_potion": {
+      "textures": "textures/item/low_arcane_potion"
+    },
+    "tensura:item/low_magic_staff": {
+      "textures": "textures/item/low_magic_staff"
+    },
+    "tensura:item/low_magic_staff_item": {
+      "textures": "textures/item/low_magic_staff_item"
+    },
+    "tensura:item/low_magisteel_axe": {
+      "textures": "textures/item/low_magisteel_axe"
+    },
+    "tensura:item/low_magisteel_bone_golem": {
+      "textures": "textures/item/low_magisteel_bone_golem"
+    },
+    "tensura:item/low_magisteel_boots": {
+      "textures": "textures/item/low_magisteel_boots"
+    },
+    "tensura:item/low_magisteel_chestplate": {
+      "textures": "textures/item/low_magisteel_chestplate"
+    },
+    "tensura:item/low_magisteel_gear_schematic": {
+      "textures": "textures/item/low_magisteel_gear_schematic"
+    },
+    "tensura:item/low_magisteel_great_sword": {
+      "textures": "textures/item/low_magisteel_great_sword"
+    },
+    "tensura:item/low_magisteel_helmet": {
+      "textures": "textures/item/low_magisteel_helmet"
+    },
+    "tensura:item/low_magisteel_hoe": {
+      "textures": "textures/item/low_magisteel_hoe"
+    },
+    "tensura:item/low_magisteel_ingot": {
+      "textures": "textures/item/low_magisteel_ingot"
+    },
+    "tensura:item/low_magisteel_katana": {
+      "textures": "textures/item/low_magisteel_katana"
+    },
+    "tensura:item/low_magisteel_kodachi": {
+      "textures": "textures/item/low_magisteel_kodachi"
+    },
+    "tensura:item/low_magisteel_leggings": {
+      "textures": "textures/item/low_magisteel_leggings"
+    },
+    "tensura:item/low_magisteel_long_sword": {
+      "textures": "textures/item/low_magisteel_long_sword"
+    },
+    "tensura:item/low_magisteel_nugget": {
+      "textures": "textures/item/low_magisteel_nugget"
+    },
+    "tensura:item/low_magisteel_odachi": {
+      "textures": "textures/item/low_magisteel_odachi"
+    },
+    "tensura:item/low_magisteel_pickaxe": {
+      "textures": "textures/item/low_magisteel_pickaxe"
+    },
+    "tensura:item/low_magisteel_scythe": {
+      "textures": "textures/item/low_magisteel_scythe"
+    },
+    "tensura:item/low_magisteel_short_sword": {
+      "textures": "textures/item/low_magisteel_short_sword"
+    },
+    "tensura:item/low_magisteel_shovel": {
+      "textures": "textures/item/low_magisteel_shovel"
+    },
+    "tensura:item/low_magisteel_sickle": {
+      "textures": "textures/item/low_magisteel_sickle"
+    },
+    "tensura:item/low_magisteel_spear": {
+      "textures": "textures/item/low_magisteel_spear"
+    },
+    "tensura:item/low_magisteel_sword": {
+      "textures": "textures/item/low_magisteel_sword"
+    },
+    "tensura:item/low_magisteel_tachi": {
+      "textures": "textures/item/low_magisteel_tachi"
+    },
+    "tensura:item/low_potion": {
+      "textures": "textures/item/low_potion"
+    },
+    "tensura:item/low_quality_magic_crystal": {
+      "textures": "textures/item/low_quality_magic_crystal"
+    },
+    "tensura:item/magic_bottle": {
+      "textures": "textures/item/magic_bottle"
+    },
+    "tensura:item/magic_bottle_of_water": {
+      "textures": "textures/item/magic_bottle_of_water"
+    },
+    "tensura:item/magic_ore_shard": {
+      "textures": "textures/item/magic_ore_shard"
+    },
+    "tensura:item/magic_staff_schematic": {
+      "textures": "textures/item/magic_staff_schematic"
+    },
+    "tensura:item/magic_stone": {
+      "textures": "textures/item/magic_stone"
+    },
+    "tensura:item/marionette_heart": {
+      "textures": "textures/item/marionette_heart"
+    },
+    "tensura:item/meat_crusher": {
+      "textures": "textures/item/meat_crusher"
+    },
+    "tensura:item/meat_crusher_model": {
+      "textures": "textures/item/meat_crusher_model"
+    },
+    "tensura:item/meaty_stew": {
+      "textures": "textures/item/meaty_stew"
+    },
+    "tensura:item/medium_arcane_potion": {
+      "textures": "textures/item/medium_arcane_potion"
+    },
+    "tensura:item/medium_magic_staff": {
+      "textures": "textures/item/medium_magic_staff"
+    },
+    "tensura:item/medium_magic_staff_item": {
+      "textures": "textures/item/medium_magic_staff_item"
+    },
+    "tensura:item/medium_quality_magic_crystal": {
+      "textures": "textures/item/medium_quality_magic_crystal"
+    },
+    "tensura:item/megalodon_meat": {
+      "textures": "textures/item/megalodon_meat"
+    },
+    "tensura:item/megalodon_sashimi": {
+      "textures": "textures/item/megalodon_sashimi"
+    },
+    "tensura:item/metal_slime_in_a_bucket": {
+      "textures": "textures/item/metal_slime_in_a_bucket"
+    },
+    "tensura:item/mithril_axe": {
+      "textures": "textures/item/mithril_axe"
+    },
+    "tensura:item/mithril_bone_golem": {
+      "textures": "textures/item/mithril_bone_golem"
+    },
+    "tensura:item/mithril_boots": {
+      "textures": "textures/item/mithril_boots"
+    },
+    "tensura:item/mithril_chestplate": {
+      "textures": "textures/item/mithril_chestplate"
+    },
+    "tensura:item/mithril_gear_schematic": {
+      "textures": "textures/item/mithril_gear_schematic"
+    },
+    "tensura:item/mithril_great_sword": {
+      "textures": "textures/item/mithril_great_sword"
+    },
+    "tensura:item/mithril_helmet": {
+      "textures": "textures/item/mithril_helmet"
+    },
+    "tensura:item/mithril_helmet_tail": {
+      "textures": "textures/item/mithril_helmet_tail"
+    },
+    "tensura:item/mithril_hoe": {
+      "textures": "textures/item/mithril_hoe"
+    },
+    "tensura:item/mithril_ingot": {
+      "textures": "textures/item/mithril_ingot"
+    },
+    "tensura:item/mithril_katana": {
+      "textures": "textures/item/mithril_katana"
+    },
+    "tensura:item/mithril_kodachi": {
+      "textures": "textures/item/mithril_kodachi"
+    },
+    "tensura:item/mithril_leggings": {
+      "textures": "textures/item/mithril_leggings"
+    },
+    "tensura:item/mithril_long_sword": {
+      "textures": "textures/item/mithril_long_sword"
+    },
+    "tensura:item/mithril_nugget": {
+      "textures": "textures/item/mithril_nugget"
+    },
+    "tensura:item/mithril_odachi": {
+      "textures": "textures/item/mithril_odachi"
+    },
+    "tensura:item/mithril_pickaxe": {
+      "textures": "textures/item/mithril_pickaxe"
+    },
+    "tensura:item/mithril_scythe": {
+      "textures": "textures/item/mithril_scythe"
+    },
+    "tensura:item/mithril_short_sword": {
+      "textures": "textures/item/mithril_short_sword"
+    },
+    "tensura:item/mithril_shovel": {
+      "textures": "textures/item/mithril_shovel"
+    },
+    "tensura:item/mithril_sickle": {
+      "textures": "textures/item/mithril_sickle"
+    },
+    "tensura:item/mithril_spear": {
+      "textures": "textures/item/mithril_spear"
+    },
+    "tensura:item/mithril_sword": {
+      "textures": "textures/item/mithril_sword"
+    },
+    "tensura:item/mithril_tachi": {
+      "textures": "textures/item/mithril_tachi"
+    },
+    "tensura:item/monster_leather_a": {
+      "textures": "textures/item/monster_leather_a"
+    },
+    "tensura:item/monster_leather_b": {
+      "textures": "textures/item/monster_leather_b"
+    },
+    "tensura:item/monster_leather_boots_a": {
+      "textures": "textures/item/monster_leather_boots_a"
+    },
+    "tensura:item/monster_leather_boots_b": {
+      "textures": "textures/item/monster_leather_boots_b"
+    },
+    "tensura:item/monster_leather_boots_c": {
+      "textures": "textures/item/monster_leather_boots_c"
+    },
+    "tensura:item/monster_leather_boots_d": {
+      "textures": "textures/item/monster_leather_boots_d"
+    },
+    "tensura:item/monster_leather_boots_special_a": {
+      "textures": "textures/item/monster_leather_boots_special_a"
+    },
+    "tensura:item/monster_leather_c": {
+      "textures": "textures/item/monster_leather_c"
+    },
+    "tensura:item/monster_leather_chestplate_a": {
+      "textures": "textures/item/monster_leather_chestplate_a"
+    },
+    "tensura:item/monster_leather_chestplate_b": {
+      "textures": "textures/item/monster_leather_chestplate_b"
+    },
+    "tensura:item/monster_leather_chestplate_c": {
+      "textures": "textures/item/monster_leather_chestplate_c"
+    },
+    "tensura:item/monster_leather_chestplate_d": {
+      "textures": "textures/item/monster_leather_chestplate_d"
+    },
+    "tensura:item/monster_leather_chestplate_special_a": {
+      "textures": "textures/item/monster_leather_chestplate_special_a"
+    },
+    "tensura:item/monster_leather_d": {
+      "textures": "textures/item/monster_leather_d"
+    },
+    "tensura:item/monster_leather_gear_schematic": {
+      "textures": "textures/item/monster_leather_gear_schematic"
+    },
+    "tensura:item/monster_leather_helmet_a": {
+      "textures": "textures/item/monster_leather_helmet_a"
+    },
+    "tensura:item/monster_leather_helmet_b": {
+      "textures": "textures/item/monster_leather_helmet_b"
+    },
+    "tensura:item/monster_leather_helmet_c": {
+      "textures": "textures/item/monster_leather_helmet_c"
+    },
+    "tensura:item/monster_leather_helmet_d": {
+      "textures": "textures/item/monster_leather_helmet_d"
+    },
+    "tensura:item/monster_leather_helmet_special_a": {
+      "textures": "textures/item/monster_leather_helmet_special_a"
+    },
+    "tensura:item/monster_leather_leggings_a": {
+      "textures": "textures/item/monster_leather_leggings_a"
+    },
+    "tensura:item/monster_leather_leggings_b": {
+      "textures": "textures/item/monster_leather_leggings_b"
+    },
+    "tensura:item/monster_leather_leggings_c": {
+      "textures": "textures/item/monster_leather_leggings_c"
+    },
+    "tensura:item/monster_leather_leggings_d": {
+      "textures": "textures/item/monster_leather_leggings_d"
+    },
+    "tensura:item/monster_leather_leggings_special_a": {
+      "textures": "textures/item/monster_leather_leggings_special_a"
+    },
+    "tensura:item/monster_leather_special_a": {
+      "textures": "textures/item/monster_leather_special_a"
+    },
+    "tensura:item/monster_saddle": {
+      "textures": "textures/item/monster_saddle"
+    },
+    "tensura:item/moonlight": {
+      "textures": "textures/item/moonlight"
+    },
+    "tensura:item/moonlight_model": {
+      "textures": "textures/item/moonlight_model"
+    },
+    "tensura:item/moth_egg": {
+      "textures": "textures/item/moth_egg"
+    },
+    "tensura:item/music_disc_nanoda": {
+      "textures": "textures/item/music_disc_nanoda"
+    },
+    "tensura:item/netherite_great_sword": {
+      "textures": "textures/item/netherite_great_sword"
+    },
+    "tensura:item/netherite_katana": {
+      "textures": "textures/item/netherite_katana"
+    },
+    "tensura:item/netherite_kodachi": {
+      "textures": "textures/item/netherite_kodachi"
+    },
+    "tensura:item/netherite_long_sword": {
+      "textures": "textures/item/netherite_long_sword"
+    },
+    "tensura:item/netherite_odachi": {
+      "textures": "textures/item/netherite_odachi"
+    },
+    "tensura:item/netherite_scythe": {
+      "textures": "textures/item/netherite_scythe"
+    },
+    "tensura:item/netherite_short_sword": {
+      "textures": "textures/item/netherite_short_sword"
+    },
+    "tensura:item/netherite_sickle": {
+      "textures": "textures/item/netherite_sickle"
+    },
+    "tensura:item/netherite_spear": {
+      "textures": "textures/item/netherite_spear"
+    },
+    "tensura:item/netherite_tachi": {
+      "textures": "textures/item/netherite_tachi"
+    },
+    "tensura:item/orb_of_domination": {
+      "textures": "textures/item/orb_of_domination"
+    },
+    "tensura:item/orichalcum_axe": {
+      "textures": "textures/item/orichalcum_axe"
+    },
+    "tensura:item/orichalcum_bone_golem": {
+      "textures": "textures/item/orichalcum_bone_golem"
+    },
+    "tensura:item/orichalcum_boots": {
+      "textures": "textures/item/orichalcum_boots"
+    },
+    "tensura:item/orichalcum_chestplate": {
+      "textures": "textures/item/orichalcum_chestplate"
+    },
+    "tensura:item/orichalcum_gear_schematic": {
+      "textures": "textures/item/orichalcum_gear_schematic"
+    },
+    "tensura:item/orichalcum_great_sword": {
+      "textures": "textures/item/orichalcum_great_sword"
+    },
+    "tensura:item/orichalcum_helmet": {
+      "textures": "textures/item/orichalcum_helmet"
+    },
+    "tensura:item/orichalcum_hoe": {
+      "textures": "textures/item/orichalcum_hoe"
+    },
+    "tensura:item/orichalcum_ingot": {
+      "textures": "textures/item/orichalcum_ingot"
+    },
+    "tensura:item/orichalcum_katana": {
+      "textures": "textures/item/orichalcum_katana"
+    },
+    "tensura:item/orichalcum_kodachi": {
+      "textures": "textures/item/orichalcum_kodachi"
+    },
+    "tensura:item/orichalcum_leggings": {
+      "textures": "textures/item/orichalcum_leggings"
+    },
+    "tensura:item/orichalcum_long_sword": {
+      "textures": "textures/item/orichalcum_long_sword"
+    },
+    "tensura:item/orichalcum_nugget": {
+      "textures": "textures/item/orichalcum_nugget"
+    },
+    "tensura:item/orichalcum_odachi": {
+      "textures": "textures/item/orichalcum_odachi"
+    },
+    "tensura:item/orichalcum_pickaxe": {
+      "textures": "textures/item/orichalcum_pickaxe"
+    },
+    "tensura:item/orichalcum_scythe": {
+      "textures": "textures/item/orichalcum_scythe"
+    },
+    "tensura:item/orichalcum_short_sword": {
+      "textures": "textures/item/orichalcum_short_sword"
+    },
+    "tensura:item/orichalcum_shovel": {
+      "textures": "textures/item/orichalcum_shovel"
+    },
+    "tensura:item/orichalcum_sickle": {
+      "textures": "textures/item/orichalcum_sickle"
+    },
+    "tensura:item/orichalcum_spear": {
+      "textures": "textures/item/orichalcum_spear"
+    },
+    "tensura:item/orichalcum_sword": {
+      "textures": "textures/item/orichalcum_sword"
+    },
+    "tensura:item/orichalcum_tachi": {
+      "textures": "textures/item/orichalcum_tachi"
+    },
+    "tensura:item/palm_boat": {
+      "textures": "textures/item/palm_boat"
+    },
+    "tensura:item/palm_chest_boat": {
+      "textures": "textures/item/palm_chest_boat"
+    },
+    "tensura:item/palm_door": {
+      "textures": "textures/item/palm_door"
+    },
+    "tensura:item/palm_hanging_sign": {
+      "textures": "textures/item/palm_hanging_sign"
+    },
+    "tensura:item/palm_sapling": {
+      "textures": "textures/item/palm_sapling"
+    },
+    "tensura:item/palm_sign": {
+      "textures": "textures/item/palm_sign"
+    },
+    "tensura:item/pierrot_mask_schematic": {
+      "textures": "textures/item/pierrot_mask_schematic"
+    },
+    "tensura:item/pink_barrier": {
+      "textures": "textures/item/pink_barrier"
+    },
+    "tensura:item/pouch_a": {
+      "textures": "textures/item/pouch_a"
+    },
+    "tensura:item/pouch_b": {
+      "textures": "textures/item/pouch_b"
+    },
+    "tensura:item/pouch_c": {
+      "textures": "textures/item/pouch_c"
+    },
+    "tensura:item/pouch_d": {
+      "textures": "textures/item/pouch_d"
+    },
+    "tensura:item/pouch_special_a": {
+      "textures": "textures/item/pouch_special_a"
+    },
+    "tensura:item/pumpkin_stew": {
+      "textures": "textures/item/pumpkin_stew"
+    },
+    "tensura:item/pure_magisteel_axe": {
+      "textures": "textures/item/pure_magisteel_axe"
+    },
+    "tensura:item/pure_magisteel_bone_golem": {
+      "textures": "textures/item/pure_magisteel_bone_golem"
+    },
+    "tensura:item/pure_magisteel_boots": {
+      "textures": "textures/item/pure_magisteel_boots"
+    },
+    "tensura:item/pure_magisteel_chestplate": {
+      "textures": "textures/item/pure_magisteel_chestplate"
+    },
+    "tensura:item/pure_magisteel_gear_schematic": {
+      "textures": "textures/item/pure_magisteel_gear_schematic"
+    },
+    "tensura:item/pure_magisteel_great_sword": {
+      "textures": "textures/item/pure_magisteel_great_sword"
+    },
+    "tensura:item/pure_magisteel_helmet": {
+      "textures": "textures/item/pure_magisteel_helmet"
+    },
+    "tensura:item/pure_magisteel_hoe": {
+      "textures": "textures/item/pure_magisteel_hoe"
+    },
+    "tensura:item/pure_magisteel_ingot": {
+      "textures": "textures/item/pure_magisteel_ingot"
+    },
+    "tensura:item/pure_magisteel_katana": {
+      "textures": "textures/item/pure_magisteel_katana"
+    },
+    "tensura:item/pure_magisteel_kodachi": {
+      "textures": "textures/item/pure_magisteel_kodachi"
+    },
+    "tensura:item/pure_magisteel_kunai": {
+      "textures": "textures/item/pure_magisteel_kunai"
+    },
+    "tensura:item/pure_magisteel_leggings": {
+      "textures": "textures/item/pure_magisteel_leggings"
+    },
+    "tensura:item/pure_magisteel_long_sword": {
+      "textures": "textures/item/pure_magisteel_long_sword"
+    },
+    "tensura:item/pure_magisteel_nugget": {
+      "textures": "textures/item/pure_magisteel_nugget"
+    },
+    "tensura:item/pure_magisteel_odachi": {
+      "textures": "textures/item/pure_magisteel_odachi"
+    },
+    "tensura:item/pure_magisteel_pickaxe": {
+      "textures": "textures/item/pure_magisteel_pickaxe"
+    },
+    "tensura:item/pure_magisteel_scythe": {
+      "textures": "textures/item/pure_magisteel_scythe"
+    },
+    "tensura:item/pure_magisteel_short_sword": {
+      "textures": "textures/item/pure_magisteel_short_sword"
+    },
+    "tensura:item/pure_magisteel_shovel": {
+      "textures": "textures/item/pure_magisteel_shovel"
+    },
+    "tensura:item/pure_magisteel_sickle": {
+      "textures": "textures/item/pure_magisteel_sickle"
+    },
+    "tensura:item/pure_magisteel_spear": {
+      "textures": "textures/item/pure_magisteel_spear"
+    },
+    "tensura:item/pure_magisteel_sword": {
+      "textures": "textures/item/pure_magisteel_sword"
+    },
+    "tensura:item/pure_magisteel_tachi": {
+      "textures": "textures/item/pure_magisteel_tachi"
+    },
+    "tensura:item/race_reset_scroll": {
+      "textures": "textures/item/race_reset_scroll"
+    },
+    "tensura:item/raw_armorsaurus_meat": {
+      "textures": "textures/item/raw_armorsaurus_meat"
+    },
+    "tensura:item/raw_blade_tiger_meat": {
+      "textures": "textures/item/raw_blade_tiger_meat"
+    },
+    "tensura:item/raw_charybdis_meat": {
+      "textures": "textures/item/raw_charybdis_meat"
+    },
+    "tensura:item/raw_giant_bat_meat": {
+      "textures": "textures/item/raw_giant_bat_meat"
+    },
+    "tensura:item/raw_megalodon_meat": {
+      "textures": "textures/item/raw_megalodon_meat"
+    },
+    "tensura:item/raw_serpent_meat": {
+      "textures": "textures/item/raw_serpent_meat"
+    },
+    "tensura:item/raw_silver": {
+      "textures": "textures/item/raw_silver"
+    },
+    "tensura:item/raw_sissie_meat": {
+      "textures": "textures/item/raw_sissie_meat"
+    },
+    "tensura:item/raw_spear_toro_meat": {
+      "textures": "textures/item/raw_spear_toro_meat"
+    },
+    "tensura:item/revival_elixir": {
+      "textures": "textures/item/revival_elixir"
+    },
+    "tensura:item/royal_blood": {
+      "textures": "textures/item/royal_blood"
+    },
+    "tensura:item/ruhk": {
+      "textures": "textures/item/ruhk"
+    },
+    "tensura:item/ruhk_model": {
+      "textures": "textures/item/ruhk_model"
+    },
+    "tensura:item/serpent_scale": {
+      "textures": "textures/item/serpent_scale"
+    },
+    "tensura:item/serpent_scalemail_boots": {
+      "textures": "textures/item/serpent_scalemail_boots"
+    },
+    "tensura:item/serpent_scalemail_chestplate": {
+      "textures": "textures/item/serpent_scalemail_chestplate"
+    },
+    "tensura:item/serpent_scalemail_gear_schematic": {
+      "textures": "textures/item/serpent_scalemail_gear_schematic"
+    },
+    "tensura:item/serpent_scalemail_helmet": {
+      "textures": "textures/item/serpent_scalemail_helmet"
+    },
+    "tensura:item/serpent_scalemail_leggings": {
+      "textures": "textures/item/serpent_scalemail_leggings"
+    },
+    "tensura:item/severer_blade": {
+      "textures": "textures/item/severer_blade"
+    },
+    "tensura:item/shadow_storage": {
+      "textures": "textures/item/shadow_storage"
+    },
+    "tensura:item/shield_schematic": {
+      "textures": "textures/item/shield_schematic"
+    },
+    "tensura:item/short_bow": {
+      "textures": "textures/item/short_bow"
+    },
+    "tensura:item/short_bow_pulling_0": {
+      "textures": "textures/item/short_bow_pulling_0"
+    },
+    "tensura:item/short_bow_pulling_1": {
+      "textures": "textures/item/short_bow_pulling_1"
+    },
+    "tensura:item/short_bow_pulling_2": {
+      "textures": "textures/item/short_bow_pulling_2"
+    },
+    "tensura:item/short_spider_bow": {
+      "textures": "textures/item/short_spider_bow"
+    },
+    "tensura:item/short_spider_bow_pulling_0": {
+      "textures": "textures/item/short_spider_bow_pulling_0"
+    },
+    "tensura:item/short_spider_bow_pulling_1": {
+      "textures": "textures/item/short_spider_bow_pulling_1"
+    },
+    "tensura:item/short_spider_bow_pulling_2": {
+      "textures": "textures/item/short_spider_bow_pulling_2"
+    },
+    "tensura:item/short_sword_schematic": {
+      "textures": "textures/item/short_sword_schematic"
+    },
+    "tensura:item/silver_apple": {
+      "textures": "textures/item/silver_apple"
+    },
+    "tensura:item/silver_axe": {
+      "textures": "textures/item/silver_axe"
+    },
+    "tensura:item/silver_boots": {
+      "textures": "textures/item/silver_boots"
+    },
+    "tensura:item/silver_chestplate": {
+      "textures": "textures/item/silver_chestplate"
+    },
+    "tensura:item/silver_coin": {
+      "textures": "textures/item/silver_coin"
+    },
+    "tensura:item/silver_gear_schematic": {
+      "textures": "textures/item/silver_gear_schematic"
+    },
+    "tensura:item/silver_great_sword": {
+      "textures": "textures/item/silver_great_sword"
+    },
+    "tensura:item/silver_helmet": {
+      "textures": "textures/item/silver_helmet"
+    },
+    "tensura:item/silver_hoe": {
+      "textures": "textures/item/silver_hoe"
+    },
+    "tensura:item/silver_ingot": {
+      "textures": "textures/item/silver_ingot"
+    },
+    "tensura:item/silver_katana": {
+      "textures": "textures/item/silver_katana"
+    },
+    "tensura:item/silver_kodachi": {
+      "textures": "textures/item/silver_kodachi"
+    },
+    "tensura:item/silver_leggings": {
+      "textures": "textures/item/silver_leggings"
+    },
+    "tensura:item/silver_long_sword": {
+      "textures": "textures/item/silver_long_sword"
+    },
+    "tensura:item/silver_nugget": {
+      "textures": "textures/item/silver_nugget"
+    },
+    "tensura:item/silver_odachi": {
+      "textures": "textures/item/silver_odachi"
+    },
+    "tensura:item/silver_pickaxe": {
+      "textures": "textures/item/silver_pickaxe"
+    },
+    "tensura:item/silver_scythe": {
+      "textures": "textures/item/silver_scythe"
+    },
+    "tensura:item/silver_short_sword": {
+      "textures": "textures/item/silver_short_sword"
+    },
+    "tensura:item/silver_shovel": {
+      "textures": "textures/item/silver_shovel"
+    },
+    "tensura:item/silver_sickle": {
+      "textures": "textures/item/silver_sickle"
+    },
+    "tensura:item/silver_spear": {
+      "textures": "textures/item/silver_spear"
+    },
+    "tensura:item/silver_sword": {
+      "textures": "textures/item/silver_sword"
+    },
+    "tensura:item/silver_tachi": {
+      "textures": "textures/item/silver_tachi"
+    },
+    "tensura:item/sissie_fin": {
+      "textures": "textures/item/sissie_fin"
+    },
+    "tensura:item/sissie_meat": {
+      "textures": "textures/item/sissie_meat"
+    },
+    "tensura:item/sissie_tooth": {
+      "textures": "textures/item/sissie_tooth"
+    },
+    "tensura:item/sissie_tooth_pickaxe": {
+      "textures": "textures/item/sissie_tooth_pickaxe"
+    },
+    "tensura:item/skill_reset_scroll": {
+      "textures": "textures/item/skill_reset_scroll"
+    },
+    "tensura:item/slime_chunk": {
+      "textures": "textures/item/slime_chunk"
+    },
+    "tensura:item/slime_core": {
+      "textures": "textures/item/slime_core"
+    },
+    "tensura:item/slime_in_a_bucket": {
+      "textures": "textures/item/slime_in_a_bucket"
+    },
+    "tensura:item/slime_staff": {
+      "textures": "textures/item/slime_staff"
+    },
+    "tensura:item/slime_staff_item": {
+      "textures": "textures/item/slime_staff_item"
+    },
+    "tensura:item/space_elemental_shard": {
+      "textures": "textures/item/space_elemental_shard"
+    },
+    "tensura:item/spatial_bag": {
+      "textures": "textures/item/spatial_bag"
+    },
+    "tensura:item/spatial_blade": {
+      "textures": "textures/item/spatial_blade"
+    },
+    "tensura:item/spatial_blade_hilt": {
+      "textures": "textures/item/spatial_blade_hilt"
+    },
+    "tensura:item/spatial_blade_schematic": {
+      "textures": "textures/item/spatial_blade_schematic"
+    },
+    "tensura:item/spear_schematic": {
+      "textures": "textures/item/spear_schematic"
+    },
+    "tensura:item/spear_toro_fin": {
+      "textures": "textures/item/spear_toro_fin"
+    },
+    "tensura:item/spear_toro_meat": {
+      "textures": "textures/item/spear_toro_meat"
+    },
+    "tensura:item/speared_fin_arrow": {
+      "textures": "textures/item/speared_fin_arrow"
+    },
+    "tensura:item/spider_bow": {
+      "textures": "textures/item/spider_bow"
+    },
+    "tensura:item/spider_bow_pulling_0": {
+      "textures": "textures/item/spider_bow_pulling_0"
+    },
+    "tensura:item/spider_bow_pulling_1": {
+      "textures": "textures/item/spider_bow_pulling_1"
+    },
+    "tensura:item/spider_bow_pulling_2": {
+      "textures": "textures/item/spider_bow_pulling_2"
+    },
+    "tensura:item/spider_bows_schematic": {
+      "textures": "textures/item/spider_bows_schematic"
+    },
+    "tensura:item/spider_dagger": {
+      "textures": "textures/item/spider_dagger"
+    },
+    "tensura:item/spider_egg": {
+      "textures": "textures/item/spider_egg"
+    },
+    "tensura:item/spider_fang": {
+      "textures": "textures/item/spider_fang"
+    },
+    "tensura:item/steel_thread": {
+      "textures": "textures/item/steel_thread"
+    },
+    "tensura:item/stellar_gold_coin": {
+      "textures": "textures/item/stellar_gold_coin"
+    },
+    "tensura:item/sticky_steel_web_cartridge": {
+      "textures": "textures/item/sticky_steel_web_cartridge"
+    },
+    "tensura:item/sticky_thread": {
+      "textures": "textures/item/sticky_thread"
+    },
+    "tensura:item/sticky_web_cartridge": {
+      "textures": "textures/item/sticky_web_cartridge"
+    },
+    "tensura:item/stone_great_sword": {
+      "textures": "textures/item/stone_great_sword"
+    },
+    "tensura:item/stone_katana": {
+      "textures": "textures/item/stone_katana"
+    },
+    "tensura:item/stone_kodachi": {
+      "textures": "textures/item/stone_kodachi"
+    },
+    "tensura:item/stone_long_sword": {
+      "textures": "textures/item/stone_long_sword"
+    },
+    "tensura:item/stone_odachi": {
+      "textures": "textures/item/stone_odachi"
+    },
+    "tensura:item/stone_scythe": {
+      "textures": "textures/item/stone_scythe"
+    },
+    "tensura:item/stone_short_sword": {
+      "textures": "textures/item/stone_short_sword"
+    },
+    "tensura:item/stone_sickle": {
+      "textures": "textures/item/stone_sickle"
+    },
+    "tensura:item/stone_spear": {
+      "textures": "textures/item/stone_spear"
+    },
+    "tensura:item/stone_tachi": {
+      "textures": "textures/item/stone_tachi"
+    },
+    "tensura:item/teary_pierrot_mask": {
+      "textures": "textures/item/teary_pierrot_mask"
+    },
+    "tensura:item/tempest_scale_knife": {
+      "textures": "textures/item/tempest_scale_knife"
+    },
+    "tensura:item/tempest_scale_shield": {
+      "textures": "textures/item/tempest_scale_shield"
+    },
+    "tensura:item/tempest_scale_shield_model": {
+      "textures": "textures/item/tempest_scale_shield_model"
+    },
+    "tensura:item/tempest_scale_sword": {
+      "textures": "textures/item/tempest_scale_sword"
+    },
+    "tensura:item/thatch": {
+      "textures": "textures/item/thatch"
+    },
+    "tensura:item/thatch_bed": {
+      "textures": "textures/item/thatch_bed"
+    },
+    "tensura:item/tome/barrier_tome": {
+      "textures": "textures/item/tome/barrier_tome"
+    },
+    "tensura:item/tome/earth_tome": {
+      "textures": "textures/item/tome/earth_tome"
+    },
+    "tensura:item/tome/enhancement_tome": {
+      "textures": "textures/item/tome/enhancement_tome"
+    },
+    "tensura:item/tome/explosion_tome": {
+      "textures": "textures/item/tome/explosion_tome"
+    },
+    "tensura:item/tome/fire_tome": {
+      "textures": "textures/item/tome/fire_tome"
+    },
+    "tensura:item/tome/gravity_tome": {
+      "textures": "textures/item/tome/gravity_tome"
+    },
+    "tensura:item/tome/ice_tome": {
+      "textures": "textures/item/tome/ice_tome"
+    },
+    "tensura:item/tome/illusion_tome": {
+      "textures": "textures/item/tome/illusion_tome"
+    },
+    "tensura:item/tome/lightning_tome": {
+      "textures": "textures/item/tome/lightning_tome"
+    },
+    "tensura:item/tome/mental_tome": {
+      "textures": "textures/item/tome/mental_tome"
+    },
+    "tensura:item/tome/misc_tome": {
+      "textures": "textures/item/tome/misc_tome"
+    },
+    "tensura:item/tome/necromancy_tome": {
+      "textures": "textures/item/tome/necromancy_tome"
+    },
+    "tensura:item/tome/random_tome": {
+      "textures": "textures/item/tome/random_tome"
+    },
+    "tensura:item/tome/recovery_tome": {
+      "textures": "textures/item/tome/recovery_tome"
+    },
+    "tensura:item/tome/space_tome": {
+      "textures": "textures/item/tome/space_tome"
+    },
+    "tensura:item/tome/summoning_tome": {
+      "textures": "textures/item/tome/summoning_tome"
+    },
+    "tensura:item/tome/water_tome": {
+      "textures": "textures/item/tome/water_tome"
+    },
+    "tensura:item/tome/wind_tome": {
+      "textures": "textures/item/tome/wind_tome"
+    },
+    "tensura:item/toro_fin_soup": {
+      "textures": "textures/item/toro_fin_soup"
+    },
+    "tensura:item/training_dummy": {
+      "textures": "textures/item/training_dummy"
+    },
+    "tensura:item/unbound_tome": {
+      "textures": "textures/item/unbound_tome"
+    },
+    "tensura:item/unicorn_horn": {
+      "textures": "textures/item/unicorn_horn"
+    },
+    "tensura:item/unicorn_horn_spear": {
+      "textures": "textures/item/unicorn_horn_spear"
+    },
+    "tensura:item/vacuumed_magic_bottle_of_water": {
+      "textures": "textures/item/vacuumed_magic_bottle_of_water"
+    },
+    "tensura:item/vortex_spear": {
+      "textures": "textures/item/vortex_spear"
+    },
+    "tensura:item/vortex_spear_model": {
+      "textures": "textures/item/vortex_spear_model"
+    },
+    "tensura:item/walther_p99": {
+      "textures": "textures/item/walther_p99"
+    },
+    "tensura:item/walther_p99_slide": {
+      "textures": "textures/item/walther_p99_slide"
+    },
+    "tensura:item/war_bow": {
+      "textures": "textures/item/war_bow"
+    },
+    "tensura:item/war_bow_pulling_0": {
+      "textures": "textures/item/war_bow_pulling_0"
+    },
+    "tensura:item/war_bow_pulling_1": {
+      "textures": "textures/item/war_bow_pulling_1"
+    },
+    "tensura:item/war_bow_pulling_2": {
+      "textures": "textures/item/war_bow_pulling_2"
+    },
+    "tensura:item/war_spider_bow": {
+      "textures": "textures/item/war_spider_bow"
+    },
+    "tensura:item/war_spider_bow_pulling_0": {
+      "textures": "textures/item/war_spider_bow_pulling_0"
+    },
+    "tensura:item/war_spider_bow_pulling_1": {
+      "textures": "textures/item/war_spider_bow_pulling_1"
+    },
+    "tensura:item/war_spider_bow_pulling_2": {
+      "textures": "textures/item/war_spider_bow_pulling_2"
+    },
+    "tensura:item/warp_core": {
+      "textures": "textures/item/warp_core"
+    },
+    "tensura:item/water_elemental_shard": {
+      "textures": "textures/item/water_elemental_shard"
+    },
+    "tensura:item/web_cartridge": {
+      "textures": "textures/item/web_cartridge"
+    },
+    "tensura:item/web_gun": {
+      "textures": "textures/item/web_gun"
+    },
+    "tensura:item/web_gun_loading": {
+      "textures": "textures/item/web_gun_loading"
+    },
+    "tensura:item/web_gun_schematic": {
+      "textures": "textures/item/web_gun_schematic"
+    },
+    "tensura:item/wind_elemental_shard": {
+      "textures": "textures/item/wind_elemental_shard"
+    },
+    "tensura:item/winged_shoes": {
+      "textures": "textures/item/winged_shoes"
+    },
+    "tensura:item/wonder_pierrot_mask": {
+      "textures": "textures/item/wonder_pierrot_mask"
+    },
+    "tensura:item/wooden_great_sword": {
+      "textures": "textures/item/wooden_great_sword"
+    },
+    "tensura:item/wooden_katana": {
+      "textures": "textures/item/wooden_katana"
+    },
+    "tensura:item/wooden_kodachi": {
+      "textures": "textures/item/wooden_kodachi"
+    },
+    "tensura:item/wooden_long_sword": {
+      "textures": "textures/item/wooden_long_sword"
+    },
+    "tensura:item/wooden_odachi": {
+      "textures": "textures/item/wooden_odachi"
+    },
+    "tensura:item/wooden_scythe": {
+      "textures": "textures/item/wooden_scythe"
+    },
+    "tensura:item/wooden_short_sword": {
+      "textures": "textures/item/wooden_short_sword"
+    },
+    "tensura:item/wooden_sickle": {
+      "textures": "textures/item/wooden_sickle"
+    },
+    "tensura:item/wooden_spear": {
+      "textures": "textures/item/wooden_spear"
+    },
+    "tensura:item/wooden_tachi": {
+      "textures": "textures/item/wooden_tachi"
+    },
+    "tensura:item/yellow_barrier": {
+      "textures": "textures/item/yellow_barrier"
+    },
+    "tensura:item/zane_blood": {
+      "textures": "textures/item/zane_blood"
+    },
+    "magicule_jewel": {
+      "textures": "textures/item/magicule_jewel"
+    },
+    "evolution_core": {
+      "textures": "textures/item/evolution_core"
+    },
+    "demon_lord_seed": {
+      "textures": "textures/item/demon_lord_seed"
+    },
+    "dragon_core": {
+      "textures": "textures/item/dragon_core"
+    },
+    "skill_crystal": {
+      "textures": "textures/item/skill_crystal"
+    },
+    "orc_disaster_spawn_egg": {
+      "textures": "textures/items/spawn_egg"
+    },
+    "tensura:item/raw_mithril": {
+      "textures": "textures/item/raw_mithril"
+    },
+    "tensura:item/raw_magisteel": {
+      "textures": "textures/item/raw_magisteel"
+    },
+    "tensura:item/raw_adamantite": {
+      "textures": "textures/item/raw_adamantite"
+    },
+    "tensura:item/raw_orichalcum": {
+      "textures": "textures/item/raw_orichalcum"
+    },
+    "tensura:item/raw_hihiirokane": {
+      "textures": "textures/item/raw_hihiirokane"
+    },
+    "tensura:item/magic_crystal_shard": {
+      "textures": "textures/item/magic_crystal_shard"
+    },
+    "tensura:item/magic_steel_fragment": {
+      "textures": "textures/item/magic_steel_fragment"
+    },
+    "tensura:item/menu_crystal": {
+      "textures": "textures/item/menu_crystal"
+    },
+    "tensura:item/skill_crystal": {
+      "textures": "textures/item/skill_crystal"
+    },
+    "tensura:item/skill_seal": {
+      "textures": "textures/item/skill_seal"
+    },
+    "tensura:item/magicule_crystal": {
+      "textures": "textures/item/magicule_crystal"
+    },
+    "tensura:item/slime_spawn_egg": {
+      "textures": "textures/item/slime_spawn_egg"
+    },
+    "tensura:item/direwolf_spawn_egg": {
+      "textures": "textures/item/direwolf_spawn_egg"
+    },
+    "tensura:item/goblin_spawn_egg": {
+      "textures": "textures/item/goblin_spawn_egg"
+    },
+    "tensura:item/lizardman_spawn_egg": {
+      "textures": "textures/item/lizardman_spawn_egg"
+    },
+    "tensura:item/orc_spawn_egg": {
+      "textures": "textures/item/orc_spawn_egg"
+    },
+    "tensura:item/ogre_spawn_egg": {
+      "textures": "textures/item/ogre_spawn_egg"
+    },
+    "tensura:item/orc_disaster_spawn_egg": {
+      "textures": "textures/item/orc_disaster_spawn_egg"
+    },
+    "tensura:item/giant_bear_spawn_egg": {
+      "textures": "textures/item/giant_bear_spawn_egg"
+    },
+    "tensura:item/horned_rabbit_spawn_egg": {
+      "textures": "textures/item/horned_rabbit_spawn_egg"
+    },
+    "tensura:item/hover_lizard_spawn_egg": {
+      "textures": "textures/item/hover_lizard_spawn_egg"
+    },
+    "tensura:item/knight_spider_spawn_egg": {
+      "textures": "textures/item/knight_spider_spawn_egg"
+    },
+    "tensura:item/blade_tiger_spawn_egg": {
+      "textures": "textures/item/blade_tiger_spawn_egg"
+    },
+    "tensura:item/armorsaurus_spawn_egg": {
+      "textures": "textures/item/armorsaurus_spawn_egg"
+    },
+    "tensura:item/feathered_serpent_spawn_egg": {
+      "textures": "textures/item/feathered_serpent_spawn_egg"
+    },
+    "tensura:item/phantaspore_spawn_egg": {
+      "textures": "textures/item/phantaspore_spawn_egg"
+    },
+    "tensura:item/skill_book_fireball": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_healing": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_arcane_barrier": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_lightning_spear": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_ice_lance": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_analytical_appraisal": {
+      "textures": "textures/skill/icons/analytical_appraisal"
+    },
+    "tensura:item/skill_book_black_flame": {
+      "textures": "textures/skill/icons/black_flame"
+    },
+    "tensura:item/skill_book_spatial_motion": {
+      "textures": "textures/skill/icons/spatial_motion"
+    },
+    "tensura:item/skill_book_aura_shield": {
+      "textures": "textures/skill/icons/aura_shield"
+    },
+    "tensura:item/skill_book_multilayer_barrier": {
+      "textures": "textures/skill/icons/multilayer_barrier"
+    },
+    "tensura:item/skill_book_anti_magic_area": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_wind_cutter": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_steel_strength": {
+      "textures": "textures/skill/icons/steel_strength"
+    },
+    "tensura:item/skill_book_body_armor": {
+      "textures": "textures/skill/icons/body_armor"
+    },
+    "tensura:item/skill_book_shadow_motion": {
+      "textures": "textures/skill/icons/shadow_motion"
+    },
+    "tensura:item/skill_book_agility": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/unique_skill_reroll": {
+      "textures": "textures/item/unique_skill_reroll"
+    },
+    "tensura:item/reincarnation_compass": {
+      "textures": "textures/item/reincarnation_compass"
+    },
+    "tensura:item/magic_horn": {
+      "textures": "textures/item/magic_horn"
+    },
+    "tensura:item/skill_horn": {
+      "textures": "textures/item/skill_horn"
+    },
+    "tensura:item/skill_icon_water_blade": {
+      "textures": "textures/skill/common/water_blade"
+    },
+    "tensura:item/skill_icon_anti_skill": {
+      "textures": "textures/skill/unique/anti_skill"
+    },
+    "tensura:item/skill_icon_falsifier": {
+      "textures": "textures/skill/unique/falsifier"
+    },
+    "tensura:item/skill_icon_all_seeing_eye": {
+      "textures": "textures/skill/extra/all_seeing_eye"
+    },
+    "tensura:item/skill_icon_degenerate": {
+      "textures": "textures/skill/unique/degenerate"
+    },
+    "tensura:item/skill_icon_commander": {
+      "textures": "textures/skill/unique/commander"
+    },
+    "tensura:item/skill_icon_multilayer_barrier": {
+      "textures": "textures/skill/extra/multilayer_barrier"
+    },
+    "tensura:item/skill_icon_gluttony": {
+      "textures": "textures/skill/unique/gluttony"
+    },
+    "tensura:item/skill_icon_telepathy": {
+      "textures": "textures/skill/common/telepathy"
+    },
+    "tensura:item/skill_icon_chosen_one": {
+      "textures": "textures/skill/unique/chosen_one"
+    },
+    "tensura:item/skill_icon_wrath": {
+      "textures": "textures/skill/unique/wrath"
+    },
+    "tensura:item/skill_icon_body_armor": {
+      "textures": "textures/skill/intrinsic/body_armor"
+    },
+    "tensura:item/skill_icon_guardian": {
+      "textures": "textures/skill/unique/guardian"
+    },
+    "tensura:item/skill_icon_reflector": {
+      "textures": "textures/skill/unique/reflector"
+    },
+    "tensura:item/skill_icon_ultraspeed_regeneration": {
+      "textures": "textures/skill/extra/ultraspeed_regeneration"
+    },
+    "tensura:item/skill_icon_absorb_and_dissolve": {
+      "textures": "textures/skill/intrinsic/absorb_and_dissolve"
+    },
+    "tensura:item/skill_icon_traveler": {
+      "textures": "textures/skill/unique/traveler"
+    },
+    "tensura:item/skill_icon_seeker": {
+      "textures": "textures/skill/unique/seeker"
+    },
+    "tensura:item/skill_icon_spatial_motion": {
+      "textures": "textures/skill/extra/spatial_motion"
+    },
+    "tensura:item/skill_icon_observer": {
+      "textures": "textures/skill/unique/observer"
+    },
+    "tensura:item/skill_icon_starved": {
+      "textures": "textures/skill/unique/starved"
+    },
+    "tensura:item/skill_icon_creator": {
+      "textures": "textures/skill/unique/creator"
+    },
+    "tensura:item/skill_icon_black_flame": {
+      "textures": "textures/skill/extra/black_flame"
+    },
+    "tensura:item/skill_icon_analytical_appraisal": {
+      "textures": "textures/skill/extra/analytical_appraisal"
+    },
+    "tensura:item/skill_icon_predator": {
+      "textures": "textures/skill/unique/predator"
+    },
+    "tensura:item/skill_icon_merciless": {
+      "textures": "textures/skill/unique/merciless"
+    },
+    "tensura:item/skill_icon_shadow_motion": {
+      "textures": "textures/skill/extra/shadow_motion"
+    },
+    "tensura:item/skill_icon_sniper": {
+      "textures": "textures/skill/unique/sniper"
+    },
+    "tensura:item/skill_icon_abnormal_condition_nullification": {
+      "textures": "textures/skill/resistance/abnormal_condition_nullification"
+    },
+    "tensura:item/skill_icon_abnormal_condition_resistance": {
+      "textures": "textures/skill/resistance/abnormal_condition_resistance"
+    },
+    "tensura:item/skill_icon_shadow_striker": {
+      "textures": "textures/skill/unique/shadow_striker"
+    },
+    "tensura:item/skill_icon_pride": {
+      "textures": "textures/skill/unique/pride"
+    },
+    "tensura:item/skill_icon_usurper": {
+      "textures": "textures/skill/unique/usurper"
+    },
+    "tensura:item/skill_icon_steel_strength": {
+      "textures": "textures/skill/extra/steel_strength"
+    },
+    "tensura:item/skill_icon_lust": {
+      "textures": "textures/skill/unique/lust"
+    },
+    "tensura:item/skill_icon_sloth": {
+      "textures": "textures/skill/unique/sloth"
+    },
+    "tensura:item/skill_icon_thought_acceleration": {
+      "textures": "textures/skill/extra/thought_acceleration"
+    },
+    "tensura:item/skill_icon_greed": {
+      "textures": "textures/skill/unique/greed"
+    },
+    "tensura:item/skill_icon_absolute_severance": {
+      "textures": "textures/skill/unique/absolute_severance"
+    },
+    "tensura:item/skill_icon_royal_beast": {
+      "textures": "textures/skill/unique/royal_beast"
+    },
+    "tensura:item/skill_icon_martial_master": {
+      "textures": "textures/skill/unique/martial_master"
+    },
+    "tensura:item/skill_icon_healer": {
+      "textures": "textures/skill/unique/healer"
+    },
+    "tensura:item/skill_icon_universal_perception": {
+      "textures": "textures/skill/extra/universal_perception"
+    },
+    "tensura:item/skill_icon_reaper": {
+      "textures": "textures/skill/unique/reaper"
+    },
+    "tensura:item/skill_icon_berserker": {
+      "textures": "textures/skill/unique/berserker"
+    },
+    "tensura:item/skill_icon_envy": {
+      "textures": "textures/skill/unique/envy"
+    },
+    "tensura:item/skill_icon_unyielding": {
+      "textures": "textures/skill/unique/unyielding"
+    },
+    "tensura:item/skill_icon_great_sage": {
+      "textures": "textures/skill/unique/great_sage"
+    },
+    "tensura:item/skill_icon_suppressor": {
+      "textures": "textures/skill/unique/suppressor"
+    },
+    "tensura:item/skill_icon_analyst": {
+      "textures": "textures/skill/unique/analyst"
+    },
+    "tensura:item/skill_icon_survivor": {
+      "textures": "textures/skill/unique/survivor"
+    },
+    "tensura:item/magicule_potion": {
+      "textures": "textures/item/magicule_potion"
+    },
+    "tensura:item/healing_potion": {
+      "textures": "textures/item/healing_potion"
+    },
+    "tensura:item/spirit_potion": {
+      "textures": "textures/item/spirit_potion"
+    },
+    "tensura:item/charybdis_core_inactive": {
+      "textures": "textures/item/charybdis_core"
+    },
+    "tensura:item/veldora_tracking_compass": {
+      "textures": "textures/item/reincarnation_compass"
+    },
+    "tensura:item/labyrinth_tracking_compass": {
+      "textures": "textures/item/reincarnation_compass"
+    },
+    "tensura:item/spirit_union_seal": {
+      "textures": "textures/item/spirit_union_seal"
+    },
+    "tensura:item/dragon_scale": {
+      "textures": "textures/item/dragon_scale"
+    },
+    "tensura:item/majesty_elementite_ingot": {
+      "textures": "textures/item/majesty_elementite_ingot"
+    },
+    "tensura:item/majesty_elementite_helmet": {
+      "textures": "textures/item/majesty_elementite_helmet"
+    },
+    "tensura:item/majesty_elementite_chestplate": {
+      "textures": "textures/item/majesty_elementite_chestplate"
+    },
+    "tensura:item/majesty_elementite_leggings": {
+      "textures": "textures/item/majesty_elementite_leggings"
+    },
+    "tensura:item/majesty_elementite_boots": {
+      "textures": "textures/item/majesty_elementite_boots"
+    },
+    "tensura:item/dragon_scale_helmet": {
+      "textures": "textures/item/dragon_scale_helmet"
+    },
+    "tensura:item/dragon_scale_chestplate": {
+      "textures": "textures/item/dragon_scale_chestplate"
+    },
+    "tensura:item/dragon_scale_leggings": {
+      "textures": "textures/item/dragon_scale_leggings"
+    },
+    "tensura:item/dragon_scale_boots": {
+      "textures": "textures/item/dragon_scale_boots"
+    },
+    "tensura:item/lizard_scale_helmet": {
+      "textures": "textures/item/lizard_scale_helmet"
+    },
+    "tensura:item/lizard_scale_chestplate": {
+      "textures": "textures/item/lizard_scale_chestplate"
+    },
+    "tensura:item/lizard_scale_leggings": {
+      "textures": "textures/item/lizard_scale_leggings"
+    },
+    "tensura:item/lizard_scale_boots": {
+      "textures": "textures/item/lizard_scale_boots"
+    },
+    "tensura:item/sea_king_helmet": {
+      "textures": "textures/item/sea_king_helmet"
+    },
+    "tensura:item/sea_king_chestplate": {
+      "textures": "textures/item/sea_king_chestplate"
+    },
+    "tensura:item/sea_king_leggings": {
+      "textures": "textures/item/sea_king_leggings"
+    },
+    "tensura:item/sea_king_boots": {
+      "textures": "textures/item/sea_king_boots"
+    },
+    "tensura:item/demon_lord_covenant": {
+      "textures": "textures/item/adamantite_axe"
+    },
+    "tensura:item/skill_book_gourmet": {
+      "textures": "textures/skill/icons/gourmet"
+    },
+    "tensura:item/tensura_compass": {
+      "textures": "textures/item/reincarnation_compass"
+    },
+    "tensura:item/naming_horn": {
+      "textures": "textures/item/skill_seal"
+    },
+    "tensura:item/tensura_crafting_table": {
+      "textures": "textures/item/tensura_crafting_table"
+    },
+    "tensura:item/spawn_egg": {
+      "textures": "textures/items/spawn_egg"
+    },
+    "tensura:skill_icon_abnormal_condition_nullification": {
+      "textures": "textures/skill/icons/abnormal_condition_nullification"
+    },
+    "tensura:skill_icon_abnormal_condition_resistance": {
+      "textures": "textures/skill/icons/abnormal_condition_resistance"
+    },
+    "tensura:skill_icon_absolute_severance": {
+      "textures": "textures/skill/icons/absolute_severance"
+    },
+    "tensura:skill_icon_absorb_and_dissolve": {
+      "textures": "textures/skill/icons/absorb_and_dissolve"
+    },
+    "tensura:skill_icon_air_flight": {
+      "textures": "textures/skill/icons/air_flight"
+    },
+    "tensura:skill_icon_all_seeing_eye": {
+      "textures": "textures/skill/icons/all_seeing_eye"
+    },
+    "tensura:skill_icon_analyst": {
+      "textures": "textures/skill/icons/analyst"
+    },
+    "tensura:skill_icon_analytical_appraisal": {
+      "textures": "textures/skill/icons/analytical_appraisal"
+    },
+    "tensura:skill_icon_anti_skill": {
+      "textures": "textures/skill/icons/anti_skill"
+    },
+    "tensura:skill_icon_aura_shield": {
+      "textures": "textures/skill/icons/aura_shield"
+    },
+    "tensura:skill_icon_aura_slash": {
+      "textures": "textures/skill/icons/aura_slash"
+    },
+    "tensura:skill_icon_aura_sword": {
+      "textures": "textures/skill/icons/aura_sword"
+    },
+    "tensura:skill_icon_battlewill": {
+      "textures": "textures/skill/icons/battlewill"
+    },
+    "tensura:skill_icon_beast_transformation": {
+      "textures": "textures/skill/icons/beast_transformation"
+    },
+    "tensura:skill_icon_berserk": {
+      "textures": "textures/skill/icons/berserk"
+    },
+    "tensura:skill_icon_berserker": {
+      "textures": "textures/skill/icons/berserker"
+    },
+    "tensura:skill_icon_bewilder": {
+      "textures": "textures/skill/icons/bewilder"
+    },
+    "tensura:skill_icon_black_flame": {
+      "textures": "textures/skill/icons/black_flame"
+    },
+    "tensura:skill_icon_black_lightning": {
+      "textures": "textures/skill/icons/black_lightning"
+    },
+    "tensura:skill_icon_blood_mist": {
+      "textures": "textures/skill/icons/blood_mist"
+    },
+    "tensura:skill_icon_body_armor": {
+      "textures": "textures/skill/icons/body_armor"
+    },
+    "tensura:skill_icon_body_double": {
+      "textures": "textures/skill/icons/body_double"
+    },
+    "tensura:skill_icon_chant_annulment": {
+      "textures": "textures/skill/icons/chant_annulment"
+    },
+    "tensura:skill_icon_charm": {
+      "textures": "textures/skill/icons/charm"
+    },
+    "tensura:skill_icon_chef": {
+      "textures": "textures/skill/icons/chef"
+    },
+    "tensura:skill_icon_chosen_one": {
+      "textures": "textures/skill/icons/chosen_one"
+    },
+    "tensura:skill_icon_coercion": {
+      "textures": "textures/skill/icons/coercion"
+    },
+    "tensura:skill_icon_cold_nullification": {
+      "textures": "textures/skill/icons/cold_nullification"
+    },
+    "tensura:skill_icon_cold_resistance": {
+      "textures": "textures/skill/icons/cold_resistance"
+    },
+    "tensura:skill_icon_commander": {
+      "textures": "textures/skill/icons/commander"
+    },
+    "tensura:skill_icon_cook": {
+      "textures": "textures/skill/icons/cook"
+    },
+    "tensura:skill_icon_corrosion": {
+      "textures": "textures/skill/icons/corrosion"
+    },
+    "tensura:skill_icon_corrosion_nullification": {
+      "textures": "textures/skill/icons/corrosion_nullification"
+    },
+    "tensura:skill_icon_corrosion_resistance": {
+      "textures": "textures/skill/icons/corrosion_resistance"
+    },
+    "tensura:skill_icon_creator": {
+      "textures": "textures/skill/icons/creator"
+    },
+    "tensura:skill_icon_danger_sense": {
+      "textures": "textures/skill/icons/danger_sense"
+    },
+    "tensura:skill_icon_dark_eight_palms": {
+      "textures": "textures/skill/icons/dark_eight_palms"
+    },
+    "tensura:skill_icon_darkness_attack_nullification": {
+      "textures": "textures/skill/icons/darkness_attack_nullification"
+    },
+    "tensura:skill_icon_darkness_attack_resistance": {
+      "textures": "textures/skill/icons/darkness_attack_resistance"
+    },
+    "tensura:skill_icon_darkness_transform": {
+      "textures": "textures/skill/icons/darkness_transform"
+    },
+    "tensura:skill_icon_death_march_dance": {
+      "textures": "textures/skill/icons/death_march_dance"
+    },
+    "tensura:skill_icon_degenerate": {
+      "textures": "textures/skill/icons/degenerate"
+    },
+    "tensura:skill_icon_demon_lord_haki": {
+      "textures": "textures/skill/icons/demon_lord_haki"
+    },
+    "tensura:skill_icon_diamond_path": {
+      "textures": "textures/skill/icons/diamond_path"
+    },
+    "tensura:skill_icon_divine_berserker": {
+      "textures": "textures/skill/icons/divine_berserker"
+    },
+    "tensura:skill_icon_divine_ki_release": {
+      "textures": "textures/skill/icons/divine_ki_release"
+    },
+    "tensura:skill_icon_dragon_ear": {
+      "textures": "textures/skill/icons/dragon_ear"
+    },
+    "tensura:skill_icon_dragon_eye": {
+      "textures": "textures/skill/icons/dragon_eye"
+    },
+    "tensura:skill_icon_dragon_mode": {
+      "textures": "textures/skill/icons/dragon_mode"
+    },
+    "tensura:skill_icon_dragon_skin": {
+      "textures": "textures/skill/icons/dragon_skin"
+    },
+    "tensura:skill_icon_drain": {
+      "textures": "textures/skill/icons/drain"
+    },
+    "tensura:skill_icon_earth_attack_nullification": {
+      "textures": "textures/skill/icons/earth_attack_nullification"
+    },
+    "tensura:skill_icon_earth_attack_resistance": {
+      "textures": "textures/skill/icons/earth_attack_resistance"
+    },
+    "tensura:skill_icon_earth_domination": {
+      "textures": "textures/skill/icons/earth_domination"
+    },
+    "tensura:skill_icon_earth_manipulation": {
+      "textures": "textures/skill/icons/earth_manipulation"
+    },
+    "tensura:skill_icon_earth_transform": {
+      "textures": "textures/skill/icons/earth_transform"
+    },
+    "tensura:skill_icon_earthshatter_kick": {
+      "textures": "textures/skill/icons/earthshatter_kick"
+    },
+    "tensura:skill_icon_eight_petals_flash": {
+      "textures": "textures/skill/icons/eight_petals_flash"
+    },
+    "tensura:skill_icon_electricity_nullification": {
+      "textures": "textures/skill/icons/electricity_nullification"
+    },
+    "tensura:skill_icon_electricity_resistance": {
+      "textures": "textures/skill/icons/electricity_resistance"
+    },
+    "tensura:skill_icon_elephant_stampede": {
+      "textures": "textures/skill/icons/elephant_stampede"
+    },
+    "tensura:skill_icon_engorger": {
+      "textures": "textures/skill/icons/engorger"
+    },
+    "tensura:skill_icon_envy": {
+      "textures": "textures/skill/icons/envy"
+    },
+    "tensura:skill_icon_eye_of_truth": {
+      "textures": "textures/skill/icons/eye_of_truth"
+    },
+    "tensura:skill_icon_falsifier": {
+      "textures": "textures/skill/icons/falsifier"
+    },
+    "tensura:skill_icon_farsight": {
+      "textures": "textures/skill/icons/farsight"
+    },
+    "tensura:skill_icon_fighter": {
+      "textures": "textures/skill/icons/fighter"
+    },
+    "tensura:skill_icon_five_petals_thrust": {
+      "textures": "textures/skill/icons/five_petals_thrust"
+    },
+    "tensura:skill_icon_flame_attack_nullification": {
+      "textures": "textures/skill/icons/flame_attack_nullification"
+    },
+    "tensura:skill_icon_flame_attack_resistance": {
+      "textures": "textures/skill/icons/flame_attack_resistance"
+    },
+    "tensura:skill_icon_flame_breath": {
+      "textures": "textures/skill/icons/flame_breath"
+    },
+    "tensura:skill_icon_flame_domination": {
+      "textures": "textures/skill/icons/flame_domination"
+    },
+    "tensura:skill_icon_flame_manipulation": {
+      "textures": "textures/skill/icons/flame_manipulation"
+    },
+    "tensura:skill_icon_flame_transform": {
+      "textures": "textures/skill/icons/flame_transform"
+    },
+    "tensura:skill_icon_formhide": {
+      "textures": "textures/skill/icons/formhide"
+    },
+    "tensura:skill_icon_fusionist": {
+      "textures": "textures/skill/icons/fusionist"
+    },
+    "tensura:skill_icon_giantification": {
+      "textures": "textures/skill/icons/giantification"
+    },
+    "tensura:skill_icon_gluttony": {
+      "textures": "textures/skill/icons/gluttony"
+    },
+    "tensura:skill_icon_godly_craftsman": {
+      "textures": "textures/skill/icons/godly_craftsman"
+    },
+    "tensura:skill_icon_godwolf_sense": {
+      "textures": "textures/skill/icons/godwolf_sense"
+    },
+    "tensura:skill_icon_gourmand": {
+      "textures": "textures/skill/icons/gourmand"
+    },
+    "tensura:skill_icon_gourmet": {
+      "textures": "textures/skill/icons/gourmet"
+    },
+    "tensura:skill_icon_gravity_attack_nullification": {
+      "textures": "textures/skill/icons/gravity_attack_nullification"
+    },
+    "tensura:skill_icon_gravity_attack_resistance": {
+      "textures": "textures/skill/icons/gravity_attack_resistance"
+    },
+    "tensura:skill_icon_gravity_domination": {
+      "textures": "textures/skill/icons/gravity_domination"
+    },
+    "tensura:skill_icon_gravity_field": {
+      "textures": "textures/skill/icons/gravity_field"
+    },
+    "tensura:skill_icon_gravity_flight": {
+      "textures": "textures/skill/icons/gravity_flight"
+    },
+    "tensura:skill_icon_gravity_manipulation": {
+      "textures": "textures/skill/icons/gravity_manipulation"
+    },
+    "tensura:skill_icon_great_sage": {
+      "textures": "textures/skill/icons/great_sage"
+    },
+    "tensura:skill_icon_greed": {
+      "textures": "textures/skill/icons/greed"
+    },
+    "tensura:skill_icon_guardian": {
+      "textures": "textures/skill/icons/guardian"
+    },
+    "tensura:skill_icon_haki": {
+      "textures": "textures/skill/icons/haki"
+    },
+    "tensura:skill_icon_haze": {
+      "textures": "textures/skill/icons/haze"
+    },
+    "tensura:skill_icon_healer": {
+      "textures": "textures/skill/icons/healer"
+    },
+    "tensura:skill_icon_heat_nullification": {
+      "textures": "textures/skill/icons/heat_nullification"
+    },
+    "tensura:skill_icon_heat_resistance": {
+      "textures": "textures/skill/icons/heat_resistance"
+    },
+    "tensura:skill_icon_heat_wave": {
+      "textures": "textures/skill/icons/heat_wave"
+    },
+    "tensura:skill_icon_heavenly_eye": {
+      "textures": "textures/skill/icons/heavenly_eye"
+    },
+    "tensura:skill_icon_heavy_slash": {
+      "textures": "textures/skill/icons/heavy_slash"
+    },
+    "tensura:skill_icon_hero_haki": {
+      "textures": "textures/skill/icons/hero_haki"
+    },
+    "tensura:skill_icon_holy_attack_nullification": {
+      "textures": "textures/skill/icons/holy_attack_nullification"
+    },
+    "tensura:skill_icon_holy_attack_resistance": {
+      "textures": "textures/skill/icons/holy_attack_resistance"
+    },
+    "tensura:skill_icon_hydraulic_propulsion": {
+      "textures": "textures/skill/icons/hydraulic_propulsion"
+    },
+    "tensura:skill_icon_ice_breath": {
+      "textures": "textures/skill/icons/ice_breath"
+    },
+    "tensura:skill_icon_infinite_regeneration": {
+      "textures": "textures/skill/icons/infinite_regeneration"
+    },
+    "tensura:skill_icon_infinity_prison": {
+      "textures": "textures/skill/icons/infinity_prison"
+    },
+    "tensura:skill_icon_instant_move": {
+      "textures": "textures/skill/icons/instant_move"
+    },
+    "tensura:skill_icon_law_manipulation": {
+      "textures": "textures/skill/icons/law_manipulation"
+    },
+    "tensura:skill_icon_light_attack_nullification": {
+      "textures": "textures/skill/icons/light_attack_nullification"
+    },
+    "tensura:skill_icon_light_attack_resistance": {
+      "textures": "textures/skill/icons/light_attack_resistance"
+    },
+    "tensura:skill_icon_light_transform": {
+      "textures": "textures/skill/icons/light_transform"
+    },
+    "tensura:skill_icon_lightning_domination": {
+      "textures": "textures/skill/icons/lightning_domination"
+    },
+    "tensura:skill_icon_lightning_manipulation": {
+      "textures": "textures/skill/icons/lightning_manipulation"
+    },
+    "tensura:skill_icon_lust": {
+      "textures": "textures/skill/icons/lust"
+    },
+    "tensura:skill_icon_magic_aura": {
+      "textures": "textures/skill/icons/magic_aura"
+    },
+    "tensura:skill_icon_magic_bullet": {
+      "textures": "textures/skill/icons/magic_bullet"
+    },
+    "tensura:skill_icon_magic_darkness_transform": {
+      "textures": "textures/skill/icons/magic_darkness_transform"
+    },
+    "tensura:skill_icon_magic_earth_transform": {
+      "textures": "textures/skill/icons/magic_earth_transform"
+    },
+    "tensura:skill_icon_magic_flame_transform": {
+      "textures": "textures/skill/icons/magic_flame_transform"
+    },
+    "tensura:skill_icon_magic_jamming": {
+      "textures": "textures/skill/icons/magic_jamming"
+    },
+    "tensura:skill_icon_magic_light_transform": {
+      "textures": "textures/skill/icons/magic_light_transform"
+    },
+    "tensura:skill_icon_magic_manipulation": {
+      "textures": "textures/skill/icons/magic_manipulation"
+    },
+    "tensura:skill_icon_magic_nullification": {
+      "textures": "textures/skill/icons/magic_nullification"
+    },
+    "tensura:skill_icon_magic_resistance": {
+      "textures": "textures/skill/icons/magic_resistance"
+    },
+    "tensura:skill_icon_magic_sense": {
+      "textures": "textures/skill/icons/magic_sense"
+    },
+    "tensura:skill_icon_magic_space_transform": {
+      "textures": "textures/skill/icons/magic_space_transform"
+    },
+    "tensura:skill_icon_magic_water_transform": {
+      "textures": "textures/skill/icons/magic_water_transform"
+    },
+    "tensura:skill_icon_magic_wind_transform": {
+      "textures": "textures/skill/icons/magic_wind_transform"
+    },
+    "tensura:skill_icon_majesty": {
+      "textures": "textures/skill/icons/majesty"
+    },
+    "tensura:skill_icon_mana_manipulation": {
+      "textures": "textures/skill/icons/mana_manipulation"
+    },
+    "tensura:skill_icon_martial_master": {
+      "textures": "textures/skill/icons/martial_master"
+    },
+    "tensura:skill_icon_mathematician": {
+      "textures": "textures/skill/icons/mathematician"
+    },
+    "tensura:skill_icon_maximum_magic_bullet": {
+      "textures": "textures/skill/icons/maximum_magic_bullet"
+    },
+    "tensura:skill_icon_merciless": {
+      "textures": "textures/skill/icons/merciless"
+    },
+    "tensura:skill_icon_molecular_manipulation": {
+      "textures": "textures/skill/icons/molecular_manipulation"
+    },
+    "tensura:skill_icon_mortal_fear": {
+      "textures": "textures/skill/icons/mortal_fear"
+    },
+    "tensura:skill_icon_multilayer_barrier": {
+      "textures": "textures/skill/icons/multilayer_barrier"
+    },
+    "tensura:skill_icon_murderer": {
+      "textures": "textures/skill/icons/murderer"
+    },
+    "tensura:skill_icon_musician": {
+      "textures": "textures/skill/icons/musician"
+    },
+    "tensura:skill_icon_observer": {
+      "textures": "textures/skill/icons/observer"
+    },
+    "tensura:skill_icon_ogre_berserker": {
+      "textures": "textures/skill/icons/ogre_berserker"
+    },
+    "tensura:skill_icon_ogre_flame": {
+      "textures": "textures/skill/icons/ogre_flame"
+    },
+    "tensura:skill_icon_ogre_sword_cannon": {
+      "textures": "textures/skill/icons/ogre_sword_cannon"
+    },
+    "tensura:skill_icon_ogre_sword_guillotine": {
+      "textures": "textures/skill/icons/ogre_sword_guillotine"
+    },
+    "tensura:skill_icon_oppressor": {
+      "textures": "textures/skill/icons/oppressor"
+    },
+    "tensura:skill_icon_pain_nullification": {
+      "textures": "textures/skill/icons/pain_nullification"
+    },
+    "tensura:skill_icon_pain_resistance": {
+      "textures": "textures/skill/icons/pain_resistance"
+    },
+    "tensura:skill_icon_paralysing_breath": {
+      "textures": "textures/skill/icons/paralysing_breath"
+    },
+    "tensura:skill_icon_paralysis": {
+      "textures": "textures/skill/icons/paralysis"
+    },
+    "tensura:skill_icon_paralysis_nullification": {
+      "textures": "textures/skill/icons/paralysis_nullification"
+    },
+    "tensura:skill_icon_paralysis_resistance": {
+      "textures": "textures/skill/icons/paralysis_resistance"
+    },
+    "tensura:skill_icon_physical_attack_nullification": {
+      "textures": "textures/skill/icons/physical_attack_nullification"
+    },
+    "tensura:skill_icon_physical_attack_resistance": {
+      "textures": "textures/skill/icons/physical_attack_resistance"
+    },
+    "tensura:skill_icon_pierce_nullification": {
+      "textures": "textures/skill/icons/pierce_nullification"
+    },
+    "tensura:skill_icon_pierce_resistance": {
+      "textures": "textures/skill/icons/pierce_resistance"
+    },
+    "tensura:skill_icon_poison": {
+      "textures": "textures/skill/icons/poison"
+    },
+    "tensura:skill_icon_poison_nullification": {
+      "textures": "textures/skill/icons/poison_nullification"
+    },
+    "tensura:skill_icon_poison_resistance": {
+      "textures": "textures/skill/icons/poison_resistance"
+    },
+    "tensura:skill_icon_poisonous_breath": {
+      "textures": "textures/skill/icons/poisonous_breath"
+    },
+    "tensura:skill_icon_possession": {
+      "textures": "textures/skill/icons/possession"
+    },
+    "tensura:skill_icon_predator": {
+      "textures": "textures/skill/icons/predator"
+    },
+    "tensura:skill_icon_pride": {
+      "textures": "textures/skill/icons/pride"
+    },
+    "tensura:skill_icon_ranged_barrier": {
+      "textures": "textures/skill/icons/ranged_barrier"
+    },
+    "tensura:skill_icon_reaper": {
+      "textures": "textures/skill/icons/reaper"
+    },
+    "tensura:skill_icon_reflector": {
+      "textures": "textures/skill/icons/reflector"
+    },
+    "tensura:skill_icon_researcher": {
+      "textures": "textures/skill/icons/researcher"
+    },
+    "tensura:skill_icon_reverser": {
+      "textures": "textures/skill/icons/reverser"
+    },
+    "tensura:skill_icon_roaring_lion_punch": {
+      "textures": "textures/skill/icons/roaring_lion_punch"
+    },
+    "tensura:skill_icon_royal_beast": {
+      "textures": "textures/skill/icons/royal_beast"
+    },
+    "tensura:skill_icon_sacred_haki": {
+      "textures": "textures/skill/icons/sacred_haki"
+    },
+    "tensura:skill_icon_sage": {
+      "textures": "textures/skill/icons/sage"
+    },
+    "tensura:skill_icon_scale_armor": {
+      "textures": "textures/skill/icons/scale_armor"
+    },
+    "tensura:skill_icon_seeker": {
+      "textures": "textures/skill/icons/seeker"
+    },
+    "tensura:skill_icon_seer": {
+      "textures": "textures/skill/icons/seer"
+    },
+    "tensura:skill_icon_self_regeneration": {
+      "textures": "textures/skill/icons/self_regeneration"
+    },
+    "tensura:skill_icon_sense_heat_source": {
+      "textures": "textures/skill/icons/sense_heat_source"
+    },
+    "tensura:skill_icon_sense_soundwave": {
+      "textures": "textures/skill/icons/sense_soundwave"
+    },
+    "tensura:skill_icon_severer": {
+      "textures": "textures/skill/icons/severer"
+    },
+    "tensura:skill_icon_shadow_motion": {
+      "textures": "textures/skill/icons/shadow_motion"
+    },
+    "tensura:skill_icon_shadow_striker": {
+      "textures": "textures/skill/icons/shadow_striker"
+    },
+    "tensura:skill_icon_sloth": {
+      "textures": "textures/skill/icons/sloth"
+    },
+    "tensura:skill_icon_snake_eye": {
+      "textures": "textures/skill/icons/snake_eye"
+    },
+    "tensura:skill_icon_sniper": {
+      "textures": "textures/skill/icons/sniper"
+    },
+    "tensura:skill_icon_sound_domination": {
+      "textures": "textures/skill/icons/sound_domination"
+    },
+    "tensura:skill_icon_sound_manipulation": {
+      "textures": "textures/skill/icons/sound_manipulation"
+    },
+    "tensura:skill_icon_space_transform": {
+      "textures": "textures/skill/icons/space_transform"
+    },
+    "tensura:skill_icon_spatial_attack_nullification": {
+      "textures": "textures/skill/icons/spatial_attack_nullification"
+    },
+    "tensura:skill_icon_spatial_attack_resistance": {
+      "textures": "textures/skill/icons/spatial_attack_resistance"
+    },
+    "tensura:skill_icon_spatial_domination": {
+      "textures": "textures/skill/icons/spatial_domination"
+    },
+    "tensura:skill_icon_spatial_manipulation": {
+      "textures": "textures/skill/icons/spatial_manipulation"
+    },
+    "tensura:skill_icon_spatial_motion": {
+      "textures": "textures/skill/icons/spatial_motion"
+    },
+    "tensura:skill_icon_spearhead": {
+      "textures": "textures/skill/icons/spearhead"
+    },
+    "tensura:skill_icon_spiritual_attack_nullification": {
+      "textures": "textures/skill/icons/spiritual_attack_nullification"
+    },
+    "tensura:skill_icon_spiritual_attack_resistance": {
+      "textures": "textures/skill/icons/spiritual_attack_resistance"
+    },
+    "tensura:skill_icon_starved": {
+      "textures": "textures/skill/icons/starved"
+    },
+    "tensura:skill_icon_steel_strength": {
+      "textures": "textures/skill/icons/steel_strength"
+    },
+    "tensura:skill_icon_sticky_steel_thread": {
+      "textures": "textures/skill/icons/sticky_steel_thread"
+    },
+    "tensura:skill_icon_strength": {
+      "textures": "textures/skill/icons/strength"
+    },
+    "tensura:skill_icon_strengthen_body": {
+      "textures": "textures/skill/icons/strengthen_body"
+    },
+    "tensura:skill_icon_suppressor": {
+      "textures": "textures/skill/icons/suppressor"
+    },
+    "tensura:skill_icon_survivor": {
+      "textures": "textures/skill/icons/survivor"
+    },
+    "tensura:skill_icon_telepathy": {
+      "textures": "textures/skill/icons/telepathy"
+    },
+    "tensura:skill_icon_thermal_fluctuation_nullification": {
+      "textures": "textures/skill/icons/thermal_fluctuation_nullification"
+    },
+    "tensura:skill_icon_thermal_fluctuation_resistance": {
+      "textures": "textures/skill/icons/thermal_fluctuation_resistance"
+    },
+    "tensura:skill_icon_thought_acceleration": {
+      "textures": "textures/skill/icons/thought_acceleration"
+    },
+    "tensura:skill_icon_thought_communication": {
+      "textures": "textures/skill/icons/thought_communication"
+    },
+    "tensura:skill_icon_thrower": {
+      "textures": "textures/skill/icons/thrower"
+    },
+    "tensura:skill_icon_thunder_breath": {
+      "textures": "textures/skill/icons/thunder_breath"
+    },
+    "tensura:skill_icon_titanification": {
+      "textures": "textures/skill/icons/titanification"
+    },
+    "tensura:skill_icon_traveler": {
+      "textures": "textures/skill/icons/traveler"
+    },
+    "tensura:skill_icon_tuner": {
+      "textures": "textures/skill/icons/tuner"
+    },
+    "tensura:skill_icon_ultra_instinct": {
+      "textures": "textures/skill/icons/ultra_instinct"
+    },
+    "tensura:skill_icon_ultrasonic_waves": {
+      "textures": "textures/skill/icons/ultrasonic_waves"
+    },
+    "tensura:skill_icon_ultraspeed_regeneration": {
+      "textures": "textures/skill/icons/ultraspeed_regeneration"
+    },
+    "tensura:skill_icon_universal_perception": {
+      "textures": "textures/skill/icons/universal_perception"
+    },
+    "tensura:skill_icon_unpredictability": {
+      "textures": "textures/skill/icons/unpredictability"
+    },
+    "tensura:skill_icon_unyielding": {
+      "textures": "textures/skill/icons/unyielding"
+    },
+    "tensura:skill_icon_usurper": {
+      "textures": "textures/skill/icons/usurper"
+    },
+    "tensura:skill_icon_villain": {
+      "textures": "textures/skill/icons/villain"
+    },
+    "tensura:skill_icon_violent_break": {
+      "textures": "textures/skill/icons/violent_break"
+    },
+    "tensura:skill_icon_voice_cannon": {
+      "textures": "textures/skill/icons/voice_cannon"
+    },
+    "tensura:skill_icon_water_attack_nullification": {
+      "textures": "textures/skill/icons/water_attack_nullification"
+    },
+    "tensura:skill_icon_water_attack_resistance": {
+      "textures": "textures/skill/icons/water_attack_resistance"
+    },
+    "tensura:skill_icon_water_blade": {
+      "textures": "textures/skill/icons/water_blade"
+    },
+    "tensura:skill_icon_water_breathing": {
+      "textures": "textures/skill/icons/water_breathing"
+    },
+    "tensura:skill_icon_water_current_control": {
+      "textures": "textures/skill/icons/water_current_control"
+    },
+    "tensura:skill_icon_water_domination": {
+      "textures": "textures/skill/icons/water_domination"
+    },
+    "tensura:skill_icon_water_manipulation": {
+      "textures": "textures/skill/icons/water_manipulation"
+    },
+    "tensura:skill_icon_water_transform": {
+      "textures": "textures/skill/icons/water_transform"
+    },
+    "tensura:skill_icon_weather_domination": {
+      "textures": "textures/skill/icons/weather_domination"
+    },
+    "tensura:skill_icon_weather_manipulation": {
+      "textures": "textures/skill/icons/weather_manipulation"
+    },
+    "tensura:skill_icon_wind_attack_nullification": {
+      "textures": "textures/skill/icons/wind_attack_nullification"
+    },
+    "tensura:skill_icon_wind_attack_resistance": {
+      "textures": "textures/skill/icons/wind_attack_resistance"
+    },
+    "tensura:skill_icon_wind_domination": {
+      "textures": "textures/skill/icons/wind_domination"
+    },
+    "tensura:skill_icon_wind_manipulation": {
+      "textures": "textures/skill/icons/wind_manipulation"
+    },
+    "tensura:skill_icon_wind_transform": {
+      "textures": "textures/skill/icons/wind_transform"
+    },
+    "tensura:skill_icon_wrath": {
+      "textures": "textures/skill/icons/wrath"
+    },
+    "tensura:item/landmark_compass": {
+      "textures": "textures/item/tracking_compass"
+    },
+    "tensura:item/skill_book_astarte": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_aura_sword": {
+      "textures": "textures/skill/icons/aura_sword"
+    },
+    "tensura:item/skill_book_azrael": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_barrier": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_battlewill": {
+      "textures": "textures/skill/icons/battlewill"
+    },
+    "tensura:item/skill_book_blizzard": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_burden": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_chain_explosion": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_clairvoyance": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_confusion": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_create_greater_undead": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_create_lesser_undead": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_curse": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_curse_bind": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_dark_cube": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_dark_eight_palms": {
+      "textures": "textures/skill/icons/dark_eight_palms"
+    },
+    "tensura:item/skill_book_darkness": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_darkness_cannon": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_death_march_dance": {
+      "textures": "textures/skill/icons/death_march_dance"
+    },
+    "tensura:item/skill_book_demon_dominate": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_demon_marionette": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_diamond_path": {
+      "textures": "textures/skill/icons/diamond_path"
+    },
+    "tensura:item/skill_book_dimension_cutter": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_dominate": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_doppelganger": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_drainage": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earth": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earth_jail": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earth_lock": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earth_spikes": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earth_storm": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earth_wall": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_earthshatter_kick": {
+      "textures": "textures/skill/icons/earthshatter_kick"
+    },
+    "tensura:item/skill_book_eight_petals_flash": {
+      "textures": "textures/skill/icons/eight_petals_flash"
+    },
+    "tensura:item/skill_book_electro_blast": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_elephant_stampede": {
+      "textures": "textures/skill/icons/elephant_stampede"
+    },
+    "tensura:item/skill_book_escape": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_explosion": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_aspectual": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_ball": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_bolt": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_breath": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_lance": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_storm": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fire_wall": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_five_petals_thrust": {
+      "textures": "textures/skill/icons/five_petals_thrust"
+    },
+    "tensura:item/skill_book_flame_wall": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_flare_circle": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_flight": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_float": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_formhide": {
+      "textures": "textures/skill/icons/formhide"
+    },
+    "tensura:item/skill_book_freeze": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_full_recovery": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_gabriel": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_gate": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_haniel": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_haze": {
+      "textures": "textures/skill/icons/haze"
+    },
+    "tensura:item/skill_book_healing_rain": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_healthcare": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_heavy_slash": {
+      "textures": "textures/skill/icons/heavy_slash"
+    },
+    "tensura:item/skill_book_hellfire": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_hypnos": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_ice_blizzard": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_ice_breaker": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_ice_wall": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_icicle_lance": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_icicle_rain": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_icicle_spear": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_instant_move": {
+      "textures": "textures/skill/icons/instant_move"
+    },
+    "tensura:item/skill_book_invisible": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_israfil": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_jibril": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_light": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_lighten": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_lightning_lance": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_liquidize": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_magic_barrier": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_magic_bullet": {
+      "textures": "textures/skill/icons/magic_bullet"
+    },
+    "tensura:item/skill_book_magic_wall": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_magma_surge": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_maximum_magic_bullet": {
+      "textures": "textures/skill/icons/maximum_magic_bullet"
+    },
+    "tensura:item/skill_book_megiddo": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_melchizedek": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_mental_crush": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_metatron": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_mirage": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_mud_hand": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_mud_spears": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_ogre_flame": {
+      "textures": "textures/skill/icons/ogre_flame"
+    },
+    "tensura:item/skill_book_ogre_sword_cannon": {
+      "textures": "textures/skill/icons/ogre_sword_cannon"
+    },
+    "tensura:item/skill_book_ogre_sword_guillotine": {
+      "textures": "textures/skill/icons/ogre_sword_guillotine"
+    },
+    "tensura:item/skill_book_possession_magic": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_protection": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_raguel": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_recovery": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_reincarnation": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_reinforced_barrier": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_reinforcement": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_roaring_lion_punch": {
+      "textures": "textures/skill/icons/roaring_lion_punch"
+    },
+    "tensura:item/skill_book_sandalphon": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_sariel": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_search_enemy": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_shadow_bind": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_shrink": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_sleep_mist": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_solar_beam": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_solar_flare": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_solar_rain": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_solar_wave": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_space": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_spatial_storage": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_stone_shot": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_strength_aspectual": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_summon_basilisk": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_summon_daemon": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_summon_greater_elemental": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_summon_hound_dog": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_summon_medium_elemental": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_summon_otherworlder": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_swipe": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_teleport": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_thunder": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_thunder_lance": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_thunder_orb": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_thunder_rain": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_tornado_blade": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_true_darkness": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_violent_break": {
+      "textures": "textures/skill/icons/violent_break"
+    },
+    "tensura:item/skill_book_warp_portal": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_water": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_water_aspectual": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_water_cutter": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_water_cutter_aspectual": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_water_jail": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_wind": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_wind_gust": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_wind_protection": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_cook": {
+      "textures": "textures/skill/icons/cook"
+    },
+    "tensura:item/skill_book_magic_bolt": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_mana_manipulation": {
+      "textures": "textures/skill/icons/mana_manipulation"
+    },
+    "tensura:item/skill_book_paralysing_breath": {
+      "textures": "textures/skill/icons/paralysing_breath"
+    },
+    "tensura:item/skill_book_electricity_nullification": {
+      "textures": "textures/skill/icons/electricity_nullification"
+    },
+    "tensura:item/skill_book_divine_berserker": {
+      "textures": "textures/skill/icons/divine_berserker"
+    },
+    "tensura:item/skill_book_flame_breath": {
+      "textures": "textures/skill/icons/flame_breath"
+    },
+    "tensura:item/skill_book_spatial_attack_nullification": {
+      "textures": "textures/skill/icons/spatial_attack_nullification"
+    },
+    "tensura:item/skill_book_drain": {
+      "textures": "textures/skill/icons/drain"
+    },
+    "tensura:item/skill_book_ultraspeed_regeneration": {
+      "textures": "textures/skill/icons/ultraspeed_regeneration"
+    },
+    "tensura:item/skill_book_reaper": {
+      "textures": "textures/skill/icons/reaper"
+    },
+    "tensura:item/skill_book_seer": {
+      "textures": "textures/skill/icons/seer"
+    },
+    "tensura:item/skill_book_wind_blade": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_gluttony": {
+      "textures": "textures/skill/icons/gluttony"
+    },
+    "tensura:item/skill_book_poison": {
+      "textures": "textures/skill/icons/poison"
+    },
+    "tensura:item/skill_book_spiritual_attack_nullification": {
+      "textures": "textures/skill/icons/spiritual_attack_nullification"
+    },
+    "tensura:item/skill_book_earth_attack_nullification": {
+      "textures": "textures/skill/icons/earth_attack_nullification"
+    },
+    "tensura:item/skill_book_black_lightning": {
+      "textures": "textures/skill/icons/black_lightning"
+    },
+    "tensura:item/skill_book_absorb_and_dissolve": {
+      "textures": "textures/skill/icons/absorb_and_dissolve"
+    },
+    "tensura:item/skill_book_thought_acceleration": {
+      "textures": "textures/skill/icons/thought_acceleration"
+    },
+    "tensura:item/skill_book_magic_nullification": {
+      "textures": "textures/skill/icons/magic_nullification"
+    },
+    "tensura:item/skill_book_murderer": {
+      "textures": "textures/skill/icons/murderer"
+    },
+    "tensura:item/skill_book_nyarlathotep": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_severer": {
+      "textures": "textures/skill/icons/severer"
+    },
+    "tensura:item/skill_book_magic_jamming": {
+      "textures": "textures/skill/icons/magic_jamming"
+    },
+    "tensura:item/skill_book_weather_domination": {
+      "textures": "textures/skill/icons/weather_domination"
+    },
+    "tensura:item/skill_book_demon_lord_haki": {
+      "textures": "textures/skill/icons/demon_lord_haki"
+    },
+    "tensura:item/skill_book_water_breathing": {
+      "textures": "textures/skill/icons/water_breathing"
+    },
+    "tensura:item/skill_book_commander": {
+      "textures": "textures/skill/icons/commander"
+    },
+    "tensura:item/skill_book_ultrasonic_waves": {
+      "textures": "textures/skill/icons/ultrasonic_waves"
+    },
+    "tensura:item/skill_book_guardian": {
+      "textures": "textures/skill/icons/guardian"
+    },
+    "tensura:item/skill_book_dragon_ear": {
+      "textures": "textures/skill/icons/dragon_ear"
+    },
+    "tensura:item/skill_book_ogre_berserker": {
+      "textures": "textures/skill/icons/ogre_berserker"
+    },
+    "tensura:item/skill_book_earth_manipulation": {
+      "textures": "textures/skill/icons/earth_manipulation"
+    },
+    "tensura:item/skill_book_majesty": {
+      "textures": "textures/skill/icons/majesty"
+    },
+    "tensura:item/skill_book_flame_transform": {
+      "textures": "textures/skill/icons/flame_transform"
+    },
+    "tensura:item/skill_book_wind_domination": {
+      "textures": "textures/skill/icons/wind_domination"
+    },
+    "tensura:item/skill_book_heat_wave": {
+      "textures": "textures/skill/icons/heat_wave"
+    },
+    "tensura:item/skill_book_coercion": {
+      "textures": "textures/skill/icons/coercion"
+    },
+    "tensura:item/skill_book_spiritual_attack_resistance": {
+      "textures": "textures/skill/icons/spiritual_attack_resistance"
+    },
+    "tensura:item/skill_book_titanification": {
+      "textures": "textures/skill/icons/titanification"
+    },
+    "tensura:item/skill_book_tuner": {
+      "textures": "textures/skill/icons/tuner"
+    },
+    "tensura:item/skill_book_creator": {
+      "textures": "textures/skill/icons/creator"
+    },
+    "tensura:item/skill_book_all_seeing_eye": {
+      "textures": "textures/skill/icons/all_seeing_eye"
+    },
+    "tensura:item/skill_book_flame_manipulation": {
+      "textures": "textures/skill/icons/flame_manipulation"
+    },
+    "tensura:item/skill_book_chant_annulment": {
+      "textures": "textures/skill/icons/chant_annulment"
+    },
+    "tensura:item/skill_book_ultra_instinct": {
+      "textures": "textures/skill/icons/ultra_instinct"
+    },
+    "tensura:item/skill_book_dragon_mode": {
+      "textures": "textures/skill/icons/dragon_mode"
+    },
+    "tensura:item/skill_book_holy_attack_resistance": {
+      "textures": "textures/skill/icons/holy_attack_resistance"
+    },
+    "tensura:item/skill_book_wind_manipulation": {
+      "textures": "textures/skill/icons/wind_manipulation"
+    },
+    "tensura:item/skill_book_spatial_manipulation": {
+      "textures": "textures/skill/icons/spatial_manipulation"
+    },
+    "tensura:item/skill_book_godwolf_sense": {
+      "textures": "textures/skill/icons/godwolf_sense"
+    },
+    "tensura:item/skill_book_fighter": {
+      "textures": "textures/skill/icons/fighter"
+    },
+    "tensura:item/skill_book_pierce_nullification": {
+      "textures": "textures/skill/icons/pierce_nullification"
+    },
+    "tensura:item/skill_book_beelzebuth": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_fusionist": {
+      "textures": "textures/skill/icons/fusionist"
+    },
+    "tensura:item/skill_book_envy": {
+      "textures": "textures/skill/icons/envy"
+    },
+    "tensura:item/skill_book_antidote": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_wind_transform": {
+      "textures": "textures/skill/icons/wind_transform"
+    },
+    "tensura:item/skill_book_poison_nullification": {
+      "textures": "textures/skill/icons/poison_nullification"
+    },
+    "tensura:item/skill_book_gourmand": {
+      "textures": "textures/skill/icons/gourmand"
+    },
+    "tensura:item/skill_book_wind_attack_resistance": {
+      "textures": "textures/skill/icons/wind_attack_resistance"
+    },
+    "tensura:item/skill_book_absolute_severance": {
+      "textures": "textures/skill/icons/absolute_severance"
+    },
+    "tensura:item/skill_book_air_flight": {
+      "textures": "textures/skill/icons/air_flight"
+    },
+    "tensura:item/skill_book_magic_darkness_transform": {
+      "textures": "textures/skill/icons/magic_darkness_transform"
+    },
+    "tensura:item/skill_book_water_attack_nullification": {
+      "textures": "textures/skill/icons/water_attack_nullification"
+    },
+    "tensura:item/skill_book_usurper": {
+      "textures": "textures/skill/icons/usurper"
+    },
+    "tensura:item/skill_book_survivor": {
+      "textures": "textures/skill/icons/survivor"
+    },
+    "tensura:item/skill_book_shadow_striker": {
+      "textures": "textures/skill/icons/shadow_striker"
+    },
+    "tensura:item/skill_book_darkness_attack_resistance": {
+      "textures": "textures/skill/icons/darkness_attack_resistance"
+    },
+    "tensura:item/skill_book_shub_niggurath": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_engorger": {
+      "textures": "textures/skill/icons/engorger"
+    },
+    "tensura:item/skill_book_magic_wind_transform": {
+      "textures": "textures/skill/icons/magic_wind_transform"
+    },
+    "tensura:item/skill_book_azathoth": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_airflow_shut": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_light_attack_nullification": {
+      "textures": "textures/skill/icons/light_attack_nullification"
+    },
+    "tensura:item/skill_book_gravity_attack_nullification": {
+      "textures": "textures/skill/icons/gravity_attack_nullification"
+    },
+    "tensura:item/skill_book_michael": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_light_attack_resistance": {
+      "textures": "textures/skill/icons/light_attack_resistance"
+    },
+    "tensura:item/skill_book_physical_attack_nullification": {
+      "textures": "textures/skill/icons/physical_attack_nullification"
+    },
+    "tensura:item/skill_book_thought_communication": {
+      "textures": "textures/skill/icons/thought_communication"
+    },
+    "tensura:item/skill_book_weather_manipulation": {
+      "textures": "textures/skill/icons/weather_manipulation"
+    },
+    "tensura:item/skill_book_hydraulic_propulsion": {
+      "textures": "textures/skill/icons/hydraulic_propulsion"
+    },
+    "tensura:item/skill_book_sacred_haki": {
+      "textures": "textures/skill/icons/sacred_haki"
+    },
+    "tensura:item/skill_book_heat_nullification": {
+      "textures": "textures/skill/icons/heat_nullification"
+    },
+    "tensura:item/skill_book_danger_sense": {
+      "textures": "textures/skill/icons/danger_sense"
+    },
+    "tensura:item/skill_book_darkness_attack_nullification": {
+      "textures": "textures/skill/icons/darkness_attack_nullification"
+    },
+    "tensura:item/skill_book_godly_craftsman": {
+      "textures": "textures/skill/icons/godly_craftsman"
+    },
+    "tensura:item/skill_book_pride": {
+      "textures": "textures/skill/icons/pride"
+    },
+    "tensura:item/skill_book_strengthen_body": {
+      "textures": "textures/skill/icons/strengthen_body"
+    },
+    "tensura:item/skill_book_sound_manipulation": {
+      "textures": "textures/skill/icons/sound_manipulation"
+    },
+    "tensura:item/skill_book_gravity_attack_resistance": {
+      "textures": "textures/skill/icons/gravity_attack_resistance"
+    },
+    "tensura:item/skill_book_berserk": {
+      "textures": "textures/skill/icons/berserk"
+    },
+    "tensura:item/skill_book_villain": {
+      "textures": "textures/skill/icons/villain"
+    },
+    "tensura:item/skill_book_space_transform": {
+      "textures": "textures/skill/icons/space_transform"
+    },
+    "tensura:item/skill_book_acid_rain": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_paralysis": {
+      "textures": "textures/skill/icons/paralysis"
+    },
+    "tensura:item/skill_book_spatial_domination": {
+      "textures": "textures/skill/icons/spatial_domination"
+    },
+    "tensura:item/skill_book_pain_nullification": {
+      "textures": "textures/skill/icons/pain_nullification"
+    },
+    "tensura:item/skill_book_lightning_manipulation": {
+      "textures": "textures/skill/icons/lightning_manipulation"
+    },
+    "tensura:item/skill_book_ranged_barrier": {
+      "textures": "textures/skill/icons/ranged_barrier"
+    },
+    "tensura:item/skill_book_mathematician": {
+      "textures": "textures/skill/icons/mathematician"
+    },
+    "tensura:item/skill_book_light_transform": {
+      "textures": "textures/skill/icons/light_transform"
+    },
+    "tensura:item/skill_book_lust": {
+      "textures": "textures/skill/icons/lust"
+    },
+    "tensura:item/skill_book_giantification": {
+      "textures": "textures/skill/icons/giantification"
+    },
+    "tensura:item/skill_book_voice_cannon": {
+      "textures": "textures/skill/icons/voice_cannon"
+    },
+    "tensura:item/skill_book_chef": {
+      "textures": "textures/skill/icons/chef"
+    },
+    "tensura:item/skill_book_charm": {
+      "textures": "textures/skill/icons/charm"
+    },
+    "tensura:item/skill_book_earth_attack_resistance": {
+      "textures": "textures/skill/icons/earth_attack_resistance"
+    },
+    "tensura:item/skill_book_analyze": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_gravity_flight": {
+      "textures": "textures/skill/icons/gravity_flight"
+    },
+    "tensura:item/skill_book_paralysis_nullification": {
+      "textures": "textures/skill/icons/paralysis_nullification"
+    },
+    "tensura:item/skill_book_fire": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_berserker": {
+      "textures": "textures/skill/icons/berserker"
+    },
+    "tensura:item/skill_book_ice_breath": {
+      "textures": "textures/skill/icons/ice_breath"
+    },
+    "tensura:item/skill_book_holy_attack_nullification": {
+      "textures": "textures/skill/icons/holy_attack_nullification"
+    },
+    "tensura:item/skill_book_gravity_domination": {
+      "textures": "textures/skill/icons/gravity_domination"
+    },
+    "tensura:item/skill_book_lightning_domination": {
+      "textures": "textures/skill/icons/lightning_domination"
+    },
+    "tensura:item/skill_book_infinite_regeneration": {
+      "textures": "textures/skill/icons/infinite_regeneration"
+    },
+    "tensura:item/skill_book_pierce_resistance": {
+      "textures": "textures/skill/icons/pierce_resistance"
+    },
+    "tensura:item/skill_book_earth_transform": {
+      "textures": "textures/skill/icons/earth_transform"
+    },
+    "tensura:item/skill_book_oppressor": {
+      "textures": "textures/skill/icons/oppressor"
+    },
+    "tensura:item/skill_book_paralysis_resistance": {
+      "textures": "textures/skill/icons/paralysis_resistance"
+    },
+    "tensura:item/skill_book_flame_domination": {
+      "textures": "textures/skill/icons/flame_domination"
+    },
+    "tensura:item/skill_book_chosen_one": {
+      "textures": "textures/skill/icons/chosen_one"
+    },
+    "tensura:item/skill_book_thrower": {
+      "textures": "textures/skill/icons/thrower"
+    },
+    "tensura:item/skill_book_corrosion": {
+      "textures": "textures/skill/icons/corrosion"
+    },
+    "tensura:item/skill_book_flame_attack_resistance": {
+      "textures": "textures/skill/icons/flame_attack_resistance"
+    },
+    "tensura:item/skill_book_dragon_eye": {
+      "textures": "textures/skill/icons/dragon_eye"
+    },
+    "tensura:item/skill_book_possession": {
+      "textures": "textures/skill/icons/possession"
+    },
+    "tensura:item/skill_book_poison_resistance": {
+      "textures": "textures/skill/icons/poison_resistance"
+    },
+    "tensura:item/skill_book_sense_soundwave": {
+      "textures": "textures/skill/icons/sense_soundwave"
+    },
+    "tensura:item/skill_book_suppressor": {
+      "textures": "textures/skill/icons/suppressor"
+    },
+    "tensura:item/skill_book_aura_slash": {
+      "textures": "textures/skill/icons/aura_slash"
+    },
+    "tensura:item/skill_book_water_current_control": {
+      "textures": "textures/skill/icons/water_current_control"
+    },
+    "tensura:item/skill_book_flame_attack_nullification": {
+      "textures": "textures/skill/icons/flame_attack_nullification"
+    },
+    "tensura:item/skill_book_traveler": {
+      "textures": "textures/skill/icons/traveler"
+    },
+    "tensura:item/skill_book_darkness_transform": {
+      "textures": "textures/skill/icons/darkness_transform"
+    },
+    "tensura:item/skill_book_healer": {
+      "textures": "textures/skill/icons/healer"
+    },
+    "tensura:item/skill_book_observer": {
+      "textures": "textures/skill/icons/observer"
+    },
+    "tensura:item/skill_book_magic_sense": {
+      "textures": "textures/skill/icons/magic_sense"
+    },
+    "tensura:item/skill_book_cold_resistance": {
+      "textures": "textures/skill/icons/cold_resistance"
+    },
+    "tensura:item/skill_book_farsight": {
+      "textures": "textures/skill/icons/farsight"
+    },
+    "tensura:item/skill_book_gravity_manipulation": {
+      "textures": "textures/skill/icons/gravity_manipulation"
+    },
+    "tensura:item/skill_book_degenerate": {
+      "textures": "textures/skill/icons/degenerate"
+    },
+    "tensura:item/skill_book_anti_shock_area": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_corrosion_resistance": {
+      "textures": "textures/skill/icons/corrosion_resistance"
+    },
+    "tensura:item/skill_book_self_regeneration": {
+      "textures": "textures/skill/icons/self_regeneration"
+    },
+    "tensura:item/skill_book_sloth": {
+      "textures": "textures/skill/icons/sloth"
+    },
+    "tensura:item/skill_book_reflector": {
+      "textures": "textures/skill/icons/reflector"
+    },
+    "tensura:item/skill_book_raphael": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_spearhead": {
+      "textures": "textures/skill/icons/spearhead"
+    },
+    "tensura:item/skill_book_unpredictability": {
+      "textures": "textures/skill/icons/unpredictability"
+    },
+    "tensura:item/skill_book_starved": {
+      "textures": "textures/skill/icons/starved"
+    },
+    "tensura:item/skill_book_great_sage": {
+      "textures": "textures/skill/icons/great_sage"
+    },
+    "tensura:item/skill_book_wind_attack_nullification": {
+      "textures": "textures/skill/icons/wind_attack_nullification"
+    },
+    "tensura:item/skill_book_corrosion_nullification": {
+      "textures": "textures/skill/icons/corrosion_nullification"
+    },
+    "tensura:item/skill_book_abnormal_condition_resistance": {
+      "textures": "textures/skill/icons/abnormal_condition_resistance"
+    },
+    "tensura:item/skill_book_greed": {
+      "textures": "textures/skill/icons/greed"
+    },
+    "tensura:item/skill_book_snake_eye": {
+      "textures": "textures/skill/icons/snake_eye"
+    },
+    "tensura:item/skill_book_sage": {
+      "textures": "textures/skill/icons/sage"
+    },
+    "tensura:item/skill_book_beast_transformation": {
+      "textures": "textures/skill/icons/beast_transformation"
+    },
+    "tensura:item/skill_book_earth_spike": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_scale_armor": {
+      "textures": "textures/skill/icons/scale_armor"
+    },
+    "tensura:item/skill_book_magic_aura": {
+      "textures": "textures/skill/icons/magic_aura"
+    },
+    "tensura:item/skill_book_telepathy": {
+      "textures": "textures/skill/icons/telepathy"
+    },
+    "tensura:item/skill_book_water_blade": {
+      "textures": "textures/skill/icons/water_blade"
+    },
+    "tensura:item/skill_book_magic_light_transform": {
+      "textures": "textures/skill/icons/magic_light_transform"
+    },
+    "tensura:item/skill_book_falsifier": {
+      "textures": "textures/skill/icons/falsifier"
+    },
+    "tensura:item/skill_book_predator": {
+      "textures": "textures/skill/icons/predator"
+    },
+    "tensura:item/skill_book_water_domination": {
+      "textures": "textures/skill/icons/water_domination"
+    },
+    "tensura:item/skill_book_dragon_skin": {
+      "textures": "textures/skill/icons/dragon_skin"
+    },
+    "tensura:item/skill_book_magic_earth_transform": {
+      "textures": "textures/skill/icons/magic_earth_transform"
+    },
+    "tensura:item/skill_book_thermal_fluctuation_nullification": {
+      "textures": "textures/skill/icons/thermal_fluctuation_nullification"
+    },
+    "tensura:item/skill_book_magic_space_transform": {
+      "textures": "textures/skill/icons/magic_space_transform"
+    },
+    "tensura:item/skill_book_cold_nullification": {
+      "textures": "textures/skill/icons/cold_nullification"
+    },
+    "tensura:item/skill_book_abnormal_condition_nullification": {
+      "textures": "textures/skill/icons/abnormal_condition_nullification"
+    },
+    "tensura:item/skill_book_electricity_resistance": {
+      "textures": "textures/skill/icons/electricity_resistance"
+    },
+    "tensura:item/skill_book_earth_domination": {
+      "textures": "textures/skill/icons/earth_domination"
+    },
+    "tensura:item/skill_book_sticky_steel_thread": {
+      "textures": "textures/skill/icons/sticky_steel_thread"
+    },
+    "tensura:item/skill_book_haki": {
+      "textures": "textures/skill/icons/haki"
+    },
+    "tensura:item/skill_book_physical_attack_resistance": {
+      "textures": "textures/skill/icons/physical_attack_resistance"
+    },
+    "tensura:item/skill_book_thunder_breath": {
+      "textures": "textures/skill/icons/thunder_breath"
+    },
+    "tensura:item/skill_book_musician": {
+      "textures": "textures/skill/icons/musician"
+    },
+    "tensura:item/skill_book_aerial_blade": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_wrath": {
+      "textures": "textures/skill/icons/wrath"
+    },
+    "tensura:item/skill_book_divine_ki_release": {
+      "textures": "textures/skill/icons/divine_ki_release"
+    },
+    "tensura:item/skill_book_molecular_manipulation": {
+      "textures": "textures/skill/icons/molecular_manipulation"
+    },
+    "tensura:item/skill_book_heat_resistance": {
+      "textures": "textures/skill/icons/heat_resistance"
+    },
+    "tensura:item/skill_book_unyielding": {
+      "textures": "textures/skill/icons/unyielding"
+    },
+    "tensura:item/skill_book_universal_perception": {
+      "textures": "textures/skill/icons/universal_perception"
+    },
+    "tensura:item/skill_book_acid_shell": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_eye_of_truth": {
+      "textures": "textures/skill/icons/eye_of_truth"
+    },
+    "tensura:item/skill_book_reverser": {
+      "textures": "textures/skill/icons/reverser"
+    },
+    "tensura:item/skill_book_water_transform": {
+      "textures": "textures/skill/icons/water_transform"
+    },
+    "tensura:item/skill_book_martial_master": {
+      "textures": "textures/skill/icons/martial_master"
+    },
+    "tensura:item/skill_book_water_manipulation": {
+      "textures": "textures/skill/icons/water_manipulation"
+    },
+    "tensura:item/skill_book_hero_haki": {
+      "textures": "textures/skill/icons/hero_haki"
+    },
+    "tensura:item/skill_book_magic_water_transform": {
+      "textures": "textures/skill/icons/magic_water_transform"
+    },
+    "tensura:item/skill_book_water_attack_resistance": {
+      "textures": "textures/skill/icons/water_attack_resistance"
+    },
+    "tensura:item/skill_book_mortal_fear": {
+      "textures": "textures/skill/icons/mortal_fear"
+    },
+    "tensura:item/skill_book_spatial_attack_resistance": {
+      "textures": "textures/skill/icons/spatial_attack_resistance"
+    },
+    "tensura:item/skill_book_merciless": {
+      "textures": "textures/skill/icons/merciless"
+    },
+    "tensura:item/skill_book_body_double": {
+      "textures": "textures/skill/icons/body_double"
+    },
+    "tensura:item/skill_book_thermal_fluctuation_resistance": {
+      "textures": "textures/skill/icons/thermal_fluctuation_resistance"
+    },
+    "tensura:item/skill_book_uriel": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_pain_resistance": {
+      "textures": "textures/skill/icons/pain_resistance"
+    },
+    "tensura:item/skill_book_anti_skill": {
+      "textures": "textures/skill/icons/anti_skill"
+    },
+    "tensura:item/skill_book_gravity_field": {
+      "textures": "textures/skill/icons/gravity_field"
+    },
+    "tensura:item/skill_book_strength": {
+      "textures": "textures/skill/icons/strength"
+    },
+    "tensura:item/skill_book_seeker": {
+      "textures": "textures/skill/icons/seeker"
+    },
+    "tensura:item/skill_book_magic_flame_transform": {
+      "textures": "textures/skill/icons/magic_flame_transform"
+    },
+    "tensura:item/skill_book_taming": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_investigator": {
+      "textures": "textures/item/skill_book_fireball"
+    },
+    "tensura:item/skill_book_law_manipulation": {
+      "textures": "textures/skill/icons/law_manipulation"
+    },
+    "tensura:item/skill_book_analyst": {
+      "textures": "textures/skill/icons/analyst"
+    },
+    "tensura:item/skill_book_poisonous_breath": {
+      "textures": "textures/skill/icons/poisonous_breath"
+    },
+    "tensura:item/skill_book_sound_domination": {
+      "textures": "textures/skill/icons/sound_domination"
+    },
+    "tensura:item/skill_book_sense_heat_source": {
+      "textures": "textures/skill/icons/sense_heat_source"
+    },
+    "tensura:item/skill_book_blood_mist": {
+      "textures": "textures/skill/icons/blood_mist"
+    },
+    "tensura:item/skill_book_bewilder": {
+      "textures": "textures/skill/icons/bewilder"
+    },
+    "tensura:item/skill_book_magic_resistance": {
+      "textures": "textures/skill/icons/magic_resistance"
+    },
+    "tensura:item/skill_book_royal_beast": {
+      "textures": "textures/skill/icons/royal_beast"
+    },
+    "tensura:item/skill_book_sniper": {
+      "textures": "textures/skill/icons/sniper"
+    },
+    "tensura:item/skill_book_infinity_prison": {
+      "textures": "textures/skill/icons/infinity_prison"
+    },
+    "tensura:item/skill_book_heavenly_eye": {
+      "textures": "textures/skill/icons/heavenly_eye"
+    },
+    "tensura:item/skill_book_researcher": {
+      "textures": "textures/skill/icons/researcher"
+    }
+  }
+}

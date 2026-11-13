@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:adamantite_kodachi"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 8,
+  "smeltTick": 50
+}

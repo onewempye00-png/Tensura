@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:armor_stand",
+    "minecraft:block_display",
+    "minecraft:glow_item_frame",
+    "minecraft:item_frame",
+    "minecraft:item",
+    "minecraft:item_display",
+    "minecraft:falling_block",
+    "minecraft:leash_knot",
+    "minecraft:ominous_item_spawner",
+    "minecraft:painting",
+    "tensura:bone_golem",
+    "tensura:training_dummy",
+    {
+      "id": "dummmmmmy:target_dummy",
+      "required": false
+    }
+  ]
+}

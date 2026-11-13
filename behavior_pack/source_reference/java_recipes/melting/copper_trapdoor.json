@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:copper_trapdoor"
+  },
+  "primary": "tensura:copper",
+  "primary_count": 27,
+  "smeltTick": 200
+}

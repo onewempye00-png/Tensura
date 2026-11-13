@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:spirit_potion"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      " B ",
+      " S "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "B": {
+        "item": "minecraft:glass_bottle"
+      },
+      "S": {
+        "item": "tensura:magic_crystal_shard"
+      }
+    },
+    "result": {
+      "item": "tensura:spirit_potion",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:dwargon_banner_pattern",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/dwargon_banner_pattern",
+      "minecraft:display_name": {
+        "value": "Dwargon Banner Pattern"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

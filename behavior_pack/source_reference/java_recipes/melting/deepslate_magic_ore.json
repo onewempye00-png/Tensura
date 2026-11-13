@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:deepslate_magic_ore"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 1,
+  "smeltTick": 120
+}

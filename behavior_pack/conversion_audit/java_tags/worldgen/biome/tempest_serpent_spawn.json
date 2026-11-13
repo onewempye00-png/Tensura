@@ -1,0 +1,7 @@
+{
+  "values": [
+    "#minecraft:has_structure/woodland_mansion",
+    "#tensura:is_cave",
+    "tensura:desert_of_death"
+  ]
+}

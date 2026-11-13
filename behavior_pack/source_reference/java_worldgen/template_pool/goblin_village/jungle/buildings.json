@@ -1,0 +1,65 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:goblin_village/jungle/goblin_tent_jungle",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:goblin_village/jungle/goblin_medical_tent_jungle",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:goblin_village/jungle/goblin_chief_jungle",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:goblin_village/jungle/goblin_campfire_jungle",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:goblin_village/jungle/goblin_tower_jungle",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:goblin_village/jungle/goblin_arch_jungle",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

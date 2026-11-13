@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_thatch_bed"},"tags":["crafting_table"],"pattern":["   ","  I","###"],"key":{"#":{"item":"tensura:thatch_block"},"I":{"item":"tensura:thatch"}},"unlock":[],"result":{"item":"tensura:thatch_bed","count":1}}}

@@ -1,0 +1,35 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:hell/gate/hell_gate_top",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:hell/gate/hell_gate_door",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:hell/gate/hell_gate_skull",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

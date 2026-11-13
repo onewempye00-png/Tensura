@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:iron_helmet"
+  },
+  "primary": "tensura:iron",
+  "primary_count": 2,
+  "smeltTick": 125
+}

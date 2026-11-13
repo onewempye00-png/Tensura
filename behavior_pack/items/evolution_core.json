@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:evolution_core",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "evolution_core",
+      "minecraft:display_name": {
+        "value": "Evolution Core"
+      },
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

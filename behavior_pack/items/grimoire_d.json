@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:grimoire_d",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/grimoire_d",
+      "minecraft:display_name": {
+        "value": "Grimoire D"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

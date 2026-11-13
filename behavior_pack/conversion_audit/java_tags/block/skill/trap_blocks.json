@@ -1,0 +1,26 @@
+{
+  "values": [
+    "#tensura:loose_blocks",
+    "minecraft:lava",
+    "minecraft:pointed_dripstone",
+    "minecraft:tripwire_hook",
+    "minecraft:tripwire",
+    "minecraft:sculk_sensor",
+    "minecraft:sculk_shrieker",
+    "minecraft:calibrated_sculk_sensor",
+    "minecraft:powder_snow",
+    "minecraft:cobweb",
+    "minecraft:trapped_chest",
+    "minecraft:tnt",
+    "tensura:sticky_cobweb",
+    "tensura:sticky_steel_cobweb",
+    {
+      "id": "lootr:lootr_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "lootr:trapped_chest",
+      "required": false
+    }
+  ]
+}

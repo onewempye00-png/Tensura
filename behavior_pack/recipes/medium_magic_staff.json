@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:medium_magic_staff"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      " SA",
+      "S  "
+    ],
+    "key": {
+      "A": {
+        "item": "tensura:low_magisteel_ingot"
+      },
+      "S": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    "result": {
+      "item": "tensura:medium_magic_staff",
+      "count": 1
+    }
+  }
+}

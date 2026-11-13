@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:leech_lizard",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/leech_lizard/leech_lizard"
+      },
+      "geometry": {
+        "default": "geometry.leech_lizard"
+      },
+      "animations": {
+        "idle": "animation.leech_lizard.idle",
+        "walk": "animation.leech_lizard.walk",
+        "run": "animation.leech_lizard.run",
+        "swim": "animation.leech_lizard.swim",
+        "bite": "animation.leech_lizard.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          },
+          {
+            "run": "query.modified_move_speed >= 0.15"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

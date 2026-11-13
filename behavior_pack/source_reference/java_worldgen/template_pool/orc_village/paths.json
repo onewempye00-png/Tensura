@@ -1,0 +1,85 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_1",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_1",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_corner_1",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_corner_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_t_1",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_t_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_x_1",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:orc_village/orc_village_road_x_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching"
+      },
+      "weight": 5
+    }
+  ],
+  "fallback": "tensura:orc_village/builds"
+}

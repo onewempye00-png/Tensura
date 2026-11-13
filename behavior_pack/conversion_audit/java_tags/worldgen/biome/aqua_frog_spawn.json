@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "c:is_stony_shores",
+      "required": false
+    },
+    "minecraft:stony_shore",
+    "#tensura:has_structure/ancient_forest",
+    "#tensura:is_swamp",
+    "#minecraft:has_structure/ocean_ruin_cold"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tensura:ifrit_clone",
+    "tensura:evil_centipede_body",
+    "tensura:tempest_serpent_body",
+    "minecraft:armor_stand",
+    "tensura:bone_golem",
+    {
+      "id": "dummmmmmy:target_dummy",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:allay",
+    "minecraft:vex",
+    "tensura:akash",
+    "tensura:arch_daemon",
+    "tensura:aqua_frog",
+    "tensura:beast_gnome",
+    "tensura:charybdis",
+    "tensura:greater_daemon",
+    "tensura:lesser_daemon",
+    "tensura:megalodon",
+    "tensura:feathered_serpent",
+    "tensura:salamander",
+    "tensura:winged_cat",
+    "tensura:ifrit",
+    "tensura:ifrit_clone",
+    "tensura:sylphide",
+    "tensura:war_gnome",
+    "tensura:undine"
+  ]
+}

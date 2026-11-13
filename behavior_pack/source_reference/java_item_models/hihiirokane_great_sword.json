@@ -1,0 +1,14 @@
+{
+  "parent": "tensura:item/great_sword_handheld",
+  "overrides": [
+    {
+      "model": "tensura:item/hihiirokane_great_sword_inactive",
+      "predicate": {
+        "minecraft:inactive": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "tensura:item/hihiirokane_great_sword"
+  }
+}

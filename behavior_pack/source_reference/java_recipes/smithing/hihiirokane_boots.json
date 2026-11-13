@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:hihiirokane_ingot"
+  },
+  "inputAmount1": 4,
+  "output": {
+    "count": 1,
+    "id": "tensura:hihiirokane_boots"
+  },
+  "schematics": [
+    "tensura:hihiirokane_gear_schematic"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:monster_leather_b"
+  },
+  "inputAmount1": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:dark_jacket"
+  },
+  "schematics": [
+    "tensura:dark_set_schematic"
+  ]
+}

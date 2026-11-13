@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:iron_boots"
+  },
+  "primary": "tensura:iron",
+  "primary_count": 2
+}

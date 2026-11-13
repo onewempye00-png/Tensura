@@ -1,0 +1,45 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tensura:baffledil",
+      "menu_category": {
+        "category": "nature"
+      },
+      "properties": {
+        "tensura:direction": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ],
+        "tensura:axis": [
+          "x",
+          "y",
+          "z"
+        ],
+        "tensura:half": [
+          "bottom",
+          "top"
+        ],
+        "tensura:waterlogged": [
+          "false",
+          "true"
+        ],
+        "tensura:enabled": [
+          "false",
+          "true"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tensura:block/baffledil",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/baffledil.json"
+    }
+  }
+}

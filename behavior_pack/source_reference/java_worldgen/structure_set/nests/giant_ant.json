@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 207453891,
+    "separation": 20,
+    "spacing": 80
+  },
+  "structures": [
+    {
+      "structure": "tensura:nests/giant_ant",
+      "weight": 1
+    }
+  ]
+}

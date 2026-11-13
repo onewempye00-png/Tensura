@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_mining_station"},"tags":["crafting_table"],"pattern":["II","SS","##"],"key":{"#":{"tag":"minecraft:planks"},"I":{"item":"minecraft:iron_ingot"},"S":{"tag":"minecraft:stone_crafting_materials"}},"unlock":[],"result":{"item":"tensura:mining_station","count":1}}}

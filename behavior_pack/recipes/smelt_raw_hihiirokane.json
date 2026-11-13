@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "tensura:smelt_raw_hihiirokane"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "tensura:raw_hihiirokane",
+    "output": "tensura:hihiirokane_ingot"
+  }
+}

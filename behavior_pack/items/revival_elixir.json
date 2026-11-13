@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:revival_elixir",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/revival_elixir",
+      "minecraft:display_name": {
+        "value": "Revival Elixir"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

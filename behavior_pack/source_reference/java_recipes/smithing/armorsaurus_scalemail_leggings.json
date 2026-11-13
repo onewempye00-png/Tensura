@@ -1,0 +1,18 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:armorsaurus_scale"
+  },
+  "input2": {
+    "item": "tensura:monster_leather_d"
+  },
+  "inputAmount1": 7,
+  "inputAmount2": 2,
+  "output": {
+    "count": 1,
+    "id": "tensura:armorsaurus_scalemail_leggings"
+  },
+  "schematics": [
+    "tensura:armorsaurus_scalemail_gear_schematic"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tensura:refining",
+  "input": {
+    "count": 1,
+    "id": "tensura:magic_bottle"
+  },
+  "input1": {
+    "item": "tensura:hipokute_grass"
+  },
+  "output": {
+    "count": 1,
+    "id": "tensura:high_potion"
+  }
+}

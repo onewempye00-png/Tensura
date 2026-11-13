@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:silver_chestplate"
+  },
+  "primary": "tensura:silver",
+  "primary_count": 2,
+  "smeltTick": 225
+}

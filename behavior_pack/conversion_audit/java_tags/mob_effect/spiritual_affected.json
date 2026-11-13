@@ -1,0 +1,29 @@
+{
+  "values": [
+    "#tensura:skill_buff",
+    "tensura:anti_skill",
+    "tensura:anti_magic",
+    "tensura:anti_shock",
+    "tensura:drowsiness",
+    "tensura:infinite_imprisonment",
+    "tensura:mind_control",
+    "tensura:spatial_blockade",
+    "tensura:soul_drain",
+    "tensura:magic_interference",
+    "tensura:curse",
+    "tensura:confusion",
+    "tensura:disintegrating",
+    "tensura:energy_blockade",
+    "tensura:fear",
+    "tensura:hypnosis",
+    "tensura:illusion_boost",
+    "tensura:insanity",
+    "tensura:magicule_poison",
+    "tensura:magicule_regeneration",
+    "tensura:silence",
+    "tensura:sleep",
+    "tensura:rampage",
+    "tensura:flashed_blindness",
+    "tensura:true_blindness"
+  ]
+}

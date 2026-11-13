@@ -1,0 +1,19 @@
+{
+  "values": [
+    "minecraft:cobweb",
+    "tensura:sticky_cobweb",
+    "tensura:sticky_steel_cobweb",
+    "tensura:spider_egg",
+    "tensura:web_block",
+    "tensura:web_stairs",
+    "tensura:web_slab",
+    "tensura:webbed_cobblestone",
+    "tensura:webbed_cobblestone_stairs",
+    "tensura:webbed_cobblestone_slab",
+    "tensura:webbed_cobblestone_wall",
+    "tensura:webbed_stone_bricks",
+    "tensura:webbed_stone_brick_stairs",
+    "tensura:webbed_stone_brick_slab",
+    "tensura:webbed_stone_brick_wall"
+  ]
+}

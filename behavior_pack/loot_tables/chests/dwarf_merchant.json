@@ -1,0 +1,122 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 16,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:writable_book",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 15
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8,
+        "min": 0
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:bronze_coin",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tensura:silver_coin",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 60
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 20,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:copper_ingot",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "tensura:thatch",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

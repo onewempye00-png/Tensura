@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:kirara_mizutani",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/otherworlder/kirara_mizutani"
+      },
+      "geometry": {
+        "default": "geometry.tensura_goblin"
+      },
+      "animations": {},
+      "scripts": {},
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

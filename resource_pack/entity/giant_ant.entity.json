@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:giant_ant",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/giant_ant/giant_ant"
+      },
+      "geometry": {
+        "default": "geometry.giant_ant"
+      },
+      "animations": {
+        "idle": "animation.giant_ant.idle",
+        "walk": "animation.giant_ant.walk",
+        "bite": "animation.giant_ant.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

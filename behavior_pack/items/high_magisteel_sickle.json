@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:high_magisteel_sickle",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/high_magisteel_sickle",
+      "minecraft:display_name": {
+        "value": "High Magisteel Sickle"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

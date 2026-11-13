@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:husk",
+    "minecraft:stray",
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:drowned",
+    "minecraft:slime",
+    "tensura:goblin",
+    "tensura:lizardman",
+    "tensura:orc"
+  ]
+}

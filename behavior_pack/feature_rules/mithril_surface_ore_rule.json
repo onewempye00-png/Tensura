@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "tensura:mithril_surface_ore_rule",
+      "places_feature": "tensura:mithril_surface_ore_feature"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "overworld"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 5,
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          58,
+          120
+        ]
+      }
+    }
+  }
+}

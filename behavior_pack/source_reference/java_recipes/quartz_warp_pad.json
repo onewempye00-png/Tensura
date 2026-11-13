@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "quartz_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:quartz_pillar"
+    },
+    "S": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:quartz_warp_pad"
+  }
+}

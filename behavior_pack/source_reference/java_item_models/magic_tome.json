@@ -1,0 +1,25 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tensura:item/tome/random_tome"
+  },
+  "overrides": [
+    { "predicate": { "barrier": 1.0 }, "model": "tensura:item/magic_tome_barrier" },
+    { "predicate": { "earth": 1.0 }, "model": "tensura:item/magic_tome_earth" },
+    { "predicate": { "enhancement": 1.0 }, "model": "tensura:item/magic_tome_enhancement" },
+    { "predicate": { "explosion": 1.0 }, "model": "tensura:item/magic_tome_explosion" },
+    { "predicate": { "fire": 1.0 }, "model": "tensura:item/magic_tome_fire" },
+    { "predicate": { "gravity": 1.0 }, "model": "tensura:item/magic_tome_gravity" },
+    { "predicate": { "ice": 1.0 }, "model": "tensura:item/magic_tome_ice" },
+    { "predicate": { "illusion": 1.0 }, "model": "tensura:item/magic_tome_illusion" },
+    { "predicate": { "lightning": 1.0 }, "model": "tensura:item/magic_tome_lightning" },
+    { "predicate": { "mental": 1.0 }, "model": "tensura:item/magic_tome_mental" },
+    { "predicate": { "recovery": 1.0 }, "model": "tensura:item/magic_tome_recovery" },
+    { "predicate": { "space": 1.0 }, "model": "tensura:item/magic_tome_space" },
+    { "predicate": { "water": 1.0 }, "model": "tensura:item/magic_tome_water" },
+    { "predicate": { "wind": 1.0 }, "model": "tensura:item/magic_tome_wind" },
+    { "predicate": { "misc": 1.0 }, "model": "tensura:item/magic_tome_misc" },
+    { "predicate": { "necromancy": 1.0 }, "model": "tensura:item/magic_tome_necromancy" },
+    { "predicate": { "summoning": 1.0 }, "model": "tensura:item/magic_tome_summoning" }
+  ]
+}

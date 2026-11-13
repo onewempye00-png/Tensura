@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shapeless":{"description":{"identifier":"tensura:jar_low_quality_magic_crystalfrom_low_quality_magic_crystal_block"},"tags":["crafting_table"],"ingredients":[{"item":"tensura:low_quality_magic_crystal_block"}],"result":{"item":"tensura:low_quality_magic_crystal","count":9}}}

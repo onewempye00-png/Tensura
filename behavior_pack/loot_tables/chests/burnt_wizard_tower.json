@@ -1,0 +1,252 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8,
+        "min": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:magic_stone",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:writable_book",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:skill_book_fire_aspectual"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_fire_lance"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_fire_wall"
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:skill_book_fire_wall"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_fire_storm"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_analyze"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_clairvoyance"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_healthcare"
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:skill_book_fire_ball"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_flight"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_search_enemy"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_doppelganger"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_dominate"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_mental_crush"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_demon_dominate"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:skill_book_explosion"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_chain_explosion"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_possession_magic"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_demon_marionette"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_hypnos"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_reincarnation"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_summon_daemon"
+            },
+            {
+              "type": "item",
+              "name": "tensura:skill_book_summon_otherworlder"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "tensura:unbound_tome",
+          "weight": 5
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1,
+        "min": 0
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:unbound_tome",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "tensura:grimoire_d",
+          "weight": 70
+        },
+        {
+          "type": "item",
+          "name": "tensura:grimoire_c",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tensura:grimoire_b",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "tensura:grimoire_a"
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 7,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_candle",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "minecraft:white_candle",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glowstone",
+          "weight": 50
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

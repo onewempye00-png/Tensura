@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tensura:space_transform",
+    "tensura:spatial_motion",
+    "tensura:magic_space_transform",
+    "tensura:shadow_motion",
+    "tensura:spatial_manipulation",
+    "tensura:spatial_domination",
+    "tensura:traveler",
+    "tensura:sniper",
+    "tensura:suppressor"
+  ]
+}

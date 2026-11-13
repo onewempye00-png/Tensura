@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "c:is_mountain",
+      "required": false
+    },
+    "#tensura:has_structure/ancient_forest",
+    "#minecraft:is_mountain",
+    "#minecraft:is_hill"
+  ]
+}

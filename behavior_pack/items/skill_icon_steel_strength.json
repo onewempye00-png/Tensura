@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:skill_icon_steel_strength",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.misc"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:skill_icon_steel_strength",
+      "minecraft:display_name": {
+        "value": "Steel Strength \u2022 Skill Icon"
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

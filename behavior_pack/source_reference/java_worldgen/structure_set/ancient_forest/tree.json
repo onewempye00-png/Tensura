@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 672091483,
+    "separation": 1,
+    "spacing": 2
+  },
+  "structures": [
+    {
+      "structure": "tensura:ancient_forest/tree",
+      "weight": 1
+    }
+  ]
+}

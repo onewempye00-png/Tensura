@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/great_sword_handheld",
+  "textures": {
+    "layer0": "tensura:item/high_magisteel_great_sword"
+  }
+}

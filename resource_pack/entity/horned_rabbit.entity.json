@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:horned_rabbit",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/horned_rabbit/horned_rabbit_brown"
+      },
+      "geometry": {
+        "default": "geometry.horned_rabbit"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

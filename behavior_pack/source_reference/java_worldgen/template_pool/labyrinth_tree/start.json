@@ -1,0 +1,15 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:labyrinth/tree/labyrinth_tree_bottom_1",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

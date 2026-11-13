@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:pouch_a",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/pouch_a",
+      "minecraft:display_name": {
+        "value": "Pouch A"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

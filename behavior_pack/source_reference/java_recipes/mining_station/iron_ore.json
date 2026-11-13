@@ -1,0 +1,29 @@
+{
+  "type": "tensura:mining_station",
+  "ingredient": {
+    "ingredient": {
+      "item": "minecraft:iron_ore"
+    },
+    "quantity": 1
+  },
+  "results": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:raw_iron"
+      },
+      "maxAmount": 4,
+      "minAmount": 1
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:cobblestone"
+      },
+      "maxAmount": 1,
+      "minAmount": 1
+    }
+  ]
+}

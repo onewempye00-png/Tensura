@@ -1,0 +1,10 @@
+{
+  "remove": [
+    "tensura:summon_medium_elemental",
+    "tensura:summon_greater_elemental"
+  ],
+  "values": [
+    "#tensura:aspectual_magic",
+    "#tensura:summoning_magic"
+  ]
+}

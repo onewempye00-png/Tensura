@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:training_dummy",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/training_dummy",
+      "minecraft:display_name": {
+        "value": "Training Dummy"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

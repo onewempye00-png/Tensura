@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/war_spider_bow_handheld",
+  "textures": {
+    "layer0": "tensura:item/war_spider_bow_pulling_0"
+  }
+}

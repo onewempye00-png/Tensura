@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:iron_nugget"
+  },
+  "inputAmount1": 5,
+  "output": {
+    "count": 1,
+    "id": "tensura:kunai"
+  },
+  "schematics": [
+    "tensura:kunai_schematic"
+  ]
+}

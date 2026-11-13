@@ -1,0 +1,17 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:apple"
+  },
+  "input2": {
+    "item": "tensura:silver_ingot"
+  },
+  "inputAmount2": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:silver_apple"
+  },
+  "schematics": [
+    "tensura:silver_gear_schematic"
+  ]
+}

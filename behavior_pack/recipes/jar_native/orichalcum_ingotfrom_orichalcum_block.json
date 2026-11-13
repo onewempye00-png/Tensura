@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shapeless":{"description":{"identifier":"tensura:jar_native/orichalcum_ingotfrom_orichalcum_block"},"tags":["crafting_table"],"ingredients":[{"item":"tensura:orichalcum_block"}],"result":{"item":"tensura:orichalcum_ingot","count":9}}}

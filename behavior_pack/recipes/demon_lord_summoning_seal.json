@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:demon_lord_summoning_seal"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " E ",
+      "CDC",
+      " E "
+    ],
+    "key": {
+      "E": "tensura:magicule_crystal",
+      "C": "tensura:daemon_core",
+      "D": "tensura:demon_lord_seed"
+    },
+    "result": {
+      "item": "tensura:demon_lord_summoning_seal",
+      "count": 1
+    }
+  }
+}

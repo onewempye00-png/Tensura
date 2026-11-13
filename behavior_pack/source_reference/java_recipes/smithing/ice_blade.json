@@ -1,0 +1,27 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:high_magisteel_ingot"
+  },
+  "input2": {
+    "item": "tensura:element_core_water"
+  },
+  "input3": {
+    "item": "minecraft:ender_eye"
+  },
+  "input4": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 2,
+  "inputAmount3": 1,
+  "inputAmount4": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:ice_blade"
+  },
+  "schematics": [
+    "tensura:high_magisteel_gear_schematic",
+    "tensura:long_sword_schematic"
+  ]
+}

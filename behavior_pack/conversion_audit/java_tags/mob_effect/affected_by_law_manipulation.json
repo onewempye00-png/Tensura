@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:hunger",
+    "minecraft:poison",
+    "minecraft:blindness",
+    "minecraft:nausea",
+    "minecraft:darkness",
+    "minecraft:mining_fatigue",
+    "minecraft:slowness",
+    "minecraft:weakness",
+    "tensura:burden",
+    "tensura:fragility",
+    "tensura:curse",
+    "tensura:fatal_poison",
+    "tensura:paralysis",
+    "tensura:petrification",
+    "tensura:hypnosis",
+    "tensura:magic_interference"
+  ]
+}

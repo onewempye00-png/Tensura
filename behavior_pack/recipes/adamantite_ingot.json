@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "tensura:adamantite_ingot"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "tensura:magic_ore_shard"
+      },
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "result": {
+      "item": "tensura:adamantite_ingot",
+      "count": 1
+    }
+  }
+}

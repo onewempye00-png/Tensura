@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "c:is_hot/nether",
+      "required": false
+    },
+    "#tensura:has_structure/ancient_forest",
+    "minecraft:crimson_forest",
+    "minecraft:nether_wastes"
+  ]
+}

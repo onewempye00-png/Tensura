@@ -1,0 +1,175 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_3",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_3_end",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_4",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_5",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_desert",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_desert_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_desert_3",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_desert_4",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_ice",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_ice_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_ice_3",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_mesa",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_mesa_2",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_mesa_3",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:charybdis_cave/charybdis_room_mesa_4",
+        "override_liquid_settings": "ignore_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

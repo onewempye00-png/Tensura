@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1456829307,
+    "separation": 20,
+    "spacing": 60
+  },
+  "structures": [
+    {
+      "structure": "tensura:ruin/wizard_tower/buried",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/wizard_tower/burnt",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/wizard_tower/frozen",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/wizard_tower/rotted",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/wizard_tower/ruined",
+      "weight": 1
+    }
+  ]
+}

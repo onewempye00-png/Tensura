@@ -1,0 +1,9 @@
+{
+  "values": [
+    "tensura:human",
+    "tensura:dwarf",
+    "tensura:elf",
+    "tensura:merfolk",
+    "tensura:beastfolk"
+  ]
+}

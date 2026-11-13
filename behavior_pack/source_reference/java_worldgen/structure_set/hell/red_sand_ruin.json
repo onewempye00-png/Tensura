@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1815833406,
+    "separation": 4,
+    "spacing": 5
+  },
+  "structures": [
+    {
+      "structure": "tensura:hell/red_sand_ruin",
+      "weight": 1
+    }
+  ]
+}

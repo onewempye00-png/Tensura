@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "tensura:dubious/ingredient_poison"
+    },
+    {
+      "tag": "tensura:dubious/ingredient_magic"
+    },
+    {
+      "tag": "tensura:dubious/ingredient_raw"
+    },
+    {
+      "tag": "tensura:dubious/ingredient_effect"
+    },
+    {
+      "tag": "tensura:dubious/ingredient_crystal"
+    },
+    {
+      "tag": "tensura:dubious/ingredient_brewing"
+    },
+    {
+      "tag": "tensura:dubious/ingredient_mushroom"
+    },
+    {
+      "tag": "tensura:raw_monster_consumables"
+    },
+    {
+      "tag": "minecraft:small_flowers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:dubious_food"
+  }
+}

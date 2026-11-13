@@ -1,0 +1,17 @@
+{
+  "values": [
+    {
+      "id": "c:is_plains",
+      "required": false
+    },
+    {
+      "id": "c:is_forest",
+      "required": false
+    },
+    "#minecraft:has_structure/village_plains",
+    "#minecraft:has_structure/village_savanna",
+    "#minecraft:is_forest",
+    "#minecraft:is_taiga",
+    "#minecraft:is_savanna"
+  ]
+}

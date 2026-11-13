@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:skill_icon_scale_armor",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.misc"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:skill_icon_scale_armor",
+      "minecraft:display_name": {
+        "value": "Scale Armor \u2022 Skill Icon"
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

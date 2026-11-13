@@ -1,0 +1,17 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "tag": "minecraft:stone_tool_materials"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:stone_short_sword"
+  },
+  "schematics": [
+    "tensura:short_sword_schematic"
+  ]
+}

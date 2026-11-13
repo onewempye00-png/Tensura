@@ -1,0 +1,25 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:copper_shell"
+  },
+  "input2": {
+    "item": "tensura:sticky_thread"
+  },
+  "input3": {
+    "item": "tensura:steel_thread"
+  },
+  "input4": {
+    "item": "minecraft:gunpowder"
+  },
+  "inputAmount2": 4,
+  "inputAmount3": 4,
+  "inputAmount4": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:sticky_steel_web_cartridge"
+  },
+  "schematics": [
+    "tensura:web_gun_schematic"
+  ]
+}

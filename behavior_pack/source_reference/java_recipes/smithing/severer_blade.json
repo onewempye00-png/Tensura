@@ -1,0 +1,18 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:iron_ingot"
+  },
+  "input2": {
+    "item": "minecraft:ender_pearl"
+  },
+  "inputAmount1": 2,
+  "inputAmount2": 1,
+  "output": {
+    "count": 3,
+    "id": "tensura:severer_blade"
+  },
+  "schematics": [
+    "tensura:spatial_blade_schematic"
+  ]
+}

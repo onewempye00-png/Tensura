@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_pouch_d"},"tags":["crafting_table"],"pattern":[" S ","L L"," L "],"key":{"L":{"item":"tensura:monster_leather_d"},"S":{"item":"minecraft:string"}},"unlock":[],"result":{"item":"tensura:pouch_d","count":1}}}

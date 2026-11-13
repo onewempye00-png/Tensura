@@ -1,0 +1,38 @@
+{
+  "type": "tensura:mining_station",
+  "ingredient": {
+    "ingredient": {
+      "item": "minecraft:cobblestone"
+    },
+    "quantity": 1
+  },
+  "results": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:gravel"
+      },
+      "maxAmount": 1,
+      "minAmount": 1
+    },
+    {
+      "chance": 0.001,
+      "item": {
+        "count": 1,
+        "id": "minecraft:iron_nugget"
+      },
+      "maxAmount": 1,
+      "minAmount": 1
+    },
+    {
+      "chance": 0.001,
+      "item": {
+        "count": 1,
+        "id": "minecraft:gold_nugget"
+      },
+      "maxAmount": 1,
+      "minAmount": 1
+    }
+  ]
+}

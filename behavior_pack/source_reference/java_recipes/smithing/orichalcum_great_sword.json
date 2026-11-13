@@ -1,0 +1,19 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:orichalcum_ingot"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 4,
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:orichalcum_great_sword"
+  },
+  "schematics": [
+    "tensura:orichalcum_gear_schematic",
+    "tensura:great_sword_schematic"
+  ]
+}

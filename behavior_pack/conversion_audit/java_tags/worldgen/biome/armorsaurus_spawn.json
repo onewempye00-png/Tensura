@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "c:is_badlands",
+      "required": false
+    },
+    "#tensura:is_cave",
+    "#minecraft:is_badlands",
+    "tensura:desert_of_death"
+  ]
+}

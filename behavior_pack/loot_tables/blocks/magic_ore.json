@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:magic_ore",
+              "conditions": [
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "tensura:magic_ore_shard",
+              "functions": [
+                {
+                  "function": "looting_enchant",
+                  "count": {
+                    "min": 0,
+                    "max": 1
+                  }
+                },
+                {
+                  "function": "explosion_decay"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

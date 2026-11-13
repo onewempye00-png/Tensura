@@ -1,0 +1,19 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:iron_ingot"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:iron_long_sword"
+  },
+  "schematics": [
+    "tensura:iron_gear_schematic",
+    "tensura:long_sword_schematic"
+  ]
+}

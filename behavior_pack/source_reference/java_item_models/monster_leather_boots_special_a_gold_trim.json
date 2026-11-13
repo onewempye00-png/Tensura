@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/monster_leather_boots_special_a",
+    "layer1": "minecraft:trims/items/boots_trim_gold"
+  }
+}

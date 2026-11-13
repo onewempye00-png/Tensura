@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shapeless":{"description":{"identifier":"tensura:jar_palm_chest_boat"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:chest"},{"item":"tensura:palm_boat"}],"result":{"item":"tensura:palm_chest_boat","count":1}}}

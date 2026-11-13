@@ -1,0 +1,20 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:thatch_wall"
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "survives_explosion"
+        }
+      ]
+    }
+  ],
+  "format_version": "1.20.0"
+}

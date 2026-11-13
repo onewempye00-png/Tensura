@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:megalodon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/megalodon/megalodon"
+      },
+      "geometry": {
+        "default": "geometry.megalodon"
+      },
+      "animations": {
+        "swim": "animation.megalodon.swim",
+        "bite": "animation.megalodon.bite"
+      },
+      "scripts": {
+        "animate": []
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

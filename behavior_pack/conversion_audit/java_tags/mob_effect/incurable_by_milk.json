@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#tensura:hidden_icon",
+    "#tensura:skill_effect",
+    "tensura:curse",
+    "tensura:fear",
+    "tensura:frost",
+    "tensura:illusion_boost",
+    "tensura:insanity",
+    "tensura:infection",
+    "tensura:magicule_poison",
+    "tensura:petrification",
+    "tensura:sleep",
+    "tensura:rampage",
+    "tensura:webbed",
+    "tensura:anti_skill",
+    "tensura:confusion",
+    "tensura:magicule_regeneration",
+    "tensura:warping"
+  ]
+}

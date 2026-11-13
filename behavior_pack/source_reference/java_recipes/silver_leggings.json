@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver_leggings",
+  "key": {
+    "S": {
+      "item": "tensura:silver_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "S S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:silver_leggings"
+  }
+}

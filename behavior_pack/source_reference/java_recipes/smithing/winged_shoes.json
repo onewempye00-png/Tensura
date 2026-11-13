@@ -1,0 +1,23 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:monster_leather_c"
+  },
+  "input2": {
+    "item": "tensura:dragon_peacock_feather"
+  },
+  "input3": {
+    "item": "tensura:magic_stone"
+  },
+  "inputAmount1": 4,
+  "inputAmount2": 4,
+  "inputAmount3": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:winged_shoes"
+  },
+  "schematics": [
+    "tensura:monster_leather_gear_schematic",
+    "tensura:low_magisteel_gear_schematic"
+  ]
+}

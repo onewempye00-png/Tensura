@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:armorsaurus_helmet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "MMM",
+      "M M"
+    ],
+    "key": {
+      "M": "tensura:armorsaurus_scale"
+    },
+    "result": {
+      "item": "tensura:armorsaurus_helmet",
+      "count": 1
+    }
+  }
+}

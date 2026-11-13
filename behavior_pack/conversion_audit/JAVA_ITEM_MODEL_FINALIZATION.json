@@ -1,0 +1,11 @@
+{
+  "source_models": 1313,
+  "bedrock_block_models_connected": 176,
+  "spawn_egg_models_connected": 70,
+  "source_parent_or_variant_models_linked_to_base_assets": 53,
+  "remaining_unresolved": 0,
+  "usable_bedrock_item_definitions": 1618,
+  "note": "Parent templates, GUI variants, pulling-state models and jar-prefixed aliases are linked to their base item/block instead of creating duplicate fake items.",
+  "original_unresolved_cases": 304,
+  "resolved_cases": 304
+}

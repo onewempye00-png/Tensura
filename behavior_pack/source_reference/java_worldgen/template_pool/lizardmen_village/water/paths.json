@@ -1,0 +1,125 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_corner_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_corner_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_corner_3",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_t_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_t_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_t_3",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_x_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_x_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_road_x_3",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 4
+    }
+  ],
+  "fallback": "tensura:lizardmen_village/water/buildings"
+}

@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:daemon_core",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "tensura:magicule_jewel",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "tensura:spirit_fusion_seal",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

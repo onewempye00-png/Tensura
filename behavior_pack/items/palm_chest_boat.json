@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:palm_chest_boat",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/palm_chest_boat",
+      "minecraft:display_name": {
+        "value": "Palm Chest Boat"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

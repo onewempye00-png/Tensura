@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:tempest_serpent",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/tempest_serpent/tempest_serpent"
+      },
+      "geometry": {
+        "default": "geometry.tempest_serpent"
+      },
+      "animations": {},
+      "scripts": {
+        "animate": []
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

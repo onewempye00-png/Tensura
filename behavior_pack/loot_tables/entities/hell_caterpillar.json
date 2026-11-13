@@ -1,0 +1,157 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:hell_moth_silk",
+              "functions": [
+                {
+                  "function": "set_count",
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 12,
+                    "min": 6
+                  }
+                },
+                {
+                  "function": "looting_enchant",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 3,
+                    "min": 0
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "tensura:hell_caterpillar_predicate",
+                      "cocoon": true,
+                      "gehenna": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "alternatives",
+              "children": [
+                {
+                  "type": "item",
+                  "name": "tensura:hell_moth_silk",
+                  "functions": [
+                    {
+                      "function": "set_count",
+                      "add": false,
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 3,
+                        "min": 1
+                      }
+                    },
+                    {
+                      "function": "looting_enchant",
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 3,
+                        "min": 0
+                      }
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "type_specific": {
+                          "type": "tensura:hell_caterpillar_predicate",
+                          "cocoon": false,
+                          "gehenna": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "item",
+                      "name": "tensura:gehenna_moth_silk",
+                      "functions": [
+                        {
+                          "function": "set_count",
+                          "add": false,
+                          "count": {
+                            "type": "minecraft:uniform",
+                            "max": 3,
+                            "min": 1
+                          }
+                        },
+                        {
+                          "function": "looting_enchant",
+                          "count": {
+                            "type": "minecraft:uniform",
+                            "max": 3,
+                            "min": 0
+                          }
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "type_specific": {
+                              "type": "tensura:hell_caterpillar_predicate",
+                              "cocoon": false,
+                              "gehenna": true
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "name": "tensura:gehenna_moth_silk",
+                      "functions": [
+                        {
+                          "function": "set_count",
+                          "add": false,
+                          "count": {
+                            "type": "minecraft:uniform",
+                            "max": 12,
+                            "min": 6
+                          }
+                        },
+                        {
+                          "function": "looting_enchant",
+                          "count": {
+                            "type": "minecraft:uniform",
+                            "max": 3,
+                            "min": 0
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

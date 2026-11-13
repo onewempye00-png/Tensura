@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:bucket_of_cattledeer_milk",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/bucket_of_cattledeer_milk",
+      "minecraft:display_name": {
+        "value": "Bucket Of Cattledeer Milk"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

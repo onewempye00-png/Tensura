@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:high_magisteel_odachi"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 2,
+  "secondary": "tensura:iron"
+}

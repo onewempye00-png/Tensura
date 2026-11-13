@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:armorsaurus",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/armorsaurus/armorsaurus"
+      },
+      "geometry": {
+        "default": "geometry.armorsaurus"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

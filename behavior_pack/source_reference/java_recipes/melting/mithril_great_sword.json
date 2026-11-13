@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:mithril_great_sword"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 2
+}

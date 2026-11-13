@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "tensura:block/webbed_stone_bricks_0"
+  }
+}

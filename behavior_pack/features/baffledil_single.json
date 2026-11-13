@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "tensura:baffledil_single"
+    },
+    "places_block": "tensura:baffledil",
+    "may_replace": [
+      "minecraft:air",
+      "minecraft:short_grass",
+      "minecraft:tall_grass"
+    ]
+  }
+}

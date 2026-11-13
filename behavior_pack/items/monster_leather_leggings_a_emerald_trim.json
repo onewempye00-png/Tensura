@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:monster_leather_leggings_a_emerald_trim",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/magicule_crystal",
+      "minecraft:display_name": {
+        "value": "Monster Leather Leggings A Emerald Trim"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": 0.6,
+        "can_always_eat": true
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      }
+    }
+  }
+}

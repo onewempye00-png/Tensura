@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:armorsaurus_scale"
+  },
+  "inputAmount1": 4,
+  "output": {
+    "count": 1,
+    "id": "tensura:armorsaurus_scalemail_boots"
+  },
+  "schematics": [
+    "tensura:armorsaurus_scalemail_gear_schematic"
+  ]
+}

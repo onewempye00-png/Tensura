@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:adamantite_ingot"
+  },
+  "inputAmount1": 5,
+  "output": {
+    "count": 1,
+    "id": "tensura:adamantite_helmet"
+  },
+  "schematics": [
+    "tensura:adamantite_gear_schematic"
+  ]
+}

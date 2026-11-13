@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "basalt_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:basalt"
+    },
+    "S": {
+      "item": "minecraft:smooth_basalt"
+    }
+  },
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:basalt_warp_pad"
+  }
+}

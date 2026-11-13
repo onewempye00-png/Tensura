@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:spirit_prayer",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/skill_seal",
+      "minecraft:display_name": {
+        "value": "Spirit Prayer Seal"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_modifiers": {
+        "use_duration": 0.1,
+        "movement_modifier": 1.0
+      }
+    }
+  }
+}

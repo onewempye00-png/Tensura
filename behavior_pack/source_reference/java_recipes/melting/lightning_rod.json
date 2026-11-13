@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:lightning_rod"
+  },
+  "primary": "tensura:copper",
+  "primary_count": 27,
+  "smeltTick": 200
+}

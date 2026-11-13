@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:golden_tachi"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 1,
+  "smeltTick": 75
+}

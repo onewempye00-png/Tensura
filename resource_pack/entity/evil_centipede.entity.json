@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:evil_centipede",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/evil_centipede/evil_centipede"
+      },
+      "geometry": {
+        "default": "geometry.evil_centitpede"
+      },
+      "animations": {},
+      "scripts": {
+        "animate": []
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:hover_lizard",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/hover_lizard/hover_lizard"
+      },
+      "geometry": {
+        "default": "geometry.hover_lizard"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:ant_crossbow_speared_fin",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/ant_crossbow_speared_fin",
+      "minecraft:display_name": {
+        "value": "Ant Crossbow Speared Fin"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:durability": {
+        "max_durability": 384
+      },
+      "minecraft:shooter": {
+        "ammunition": [
+          "minecraft:arrow"
+        ],
+        "max_draw_duration": 1,
+        "scale_power_by_draw_duration": true
+      },
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": 0.6,
+        "can_always_eat": true
+      }
+    }
+  }
+}

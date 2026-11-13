@@ -1,0 +1,19 @@
+{
+  "values": [
+    "minecraft:slowness",
+    "minecraft:long_slowness",
+    "minecraft:strong_slowness",
+    "minecraft:harming",
+    "minecraft:strong_harming",
+    "minecraft:poison",
+    "minecraft:long_poison",
+    "minecraft:strong_poison",
+    "minecraft:weakness",
+    "minecraft:long_weakness",
+    "tensura:chill",
+    "tensura:long_chill",
+    "tensura:long_chill",
+    "tensura:glowing",
+    "tensura:long_glowing"
+  ]
+}

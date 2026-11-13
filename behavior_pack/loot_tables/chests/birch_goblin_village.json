@@ -1,0 +1,111 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+          "weight": 50
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 4,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:short_grass",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 4,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:thatch",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 30
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 35
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 10,
+        "min": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:birch_planks",
+          "weight": 35
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:short_sword_schematic",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 75
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

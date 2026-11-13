@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:adamantite_block"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 648,
+  "smeltTick": 2000
+}

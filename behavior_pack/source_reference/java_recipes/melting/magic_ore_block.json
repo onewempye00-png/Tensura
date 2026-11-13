@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:magic_ore_block"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 9,
+  "smeltTick": 600
+}

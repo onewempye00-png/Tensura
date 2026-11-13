@@ -1,0 +1,38 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:dragon_scale_leggings",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/dragon_scale_leggings",
+      "minecraft:display_name": {
+        "value": "Dragon Scale Leggings"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:wearable": {
+        "slot": "slot.armor.legs",
+        "protection": 6
+      },
+      "minecraft:durability": {
+        "max_durability": 2100
+      },
+      "minecraft:enchantable": {
+        "slot": "armor",
+        "value": 18
+      },
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": 0.6,
+        "can_always_eat": true
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      }
+    }
+  }
+}

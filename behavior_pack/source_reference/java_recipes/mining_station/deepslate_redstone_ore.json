@@ -1,0 +1,29 @@
+{
+  "type": "tensura:mining_station",
+  "ingredient": {
+    "ingredient": {
+      "item": "minecraft:deepslate_redstone_ore"
+    },
+    "quantity": 1
+  },
+  "results": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:redstone"
+      },
+      "maxAmount": 8,
+      "minAmount": 4
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:deepslate"
+      },
+      "maxAmount": 1,
+      "minAmount": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "tensura:refining",
+  "input": {
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:potion"
+  },
+  "input1": {
+    "item": "tensura:hipokute_flower"
+  },
+  "output": {
+    "count": 1,
+    "id": "tensura:full_potion"
+  }
+}

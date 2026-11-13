@@ -1,0 +1,28 @@
+{
+  "values": [
+    "#minecraft:dirt",
+    "#minecraft:sand",
+    "#minecraft:base_stone_overworld",
+    "#minecraft:base_stone_nether",
+    "#minecraft:terracotta",
+    "#tensura:ores",
+    "#minecraft:needs_stone_tool",
+    "minecraft:grass_block",
+    "minecraft:dirt_path",
+    "minecraft:farmland",
+    "minecraft:gilded_blackstone",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "minecraft:clay",
+    "minecraft:gravel",
+    "tensura:sarasa_sandstone",
+    {
+      "id": "c:cobblestones",
+      "required": false
+    },
+    {
+      "id": "c:stones",
+      "required": false
+    }
+  ]
+}

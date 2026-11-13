@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:holy_armaments_boots",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/holy_armaments_boots",
+      "minecraft:display_name": {
+        "value": "Holy Armaments Boots"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:salamander",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/salamander/salamander"
+      },
+      "geometry": {
+        "default": "geometry.salamander"
+      },
+      "animations": {
+        "idle": "animation.salamander.idle",
+        "walk": "animation.salamander.walk"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

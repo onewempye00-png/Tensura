@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft":{"recipe_shapeless":{"description":{"identifier":"tensura:mobile_smithing_spatial_blade"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:stick"},{"item":"tensura:severer_blade"},{"item":"tensura:spatial_blade_schematic"}],"result":{"item":"tensura:spatial_blade","count":1}}}}

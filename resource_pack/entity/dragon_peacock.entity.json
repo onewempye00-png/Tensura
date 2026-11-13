@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:dragon_peacock",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/dragon_peacock/dragon_peacock_baby"
+      },
+      "geometry": {
+        "default": "geometry.dragon_peacock"
+      },
+      "animations": {
+        "idle": "animation.dragon_peacock.idle",
+        "walk": "animation.dragon_peacock.walk"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 538291047,
+    "separation": 20,
+    "spacing": 35
+  },
+  "structures": [
+    {
+      "structure": "tensura:villages/lizardmen_village/underground",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/lizardmen_village/water",
+      "weight": 1
+    }
+  ]
+}

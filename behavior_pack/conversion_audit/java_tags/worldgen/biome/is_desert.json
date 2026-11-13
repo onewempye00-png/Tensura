@@ -1,0 +1,13 @@
+{
+  "values": [
+    {
+      "id": "c:is_desert",
+      "required": false
+    },
+    "#minecraft:has_structure/desert_pyramid",
+    "#minecraft:has_structure/ruined_portal_desert",
+    "#minecraft:has_structure/village_desert",
+    "tensura:desert_of_death",
+    "tensura:barren_land"
+  ]
+}

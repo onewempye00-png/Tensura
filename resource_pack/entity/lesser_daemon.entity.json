@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:lesser_daemon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/daemon/lesser_daemon"
+      },
+      "geometry": {
+        "default": "geometry.lesser_daemon"
+      },
+      "animations": {
+        "idle": "animation.lesser_daemon.idle",
+        "walk": "animation.lesser_daemon.walk"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

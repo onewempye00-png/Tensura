@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:otherworlder_contract",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/skill_seal",
+      "minecraft:display_name": {
+        "value": "Otherworlder Summoning Contract"
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

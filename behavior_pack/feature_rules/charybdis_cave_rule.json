@@ -1,0 +1,47 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "tensura:charybdis_cave_rule",
+      "places_feature": "tensura:charybdis_cave_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "overworld"
+        }
+      ],
+      "minecraft:random_block_chance": {
+        "block": "minecraft:stone",
+        "chance": 0.00015
+      }
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          25,
+          45
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:monster_leather_boots_d",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/monster_leather_boots_d",
+      "minecraft:display_name": {
+        "value": "Monster Leather Boots D"
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

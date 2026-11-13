@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "single_tatami_carpet",
+  "key": {
+    "B": {
+      "item": "tensura:single_tatami_block"
+    }
+  },
+  "pattern": [
+    "BB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "tensura:single_tatami_carpet"
+  }
+}

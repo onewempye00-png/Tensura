@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:high_magisteel_ingot"
+  },
+  "inputAmount1": 5,
+  "output": {
+    "count": 1,
+    "id": "tensura:high_magisteel_helmet"
+  },
+  "schematics": [
+    "tensura:high_magisteel_gear_schematic"
+  ]
+}

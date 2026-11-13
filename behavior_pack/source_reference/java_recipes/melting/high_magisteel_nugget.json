@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:high_magisteel_nugget"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 1,
+  "smeltTick": 40
+}

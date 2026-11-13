@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:companion_dino",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/armorsaurus/armorsaurus"
+      },
+      "geometry": {
+        "default": "geometry.armorsaurus"
+      },
+      "animations": {},
+      "scripts": {},
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tatami_block",
+  "key": {
+    "#": {
+      "item": "tensura:thatch"
+    },
+    "B": {
+      "item": "tensura:thatch_block"
+    }
+  },
+  "pattern": [
+    "##",
+    "BB",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "tensura:tatami_block"
+  }
+}

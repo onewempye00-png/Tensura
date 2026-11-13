@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:hihiirokane_helmet"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 24,
+  "smeltTick": 125
+}

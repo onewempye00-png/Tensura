@@ -1,0 +1,18 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:silver_ingot"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 2,
+  "output": {
+    "count": 1,
+    "id": "tensura:silver_axe"
+  },
+  "schematics": [
+    "tensura:silver_gear_schematic"
+  ]
+}

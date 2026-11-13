@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:orichalcum_chestplate"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 4,
+  "smeltTick": 225
+}

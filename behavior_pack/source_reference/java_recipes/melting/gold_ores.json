@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "tag": "minecraft:gold_ores"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 9,
+  "smeltTick": 200
+}

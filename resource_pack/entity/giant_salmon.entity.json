@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:giant_salmon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/giant_salmon/giant_salmon"
+      },
+      "geometry": {
+        "default": "geometry.giant_salmon"
+      },
+      "animations": {},
+      "scripts": {
+        "animate": []
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

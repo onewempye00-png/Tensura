@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1725670197,
+    "separation": 30,
+    "spacing": 40
+  },
+  "structures": [
+    {
+      "structure": "tensura:villages/orc_village",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:gazel_dwargo_spawn_egg",
+      "menu_category": {
+        "category": "spawn_egg"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/spawn_egg",
+      "minecraft:display_name": {
+        "value": "Gazel Dwargo Spawn Egg"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:entity_placer": {
+        "entity": "tensura:gazel_dwargo"
+      }
+    }
+  }
+}

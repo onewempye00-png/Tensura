@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tensura:low_quality_magic_crystal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "tensura:low_quality_magic_crystal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:low_magisteel_hoe"
+  },
+  "primary": "tensura:magisteel",
+  "secondary": "tensura:iron",
+  "secondary_count": 1,
+  "smeltTick": 50
+}

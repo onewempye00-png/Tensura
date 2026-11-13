@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "low_quality_magic_crystal_bricks_magic_engine",
+  "key": {
+    "#": {
+      "item": "tensura:low_quality_magic_crystal_bricks"
+    },
+    "I": {
+      "item": "tensura:pure_magisteel_ingot"
+    },
+    "S": {
+      "item": "tensura:high_quality_magic_crystal"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:low_quality_magic_crystal_bricks_magic_engine"
+  }
+}

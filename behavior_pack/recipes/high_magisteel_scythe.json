@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:high_magisteel_scythe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "HH ",
+      " SH",
+      " S "
+    ],
+    "key": {
+      "H": "tensura:high_magisteel_ingot",
+      "S": "minecraft:stick"
+    },
+    "result": {
+      "item": "tensura:high_magisteel_scythe",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tensura:world_tree_leaves",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.leaves"
+      },
+      "properties": {
+        "tensura:direction": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ],
+        "tensura:axis": [
+          "x",
+          "y",
+          "z"
+        ],
+        "tensura:half": [
+          "bottom",
+          "top"
+        ],
+        "tensura:waterlogged": [
+          "false",
+          "true"
+        ],
+        "tensura:enabled": [
+          "false",
+          "true"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3
+      },
+      "minecraft:map_color": "#1D765C",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tensura:block/world_tree_leaves",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_dampening": 1
+    }
+  }
+}

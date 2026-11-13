@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "tensura:smelt_magic_crystal_shard"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "tensura:magic_crystal_shard",
+    "output": "tensura:magic_ore_shard"
+  }
+}

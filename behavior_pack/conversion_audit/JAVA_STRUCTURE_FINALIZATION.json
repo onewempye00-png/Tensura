@@ -1,0 +1,71 @@
+{
+  "source_java_nbt_structures": 382,
+  "source_structure_errors": 0,
+  "source_structure_blocks": 883074,
+  "source_structure_entities": 222,
+  "source_block_entity_records": 2128,
+  "composite_structures": [
+    {
+      "name": "dwarf_village/complete",
+      "size": [
+        150,
+        45,
+        150
+      ],
+      "parts": 19,
+      "placedBlockEntries": 64758,
+      "palette": 225,
+      "entities": 19,
+      "bytes": 8131204
+    },
+    {
+      "name": "charybdis_cave/complete",
+      "size": [
+        100,
+        60,
+        160
+      ],
+      "parts": 8,
+      "placedBlockEntries": 17587,
+      "palette": 68,
+      "entities": 0,
+      "bytes": 7684286
+    },
+    {
+      "name": "hell/gate/complete",
+      "size": [
+        80,
+        130,
+        40
+      ],
+      "parts": 4,
+      "placedBlockEntries": 47862,
+      "palette": 42,
+      "entities": 1,
+      "bytes": 3331543
+    }
+  ],
+  "labyrinth": {
+    "source_blocks": 610695,
+    "source_dimensions": [
+      110,
+      244,
+      317
+    ],
+    "state_records": 18578,
+    "segments": 10,
+    "converted_non_air_blocks": 537016
+  },
+  "final_mcstructure_files": 395,
+  "final_non_air_block_entries": 1300300,
+  "final_structure_entities": 242,
+  "supported_bedrock_block_entity_entries": 1218,
+  "custom_block_palette_ids": 48,
+  "max_structure_volume": 1012500,
+  "validation_errors": 0,
+  "notes": [
+    "Java jigsaw connector blocks are removed from final placed structures rather than copied as unsupported blocks.",
+    "Supported chest, furnace, sign, banner, bed, spawner and other Bedrock block entity records are translated into block_position_data.",
+    "Java-only custom block entity behavior is represented by supported blocks or script-backed interactions where applicable."
+  ]
+}

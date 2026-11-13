@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tensura:thatch_block"
+    },
+    "F": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "T": {
+      "item": "tensura:thatch"
+    }
+  },
+  "pattern": [
+    "TBT",
+    "TFT",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:training_dummy"
+  }
+}

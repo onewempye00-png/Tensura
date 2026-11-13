@@ -1,0 +1,6 @@
+{
+    "parent": "tensura:item/ant_crossbow",
+    "textures": {
+        "layer0": "tensura:item/ant_crossbow_speared_fin"
+    }
+}

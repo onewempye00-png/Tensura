@@ -1,0 +1,27 @@
+{
+  "pack_validation_counts": {
+    "items": 1618,
+    "blocks": 197,
+    "entities": 115,
+    "clientEntities": 115,
+    "spawnRules": 70,
+    "features": 23,
+    "featureRules": 21,
+    "lootTables": 35
+  },
+  "pack_errors": 0,
+  "pack_warnings": 0,
+  "mcstructure_files": 395,
+  "mcstructure_errors": 0,
+  "non_air_block_entries": 1300300,
+  "structure_entities": 242,
+  "supported_block_entity_entries": 1218,
+  "custom_block_palette_ids": 48,
+  "client_model_reference_errors": 0,
+  "java_item_model_records": 1313,
+  "original_unresolved_item_model_cases": 304,
+  "remaining_unresolved_item_model_cases": 0,
+  "javascript_syntax": "passed",
+  "json_syntax": "passed",
+  "live_android_bedrock_runtime_test": "not performed; target-device import/playtest is still required"
+}

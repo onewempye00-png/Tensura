@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#tensura:no_highlight",
+    "#tensura:non_living",
+    "minecraft:boat",
+    "minecraft:chest_boat",
+    "minecraft:minecart",
+    "minecraft:chest_minecart",
+    "minecraft:command_block_minecart",
+    "minecraft:furnace_minecart",
+    "minecraft:hopper_minecart",
+    "minecraft:spawner_minecart",
+    "minecraft:tnt_minecart",
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "tensura:speared_fin_arrow",
+    "tensura:invisible_arrow",
+    "tensura:spear",
+    "tensura:kunai"
+  ]
+}

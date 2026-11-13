@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/granite_warp_pad"},"tags":["crafting_table"],"pattern":["SMS","MCM","SMS"],"key":{"C":{"item":"tensura:warp_core"},"M":{"item":"minecraft:polished_granite"},"S":{"item":"minecraft:granite"}},"result":{"item":"tensura:granite_warp_pad","count":1}}}

@@ -1,0 +1,2298 @@
+{
+  "source": "tensura-neoforge-2.0.1.5.jar",
+  "structure_count": 382,
+  "structures": [
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_labyrinth_tree_1.nbt",
+      "compressed_bytes": 155067,
+      "bedrock_target": "ancient_forest_labyrinth_tree_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_labyrinth_tree_2.nbt",
+      "compressed_bytes": 79764,
+      "bedrock_target": "ancient_forest_labyrinth_tree_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_mushroom_1.nbt",
+      "compressed_bytes": 2749,
+      "bedrock_target": "ancient_forest_mushroom_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_mushroom_2.nbt",
+      "compressed_bytes": 2706,
+      "bedrock_target": "ancient_forest_mushroom_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_mushroom_3.nbt",
+      "compressed_bytes": 8087,
+      "bedrock_target": "ancient_forest_mushroom_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_mushroom_4.nbt",
+      "compressed_bytes": 7194,
+      "bedrock_target": "ancient_forest_mushroom_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_1.nbt",
+      "compressed_bytes": 3168,
+      "bedrock_target": "ancient_forest_rock_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_10.nbt",
+      "compressed_bytes": 3671,
+      "bedrock_target": "ancient_forest_rock_10.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_11.nbt",
+      "compressed_bytes": 8188,
+      "bedrock_target": "ancient_forest_rock_11.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_12.nbt",
+      "compressed_bytes": 6239,
+      "bedrock_target": "ancient_forest_rock_12.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_13.nbt",
+      "compressed_bytes": 1149,
+      "bedrock_target": "ancient_forest_rock_13.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_14.nbt",
+      "compressed_bytes": 2366,
+      "bedrock_target": "ancient_forest_rock_14.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_2.nbt",
+      "compressed_bytes": 6995,
+      "bedrock_target": "ancient_forest_rock_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_3.nbt",
+      "compressed_bytes": 3432,
+      "bedrock_target": "ancient_forest_rock_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_4.nbt",
+      "compressed_bytes": 7241,
+      "bedrock_target": "ancient_forest_rock_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_5.nbt",
+      "compressed_bytes": 7155,
+      "bedrock_target": "ancient_forest_rock_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_6.nbt",
+      "compressed_bytes": 2727,
+      "bedrock_target": "ancient_forest_rock_6.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_7.nbt",
+      "compressed_bytes": 8780,
+      "bedrock_target": "ancient_forest_rock_7.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_8.nbt",
+      "compressed_bytes": 3506,
+      "bedrock_target": "ancient_forest_rock_8.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_rock_9.nbt",
+      "compressed_bytes": 1918,
+      "bedrock_target": "ancient_forest_rock_9.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_tree_1.nbt",
+      "compressed_bytes": 40108,
+      "bedrock_target": "ancient_forest_tree_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_tree_2.nbt",
+      "compressed_bytes": 36230,
+      "bedrock_target": "ancient_forest_tree_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_tree_3.nbt",
+      "compressed_bytes": 73423,
+      "bedrock_target": "ancient_forest_tree_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_tree_4.nbt",
+      "compressed_bytes": 39510,
+      "bedrock_target": "ancient_forest_tree_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_tree_5.nbt",
+      "compressed_bytes": 39913,
+      "bedrock_target": "ancient_forest_tree_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ancient_forest/ancient_forest_tree_6.nbt",
+      "compressed_bytes": 50787,
+      "bedrock_target": "ancient_forest_tree_6.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_big_room.nbt",
+      "compressed_bytes": 51302,
+      "bedrock_target": "ant_nest_big_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_entrance_ramp.nbt",
+      "compressed_bytes": 23571,
+      "bedrock_target": "ant_nest_entrance_ramp.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_fallback.nbt",
+      "compressed_bytes": 1038,
+      "bedrock_target": "ant_nest_fallback.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_hill.nbt",
+      "compressed_bytes": 55299,
+      "bedrock_target": "ant_nest_hill.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_i_corridor.nbt",
+      "compressed_bytes": 16068,
+      "bedrock_target": "ant_nest_i_corridor.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_l_corridor.nbt",
+      "compressed_bytes": 13060,
+      "bedrock_target": "ant_nest_l_corridor.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_ramp.nbt",
+      "compressed_bytes": 43273,
+      "bedrock_target": "ant_nest_ramp.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_small_room.nbt",
+      "compressed_bytes": 18309,
+      "bedrock_target": "ant_nest_small_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_smol_room.nbt",
+      "compressed_bytes": 16977,
+      "bedrock_target": "ant_nest_smol_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_t_corridor.nbt",
+      "compressed_bytes": 16426,
+      "bedrock_target": "ant_nest_t_corridor.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ant_nest/ant_nest_x.nbt",
+      "compressed_bytes": 18910,
+      "bedrock_target": "ant_nest_x.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_entrance.nbt",
+      "compressed_bytes": 6009,
+      "bedrock_target": "charybdis_entrance.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_entrance_desert.nbt",
+      "compressed_bytes": 5491,
+      "bedrock_target": "charybdis_entrance_desert.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_entrance_ice.nbt",
+      "compressed_bytes": 5248,
+      "bedrock_target": "charybdis_entrance_ice.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_entrance_mesa.nbt",
+      "compressed_bytes": 5448,
+      "bedrock_target": "charybdis_entrance_mesa.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room.nbt",
+      "compressed_bytes": 19274,
+      "bedrock_target": "charybdis_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_2.nbt",
+      "compressed_bytes": 22789,
+      "bedrock_target": "charybdis_room_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_3.nbt",
+      "compressed_bytes": 59761,
+      "bedrock_target": "charybdis_room_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_3_end.nbt",
+      "compressed_bytes": 3826,
+      "bedrock_target": "charybdis_room_3_end.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_4.nbt",
+      "compressed_bytes": 11883,
+      "bedrock_target": "charybdis_room_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_5.nbt",
+      "compressed_bytes": 8383,
+      "bedrock_target": "charybdis_room_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_desert.nbt",
+      "compressed_bytes": 18671,
+      "bedrock_target": "charybdis_room_desert.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_desert_2.nbt",
+      "compressed_bytes": 20009,
+      "bedrock_target": "charybdis_room_desert_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_desert_3.nbt",
+      "compressed_bytes": 12979,
+      "bedrock_target": "charybdis_room_desert_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_desert_4.nbt",
+      "compressed_bytes": 9156,
+      "bedrock_target": "charybdis_room_desert_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_ice.nbt",
+      "compressed_bytes": 18223,
+      "bedrock_target": "charybdis_room_ice.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_ice_2.nbt",
+      "compressed_bytes": 9291,
+      "bedrock_target": "charybdis_room_ice_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_ice_3.nbt",
+      "compressed_bytes": 14567,
+      "bedrock_target": "charybdis_room_ice_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_mesa.nbt",
+      "compressed_bytes": 19087,
+      "bedrock_target": "charybdis_room_mesa.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_mesa_2.nbt",
+      "compressed_bytes": 20336,
+      "bedrock_target": "charybdis_room_mesa_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_mesa_3.nbt",
+      "compressed_bytes": 9465,
+      "bedrock_target": "charybdis_room_mesa_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_room_mesa_4.nbt",
+      "compressed_bytes": 13483,
+      "bedrock_target": "charybdis_room_mesa_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_stairs.nbt",
+      "compressed_bytes": 9080,
+      "bedrock_target": "charybdis_stairs.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_stairs_desert.nbt",
+      "compressed_bytes": 8870,
+      "bedrock_target": "charybdis_stairs_desert.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_stairs_ice.nbt",
+      "compressed_bytes": 8606,
+      "bedrock_target": "charybdis_stairs_ice.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/charybdis_cave/charybdis_stairs_mesa.nbt",
+      "compressed_bytes": 8957,
+      "bedrock_target": "charybdis_stairs_mesa.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_arena.nbt",
+      "compressed_bytes": 281506,
+      "bedrock_target": "dwarf_arena.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_dojo.nbt",
+      "compressed_bytes": 10148,
+      "bedrock_target": "dwarf_dojo.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_large_1.nbt",
+      "compressed_bytes": 7497,
+      "bedrock_target": "dwarf_house_large_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_large_2.nbt",
+      "compressed_bytes": 7086,
+      "bedrock_target": "dwarf_house_large_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_small_1.nbt",
+      "compressed_bytes": 1472,
+      "bedrock_target": "dwarf_house_small_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_small_2.nbt",
+      "compressed_bytes": 1462,
+      "bedrock_target": "dwarf_house_small_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_small_3.nbt",
+      "compressed_bytes": 1468,
+      "bedrock_target": "dwarf_house_small_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_small_4.nbt",
+      "compressed_bytes": 1511,
+      "bedrock_target": "dwarf_house_small_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_small_5.nbt",
+      "compressed_bytes": 1535,
+      "bedrock_target": "dwarf_house_small_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_house_small_6.nbt",
+      "compressed_bytes": 1524,
+      "bedrock_target": "dwarf_house_small_6.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_library_1.nbt",
+      "compressed_bytes": 2725,
+      "bedrock_target": "dwarf_library_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_library_2.nbt",
+      "compressed_bytes": 2718,
+      "bedrock_target": "dwarf_library_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_magic_trainer.nbt",
+      "compressed_bytes": 9946,
+      "bedrock_target": "dwarf_magic_trainer.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_royal_tower.nbt",
+      "compressed_bytes": 8765,
+      "bedrock_target": "dwarf_royal_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_smithy_1.nbt",
+      "compressed_bytes": 8028,
+      "bedrock_target": "dwarf_smithy_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_smithy_2.nbt",
+      "compressed_bytes": 8014,
+      "bedrock_target": "dwarf_smithy_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_butcher_1.nbt",
+      "compressed_bytes": 5484,
+      "bedrock_target": "dwarf_village_butcher_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_butcher_2.nbt",
+      "compressed_bytes": 5390,
+      "bedrock_target": "dwarf_village_butcher_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_butcher_3.nbt",
+      "compressed_bytes": 5542,
+      "bedrock_target": "dwarf_village_butcher_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_fisherman.nbt",
+      "compressed_bytes": 5852,
+      "bedrock_target": "dwarf_village_fisherman.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_guard_1.nbt",
+      "compressed_bytes": 6805,
+      "bedrock_target": "dwarf_village_guard_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_guard_2.nbt",
+      "compressed_bytes": 6810,
+      "bedrock_target": "dwarf_village_guard_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_lumberjack.nbt",
+      "compressed_bytes": 3946,
+      "bedrock_target": "dwarf_village_lumberjack.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_prison.nbt",
+      "compressed_bytes": 4601,
+      "bedrock_target": "dwarf_village_prison.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/building/dwarf_village_shepherd.nbt",
+      "compressed_bytes": 5522,
+      "bedrock_target": "dwarf_village_shepherd.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_beetroot_1.nbt",
+      "compressed_bytes": 2040,
+      "bedrock_target": "dwarf_field_beetroot_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_beetroot_2.nbt",
+      "compressed_bytes": 1622,
+      "bedrock_target": "dwarf_field_beetroot_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_carrot_1.nbt",
+      "compressed_bytes": 2080,
+      "bedrock_target": "dwarf_field_carrot_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_carrot_2.nbt",
+      "compressed_bytes": 1660,
+      "bedrock_target": "dwarf_field_carrot_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_potato_1.nbt",
+      "compressed_bytes": 2080,
+      "bedrock_target": "dwarf_field_potato_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_potato_2.nbt",
+      "compressed_bytes": 1652,
+      "bedrock_target": "dwarf_field_potato_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_wheat_1.nbt",
+      "compressed_bytes": 2083,
+      "bedrock_target": "dwarf_field_wheat_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_field_wheat_2.nbt",
+      "compressed_bytes": 1648,
+      "bedrock_target": "dwarf_field_wheat_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_village_farm_hut.nbt",
+      "compressed_bytes": 812,
+      "bedrock_target": "dwarf_village_farm_hut.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/farms/dwarf_village_farm_road.nbt",
+      "compressed_bytes": 1354,
+      "bedrock_target": "dwarf_village_farm_road.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_building.nbt",
+      "compressed_bytes": 11118,
+      "bedrock_target": "dwarf_mine_building.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_elevator_1.nbt",
+      "compressed_bytes": 2023,
+      "bedrock_target": "dwarf_mine_elevator_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_elevator_2.nbt",
+      "compressed_bytes": 1471,
+      "bedrock_target": "dwarf_mine_elevator_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_path.nbt",
+      "compressed_bytes": 642,
+      "bedrock_target": "dwarf_mine_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_underground.nbt",
+      "compressed_bytes": 8397,
+      "bedrock_target": "dwarf_mine_underground.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_underground_1.nbt",
+      "compressed_bytes": 6522,
+      "bedrock_target": "dwarf_mine_underground_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/mine/dwarf_mine_underground_2.nbt",
+      "compressed_bytes": 13091,
+      "bedrock_target": "dwarf_mine_underground_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_fountain.nbt",
+      "compressed_bytes": 796,
+      "bedrock_target": "dwarf_village_fountain.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_plaza.nbt",
+      "compressed_bytes": 741,
+      "bedrock_target": "dwarf_village_plaza.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_plaza_path.nbt",
+      "compressed_bytes": 568,
+      "bedrock_target": "dwarf_village_plaza_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_1.nbt",
+      "compressed_bytes": 1867,
+      "bedrock_target": "dwarf_village_shop_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_2.nbt",
+      "compressed_bytes": 1630,
+      "bedrock_target": "dwarf_village_shop_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_3.nbt",
+      "compressed_bytes": 1639,
+      "bedrock_target": "dwarf_village_shop_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_4.nbt",
+      "compressed_bytes": 1581,
+      "bedrock_target": "dwarf_village_shop_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_5.nbt",
+      "compressed_bytes": 1811,
+      "bedrock_target": "dwarf_village_shop_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_6.nbt",
+      "compressed_bytes": 1735,
+      "bedrock_target": "dwarf_village_shop_6.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_7.nbt",
+      "compressed_bytes": 1707,
+      "bedrock_target": "dwarf_village_shop_7.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/plaza/dwarf_village_shop_8.nbt",
+      "compressed_bytes": 1703,
+      "bedrock_target": "dwarf_village_shop_8.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_dojo_path.nbt",
+      "compressed_bytes": 538,
+      "bedrock_target": "dwarf_dojo_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_merchant_cart.nbt",
+      "compressed_bytes": 3306,
+      "bedrock_target": "dwarf_merchant_cart.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_i_1.nbt",
+      "compressed_bytes": 438,
+      "bedrock_target": "dwarf_path_i_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_i_2.nbt",
+      "compressed_bytes": 490,
+      "bedrock_target": "dwarf_path_i_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_i_3.nbt",
+      "compressed_bytes": 444,
+      "bedrock_target": "dwarf_path_i_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_i_4.nbt",
+      "compressed_bytes": 442,
+      "bedrock_target": "dwarf_path_i_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_i_5.nbt",
+      "compressed_bytes": 438,
+      "bedrock_target": "dwarf_path_i_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_t_1.nbt",
+      "compressed_bytes": 503,
+      "bedrock_target": "dwarf_path_t_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_t_2.nbt",
+      "compressed_bytes": 516,
+      "bedrock_target": "dwarf_path_t_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_t_3.nbt",
+      "compressed_bytes": 501,
+      "bedrock_target": "dwarf_path_t_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_t_4.nbt",
+      "compressed_bytes": 503,
+      "bedrock_target": "dwarf_path_t_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_t_5.nbt",
+      "compressed_bytes": 502,
+      "bedrock_target": "dwarf_path_t_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_x_1.nbt",
+      "compressed_bytes": 502,
+      "bedrock_target": "dwarf_path_x_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_x_2.nbt",
+      "compressed_bytes": 555,
+      "bedrock_target": "dwarf_path_x_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_x_3.nbt",
+      "compressed_bytes": 527,
+      "bedrock_target": "dwarf_path_x_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_x_4.nbt",
+      "compressed_bytes": 534,
+      "bedrock_target": "dwarf_path_x_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_path_x_5.nbt",
+      "compressed_bytes": 531,
+      "bedrock_target": "dwarf_path_x_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/road/dwarf_village_cart.nbt",
+      "compressed_bytes": 479,
+      "bedrock_target": "dwarf_village_cart.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_royal_guard.nbt",
+      "compressed_bytes": 2297,
+      "bedrock_target": "dwarf_royal_guard.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_prisoner_dwarf.nbt",
+      "compressed_bytes": 1879,
+      "bedrock_target": "dwarf_village_prisoner_dwarf.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_prisoner_goblin.nbt",
+      "compressed_bytes": 2045,
+      "bedrock_target": "dwarf_village_prisoner_goblin.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_prisoner_lizardman.nbt",
+      "compressed_bytes": 2096,
+      "bedrock_target": "dwarf_village_prisoner_lizardman.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_prisoner_pillager.nbt",
+      "compressed_bytes": 1669,
+      "bedrock_target": "dwarf_village_prisoner_pillager.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_prisoner_slime.nbt",
+      "compressed_bytes": 1939,
+      "bedrock_target": "dwarf_village_prisoner_slime.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_prisoner_villager.nbt",
+      "compressed_bytes": 1727,
+      "bedrock_target": "dwarf_village_prisoner_villager.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/dwarf_village/spawn/dwarf_village_spawn.nbt",
+      "compressed_bytes": 1890,
+      "bedrock_target": "dwarf_village_spawn.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_acacia_path_1.nbt",
+      "compressed_bytes": 456,
+      "bedrock_target": "goblin_acacia_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_acacia_path_2.nbt",
+      "compressed_bytes": 469,
+      "bedrock_target": "goblin_acacia_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_acacia_path_3.nbt",
+      "compressed_bytes": 480,
+      "bedrock_target": "goblin_acacia_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_arch_acacia.nbt",
+      "compressed_bytes": 736,
+      "bedrock_target": "goblin_arch_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_arch_path_acacia.nbt",
+      "compressed_bytes": 338,
+      "bedrock_target": "goblin_arch_path_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_campfire_acacia.nbt",
+      "compressed_bytes": 740,
+      "bedrock_target": "goblin_campfire_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_chief_acacia.nbt",
+      "compressed_bytes": 1987,
+      "bedrock_target": "goblin_chief_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_end_acacia_path_1.nbt",
+      "compressed_bytes": 395,
+      "bedrock_target": "goblin_end_acacia_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_end_acacia_path_2.nbt",
+      "compressed_bytes": 393,
+      "bedrock_target": "goblin_end_acacia_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_end_acacia_path_3.nbt",
+      "compressed_bytes": 374,
+      "bedrock_target": "goblin_end_acacia_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_medical_tent_acacia.nbt",
+      "compressed_bytes": 1613,
+      "bedrock_target": "goblin_medical_tent_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_start_acacia.nbt",
+      "compressed_bytes": 653,
+      "bedrock_target": "goblin_start_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_t_acacia_path_1.nbt",
+      "compressed_bytes": 531,
+      "bedrock_target": "goblin_t_acacia_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_t_acacia_path_2.nbt",
+      "compressed_bytes": 536,
+      "bedrock_target": "goblin_t_acacia_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_tent_acacia.nbt",
+      "compressed_bytes": 781,
+      "bedrock_target": "goblin_tent_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_tower_acacia.nbt",
+      "compressed_bytes": 1069,
+      "bedrock_target": "goblin_tower_acacia.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/acacia/goblin_x_acacia_path.nbt",
+      "compressed_bytes": 646,
+      "bedrock_target": "goblin_x_acacia_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_arch_birch.nbt",
+      "compressed_bytes": 733,
+      "bedrock_target": "goblin_arch_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_arch_path_birch.nbt",
+      "compressed_bytes": 337,
+      "bedrock_target": "goblin_arch_path_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_birch_path_1.nbt",
+      "compressed_bytes": 485,
+      "bedrock_target": "goblin_birch_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_birch_path_2.nbt",
+      "compressed_bytes": 452,
+      "bedrock_target": "goblin_birch_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_birch_path_3.nbt",
+      "compressed_bytes": 480,
+      "bedrock_target": "goblin_birch_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_campfire_birch.nbt",
+      "compressed_bytes": 744,
+      "bedrock_target": "goblin_campfire_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_chief_birch.nbt",
+      "compressed_bytes": 1994,
+      "bedrock_target": "goblin_chief_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_end_birch_path_1.nbt",
+      "compressed_bytes": 395,
+      "bedrock_target": "goblin_end_birch_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_end_birch_path_2.nbt",
+      "compressed_bytes": 393,
+      "bedrock_target": "goblin_end_birch_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_end_birch_path_3.nbt",
+      "compressed_bytes": 374,
+      "bedrock_target": "goblin_end_birch_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_medical_tent_birch.nbt",
+      "compressed_bytes": 1616,
+      "bedrock_target": "goblin_medical_tent_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_start_birch.nbt",
+      "compressed_bytes": 651,
+      "bedrock_target": "goblin_start_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_t_birch_path_1.nbt",
+      "compressed_bytes": 541,
+      "bedrock_target": "goblin_t_birch_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_t_birch_path_2.nbt",
+      "compressed_bytes": 537,
+      "bedrock_target": "goblin_t_birch_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_tent_birch.nbt",
+      "compressed_bytes": 780,
+      "bedrock_target": "goblin_tent_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_tower_birch.nbt",
+      "compressed_bytes": 1069,
+      "bedrock_target": "goblin_tower_birch.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/birch/goblin_x_birch_path.nbt",
+      "compressed_bytes": 643,
+      "bedrock_target": "goblin_x_birch_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/goblin_spawn.nbt",
+      "compressed_bytes": 1814,
+      "bedrock_target": "goblin_spawn.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_arch_jungle.nbt",
+      "compressed_bytes": 737,
+      "bedrock_target": "goblin_arch_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_arch_path_jungle.nbt",
+      "compressed_bytes": 338,
+      "bedrock_target": "goblin_arch_path_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_campfire_jungle.nbt",
+      "compressed_bytes": 751,
+      "bedrock_target": "goblin_campfire_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_chief_jungle.nbt",
+      "compressed_bytes": 1977,
+      "bedrock_target": "goblin_chief_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_end_jungle_path_1.nbt",
+      "compressed_bytes": 396,
+      "bedrock_target": "goblin_end_jungle_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_end_jungle_path_2.nbt",
+      "compressed_bytes": 394,
+      "bedrock_target": "goblin_end_jungle_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_end_jungle_path_3.nbt",
+      "compressed_bytes": 375,
+      "bedrock_target": "goblin_end_jungle_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_jungle_path_1.nbt",
+      "compressed_bytes": 481,
+      "bedrock_target": "goblin_jungle_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_jungle_path_2.nbt",
+      "compressed_bytes": 460,
+      "bedrock_target": "goblin_jungle_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_jungle_path_3.nbt",
+      "compressed_bytes": 481,
+      "bedrock_target": "goblin_jungle_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_medical_tent_jungle.nbt",
+      "compressed_bytes": 1620,
+      "bedrock_target": "goblin_medical_tent_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_start_jungle.nbt",
+      "compressed_bytes": 654,
+      "bedrock_target": "goblin_start_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_t_jungle_path_1.nbt",
+      "compressed_bytes": 514,
+      "bedrock_target": "goblin_t_jungle_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_t_jungle_path_2.nbt",
+      "compressed_bytes": 532,
+      "bedrock_target": "goblin_t_jungle_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_tent_jungle.nbt",
+      "compressed_bytes": 781,
+      "bedrock_target": "goblin_tent_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_tower_jungle.nbt",
+      "compressed_bytes": 1072,
+      "bedrock_target": "goblin_tower_jungle.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/jungle/goblin_x_jungle_path.nbt",
+      "compressed_bytes": 648,
+      "bedrock_target": "goblin_x_jungle_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_arch_oak.nbt",
+      "compressed_bytes": 732,
+      "bedrock_target": "goblin_arch_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_arch_path_oak.nbt",
+      "compressed_bytes": 336,
+      "bedrock_target": "goblin_arch_path_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_campfire_oak.nbt",
+      "compressed_bytes": 749,
+      "bedrock_target": "goblin_campfire_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_chief_oak.nbt",
+      "compressed_bytes": 1985,
+      "bedrock_target": "goblin_chief_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_end_oak_path_1.nbt",
+      "compressed_bytes": 395,
+      "bedrock_target": "goblin_end_oak_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_end_oak_path_2.nbt",
+      "compressed_bytes": 392,
+      "bedrock_target": "goblin_end_oak_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_end_oak_path_3.nbt",
+      "compressed_bytes": 384,
+      "bedrock_target": "goblin_end_oak_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_medical_tent_oak.nbt",
+      "compressed_bytes": 1617,
+      "bedrock_target": "goblin_medical_tent_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_oak_path_1.nbt",
+      "compressed_bytes": 465,
+      "bedrock_target": "goblin_oak_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_oak_path_2.nbt",
+      "compressed_bytes": 474,
+      "bedrock_target": "goblin_oak_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_oak_path_3.nbt",
+      "compressed_bytes": 463,
+      "bedrock_target": "goblin_oak_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_start_oak.nbt",
+      "compressed_bytes": 650,
+      "bedrock_target": "goblin_start_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_t_oak_path_1.nbt",
+      "compressed_bytes": 541,
+      "bedrock_target": "goblin_t_oak_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_t_oak_path_2.nbt",
+      "compressed_bytes": 544,
+      "bedrock_target": "goblin_t_oak_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_tent_oak.nbt",
+      "compressed_bytes": 776,
+      "bedrock_target": "goblin_tent_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_tower_oak.nbt",
+      "compressed_bytes": 1068,
+      "bedrock_target": "goblin_tower_oak.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/oak/goblin_x_oak_path.nbt",
+      "compressed_bytes": 631,
+      "bedrock_target": "goblin_x_oak_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_arch_palm.nbt",
+      "compressed_bytes": 732,
+      "bedrock_target": "goblin_arch_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_arch_path_palm.nbt",
+      "compressed_bytes": 337,
+      "bedrock_target": "goblin_arch_path_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_campfire_palm.nbt",
+      "compressed_bytes": 753,
+      "bedrock_target": "goblin_campfire_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_chief_palm.nbt",
+      "compressed_bytes": 1987,
+      "bedrock_target": "goblin_chief_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_end_palm_path_1.nbt",
+      "compressed_bytes": 395,
+      "bedrock_target": "goblin_end_palm_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_end_palm_path_2.nbt",
+      "compressed_bytes": 397,
+      "bedrock_target": "goblin_end_palm_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_end_palm_path_3.nbt",
+      "compressed_bytes": 378,
+      "bedrock_target": "goblin_end_palm_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_medical_tent_palm.nbt",
+      "compressed_bytes": 1614,
+      "bedrock_target": "goblin_medical_tent_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_palm_path_1.nbt",
+      "compressed_bytes": 452,
+      "bedrock_target": "goblin_palm_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_palm_path_2.nbt",
+      "compressed_bytes": 449,
+      "bedrock_target": "goblin_palm_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_palm_path_3.nbt",
+      "compressed_bytes": 459,
+      "bedrock_target": "goblin_palm_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_start_palm.nbt",
+      "compressed_bytes": 640,
+      "bedrock_target": "goblin_start_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_t_palm_path_1.nbt",
+      "compressed_bytes": 535,
+      "bedrock_target": "goblin_t_palm_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_t_palm_path_2.nbt",
+      "compressed_bytes": 525,
+      "bedrock_target": "goblin_t_palm_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_tent_palm.nbt",
+      "compressed_bytes": 777,
+      "bedrock_target": "goblin_tent_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_tower_palm.nbt",
+      "compressed_bytes": 944,
+      "bedrock_target": "goblin_tower_palm.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/palm/goblin_x_palm_path.nbt",
+      "compressed_bytes": 622,
+      "bedrock_target": "goblin_x_palm_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_arch_path_spruce.nbt",
+      "compressed_bytes": 338,
+      "bedrock_target": "goblin_arch_path_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_arch_spruce.nbt",
+      "compressed_bytes": 737,
+      "bedrock_target": "goblin_arch_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_campfire_spruce.nbt",
+      "compressed_bytes": 748,
+      "bedrock_target": "goblin_campfire_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_chief_spruce.nbt",
+      "compressed_bytes": 1974,
+      "bedrock_target": "goblin_chief_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_end_spruce_path_1.nbt",
+      "compressed_bytes": 395,
+      "bedrock_target": "goblin_end_spruce_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_end_spruce_path_2.nbt",
+      "compressed_bytes": 394,
+      "bedrock_target": "goblin_end_spruce_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_end_spruce_path_3.nbt",
+      "compressed_bytes": 375,
+      "bedrock_target": "goblin_end_spruce_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_medical_tent_spruce.nbt",
+      "compressed_bytes": 1605,
+      "bedrock_target": "goblin_medical_tent_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_spruce_path_1.nbt",
+      "compressed_bytes": 472,
+      "bedrock_target": "goblin_spruce_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_spruce_path_2.nbt",
+      "compressed_bytes": 471,
+      "bedrock_target": "goblin_spruce_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_spruce_path_3.nbt",
+      "compressed_bytes": 477,
+      "bedrock_target": "goblin_spruce_path_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_start_spruce.nbt",
+      "compressed_bytes": 652,
+      "bedrock_target": "goblin_start_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_t_spruce_path_1.nbt",
+      "compressed_bytes": 555,
+      "bedrock_target": "goblin_t_spruce_path_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_t_spruce_path_2.nbt",
+      "compressed_bytes": 521,
+      "bedrock_target": "goblin_t_spruce_path_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_tent_spruce.nbt",
+      "compressed_bytes": 783,
+      "bedrock_target": "goblin_tent_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_tower_spruce.nbt",
+      "compressed_bytes": 1069,
+      "bedrock_target": "goblin_tower_spruce.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/goblin_village/spruce/goblin_x_spruce_path.nbt",
+      "compressed_bytes": 645,
+      "bedrock_target": "goblin_x_spruce_path.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/gate/hell_gate_bottom.nbt",
+      "compressed_bytes": 126736,
+      "bedrock_target": "hell_gate_bottom.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/gate/hell_gate_door.nbt",
+      "compressed_bytes": 29839,
+      "bedrock_target": "hell_gate_door.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/gate/hell_gate_skull.nbt",
+      "compressed_bytes": 3833,
+      "bedrock_target": "hell_gate_skull.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/gate/hell_gate_top.nbt",
+      "compressed_bytes": 47453,
+      "bedrock_target": "hell_gate_top.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/quartz/hell_gate_big_quartz.nbt",
+      "compressed_bytes": 4716,
+      "bedrock_target": "hell_gate_big_quartz.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/quartz/hell_gate_big_ruined_quartz.nbt",
+      "compressed_bytes": 4796,
+      "bedrock_target": "hell_gate_big_ruined_quartz.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/quartz/hell_gate_quartz.nbt",
+      "compressed_bytes": 1923,
+      "bedrock_target": "hell_gate_quartz.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/quartz/hell_gate_ruined_quartz.nbt",
+      "compressed_bytes": 1898,
+      "bedrock_target": "hell_gate_ruined_quartz.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/quartz/hell_pillar_quartz.nbt",
+      "compressed_bytes": 991,
+      "bedrock_target": "hell_pillar_quartz.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/quartz/hell_pillar_ruined_quartz.nbt",
+      "compressed_bytes": 746,
+      "bedrock_target": "hell_pillar_ruined_quartz.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_gate_big_red_sandstone.nbt",
+      "compressed_bytes": 4682,
+      "bedrock_target": "hell_gate_big_red_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_gate_big_ruined_red_sandstone.nbt",
+      "compressed_bytes": 4870,
+      "bedrock_target": "hell_gate_big_ruined_red_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_gate_big_ruined_red_sandstone_with_chest.nbt",
+      "compressed_bytes": 4984,
+      "bedrock_target": "hell_gate_big_ruined_red_sandstone_with_chest.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_gate_red_sandstone.nbt",
+      "compressed_bytes": 1893,
+      "bedrock_target": "hell_gate_red_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_gate_ruined_red_sandstone.nbt",
+      "compressed_bytes": 1937,
+      "bedrock_target": "hell_gate_ruined_red_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_pillar_red_sandstone.nbt",
+      "compressed_bytes": 968,
+      "bedrock_target": "hell_pillar_red_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/red_sand/hell_pillar_ruined_red_sandstone.nbt",
+      "compressed_bytes": 747,
+      "bedrock_target": "hell_pillar_ruined_red_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/sand/hell_gate_big_ruined_sandstone.nbt",
+      "compressed_bytes": 5099,
+      "bedrock_target": "hell_gate_big_ruined_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/sand/hell_gate_big_sandstone.nbt",
+      "compressed_bytes": 4840,
+      "bedrock_target": "hell_gate_big_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/sand/hell_gate_ruined_sandstone.nbt",
+      "compressed_bytes": 2065,
+      "bedrock_target": "hell_gate_ruined_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/sand/hell_gate_sandstone.nbt",
+      "compressed_bytes": 2002,
+      "bedrock_target": "hell_gate_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/sand/hell_pillar_ruined_sandstone.nbt",
+      "compressed_bytes": 840,
+      "bedrock_target": "hell_pillar_ruined_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/hell/sand/hell_pillar_sandstone.nbt",
+      "compressed_bytes": 1060,
+      "bedrock_target": "hell_pillar_sandstone.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/labyrinth/tree/labyrinth_tree_bottom_1.nbt",
+      "compressed_bytes": 99270,
+      "bedrock_target": "labyrinth_tree_bottom_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/labyrinth/tree/labyrinth_tree_top_1.nbt",
+      "compressed_bytes": 152838,
+      "bedrock_target": "labyrinth_tree_top_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/labyrinth/tree/labyrinth_tree_top_2.nbt",
+      "compressed_bytes": 142710,
+      "bedrock_target": "labyrinth_tree_top_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/labyrinth/tree/labyrinth_tree_top_3.nbt",
+      "compressed_bytes": 147324,
+      "bedrock_target": "labyrinth_tree_top_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/labyrinth/tree/labyrinth_tree_top_4.nbt",
+      "compressed_bytes": 124457,
+      "bedrock_target": "labyrinth_tree_top_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/hover_lizard_spawn.nbt",
+      "compressed_bytes": 1708,
+      "bedrock_target": "hover_lizard_spawn.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/lizardman_spawn.nbt",
+      "compressed_bytes": 1912,
+      "bedrock_target": "lizardman_spawn.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/lizardmen_short_tower.nbt",
+      "compressed_bytes": 2607,
+      "bedrock_target": "lizardmen_short_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/lizardmen_tall_tower.nbt",
+      "compressed_bytes": 4298,
+      "bedrock_target": "lizardmen_tall_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/lizardmen_village_tower.nbt",
+      "compressed_bytes": 6191,
+      "bedrock_target": "lizardmen_village_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_blacksmith_1.nbt",
+      "compressed_bytes": 5131,
+      "bedrock_target": "lizardmen_village_blacksmith_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_blacksmith_2.nbt",
+      "compressed_bytes": 5098,
+      "bedrock_target": "lizardmen_village_blacksmith_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_blacksmith_3.nbt",
+      "compressed_bytes": 5074,
+      "bedrock_target": "lizardmen_village_blacksmith_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_blacksmith_4.nbt",
+      "compressed_bytes": 5187,
+      "bedrock_target": "lizardmen_village_blacksmith_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_curved_stairs_1.nbt",
+      "compressed_bytes": 3865,
+      "bedrock_target": "lizardmen_village_curved_stairs_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_curved_stairs_2.nbt",
+      "compressed_bytes": 3840,
+      "bedrock_target": "lizardmen_village_curved_stairs_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_curved_stairs_3.nbt",
+      "compressed_bytes": 3779,
+      "bedrock_target": "lizardmen_village_curved_stairs_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_curved_stairs_4.nbt",
+      "compressed_bytes": 3844,
+      "bedrock_target": "lizardmen_village_curved_stairs_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_entrance.nbt",
+      "compressed_bytes": 12259,
+      "bedrock_target": "lizardmen_village_entrance.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_entrance_stairs.nbt",
+      "compressed_bytes": 6949,
+      "bedrock_target": "lizardmen_village_entrance_stairs.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_fallback.nbt",
+      "compressed_bytes": 786,
+      "bedrock_target": "lizardmen_village_fallback.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_fallback_2.nbt",
+      "compressed_bytes": 787,
+      "bedrock_target": "lizardmen_village_fallback_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_1.nbt",
+      "compressed_bytes": 1820,
+      "bedrock_target": "lizardmen_village_hallway_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_2.nbt",
+      "compressed_bytes": 1840,
+      "bedrock_target": "lizardmen_village_hallway_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_3.nbt",
+      "compressed_bytes": 1780,
+      "bedrock_target": "lizardmen_village_hallway_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_4.nbt",
+      "compressed_bytes": 1859,
+      "bedrock_target": "lizardmen_village_hallway_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_corner_1.nbt",
+      "compressed_bytes": 1958,
+      "bedrock_target": "lizardmen_village_hallway_corner_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_corner_2.nbt",
+      "compressed_bytes": 1855,
+      "bedrock_target": "lizardmen_village_hallway_corner_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_corner_3.nbt",
+      "compressed_bytes": 1999,
+      "bedrock_target": "lizardmen_village_hallway_corner_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_corner_4.nbt",
+      "compressed_bytes": 1888,
+      "bedrock_target": "lizardmen_village_hallway_corner_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_t_1.nbt",
+      "compressed_bytes": 1996,
+      "bedrock_target": "lizardmen_village_hallway_t_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_t_2.nbt",
+      "compressed_bytes": 2243,
+      "bedrock_target": "lizardmen_village_hallway_t_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_t_3.nbt",
+      "compressed_bytes": 2095,
+      "bedrock_target": "lizardmen_village_hallway_t_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_t_4.nbt",
+      "compressed_bytes": 2231,
+      "bedrock_target": "lizardmen_village_hallway_t_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_x_1.nbt",
+      "compressed_bytes": 2332,
+      "bedrock_target": "lizardmen_village_hallway_x_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_x_2.nbt",
+      "compressed_bytes": 2354,
+      "bedrock_target": "lizardmen_village_hallway_x_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_x_3.nbt",
+      "compressed_bytes": 2408,
+      "bedrock_target": "lizardmen_village_hallway_x_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hallway_x_4.nbt",
+      "compressed_bytes": 2410,
+      "bedrock_target": "lizardmen_village_hallway_x_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_hay_room.nbt",
+      "compressed_bytes": 3001,
+      "bedrock_target": "lizardmen_village_hay_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_mess_hall_1.nbt",
+      "compressed_bytes": 4264,
+      "bedrock_target": "lizardmen_village_mess_hall_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_mess_hall_2.nbt",
+      "compressed_bytes": 4301,
+      "bedrock_target": "lizardmen_village_mess_hall_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_mess_hall_3.nbt",
+      "compressed_bytes": 4356,
+      "bedrock_target": "lizardmen_village_mess_hall_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_prison_1.nbt",
+      "compressed_bytes": 5796,
+      "bedrock_target": "lizardmen_village_prison_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_prison_2.nbt",
+      "compressed_bytes": 5815,
+      "bedrock_target": "lizardmen_village_prison_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_room_1.nbt",
+      "compressed_bytes": 4924,
+      "bedrock_target": "lizardmen_village_room_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_room_2.nbt",
+      "compressed_bytes": 4828,
+      "bedrock_target": "lizardmen_village_room_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_room_3.nbt",
+      "compressed_bytes": 4997,
+      "bedrock_target": "lizardmen_village_room_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_stable.nbt",
+      "compressed_bytes": 8508,
+      "bedrock_target": "lizardmen_village_stable.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_stairs_1.nbt",
+      "compressed_bytes": 3419,
+      "bedrock_target": "lizardmen_village_stairs_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_stairs_2.nbt",
+      "compressed_bytes": 3270,
+      "bedrock_target": "lizardmen_village_stairs_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_stairs_3.nbt",
+      "compressed_bytes": 3478,
+      "bedrock_target": "lizardmen_village_stairs_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_stairs_4.nbt",
+      "compressed_bytes": 3380,
+      "bedrock_target": "lizardmen_village_stairs_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_thatch_room.nbt",
+      "compressed_bytes": 3446,
+      "bedrock_target": "lizardmen_village_thatch_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/underground/lizardmen_village_throne_room.nbt",
+      "compressed_bytes": 11567,
+      "bedrock_target": "lizardmen_village_throne_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_house_1.nbt",
+      "compressed_bytes": 1619,
+      "bedrock_target": "lizardmen_village_house_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_house_2.nbt",
+      "compressed_bytes": 1685,
+      "bedrock_target": "lizardmen_village_house_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_house_3.nbt",
+      "compressed_bytes": 1622,
+      "bedrock_target": "lizardmen_village_house_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_house_4.nbt",
+      "compressed_bytes": 1646,
+      "bedrock_target": "lizardmen_village_house_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_house_5.nbt",
+      "compressed_bytes": 1640,
+      "bedrock_target": "lizardmen_village_house_5.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_house_6.nbt",
+      "compressed_bytes": 1567,
+      "bedrock_target": "lizardmen_village_house_6.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_pillar.nbt",
+      "compressed_bytes": 320,
+      "bedrock_target": "lizardmen_village_pillar.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_1.nbt",
+      "compressed_bytes": 870,
+      "bedrock_target": "lizardmen_village_road_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_2.nbt",
+      "compressed_bytes": 897,
+      "bedrock_target": "lizardmen_village_road_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_3.nbt",
+      "compressed_bytes": 920,
+      "bedrock_target": "lizardmen_village_road_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_corner_1.nbt",
+      "compressed_bytes": 871,
+      "bedrock_target": "lizardmen_village_road_corner_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_corner_2.nbt",
+      "compressed_bytes": 888,
+      "bedrock_target": "lizardmen_village_road_corner_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_corner_3.nbt",
+      "compressed_bytes": 877,
+      "bedrock_target": "lizardmen_village_road_corner_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_t_1.nbt",
+      "compressed_bytes": 1024,
+      "bedrock_target": "lizardmen_village_road_t_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_t_2.nbt",
+      "compressed_bytes": 1028,
+      "bedrock_target": "lizardmen_village_road_t_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_t_3.nbt",
+      "compressed_bytes": 1064,
+      "bedrock_target": "lizardmen_village_road_t_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_x_1.nbt",
+      "compressed_bytes": 1169,
+      "bedrock_target": "lizardmen_village_road_x_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_x_2.nbt",
+      "compressed_bytes": 1181,
+      "bedrock_target": "lizardmen_village_road_x_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_road_x_3.nbt",
+      "compressed_bytes": 1215,
+      "bedrock_target": "lizardmen_village_road_x_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_storage_1.nbt",
+      "compressed_bytes": 2200,
+      "bedrock_target": "lizardmen_village_storage_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/lizardman_village/water/lizardmen_village_storage_2.nbt",
+      "compressed_bytes": 2146,
+      "bedrock_target": "lizardmen_village_storage_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_lord_spawn.nbt",
+      "compressed_bytes": 2052,
+      "bedrock_target": "orc_lord_spawn.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_spawn.nbt",
+      "compressed_bytes": 1699,
+      "bedrock_target": "orc_spawn.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_big_tent_1.nbt",
+      "compressed_bytes": 2162,
+      "bedrock_target": "orc_village_big_tent_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_big_tent_2.nbt",
+      "compressed_bytes": 2161,
+      "bedrock_target": "orc_village_big_tent_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_big_tent_3.nbt",
+      "compressed_bytes": 2230,
+      "bedrock_target": "orc_village_big_tent_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_big_tent_4.nbt",
+      "compressed_bytes": 2231,
+      "bedrock_target": "orc_village_big_tent_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_campfire_1.nbt",
+      "compressed_bytes": 1354,
+      "bedrock_target": "orc_village_campfire_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_campfire_2.nbt",
+      "compressed_bytes": 1357,
+      "bedrock_target": "orc_village_campfire_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_logs.nbt",
+      "compressed_bytes": 1775,
+      "bedrock_target": "orc_village_logs.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_1.nbt",
+      "compressed_bytes": 651,
+      "bedrock_target": "orc_village_road_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_2.nbt",
+      "compressed_bytes": 644,
+      "bedrock_target": "orc_village_road_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_corner_1.nbt",
+      "compressed_bytes": 909,
+      "bedrock_target": "orc_village_road_corner_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_corner_2.nbt",
+      "compressed_bytes": 895,
+      "bedrock_target": "orc_village_road_corner_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_t_1.nbt",
+      "compressed_bytes": 1135,
+      "bedrock_target": "orc_village_road_t_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_t_2.nbt",
+      "compressed_bytes": 1100,
+      "bedrock_target": "orc_village_road_t_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_x_1.nbt",
+      "compressed_bytes": 1316,
+      "bedrock_target": "orc_village_road_x_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_road_x_2.nbt",
+      "compressed_bytes": 1286,
+      "bedrock_target": "orc_village_road_x_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_small_tent_1.nbt",
+      "compressed_bytes": 1779,
+      "bedrock_target": "orc_village_small_tent_1.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_small_tent_2.nbt",
+      "compressed_bytes": 1763,
+      "bedrock_target": "orc_village_small_tent_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_small_tent_3.nbt",
+      "compressed_bytes": 1781,
+      "bedrock_target": "orc_village_small_tent_3.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_small_tent_4.nbt",
+      "compressed_bytes": 1758,
+      "bedrock_target": "orc_village_small_tent_4.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/orc_village/orc_village_storage.nbt",
+      "compressed_bytes": 2166,
+      "bedrock_target": "orc_village_storage.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/tower/buried_wizard_tower.nbt",
+      "compressed_bytes": 9071,
+      "bedrock_target": "buried_wizard_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/tower/burnt_wizard_tower.nbt",
+      "compressed_bytes": 5936,
+      "bedrock_target": "burnt_wizard_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/tower/frozen_wizard_tower.nbt",
+      "compressed_bytes": 9259,
+      "bedrock_target": "frozen_wizard_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/tower/rotted_wizard_tower.nbt",
+      "compressed_bytes": 8965,
+      "bedrock_target": "rotted_wizard_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/tower/ruined_wizard_tower.nbt",
+      "compressed_bytes": 9483,
+      "bedrock_target": "ruined_wizard_tower.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/warp/cold_warp_pad.nbt",
+      "compressed_bytes": 1013,
+      "bedrock_target": "cold_warp_pad.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/warp/desert_warp_pad.nbt",
+      "compressed_bytes": 1013,
+      "bedrock_target": "desert_warp_pad.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/warp/mesa_warp_pad.nbt",
+      "compressed_bytes": 1018,
+      "bedrock_target": "mesa_warp_pad.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/warp/plains_warp_pad.nbt",
+      "compressed_bytes": 1108,
+      "bedrock_target": "plains_warp_pad.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/ruin/warp/swamp_warp_pad.nbt",
+      "compressed_bytes": 1025,
+      "bedrock_target": "swamp_warp_pad.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_entrance.nbt",
+      "compressed_bytes": 12604,
+      "bedrock_target": "spider_nest_entrance.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_entrance_dungeon.nbt",
+      "compressed_bytes": 13303,
+      "bedrock_target": "spider_nest_entrance_dungeon.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_room.nbt",
+      "compressed_bytes": 58773,
+      "bedrock_target": "spider_nest_room.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_room_2.nbt",
+      "compressed_bytes": 51711,
+      "bedrock_target": "spider_nest_room_2.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_room_dungeon.nbt",
+      "compressed_bytes": 60463,
+      "bedrock_target": "spider_nest_room_dungeon.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_stairs.nbt",
+      "compressed_bytes": 19216,
+      "bedrock_target": "spider_nest_stairs.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_stairs_dungeon.nbt",
+      "compressed_bytes": 43484,
+      "bedrock_target": "spider_nest_stairs_dungeon.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    },
+    {
+      "java_file": "data/tensura/structure/spider_nest/spider_nest_surface.nbt",
+      "compressed_bytes": 673,
+      "bedrock_target": "spider_nest_surface.mcstructure",
+      "status": "requires Java NBT palette/block-state conversion; not copied as active Bedrock structure"
+    }
+  ]
+}

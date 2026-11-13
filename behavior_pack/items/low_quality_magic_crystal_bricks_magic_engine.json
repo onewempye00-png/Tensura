@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:low_quality_magic_crystal_bricks_magic_engine",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/magicule_crystal",
+      "minecraft:display_name": {
+        "value": "Low Quality Magic Crystal Bricks Magic Engine"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer": {
+        "block": "tensura:low_quality_magic_crystal_bricks_magic_engine"
+      }
+    }
+  }
+}

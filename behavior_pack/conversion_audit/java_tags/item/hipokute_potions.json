@@ -1,0 +1,8 @@
+{
+  "values": [
+    "tensura:low_potion",
+    "tensura:high_potion",
+    "tensura:full_potion",
+    "tensura:revival_elixir"
+  ]
+}

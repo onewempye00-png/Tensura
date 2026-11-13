@@ -1,0 +1,34 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 418573921,
+    "separation": 16,
+    "spacing": 34
+  },
+  "structures": [
+    {
+      "structure": "tensura:villages/goblin_village/acacia",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/goblin_village/birch",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/goblin_village/jungle",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/goblin_village/oak",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/goblin_village/palm",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/goblin_village/spruce",
+      "weight": 1
+    }
+  ]
+}

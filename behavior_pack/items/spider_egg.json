@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:spider_egg",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/spider_egg",
+      "minecraft:display_name": {
+        "value": "Spider Egg"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer": {
+        "block": "tensura:spider_egg"
+      }
+    }
+  }
+}

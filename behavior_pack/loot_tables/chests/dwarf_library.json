@@ -1,0 +1,97 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:writable_book",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ink_sac",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 4,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:battlewill_manual",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 75
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chiseled_bookshelf",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bookshelf",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

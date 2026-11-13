@@ -1,0 +1,112 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:palm_leaves",
+              "conditions": [
+                {
+                  "condition": "any_of",
+                  "terms": [
+                    {
+                      "condition": "match_tool",
+                      "predicate": {
+                        "items": "minecraft:shears"
+                      }
+                    },
+                    {
+                      "condition": "match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "tensura:palm_sapling",
+              "conditions": [
+                {
+                  "condition": "survives_explosion"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 1
+              }
+            },
+            {
+              "function": "explosion_decay"
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "inverted",
+          "term": {
+            "condition": "any_of",
+            "terms": [
+              {
+                "condition": "match_tool",
+                "predicate": {
+                  "items": "minecraft:shears"
+                }
+              },
+              {
+                "condition": "match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "format_version": "1.20.0"
+}

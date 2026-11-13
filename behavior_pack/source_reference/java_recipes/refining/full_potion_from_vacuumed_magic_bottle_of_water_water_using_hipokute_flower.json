@@ -1,0 +1,14 @@
+{
+  "type": "tensura:refining",
+  "input": {
+    "count": 1,
+    "id": "tensura:vacuumed_magic_bottle_of_water"
+  },
+  "input1": {
+    "item": "tensura:hipokute_flower"
+  },
+  "output": {
+    "count": 1,
+    "id": "tensura:full_potion"
+  }
+}

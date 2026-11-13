@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tool_rack",
+  "key": {
+    "#": {
+      "item": "minecraft:warped_slab"
+    },
+    "F": {
+      "item": "minecraft:warped_fence"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "F F",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:warped_tool_rack"
+  }
+}

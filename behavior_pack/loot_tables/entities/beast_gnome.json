@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:earth_elemental_shard",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:elemental_essence",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.1
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

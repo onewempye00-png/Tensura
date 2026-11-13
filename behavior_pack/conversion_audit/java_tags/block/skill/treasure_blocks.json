@@ -1,0 +1,48 @@
+{
+  "values": [
+    "minecraft:barrel",
+    "minecraft:chest",
+    "minecraft:ender_chest",
+    "minecraft:vault",
+    "minecraft:dragon_egg",
+    "minecraft:ancient_debris",
+    "minecraft:suspicious_sand",
+    "minecraft:suspicious_gravel",
+    "tensura:magic_ore",
+    "tensura:deepslate_magic_ore",
+    "tensura:charybdis_core",
+    "tensura:royal_dwarven_warp_pad",
+    {
+      "id": "lootr:lootr_barrel",
+      "required": false
+    },
+    {
+      "id": "lootr:barrel",
+      "required": false
+    },
+    {
+      "id": "lootr:lootr_chest",
+      "required": false
+    },
+    {
+      "id": "lootr:chest",
+      "required": false
+    },
+    {
+      "id": "lootr:lootr_shulker",
+      "required": false
+    },
+    {
+      "id": "lootr:shulker_box",
+      "required": false
+    },
+    {
+      "id": "lootr:suspicious_sand",
+      "required": false
+    },
+    {
+      "id": "lootr:suspicious_gravel",
+      "required": false
+    }
+  ]
+}

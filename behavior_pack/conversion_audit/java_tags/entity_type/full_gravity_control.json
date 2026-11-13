@@ -1,0 +1,24 @@
+{
+  "values": [
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "tensura:gazel_dwargo",
+    "tensura:hinata_sakaguchi",
+    "tensura:training_dummy",
+    "tensura:lesser_daemon",
+    "tensura:greater_daemon",
+    "tensura:arch_daemon",
+    "tensura:akash",
+    "tensura:charybdis",
+    "tensura:elemental_colossus",
+    "tensura:ifrit",
+    "tensura:ifrit_clone",
+    "tensura:sylphide",
+    "tensura:undine",
+    "tensura:war_gnome",
+    {
+      "id": "dummmmmmy:target_dummy",
+      "required": false
+    }
+  ]
+}

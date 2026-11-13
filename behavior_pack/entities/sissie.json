@@ -1,0 +1,66 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tensura:sissie",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "tensura",
+          "npc",
+          "humanoid"
+        ]
+      },
+      "minecraft:health": {
+        "value": 240,
+        "max": 240
+      },
+      "minecraft:attack": {
+        "damage": 8
+      },
+      "minecraft:movement": {
+        "value": 0.28
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": false,
+        "can_pass_doors": true,
+        "can_open_doors": false
+      },
+      "minecraft:follow_range": {
+        "value": 24
+      },
+      "minecraft:collision_box": {
+        "width": 0.65,
+        "height": 1.95
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/sissie.json"
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      }
+    }
+  }
+}

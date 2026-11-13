@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:hihiirokane_axe_inactive",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/hihiirokane_axe_inactive",
+      "minecraft:display_name": {
+        "value": "Hihiirokane Axe Inactive"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

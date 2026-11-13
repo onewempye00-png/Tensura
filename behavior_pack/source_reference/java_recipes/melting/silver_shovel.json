@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:silver_shovel"
+  },
+  "primary": "tensura:silver",
+  "primary_count": 1,
+  "smeltTick": 50
+}

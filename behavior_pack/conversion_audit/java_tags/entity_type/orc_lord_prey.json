@@ -1,0 +1,16 @@
+{
+  "remove": [
+    "tensura:orc",
+    "tensura:orc_lord",
+    "tensura:orc_disaster"
+  ],
+  "values": [
+    "#tensura:animal_prey",
+    "#tensura:human_like",
+    "#tensura:drop_crystal",
+    "#tensura:can_be_named",
+    "minecraft:player",
+    "minecraft:iron_golem",
+    "minecraft:snow_golem"
+  ]
+}

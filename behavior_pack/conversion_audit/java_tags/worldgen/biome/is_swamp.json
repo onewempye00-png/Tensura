@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "c:is_swamp",
+      "required": false
+    },
+    "#minecraft:has_structure/swamp_hut",
+    "#minecraft:has_structure/ruined_portal_swamp",
+    "#minecraft:allows_surface_slime_spawns"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:high_magisteel_chestplate",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/high_magisteel_chestplate",
+      "minecraft:display_name": {
+        "value": "High Magisteel Chestplate"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest",
+        "protection": 8
+      },
+      "minecraft:durability": {
+        "max_durability": 520
+      },
+      "minecraft:enchantable": {
+        "slot": "armor",
+        "value": 12
+      }
+    }
+  }
+}

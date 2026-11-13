@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:ancient_debris"
+  },
+  "primary": "tensura:netherite",
+  "primary_count": 4,
+  "smeltTick": 75
+}

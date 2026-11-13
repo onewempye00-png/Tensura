@@ -1,0 +1,45 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tensura:chiseled_low_quality_magic_crystal_bricks",
+      "menu_category": {
+        "category": "construction"
+      },
+      "properties": {
+        "tensura:direction": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ],
+        "tensura:axis": [
+          "x",
+          "y",
+          "z"
+        ],
+        "tensura:half": [
+          "bottom",
+          "top"
+        ],
+        "tensura:waterlogged": [
+          "false",
+          "true"
+        ],
+        "tensura:enabled": [
+          "false",
+          "true"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tensura:block/chiseled_low_quality_magic_crystal_bricks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/chiseled_low_quality_magic_crystal_bricks.json"
+    }
+  }
+}

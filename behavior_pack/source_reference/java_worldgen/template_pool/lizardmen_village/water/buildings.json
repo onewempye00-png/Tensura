@@ -1,0 +1,95 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_pillar",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_house_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_house_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_house_3",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_house_4",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_house_5",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/water/lizardmen_village_house_6",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/underground/lizardmen_village_storage_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tensura:lizardman_village/underground/lizardmen_village_storage_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

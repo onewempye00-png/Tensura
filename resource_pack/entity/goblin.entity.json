@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:goblin",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/tensura_goblin"
+      },
+      "geometry": {
+        "default": "geometry.tensura_goblin"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "sound_effects": {
+        "ambient": "tensura.entity.goblin.ambient",
+        "hurt": "tensura.entity.goblin.hurt",
+        "death": "tensura.entity.goblin.death"
+      }
+    }
+  }
+}

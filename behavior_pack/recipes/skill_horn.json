@@ -1,0 +1,34 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:skill_horn"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " D ",
+      "ABA",
+      " G "
+    ],
+    "key": {
+      "D": {
+        "item": "minecraft:diamond"
+      },
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "B": {
+        "item": "minecraft:blaze_rod"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "result": {
+      "item": "tensura:skill_horn",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:silver_sword",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/silver_sword",
+      "minecraft:display_name": {
+        "value": "Silver Sword"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1200
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 60,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "tensura:magic_bottle_of_water"
+  },
+  "result": {
+    "count": 1,
+    "id": "tensura:vacuumed_magic_bottle_of_water"
+  }
+}

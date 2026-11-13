@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_stone_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:end_stone_bricks"
+    },
+    "S": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:end_stone_warp_pad"
+  }
+}

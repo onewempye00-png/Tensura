@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:low_magisteel_leggings"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 1,
+  "secondary": "tensura:iron",
+  "secondary_count": 2,
+  "smeltTick": 175
+}

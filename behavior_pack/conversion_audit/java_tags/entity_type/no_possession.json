@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#tensura:boss_for_hero",
+    "minecraft:warden",
+    "minecraft:armor_stand",
+    "tensura:ifrit_clone",
+    "tensura:gazel_dwargo",
+    "tensura:hinata_sakaguchi",
+    "tensura:shizu",
+    "tensura:training_dummy",
+    {
+      "id": "dummmmmmy:target_dummy",
+      "required": false
+    }
+  ]
+}

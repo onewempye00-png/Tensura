@@ -1,0 +1,18 @@
+{
+  "values": [
+    "#tensura:is_mental",
+    "#tensura:is_spiritual",
+    "tensura:curse",
+    "tensura:magicule_poison",
+    "tensura:severance",
+    "tensura:devoured",
+    "tensura:energy_drain",
+    "tensura:energy_source_lost",
+    "tensura:infinite_eater",
+    "tensura:suffocate",
+    "minecraft:starve",
+    "minecraft:out_of_world",
+    "minecraft:generic_kill",
+    "minecraft:outside_border"
+  ]
+}

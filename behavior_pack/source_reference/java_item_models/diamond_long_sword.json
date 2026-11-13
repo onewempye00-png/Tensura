@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/long_sword_handheld",
+  "textures": {
+    "layer0": "tensura:item/diamond_long_sword"
+  }
+}

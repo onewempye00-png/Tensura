@@ -1,0 +1,105 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 10,
+        "min": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 5
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "tensura:monster_leather_d",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "tensura:dwargon_banner_pattern",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 15
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "tensura:iron_spear",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_sword",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "tensura:golden_spear",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 15
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

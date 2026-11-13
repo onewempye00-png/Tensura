@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:skill_book_reinforced_barrier",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/skill_book_reinforced_barrier",
+      "minecraft:display_name": {
+        "value": "Skill Tome: Reinforced Barrier"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_modifiers": {
+        "use_duration": 0.1,
+        "movement_modifier": 1.0
+      }
+    }
+  }
+}

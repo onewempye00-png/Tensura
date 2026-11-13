@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:golden_chestplate"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 2,
+  "smeltTick": 225
+}

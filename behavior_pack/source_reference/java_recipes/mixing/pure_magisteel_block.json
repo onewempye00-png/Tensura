@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_mixing",
+  "output": {
+    "count": 1,
+    "id": "tensura:pure_magisteel_block"
+  },
+  "right": "tensura:magisteel",
+  "right_count": 324
+}

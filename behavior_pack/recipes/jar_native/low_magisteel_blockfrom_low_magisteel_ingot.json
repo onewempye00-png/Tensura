@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/low_magisteel_blockfrom_low_magisteel_ingot"},"tags":["crafting_table"],"pattern":["###","###","###"],"key":{"#":{"item":"tensura:low_magisteel_ingot"}},"result":{"item":"tensura:low_magisteel_block","count":1}}}

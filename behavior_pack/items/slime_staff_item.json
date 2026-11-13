@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:slime_staff_item",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/slime_staff_item",
+      "minecraft:display_name": {
+        "value": "Slime Staff"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": 3,
+      "minecraft:durability": {
+        "max_durability": 500
+      }
+    }
+  }
+}

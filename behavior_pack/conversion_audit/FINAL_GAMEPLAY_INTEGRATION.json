@@ -1,0 +1,42 @@
+{
+  "version": "3.2.6",
+  "menu": "Tensura Compass replaces the retired reincarnation compass/menu crystal.",
+  "horns": {
+    "skill": "Each hotbar slot stores an independent skill assignment.",
+    "magic": "Each hotbar slot stores an independent magic assignment.",
+    "naming": "Names mobs directly and offers player naming with target consent."
+  },
+  "crafting": "Dedicated placeable Tensura Crafting Table with recipe and forge/alchemy/kiln/mining/spellbinding menu.",
+  "resources": "HP is read from actual health; MP, AP and SP are consumed by the appropriate spell/skill categories; EP is recalculated from resource pools.",
+  "hud": "18-segment left-anchored bars; enlarged HUD panel; three passive skill slots.",
+  "skills": "Great Sage, Raphael and Ciel remain Unique Skills; Raphael is a passive loadout skill; passive skills support equip and unequip.",
+  "reset_scroll": "Character Reset Scroll opens confirmation and resets race/progression while preserving inventory and gear.",
+  "elemental_spirits": "Eight summonable elemental spirit entities with rank-based contract costs and source-derived visual reuse.",
+  "armor_ep": "Equipment stores EP and advances grade over time; armor/weapon self-repair retained.",
+  "bows": "Bow/crossbow item definitions use Bedrock shooter components and arrow ammunition.",
+  "bosses": "Boss health increased to thousands/hundreds of thousands/millions; boss loot tables and scripted drops are Tensura items only.",
+  "landmarks": [
+    "Veldora Cave",
+    "Charybdis Cave",
+    "Dwarven Village",
+    "Great World Tree",
+    "Spirit Sanctuary",
+    "Great Spirit Labyrinth"
+  ],
+  "dimensions": {
+    "Hell": "Nether approximation with Hell structures/features",
+    "Great Spirit Labyrinth": "End approximation with ten Java-derived structure segments and guardian/hound"
+  },
+  "mobile": "Uses Bedrock Script API and item-based UI; no chat command workflow for menu, skills, magic or naming.",
+  "content_counts": {
+    "items": 1618,
+    "blocks": 197,
+    "behavior_entities": 115,
+    "client_entities": 115,
+    "spawn_rules": 70,
+    "features": 23,
+    "feature_rules": 21,
+    "loot_tables": 35,
+    "converted_structures": 395
+  }
+}

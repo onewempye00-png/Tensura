@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "tensura:smelt_raw_magisteel"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "tensura:raw_magisteel",
+    "output": "tensura:low_magisteel_ingot"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kiln",
+  "key": {
+    "#": {
+      "item": "tensura:mithril_ingot"
+    },
+    "C": {
+      "item": "minecraft:cauldron"
+    },
+    "K": {
+      "item": "tensura:kiln"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "#N#",
+    "CKC",
+    "#N#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:kiln_mithril"
+  }
+}

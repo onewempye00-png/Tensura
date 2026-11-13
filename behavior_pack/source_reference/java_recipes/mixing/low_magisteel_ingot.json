@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_mixing",
+  "left": "tensura:iron",
+  "left_count": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:low_magisteel_ingot"
+  },
+  "right": "tensura:magisteel",
+  "right_count": 4
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tensura:world_tree_log",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.log"
+      },
+      "properties": {
+        "tensura:direction": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ],
+        "tensura:axis": [
+          "x",
+          "y",
+          "z"
+        ],
+        "tensura:half": [
+          "bottom",
+          "top"
+        ],
+        "tensura:waterlogged": [
+          "false",
+          "true"
+        ],
+        "tensura:enabled": [
+          "false",
+          "true"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3
+      },
+      "minecraft:map_color": "#1B574C",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tensura:block/world_tree_log",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+      }
+    }
+  }
+}

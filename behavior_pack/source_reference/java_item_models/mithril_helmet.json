@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/mithril_helmet_tail",
+    "layer1": "tensura:item/mithril_helmet"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_mixing",
+  "left": "tensura:gold",
+  "left_count": 4,
+  "output": {
+    "count": 1,
+    "id": "tensura:orichalcum_ingot"
+  },
+  "right": "tensura:magisteel",
+  "right_count": 20
+}

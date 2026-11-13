@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.tempest_serpent",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "All",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "All",
+					"pivot": [0, 4, 0.5],
+					"cubes": [
+						{"origin": [-5, 0.1, -7.85], "size": [10, 10, 8], "inflate": 0.01, "uv": [38, 21]},
+						{"origin": [0, 10.1, -7.85], "size": [0, 2, 8], "uv": [0, 85]}
+					]
+				},
+				{
+					"name": "Chest",
+					"parent": "Body",
+					"pivot": [0, 0.25, -0.25],
+					"cubes": [
+						{"origin": [-4, 6.75, -0.25], "size": [8, 8, 3], "inflate": -0.3, "pivot": [0, 10, 0.165], "rotation": [90, 0, 0], "uv": [74, 34]}
+					]
+				},
+				{
+					"name": "Body2",
+					"parent": "Body",
+					"pivot": [0, 4.25, -0.5],
+					"cubes": [
+						{"origin": [-5, 0.1, -0.85], "size": [10, 10, 8], "uv": [38, 39]},
+						{"origin": [0, 10.1, -0.85], "size": [0, 2, 8], "uv": [0, 85]}
+					]
+				}
+			]
+		}
+	]
+}

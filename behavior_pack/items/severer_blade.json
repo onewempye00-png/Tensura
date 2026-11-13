@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:severer_blade",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/severer_blade",
+      "minecraft:display_name": {
+        "value": "Severer Blade"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

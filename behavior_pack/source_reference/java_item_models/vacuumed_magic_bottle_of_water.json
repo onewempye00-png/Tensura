@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/vacuumed_magic_bottle_of_water"
+  }
+}

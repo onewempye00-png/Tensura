@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:orc_disaster",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/tensura/orc_disaster"
+      },
+      "geometry": {
+        "default": "geometry.orc_disaster"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "sound_effects": {
+        "ambient": "tensura.entity.goblin.ambient",
+        "hurt": "tensura.entity.goblin.hurt",
+        "death": "tensura.entity.goblin.death"
+      }
+    }
+  }
+}

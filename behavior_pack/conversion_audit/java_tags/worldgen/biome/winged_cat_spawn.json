@@ -1,0 +1,15 @@
+{
+  "values": [
+    {
+      "id": "c:is_jungle",
+      "required": false
+    },
+    {
+      "id": "c:is_outer_end_island",
+      "required": false
+    },
+    "#tensura:has_structure/ancient_forest",
+    "#minecraft:is_jungle",
+    "#minecraft:has_structure/end_city"
+  ]
+}

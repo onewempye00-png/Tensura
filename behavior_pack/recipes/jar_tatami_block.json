@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_tatami_block"},"tags":["crafting_table"],"pattern":["##","BB","##"],"key":{"#":{"item":"tensura:thatch"},"B":{"item":"tensura:thatch_block"}},"unlock":[],"result":{"item":"tensura:tatami_block","count":4}}}

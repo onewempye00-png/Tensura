@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "c:is_deep_ocean",
+      "required": false
+    },
+    "#minecraft:is_deep_ocean"
+  ]
+}

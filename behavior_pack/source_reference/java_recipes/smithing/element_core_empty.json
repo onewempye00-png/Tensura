@@ -1,0 +1,17 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:magic_stone"
+  },
+  "input2": {
+    "item": "tensura:medium_quality_magic_crystal"
+  },
+  "inputAmount2": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:element_core_empty"
+  },
+  "schematics": [
+    "tensura:low_magisteel_gear_schematic"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 651928374,
+    "separation": 30,
+    "spacing": 40
+  },
+  "structures": [
+    {
+      "structure": "tensura:villages/lizardmen_village/tower_tall",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:villages/lizardmen_village/tower_short",
+      "weight": 1
+    }
+  ]
+}

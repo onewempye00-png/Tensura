@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "tensura:akash",
+    "tensura:ifrit",
+    "tensura:charybdis",
+    "tensura:elemental_colossus",
+    "tensura:orc_lord",
+    "tensura:orc_disaster",
+    "tensura:supermassive_slime",
+    "tensura:sylphide",
+    "tensura:undine",
+    "tensura:war_gnome",
+    {
+      "id": "c:bosses",
+      "required": false
+    }
+  ]
+}

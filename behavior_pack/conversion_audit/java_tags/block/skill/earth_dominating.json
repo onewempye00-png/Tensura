@@ -1,0 +1,25 @@
+{
+  "values": [
+    "#tensura:skill/earth_manipulating",
+    "#minecraft:base_stone_overworld",
+    "#minecraft:base_stone_nether",
+    "#minecraft:nylium",
+    "#minecraft:wart_blocks",
+    "#minecraft:terracotta",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "minecraft:calcite",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:stone",
+    "minecraft:deepslate",
+    "minecraft:tuff",
+    "minecraft:dripstone_block",
+    "minecraft:pointed_dripstone",
+    "minecraft:cobblestone",
+    "minecraft:infested_cobblestone",
+    "minecraft:mossy_cobblestone",
+    "minecraft:cobbled_deepslate"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "tensura:item/high_magic_staff",
+  "textures": {
+    "0": "tensura:item/slime_staff",
+    "particle": "tensura:item/slime_staff"
+  }
+}

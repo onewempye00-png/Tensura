@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:moth_egg",
+              "conditions": [
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "tensura:hell_moth_silk",
+              "functions": [
+                {
+                  "function": "set_count",
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 3,
+                    "min": 1
+                  }
+                },
+                {
+                  "function": "limit_count",
+                  "limit": {
+                    "max": 3,
+                    "min": 0
+                  }
+                },
+                {
+                  "function": "explosion_decay"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

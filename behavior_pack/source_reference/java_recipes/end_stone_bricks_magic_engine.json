@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_stone_bricks_magic_engine",
+  "key": {
+    "#": {
+      "item": "minecraft:end_stone_bricks"
+    },
+    "I": {
+      "item": "tensura:pure_magisteel_ingot"
+    },
+    "S": {
+      "item": "tensura:high_quality_magic_crystal"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:end_stone_bricks_magic_engine"
+  }
+}

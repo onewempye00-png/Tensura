@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "c:is_badlands",
+      "required": false
+    },
+    "#tensura:has_structure/ancient_forest",
+    "#tensura:is_cave",
+    "#minecraft:is_badlands"
+  ]
+}

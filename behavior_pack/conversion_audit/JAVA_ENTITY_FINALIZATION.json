@@ -1,0 +1,35 @@
+{
+  "behavior_entities": 115,
+  "client_entities": 115,
+  "spawn_rules": 70,
+  "source_spawn_egg_models": 70,
+  "spawn_egg_item_definitions": 72,
+  "elemental_spirit_entities": [
+    "spirit_light",
+    "spirit_darkness",
+    "spirit_fire",
+    "spirit_spatial",
+    "spirit_wind",
+    "spirit_earth",
+    "spirit_water",
+    "spirit_gravity"
+  ],
+  "new_client_entity_completion": 35,
+  "client_geometry_texture_animation_reference_errors": 0,
+  "boss_hp": {
+    "veldora": 1000000,
+    "guy_crimson": 500000,
+    "charybdis": 250000,
+    "elemental_colossus": 100000,
+    "orc_disaster": 25000,
+    "orc_lord": 8000,
+    "diablo": 50000,
+    "testarossa": 40000,
+    "carrera": 35000,
+    "ultima": 30000,
+    "misery": 25000,
+    "rain": 25000,
+    "ifrit": 12000
+  },
+  "boss_loot_tables_tensura_only": 13
+}

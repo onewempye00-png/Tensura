@@ -1,0 +1,13 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:copper_ingot"
+  },
+  "output": {
+    "count": 4,
+    "id": "tensura:copper_shell"
+  },
+  "schematics": [
+    "tensura:web_gun_schematic"
+  ]
+}

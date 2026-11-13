@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:nether_quartz_ore",
+    {
+      "id": "c:ores_in_ground/netherrack",
+      "required": false
+    }
+  ]
+}

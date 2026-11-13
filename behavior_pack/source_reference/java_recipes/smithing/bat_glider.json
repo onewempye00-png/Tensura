@@ -1,0 +1,22 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:giant_bat_wing"
+  },
+  "input2": {
+    "item": "tensura:monster_leather_c"
+  },
+  "input3": {
+    "item": "tensura:magic_stone"
+  },
+  "inputAmount1": 2,
+  "inputAmount2": 2,
+  "inputAmount3": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:bat_glider"
+  },
+  "schematics": [
+    "tensura:monster_leather_gear_schematic"
+  ]
+}

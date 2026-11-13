@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/dragon_peacock_feather"
+  }
+}

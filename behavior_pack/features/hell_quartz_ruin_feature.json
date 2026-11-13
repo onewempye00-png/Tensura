@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "tensura:hell_quartz_ruin_feature"
+    },
+    "structure_name": "tensura:hell/quartz/hell_gate_ruined_quartz",
+    "adjustment_radius": 8,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {}
+    }
+  }
+}

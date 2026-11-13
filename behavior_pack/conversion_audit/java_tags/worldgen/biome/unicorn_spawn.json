@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "c:is_mountain",
+      "required": false
+    },
+    "#minecraft:is_mountain",
+    "minecraft:flower_forest"
+  ]
+}

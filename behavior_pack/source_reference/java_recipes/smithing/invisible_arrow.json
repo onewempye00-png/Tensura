@@ -1,0 +1,21 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:flint"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "input3": {
+    "item": "tensura:invisible_feather"
+  },
+  "inputAmount2": 1,
+  "inputAmount3": 1,
+  "output": {
+    "count": 6,
+    "id": "tensura:invisible_arrow"
+  },
+  "schematics": [
+    "tensura:basic_bows_schematic"
+  ]
+}

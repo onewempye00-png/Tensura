@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:cut_copper_slab"
+  },
+  "primary": "tensura:copper",
+  "primary_count": 40,
+  "smeltTick": 300
+}

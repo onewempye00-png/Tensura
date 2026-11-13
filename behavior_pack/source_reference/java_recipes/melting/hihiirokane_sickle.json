@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:hihiirokane_sickle"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 12,
+  "smeltTick": 75
+}

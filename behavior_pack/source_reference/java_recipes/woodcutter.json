@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "woodcutter",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " I ",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:woodcutter"
+  }
+}

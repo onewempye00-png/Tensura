@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tuff_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "MCM",
+    "MMM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:tuff_warp_pad"
+  }
+}

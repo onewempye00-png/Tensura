@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_sarasa_sandstone_slab"},"tags":["crafting_table"],"pattern":["###"],"key":{"#":{"item":"tensura:sarasa_sandstone"}},"unlock":[],"result":{"item":"tensura:sarasa_sandstone_slab","count":6}}}

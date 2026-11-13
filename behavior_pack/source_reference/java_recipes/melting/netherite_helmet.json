@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "primary": "tensura:netherite",
+  "primary_count": 4,
+  "secondary": "tensura:gold",
+  "secondary_count": 8,
+  "smeltTick": 125
+}

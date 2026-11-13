@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:mithril_bone_golem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/mithril_bone_golem",
+      "minecraft:display_name": {
+        "value": "Mithril Bone Golem"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

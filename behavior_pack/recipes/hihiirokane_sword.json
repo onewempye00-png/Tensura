@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:hihiirokane_sword"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " H ",
+      " H ",
+      " S "
+    ],
+    "key": {
+      "H": "tensura:hihiirokane_ingot",
+      "S": "minecraft:stick"
+    },
+    "result": {
+      "item": "tensura:hihiirokane_sword",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:low_magisteel_scythe"
+  },
+  "primary": "tensura:magisteel",
+  "secondary": "tensura:iron",
+  "secondary_count": 1
+}

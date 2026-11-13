@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tensura:hipokute_grass",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tensura:block/hipokute_grass_stage0",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/hipokute_grass.json"
+    }
+  }
+}

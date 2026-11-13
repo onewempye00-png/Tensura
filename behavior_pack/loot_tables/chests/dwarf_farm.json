@@ -1,0 +1,120 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 16,
+        "min": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5,
+        "min": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:melon",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_seeds",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:short_grass",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5,
+        "min": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "tensura:silver_hoe",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tall_grass",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

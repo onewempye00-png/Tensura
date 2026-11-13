@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 10,
+        "min": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 25
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

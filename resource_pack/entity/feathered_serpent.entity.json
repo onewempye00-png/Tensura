@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:feathered_serpent",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/feathered_serpent/feathered_serpent"
+      },
+      "geometry": {
+        "default": "geometry.feathered_serpent"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

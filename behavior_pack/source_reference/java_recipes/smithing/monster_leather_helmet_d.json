@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:monster_leather_d"
+  },
+  "inputAmount1": 5,
+  "output": {
+    "count": 1,
+    "id": "tensura:monster_leather_helmet_d"
+  },
+  "schematics": [
+    "tensura:monster_leather_gear_schematic"
+  ]
+}

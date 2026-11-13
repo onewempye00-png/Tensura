@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:adamantite_chestplate"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 16,
+  "smeltTick": 225
+}

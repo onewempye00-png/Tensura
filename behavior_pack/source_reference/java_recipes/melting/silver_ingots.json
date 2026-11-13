@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:silver_ingot"
+  },
+  "primary": "tensura:silver",
+  "primary_count": 9
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#tensura:spell_cast_weapons",
+    "#minecraft:enchantable/bow",
+    "#minecraft:enchantable/crossbow",
+    "#tensura:spears",
+    "#minecraft:enchantable/trident",
+    "tensura:kunai",
+    "tensura:pure_magisteel_kunai",
+    "tensura:web_gun",
+    "tensura:walther_p99"
+  ]
+}

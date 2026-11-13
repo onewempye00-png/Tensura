@@ -1,0 +1,18 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:mithril_ingot"
+  },
+  "input2": {
+    "item": "minecraft:feather"
+  },
+  "inputAmount1": 5,
+  "inputAmount2": 3,
+  "output": {
+    "count": 1,
+    "id": "tensura:mithril_helmet"
+  },
+  "schematics": [
+    "tensura:mithril_gear_schematic"
+  ]
+}

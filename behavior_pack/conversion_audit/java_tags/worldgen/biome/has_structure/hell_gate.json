@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#tensura:is_hell",
+    "#tensura:is_flat_land",
+    "#minecraft:is_badlands",
+    "#minecraft:is_savanna",
+    "tensura:barren_land",
+    "tensura:desert_of_death"
+  ]
+}

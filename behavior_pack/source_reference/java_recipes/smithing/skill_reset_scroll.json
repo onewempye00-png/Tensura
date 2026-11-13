@@ -1,0 +1,30 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:orichalcum_ingot"
+  },
+  "input2": {
+    "item": "tensura:pure_magisteel_ingot"
+  },
+  "input3": {
+    "item": "tensura:magic_stone"
+  },
+  "input4": {
+    "item": "tensura:monster_leather_a"
+  },
+  "input5": {
+    "item": "minecraft:paper"
+  },
+  "inputAmount1": 2,
+  "inputAmount2": 1,
+  "inputAmount3": 1,
+  "inputAmount4": 2,
+  "inputAmount5": 3,
+  "output": {
+    "count": 1,
+    "id": "tensura:skill_reset_scroll"
+  },
+  "schematics": [
+    "tensura:orichalcum_gear_schematic"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/scythe_handheld",
+  "textures": {
+    "layer0": "tensura:item/netherite_scythe"
+  }
+}

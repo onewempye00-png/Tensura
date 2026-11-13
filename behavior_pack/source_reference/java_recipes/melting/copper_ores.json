@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "tag": "minecraft:copper_ores"
+  },
+  "primary": "tensura:copper",
+  "primary_count": 9,
+  "smeltTick": 200
+}

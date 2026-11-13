@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_nether_brick_warp_pad"},"tags":["crafting_table"],"pattern":["MMM","MCM","MMM"],"key":{"C":{"item":"tensura:warp_core"},"M":{"item":"minecraft:nether_bricks"}},"unlock":[],"result":{"item":"tensura:nether_brick_warp_pad","count":1}}}

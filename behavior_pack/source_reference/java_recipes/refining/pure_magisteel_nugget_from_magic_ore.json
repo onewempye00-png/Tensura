@@ -1,0 +1,11 @@
+{
+  "type": "tensura:refining",
+  "input": {
+    "count": 1,
+    "id": "tensura:magic_ore"
+  },
+  "output": {
+    "count": 2,
+    "id": "tensura:pure_magisteel_nugget"
+  }
+}

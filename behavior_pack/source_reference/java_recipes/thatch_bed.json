@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "beds",
+  "key": {
+    "#": {
+      "item": "tensura:thatch_block"
+    },
+    "I": {
+      "item": "tensura:thatch"
+    }
+  },
+  "pattern": [
+    "   ",
+    "  I",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:thatch_bed"
+  }
+}

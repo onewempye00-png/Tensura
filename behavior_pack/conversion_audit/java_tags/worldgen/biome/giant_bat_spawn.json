@@ -1,0 +1,18 @@
+{
+  "values": [
+    {
+      "id": "c:is_mountain",
+      "required": false
+    },
+    {
+      "id": "c:is_badlands",
+      "required": false
+    },
+    "#minecraft:is_hill",
+    "#minecraft:is_mountain",
+    "#minecraft:is_badlands",
+    "#minecraft:has_structure/woodland_mansion",
+    "minecraft:dripstone_caves",
+    "minecraft:deep_dark"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#tensura:resistance_skills",
+    "#tensura:common_skills",
+    "#tensura:intrinsic_skills",
+    "#tensura:extra_skills",
+    "#tensura:unique_skills",
+    {
+      "id": "#tensura:ultimate_skills",
+      "required": false
+    }
+  ]
+}

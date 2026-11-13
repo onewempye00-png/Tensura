@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:low_magic_staff"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      " SA",
+      "S "
+    ],
+    "key": {
+      "A": {
+        "item": "tensura:magic_ore_shard"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "tensura:low_magic_staff",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:pure_magisteel_ingot"
+  },
+  "input2": {
+    "item": "minecraft:clay_ball"
+  },
+  "input3": {
+    "item": "minecraft:red_dye"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 2,
+  "inputAmount3": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:anti_magic_mask"
+  },
+  "schematics": [
+    "tensura:anti_magic_mask_schematic"
+  ]
+}

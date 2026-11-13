@@ -1,0 +1,79 @@
+{
+  "namespace": "hud",
+  "hud_actionbar_text": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [
+      8,
+      6
+    ],
+    "size": [
+      520,
+      190
+    ],
+    "alpha": "@hud.anim_actionbar_text_background_alpha_out",
+    "controls": [
+      {
+        "actionbar_message": {
+          "type": "label",
+          "text": "$actionbar_text",
+          "font_size": "large",
+          "color": "$tool_tip_text",
+          "shadow": true,
+          "text_alignment": "left",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            2,
+            2
+          ],
+          "max_size": [
+            500,
+            180
+          ],
+          "line_padding": 3,
+          "layer": 31,
+          "localize": false,
+          "alpha": "@hud.anim_actionbar_text_alpha_out",
+          "size": [
+            500,
+            180
+          ]
+        }
+      }
+    ],
+    "type": "label",
+    "layer": 30,
+    "font_size": "large",
+    "max_size": [
+      520,
+      190
+    ]
+  },
+  "hud_actionbar_text/actionbar_message": {
+    "type": "label",
+    "text": "$actionbar_text",
+    "font_size": "large",
+    "color": "$tool_tip_text",
+    "shadow": true,
+    "text_alignment": "left",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [
+      2,
+      2
+    ],
+    "max_size": [
+      520,
+      190
+    ],
+    "line_padding": 3,
+    "layer": 31,
+    "localize": false,
+    "alpha": "@hud.anim_actionbar_text_alpha_out",
+    "size": [
+      520,
+      190
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "carvers": {
+    "air": "minecraft:canyon"
+  },
+  "creature_spawn_probability": 1.0E-4,
+  "downfall": 0.0,
+  "effects": {
+    "additions_sound": {
+      "sound": "minecraft:ambient.nether_wastes.additions",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
+    "fog_color": 1586208,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.nether_wastes.mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.nether.nether_wastes"
+    },
+    "sky_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 4159204
+  },
+  "features": [
+    [],
+    [],
+    [
+      "tensura:hell_block_blob"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {
+    "tensura:greater_daemon": {
+      "charge": 4.0,
+      "energy_budget": 4.0
+    },
+    "tensura:hound_dog": {
+      "charge": 0.7,
+      "energy_budget": 0.7
+    },
+    "tensura:lesser_daemon": {
+      "charge": 4.0,
+      "energy_budget": 4.0
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "tensura:hound_dog",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 70
+      },
+      {
+        "type": "tensura:lesser_daemon",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 40
+      },
+      {
+        "type": "tensura:greater_daemon",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.6,
+  "temperature_modifier": "frozen"
+}

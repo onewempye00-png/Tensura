@@ -1,0 +1,82 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tensura:zombie",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "tensura",
+          "monster"
+        ]
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:attack": {
+        "damage": 12
+      },
+      "minecraft:movement": {
+        "value": 0.28
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 2.2
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/zombie.json"
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 16,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "track_target": true,
+        "reach_multiplier": 1.5
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:giant_bat",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/giant_bat/giant_bat"
+      },
+      "geometry": {
+        "default": "geometry.giant_bat"
+      },
+      "animations": {
+        "bite": "animation.giant_bat.bite"
+      },
+      "scripts": {
+        "animate": []
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

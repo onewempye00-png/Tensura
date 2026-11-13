@@ -1,0 +1,26 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:mithril_ingot"
+  },
+  "input2": {
+    "item": "tensura:magic_stone"
+  },
+  "input3": {
+    "item": "tensura:monster_leather_a"
+  },
+  "input4": {
+    "item": "minecraft:paper"
+  },
+  "inputAmount1": 2,
+  "inputAmount2": 1,
+  "inputAmount3": 2,
+  "inputAmount4": 4,
+  "output": {
+    "count": 1,
+    "id": "tensura:race_reset_scroll"
+  },
+  "schematics": [
+    "tensura:mithril_gear_schematic"
+  ]
+}

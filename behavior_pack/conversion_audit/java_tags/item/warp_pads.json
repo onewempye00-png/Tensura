@@ -1,0 +1,28 @@
+{
+  "values": [
+    "tensura:stone_warp_pad",
+    "tensura:granite_warp_pad",
+    "tensura:diorite_warp_pad",
+    "tensura:andesite_warp_pad",
+    "tensura:calcite_warp_pad",
+    "tensura:tuff_warp_pad",
+    "tensura:deepslate_warp_pad",
+    "tensura:brick_warp_pad",
+    "tensura:sandstone_warp_pad",
+    "tensura:red_sandstone_warp_pad",
+    "tensura:sarasa_sandstone_warp_pad",
+    "tensura:packed_mud_warp_pad",
+    "tensura:prismarine_brick_warp_pad",
+    "tensura:nether_brick_warp_pad",
+    "tensura:red_nether_brick_warp_pad",
+    "tensura:blackstone_warp_pad",
+    "tensura:basalt_warp_pad",
+    "tensura:quartz_warp_pad",
+    "tensura:end_stone_warp_pad",
+    "tensura:purpur_warp_pad",
+    "tensura:labyrinth_brick_warp_pad",
+    "tensura:cream_labyrinth_brick_warp_pad",
+    "tensura:dark_labyrinth_brick_warp_pad",
+    "tensura:royal_dwarven_warp_pad"
+  ]
+}

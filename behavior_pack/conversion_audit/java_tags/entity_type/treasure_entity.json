@@ -1,0 +1,19 @@
+{
+  "values": [
+    "minecraft:chest_boat",
+    "minecraft:chest_minecart",
+    "tensura:bone_golem",
+    {
+      "id": "lootr:lootr_cart",
+      "required": false
+    },
+    {
+      "id": "lootr:chest_minecart",
+      "required": false
+    },
+    {
+      "id": "lootr:item_frame",
+      "required": false
+    }
+  ]
+}

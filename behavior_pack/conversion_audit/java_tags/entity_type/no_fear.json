@@ -1,0 +1,28 @@
+{
+  "values": [
+    "#tensura:clones",
+    "#tensura:non_living",
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "minecraft:warden",
+    "tensura:akash",
+    "tensura:charybdis",
+    "tensura:elemental_colossus",
+    "tensura:ifrit",
+    "tensura:orc_lord",
+    "tensura:orc_disaster",
+    "tensura:supermassive_slime",
+    "tensura:sylphide",
+    "tensura:undine",
+    "tensura:war_gnome",
+    "tensura:gazel_dwargo",
+    "tensura:hinata_sakaguchi",
+    "tensura:shizu",
+    "tensura:bone_golem",
+    "tensura:training_dummy",
+    {
+      "id": "c:bosses",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "values": [
+    "tensura:divine_human",
+    "tensura:divine_elf",
+    "tensura:divine_dwarf",
+    "tensura:divine_beast",
+    "tensura:divine_bird",
+    "tensura:divine_boar",
+    "tensura:divine_dragon",
+    "tensura:divine_fish",
+    "tensura:divine_giant",
+    "tensura:divine_oni",
+    "tensura:divine_fighter",
+    "tensura:divine_vampire",
+    "tensura:divine_skeleton",
+    "tensura:god_slime",
+    "tensura:devil_lord"
+  ]
+}

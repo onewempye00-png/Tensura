@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:hihiirokane_boots"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 24
+}

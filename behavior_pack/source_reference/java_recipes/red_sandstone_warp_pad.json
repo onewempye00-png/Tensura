@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "red_sandstone_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:cut_red_sandstone"
+    },
+    "S": {
+      "item": "minecraft:smooth_red_sandstone"
+    }
+  },
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:red_sandstone_warp_pad"
+  }
+}

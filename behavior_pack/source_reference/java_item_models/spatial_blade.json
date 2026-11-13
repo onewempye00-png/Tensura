@@ -1,0 +1,9 @@
+{
+  "parent": "tensura:item/long_sword_handheld",
+  "textures": {
+    "layer0": "tensura:item/spatial_blade"
+  },
+  "overrides": [
+    { "predicate": { "hilt": 1.0 }, "model": "tensura:item/spatial_blade_hilt" }
+  ]
+}

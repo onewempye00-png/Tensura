@@ -1,0 +1,33 @@
+{
+  "configured_features_and_placed_features": "Converted to native Bedrock feature definitions and feature rules where supported; existing ore features retained and connected to rules.",
+  "bedrock_features": 23,
+  "bedrock_feature_rules": 21,
+  "structure_features": [
+    "tensura:charybdis_cave_feature",
+    "tensura:dwarf_village_feature",
+    "tensura:hell_gate_feature",
+    "tensura:hell_red_sand_ruin_feature",
+    "tensura:hell_sand_ruin_feature",
+    "tensura:hell_quartz_ruin_feature"
+  ],
+  "vegetation_features": [
+    "tensura:palm_tree_feature",
+    "tensura:hipokute_grass_scatter",
+    "tensura:baffledil_scatter"
+  ],
+  "java_custom_biome_approximations": {
+    "desert_of_death": "minecraft:desert + badlands tags; sand/ore and ruin features",
+    "ancient_forest": "minecraft:jungle + forest tags; source tree/plant features",
+    "barren_land": "minecraft:badlands",
+    "underworld_barrens": "minecraft:nether_wastes",
+    "underworld_spikes": "minecraft:basalt_deltas",
+    "underworld_red_sands": "minecraft:crimson_forest",
+    "underworld_sands": "minecraft:soul_sand_valley",
+    "miasmic_plains": "minecraft:warped_forest"
+  },
+  "dimension_approximations": {
+    "tensura:hell": "minecraft:nether, with Hell gate and three ruin structure rules plus native Nether blocks/features",
+    "tensura:labyrinth": "minecraft:the_end, with the original Java labyrinth block dataset placed as ten connected structures"
+  },
+  "placement_safety": "Large structure rules use biome filters and random-block chance gates to avoid placing a village or cave in every chunk."
+}

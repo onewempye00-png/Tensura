@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_mixing",
+  "left": "tensura:iron",
+  "left_count": 45,
+  "output": {
+    "count": 1,
+    "id": "tensura:high_magisteel_block"
+  },
+  "right": "tensura:magisteel",
+  "right_count": 144
+}

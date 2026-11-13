@@ -1,0 +1,37 @@
+{
+  "values": [
+    {
+      "id": "neoforge:is_physical",
+      "required": false
+    },
+    "tensura:bullet",
+    "tensura:kunai",
+    "tensura:unicorn_horn",
+    "tensura:spear",
+    "tensura:severer_blade",
+    "tensura:tempest_scale",
+    "tensura:aura_bullet",
+    "tensura:aura_slash",
+    "tensura:steel_thread",
+    "minecraft:arrow",
+    "minecraft:cactus",
+    "minecraft:cramming",
+    "minecraft:fall",
+    "minecraft:falling_anvil",
+    "minecraft:falling_block",
+    "minecraft:falling_stalactite",
+    "minecraft:fly_into_wall",
+    "minecraft:generic",
+    "minecraft:in_wall",
+    "minecraft:mob_attack",
+    "minecraft:mob_attack_no_aggro",
+    "minecraft:mob_projectile",
+    "minecraft:player_attack",
+    "minecraft:spit",
+    "minecraft:stalagmite",
+    "minecraft:sting",
+    "minecraft:sweet_berry_bush",
+    "minecraft:thrown",
+    "minecraft:trident"
+  ]
+}

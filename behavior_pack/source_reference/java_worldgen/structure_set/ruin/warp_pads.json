@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1231984572,
+    "separation": 20,
+    "spacing": 50
+  },
+  "structures": [
+    {
+      "structure": "tensura:ruin/warp/plains_warp_pad",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/warp/cold_warp_pad",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/warp/desert_warp_pad",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/warp/mesa_warp_pad",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:ruin/warp/swamp_warp_pad",
+      "weight": 1
+    }
+  ]
+}

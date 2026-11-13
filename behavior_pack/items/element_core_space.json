@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:element_core_space",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/element_core_space",
+      "minecraft:display_name": {
+        "value": "Element Core Space"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": 0.3,
+        "can_always_eat": true
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      }
+    }
+  }
+}

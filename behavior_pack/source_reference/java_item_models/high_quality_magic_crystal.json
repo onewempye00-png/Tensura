@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/high_quality_magic_crystal"
+  },
+  "display": {
+    "head": {
+      "rotation": [0, 0, 45]
+    }
+  }
+}

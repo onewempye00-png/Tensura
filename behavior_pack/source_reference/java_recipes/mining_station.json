@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mining_station",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "pattern": [
+    "II",
+    "SS",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:mining_station"
+  }
+}

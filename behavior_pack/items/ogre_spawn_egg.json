@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:ogre_spawn_egg",
+      "menu_category": {
+        "category": "spawn"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/ogre_spawn_egg",
+      "minecraft:display_name": {
+        "value": "Ogre Spawn Egg"
+      },
+      "minecraft:entity_placer": {
+        "entity": "tensura:ogre"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

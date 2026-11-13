@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "daemon_core",
+  "key": {
+    "D": {
+      "item": "tensura:daemon_essence"
+    },
+    "S": {
+      "item": "tensura:magic_stone"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DSD",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:daemon_core"
+  }
+}

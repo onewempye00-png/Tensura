@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/hihiirokane_blockfrom_hihiirokane_ingot"},"tags":["crafting_table"],"pattern":["###","###","###"],"key":{"#":{"item":"tensura:hihiirokane_ingot"}},"result":{"item":"tensura:hihiirokane_block","count":1}}}

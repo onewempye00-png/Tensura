@@ -1,0 +1,21 @@
+{
+  "values": [
+    "minecraft:porkchop",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:beef",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton",
+    "minecraft:rabbit_foot",
+    {
+      "id": "c:foods/raw_meat",
+      "required": false
+    },
+    {
+      "id": "c:foods/raw_fish",
+      "required": false
+    }
+  ]
+}

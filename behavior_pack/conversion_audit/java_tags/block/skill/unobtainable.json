@@ -1,0 +1,60 @@
+{
+  "values": [
+    "#tensura:labyrinth_blocks",
+    "tensura:charybdis_core",
+    "minecraft:powder_snow",
+    "minecraft:barrier",
+    "minecraft:light",
+    "minecraft:reinforced_deepslate",
+    "minecraft:spawner",
+    "minecraft:trial_spawner",
+    "minecraft:vault",
+    "minecraft:end_gateway",
+    "minecraft:end_portal",
+    "minecraft:end_portal_frame",
+    "minecraft:nether_portal",
+    "minecraft:command_block",
+    "minecraft:chain_command_block",
+    "minecraft:repeating_command_block",
+    "minecraft:structure_block",
+    "minecraft:structure_void",
+    "minecraft:jigsaw",
+    "minecraft:bedrock",
+    "minecraft:turtle_egg",
+    "minecraft:fire",
+    "tensura:black_fire",
+    "tensura:moth_egg",
+    {
+      "id": "lootr:lootr_barrel",
+      "required": false
+    },
+    {
+      "id": "lootr:barrel",
+      "required": false
+    },
+    {
+      "id": "lootr:lootr_chest",
+      "required": false
+    },
+    {
+      "id": "lootr:chest",
+      "required": false
+    },
+    {
+      "id": "lootr:lootr_shulker",
+      "required": false
+    },
+    {
+      "id": "lootr:shulker_box",
+      "required": false
+    },
+    {
+      "id": "lootr:suspicious_sand",
+      "required": false
+    },
+    {
+      "id": "lootr:suspicious_gravel",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tensura:cream_labyrinth_stone_br",
+      "menu_category": {
+        "category": "construction"
+      },
+      "properties": {
+        "tensura:direction": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ],
+        "tensura:axis": [
+          "x",
+          "y",
+          "z"
+        ],
+        "tensura:half": [
+          "bottom",
+          "top"
+        ],
+        "tensura:waterlogged": [
+          "false",
+          "true"
+        ],
+        "tensura:enabled": [
+          "false",
+          "true"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tensura:block/cream_labyrinth_stone_br",
+          "render_method": "opaque"
+        }
+      }
+    }
+  }
+}

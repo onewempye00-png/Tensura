@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:vortex_spear",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/vortex_spear",
+      "minecraft:display_name": {
+        "value": "Vortex Spear"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": {
+        "value": 8
+      }
+    }
+  }
+}

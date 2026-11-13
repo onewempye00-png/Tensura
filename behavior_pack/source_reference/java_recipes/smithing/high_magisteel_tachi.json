@@ -1,0 +1,24 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:high_magisteel_ingot"
+  },
+  "input2": {
+    "item": "minecraft:gold_ingot"
+  },
+  "input3": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 1,
+  "inputAmount3": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:high_magisteel_tachi"
+  },
+  "schematics": [
+    "tensura:high_magisteel_gear_schematic",
+    "tensura:long_sword_schematic",
+    "tensura:japanese_sword_schematic"
+  ]
+}

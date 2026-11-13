@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:cut_copper_stairs"
+  },
+  "primary": "tensura:copper",
+  "primary_count": 54,
+  "smeltTick": 400
+}

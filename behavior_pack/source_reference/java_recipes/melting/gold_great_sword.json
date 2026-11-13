@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:golden_great_sword"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 1
+}

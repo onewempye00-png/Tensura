@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:slime_core",
+      "menu_category": {
+        "category": "material"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/slime_core",
+      "minecraft:display_name": {
+        "value": "Slime Core"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:mushroom_stew",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    {
+      "id": "c:mushrooms",
+      "required": false
+    }
+  ]
+}

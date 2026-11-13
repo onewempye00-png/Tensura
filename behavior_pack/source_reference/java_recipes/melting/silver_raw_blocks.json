@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:raw_silver_block"
+  },
+  "primary": "tensura:silver",
+  "primary_count": 81,
+  "smeltTick": 900
+}

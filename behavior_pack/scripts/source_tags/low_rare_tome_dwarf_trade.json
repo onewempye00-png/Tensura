@@ -1,0 +1,11 @@
+{
+  "values": [
+    "tensura:magic_wall",
+    "tensura:healing",
+    "tensura:analyze",
+    "tensura:clairvoyance",
+    "tensura:flight",
+    "tensura:healthcare",
+    "tensura:search_enemy"
+  ]
+}

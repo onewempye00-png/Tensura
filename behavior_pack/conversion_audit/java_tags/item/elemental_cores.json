@@ -1,0 +1,10 @@
+{
+  "values": [
+    "tensura:element_core_empty",
+    "tensura:element_core_earth",
+    "tensura:element_core_fire",
+    "tensura:element_core_space",
+    "tensura:element_core_water",
+    "tensura:element_core_wind"
+  ]
+}

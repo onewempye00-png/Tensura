@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#minecraft:wooden_pressure_plates",
+    "#minecraft:beds",
+    "#minecraft:villager_plantable_seeds",
+    "#minecraft:dye",
+    "#tensura:bone_golems",
+    "minecraft:honey_block",
+    "minecraft:stick",
+    "minecraft:cake",
+    "minecraft:sugar",
+    "minecraft:leather",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:enchanted_book",
+    "tensura:enchanted_silver_apple",
+    "tensura:warp_core",
+    "tensura:daemon_core"
+  ]
+}

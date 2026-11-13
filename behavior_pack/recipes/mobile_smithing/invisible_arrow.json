@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft":{"recipe_shapeless":{"description":{"identifier":"tensura:mobile_smithing_invisible_arrow"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:stick"},{"item":"tensura:invisible_feather"},{"item":"tensura:basic_bows_schematic"}],"result":{"item":"tensura:invisible_arrow","count":6}}}}

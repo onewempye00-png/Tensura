@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:gold_block"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 81,
+  "smeltTick": 600
+}

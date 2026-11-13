@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "tag": "tensura:silver_ores"
+  },
+  "primary": "tensura:silver",
+  "primary_count": 9,
+  "smeltTick": 200
+}

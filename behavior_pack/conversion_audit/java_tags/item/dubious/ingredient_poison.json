@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:pufferfish",
+    "minecraft:rotten_flesh",
+    "minecraft:spider_eye",
+    "minecraft:poisonous_potato",
+    "minecraft:fermented_spider_eye",
+    {
+      "id": "c:foods/food_poisoning",
+      "required": false
+    }
+  ]
+}

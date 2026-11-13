@@ -1,0 +1,21 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:goblin_club"
+  },
+  "input2": {
+    "item": "tensura:low_magisteel_ingot"
+  },
+  "input3": {
+    "item": "minecraft:gold_ingot"
+  },
+  "inputAmount2": 1,
+  "inputAmount3": 2,
+  "output": {
+    "count": 1,
+    "id": "tensura:kanabo"
+  },
+  "schematics": [
+    "tensura:low_magisteel_gear_schematic"
+  ]
+}

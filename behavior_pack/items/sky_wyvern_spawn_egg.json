@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:sky_wyvern_spawn_egg",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/horned_rabbit_spawn_egg",
+      "minecraft:display_name": {
+        "value": "Sky Wyvern Spawn Egg"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:entity_placer": {
+        "entity": "tensura:sky_wyvern"
+      }
+    }
+  }
+}

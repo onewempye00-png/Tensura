@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_mixing",
+  "left": "tensura:silver",
+  "left_count": 81,
+  "output": {
+    "count": 1,
+    "id": "tensura:silver_block"
+  }
+}

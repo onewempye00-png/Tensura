@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:veldora",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/tempest_serpent/tempest_serpent"
+      },
+      "geometry": {
+        "default": "geometry.tempest_serpent"
+      },
+      "animations": {
+        "idle": "animation.tempest_serpent.idle",
+        "breath": "animation.tempest_serpent.breath",
+        "bite": "animation.tempest_serpent.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:copper_shell",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/copper_shell",
+      "minecraft:display_name": {
+        "value": "Copper Shell"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:spirit_fusion_seal"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " P ",
+      "GSG",
+      " P "
+    ],
+    "key": {
+      "P": "tensura:spirit_prayer",
+      "G": "tensura:great_spirit_water",
+      "S": "tensura:spirit_integration"
+    },
+    "result": {
+      "item": "tensura:spirit_fusion_seal",
+      "count": 1
+    }
+  }
+}

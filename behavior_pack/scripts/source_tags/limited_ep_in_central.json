@@ -1,0 +1,8 @@
+{
+  "values": [
+    "tensura:lesser_daemon",
+    "tensura:greater_daemon",
+    "tensura:arch_daemon",
+    "tensura:daemon_lord"
+  ]
+}

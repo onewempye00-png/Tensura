@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:direwolf",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/tensura/direwolf"
+      },
+      "geometry": {
+        "default": "geometry.direwolf"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "sound_effects": {
+        "ambient": "tensura.entity.goblin.ambient",
+        "hurt": "tensura.entity.goblin.hurt",
+        "death": "tensura.entity.goblin.death"
+      },
+      "animations": {},
+      "scripts": {}
+    }
+  }
+}

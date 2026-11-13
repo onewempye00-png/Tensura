@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:knight_spider",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/knight_spider/knight_spider"
+      },
+      "geometry": {
+        "default": "geometry.knight_spider"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

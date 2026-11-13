@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bone_golem",
+  "key": {
+    "B": {
+      "item": "tensura:mithril_boots"
+    },
+    "C": {
+      "item": "tensura:mithril_chestplate"
+    },
+    "D": {
+      "item": "tensura:daemon_core"
+    },
+    "H": {
+      "item": "tensura:mithril_helmet"
+    },
+    "I": {
+      "item": "tensura:pure_magisteel_ingot"
+    },
+    "L": {
+      "item": "tensura:mithril_leggings"
+    }
+  },
+  "pattern": [
+    "IHI",
+    "CDL",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:mithril_bone_golem"
+  }
+}

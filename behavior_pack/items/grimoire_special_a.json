@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:grimoire_special_a",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/grimoire_special_a",
+      "minecraft:display_name": {
+        "value": "Grimoire Special A"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

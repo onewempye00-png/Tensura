@@ -1,0 +1,25 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:magic_stone"
+  },
+  "input2": {
+    "item": "tensura:low_magisteel_ingot"
+  },
+  "input3": {
+    "item": "tensura:element_core_space"
+  },
+  "input4": {
+    "item": "minecraft:ender_pearl"
+  },
+  "inputAmount2": 4,
+  "inputAmount3": 2,
+  "inputAmount4": 2,
+  "output": {
+    "count": 1,
+    "id": "tensura:warp_core"
+  },
+  "schematics": [
+    "tensura:low_magisteel_gear_schematic"
+  ]
+}

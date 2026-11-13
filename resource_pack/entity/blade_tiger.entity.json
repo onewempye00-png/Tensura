@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:blade_tiger",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/blade_tiger/blade_tiger"
+      },
+      "geometry": {
+        "default": "geometry.blade_tiger"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

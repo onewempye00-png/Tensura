@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "tensura:jar_blade_tiger_steak_from_smoking"
+    },
+    "tags": [
+      "smoker"
+    ],
+    "input": "tensura:raw_blade_tiger_meat",
+    "output": "tensura:blade_tiger_steak"
+  }
+}

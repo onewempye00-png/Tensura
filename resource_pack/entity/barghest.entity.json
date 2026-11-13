@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:barghest",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/barghest/barghest"
+      },
+      "geometry": {
+        "default": "geometry.barghest"
+      },
+      "animations": {
+        "idle": "animation.barghest.idle",
+        "walk": "animation.barghest.walk",
+        "run": "animation.barghest.run",
+        "swim": "animation.barghest.swim",
+        "bite": "animation.barghest.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          },
+          {
+            "run": "query.modified_move_speed >= 0.15"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

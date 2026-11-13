@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "id": "c:is_savanna",
+      "required": false
+    },
+    {
+      "id": "c:is_forest",
+      "required": false
+    },
+    "#minecraft:is_forest",
+    "#minecraft:is_savanna"
+  ]
+}

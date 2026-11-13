@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:mining_station"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "III",
+      "SCS",
+      "III"
+    ],
+    "key": {
+      "I": "minecraft:iron_ingot",
+      "S": "minecraft:stone",
+      "C": "minecraft:chest"
+    },
+    "result": {
+      "item": "tensura:mining_station",
+      "count": 1
+    }
+  }
+}

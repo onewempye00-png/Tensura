@@ -1,0 +1,64 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "gui_light": "front",
+  "texture_size": [
+    64,
+    64
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        -14,
+        3.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        -14,
+        3.25
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        2.75,
+        -17,
+        1
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "translation": [
+        2.75,
+        -17,
+        1
+      ]
+    }
+  },
+  "textures": {
+    "particle": "tensura:item/tempest_scale_shield_model"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "tensura:item/tempest_scale_shield_blocking"}
+  ]
+}

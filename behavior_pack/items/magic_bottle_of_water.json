@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:magic_bottle_of_water",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/magicule_crystal",
+      "minecraft:display_name": {
+        "value": "Magic Bottle Of Water"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

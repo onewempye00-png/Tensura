@@ -1,0 +1,7 @@
+{
+  "parent": "tensura:item/grimoire",
+  "textures": {
+    "0": "tensura:item/grimoire_special_a",
+    "particle": "tensura:item/grimoire_special_a"
+  }
+}

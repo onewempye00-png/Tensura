@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:dark_set_schematic",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/dark_set_schematic",
+      "minecraft:display_name": {
+        "value": "Dark Set Schematic"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

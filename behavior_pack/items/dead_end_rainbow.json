@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:dead_end_rainbow",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/dead_end_rainbow",
+      "minecraft:display_name": {
+        "value": "Dead End Rainbow"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_modifiers": {
+        "use_duration": 1,
+        "movement_modifier": 0.35
+      },
+      "minecraft:durability": {
+        "max_durability": 384
+      },
+      "minecraft:shooter": {
+        "ammunition": [
+          "minecraft:arrow"
+        ],
+        "max_draw_duration": 1,
+        "scale_power_by_draw_duration": true
+      }
+    }
+  }
+}

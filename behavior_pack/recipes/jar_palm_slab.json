@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_palm_slab"},"tags":["crafting_table"],"pattern":["###"],"key":{"#":{"item":"tensura:palm_planks"}},"unlock":[],"result":{"item":"tensura:palm_slab","count":6}}}

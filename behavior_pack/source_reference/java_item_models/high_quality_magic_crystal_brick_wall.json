@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "tensura:block/high_quality_magic_crystal_bricks"
+  }
+}

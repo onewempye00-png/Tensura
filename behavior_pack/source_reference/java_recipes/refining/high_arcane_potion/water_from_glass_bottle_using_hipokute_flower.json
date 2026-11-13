@@ -1,0 +1,17 @@
+{
+  "type": "tensura:refining",
+  "input": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "input1": {
+    "item": "tensura:hipokute_flower"
+  },
+  "input2": {
+    "item": "tensura:daemon_essence"
+  },
+  "output": {
+    "count": 1,
+    "id": "tensura:high_arcane_potion"
+  }
+}

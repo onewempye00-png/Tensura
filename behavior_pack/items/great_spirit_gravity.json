@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:great_spirit_gravity",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/skill_book_healing",
+      "minecraft:display_name": {
+        "value": "Great Elemental Spirit: Gravity"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_modifiers": {
+        "use_duration": 0.1,
+        "movement_modifier": 1.0
+      }
+    }
+  }
+}

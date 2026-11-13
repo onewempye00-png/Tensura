@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bone_golem",
+  "key": {
+    "B": {
+      "item": "tensura:hihiirokane_boots"
+    },
+    "C": {
+      "item": "tensura:hihiirokane_chestplate"
+    },
+    "D": {
+      "item": "tensura:daemon_core"
+    },
+    "H": {
+      "item": "tensura:hihiirokane_helmet"
+    },
+    "I": {
+      "item": "tensura:pure_magisteel_ingot"
+    },
+    "L": {
+      "item": "tensura:hihiirokane_leggings"
+    }
+  },
+  "pattern": [
+    "IHI",
+    "CDL",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:hihiirokane_bone_golem"
+  }
+}

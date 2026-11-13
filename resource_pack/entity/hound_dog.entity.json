@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:hound_dog",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/hound_dog/hound_dog"
+      },
+      "geometry": {
+        "default": "geometry.hound_dog"
+      },
+      "animations": {
+        "idle": "animation.hound_dog.idle",
+        "walk": "animation.hound_dog.walk",
+        "run": "animation.hound_dog.run",
+        "bite": "animation.hound_dog.bite"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "idle": "query.modified_move_speed < 0.02"
+          },
+          {
+            "walk": "query.modified_move_speed >= 0.02 && query.modified_move_speed < 0.15"
+          },
+          {
+            "run": "query.modified_move_speed >= 0.15"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

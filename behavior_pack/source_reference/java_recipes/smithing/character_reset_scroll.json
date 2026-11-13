@@ -1,0 +1,26 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:pure_magisteel_ingot"
+  },
+  "input2": {
+    "item": "tensura:magic_stone"
+  },
+  "input3": {
+    "item": "tensura:monster_leather_a"
+  },
+  "input4": {
+    "item": "minecraft:paper"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 1,
+  "inputAmount3": 2,
+  "inputAmount4": 3,
+  "output": {
+    "count": 1,
+    "id": "tensura:character_reset_scroll"
+  },
+  "schematics": [
+    "tensura:pure_magisteel_gear_schematic"
+  ]
+}

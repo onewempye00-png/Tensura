@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:tnt",
+    "minecraft:tnt_minecart",
+    "minecraft:end_crystal",
+    "tensura:earth_spike",
+    "tensura:icicle_spike",
+    "tensura:mud_spike",
+    "tensura:earth_pillar",
+    "tensura:fire_pillar",
+    "tensura:ice_pillar",
+    "tensura:fusionist_landmine",
+    "tensura:falling_block"
+  ]
+}

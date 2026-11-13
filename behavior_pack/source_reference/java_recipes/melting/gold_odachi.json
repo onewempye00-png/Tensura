@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:golden_odachi"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 1
+}

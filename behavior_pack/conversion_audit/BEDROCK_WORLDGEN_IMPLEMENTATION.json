@@ -1,0 +1,42 @@
+{
+  "source_dimensions": {
+    "tensura:hell": {
+      "bedrock_target": "minecraft:nether",
+      "strategy": "native Nether with Hell gate/ruin structures and Nether feature rules; Bedrock does not load Java custom multi-noise dimension serializers"
+    },
+    "tensura:labyrinth": {
+      "bedrock_target": "minecraft:the_end",
+      "strategy": "native End used as void-like supported dimension; original 110x244x317 Java block dataset split into ten connected .mcstructure segments"
+    }
+  },
+  "structure_placement": {
+    "charybdis_cave": "composite Java template placed by Bedrock structure_template_feature and exploration map fallback",
+    "dwarf_village": "19 original Java templates composed into one village structure and placed by Bedrock structure_template_feature and exploration map fallback",
+    "hell_gate": "four original Java gate pieces composed into one structure; Nether feature rule"
+  },
+  "worldgen_approximations": {
+    "custom_biomes": [
+      "desert_of_death",
+      "ancient_forest",
+      "barren_land",
+      "underworld_barrens",
+      "underworld_spikes",
+      "underworld_red_sands",
+      "underworld_sands",
+      "miasmic_plains"
+    ],
+    "bedrock_biome_tags": [
+      "overworld",
+      "nether",
+      "the_end"
+    ],
+    "features": [
+      "ore features retained",
+      "palm tree Bedrock tree_feature",
+      "hipokute grass scatter feature",
+      "baffledil scatter feature",
+      "structure template features for cave/village/Hell gate/ruins"
+    ]
+  },
+  "runtime_note": "Static pack validation is not an in-game Android certification."
+}

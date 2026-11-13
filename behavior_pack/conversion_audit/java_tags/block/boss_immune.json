@@ -1,0 +1,44 @@
+{
+  "values": [
+    "#tensura:magic_explosion_immune",
+    "#minecraft:wither_immune",
+    "tensura:high_magisteel_block",
+    "tensura:mithril_block",
+    "tensura:orichalcum_block",
+    "tensura:pure_magisteel_block",
+    "tensura:adamantite_block",
+    "tensura:hihiirokane_block",
+    {
+      "id": "lootr:lootr_barrel",
+      "required": false
+    },
+    {
+      "id": "lootr:barrel",
+      "required": false
+    },
+    {
+      "id": "lootr:lootr_chest",
+      "required": false
+    },
+    {
+      "id": "lootr:chest",
+      "required": false
+    },
+    {
+      "id": "lootr:lootr_shulker",
+      "required": false
+    },
+    {
+      "id": "lootr:shulker_box",
+      "required": false
+    },
+    {
+      "id": "lootr:suspicious_sand",
+      "required": false
+    },
+    {
+      "id": "lootr:suspicious_gravel",
+      "required": false
+    }
+  ]
+}

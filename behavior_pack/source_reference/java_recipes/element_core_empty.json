@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tensura:medium_quality_magic_crystal"
+    },
+    "X": {
+      "item": "tensura:magic_stone"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:element_core_empty"
+  }
+}

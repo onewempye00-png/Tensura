@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/low_quality_magic_crystal_brick_stairs"},"tags":["crafting_table"],"pattern":["#  ","## ","###"],"key":{"#":{"item":"tensura:low_quality_magic_crystal_bricks"}},"result":{"item":"tensura:low_quality_magic_crystal_brick_stairs","count":4}}}

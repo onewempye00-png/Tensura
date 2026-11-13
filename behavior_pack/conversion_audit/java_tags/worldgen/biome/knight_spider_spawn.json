@@ -1,0 +1,18 @@
+{
+  "remove": [
+    "tensura:barren_land"
+  ],
+  "values": [
+    {
+      "id": "c:is_desert",
+      "required": false
+    },
+    {
+      "id": "c:is_badlands",
+      "required": false
+    },
+    "#tensura:is_desert",
+    "#minecraft:is_badlands",
+    "tensura:desert_of_death"
+  ]
+}

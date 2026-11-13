@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:menu_crystal",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/menu_crystal",
+      "minecraft:display_name": {
+        "value": "Tensura Menu"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:glint": true,
+      "minecraft:use_modifiers": {
+        "use_duration": 0.1,
+        "movement_modifier": 1.0
+      }
+    }
+  }
+}

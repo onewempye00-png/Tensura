@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:iron_shovel"
+  },
+  "primary": "tensura:iron",
+  "primary_count": 1,
+  "smeltTick": 50
+}

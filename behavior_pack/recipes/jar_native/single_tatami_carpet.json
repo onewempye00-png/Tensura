@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/single_tatami_carpet"},"tags":["crafting_table"],"pattern":["BB"],"key":{"B":{"item":"tensura:single_tatami_block"}},"result":{"item":"tensura:single_tatami_carpet","count":3}}}

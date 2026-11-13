@@ -1,0 +1,120 @@
+{
+  "version": "3.3.0",
+  "source": {
+    "jar_bytes": 36224833,
+    "jar_entries": 14337,
+    "java_class_files": 2816,
+    "assets": 4939,
+    "data_files": 5852,
+    "tensura_assets": 4931,
+    "tensura_data": 3248,
+    "item_models": 1313,
+    "geo_models": 123,
+    "entity_textures": 644,
+    "item_textures": 731,
+    "sounds": 113,
+    "structures": 385,
+    "worldgen": 162,
+    "recipes": 863,
+    "loot_tables": 290,
+    "tags": 385
+  },
+  "converted": {
+    "bp_files": 6923,
+    "rp_files": 3020,
+    "items": 1997,
+    "blocks": 197,
+    "behavior_entities": 115,
+    "client_entities": 115,
+    "recipes": 526,
+    "loot_tables": 306,
+    "structures": 438,
+    "features": 23,
+    "feature_rules": 21,
+    "textures": 2699,
+    "geometries": 54,
+    "animations": 33,
+    "spawn_rules": 70,
+    "dimensions": 5
+  },
+  "coverage": {
+    "java_nameable_entity_ids": 70,
+    "java_loot_tables_converted": 290,
+    "java_skill_tome_tag_expansions": 25,
+    "java_battlewill_manual_tier_pools": 4,
+    "java_recipe_catalogs": {
+      "kiln": 272,
+      "mining": 28,
+      "mixing": 14,
+      "alchemy": 31,
+      "forge": 298
+    },
+    "java_native_recipe_sources": 220,
+    "bedrock_native_recipe_files": 526,
+    "java_structure_files": 385,
+    "bedrock_structure_files": 438,
+    "java_worldgen_files": 162,
+    "bedrock_features": 23,
+    "bedrock_feature_rules": 21
+  },
+  "validation": {
+    "live_runtime_test": "not performed",
+    "static_json": "passed: 6296 files, 0 errors",
+    "javascript": "passed: 8 files, 0 errors",
+    "item_icon_references": "passed: 0 missing",
+    "loot_table_schema": "passed: 306 files, 0 invalid root/pool shapes",
+    "archive_integrity": "pending"
+  },
+  "limitations": [
+    {
+      "java_capability": "Forge/NeoForge runtime classes, mixins, event bus and networking",
+      "bedrock_limit": "Bedrock cannot load Java bytecode, mixins or Forge event handlers.",
+      "replacement": "Recreated supported gameplay with @minecraft/server scripts, Bedrock entity components, item/block components and UI forms. Java class-only behavior without a mapped gameplay handler remains explicitly listed in the gap audit."
+    },
+    {
+      "java_capability": "Arbitrary Java dimension serializers and noise settings",
+      "bedrock_limit": "Bedrock custom dimensions use Bedrock dimension definitions and supported generators; Java serializer/noise code cannot be imported.",
+      "replacement": "Independent custom dimension IDs with scripted chunk/structure construction and biome approximations; custom terrain profiles are built from Bedrock-safe blocks and scheduled batches."
+    },
+    {
+      "java_capability": "Java configured/placed features, biome modifiers and structure sets",
+      "bedrock_limit": "Java worldgen registries and placement modifiers are not Bedrock feature-rule JSON.",
+      "replacement": "Mapped to Bedrock features/feature rules where possible; unsupported placement logic is recreated with chunk-aware script placement and deterministic spacing."
+    },
+    {
+      "java_capability": "Java NBT block entities, jigsaw pools and processors",
+      "bedrock_limit": "Java NBT schema and jigsaw runtime are not Bedrock .mcstructure or structure-pool formats.",
+      "replacement": "Converted block palettes/states and supported block entities to Bedrock .mcstructure; split oversized structures and scripted placement; unsupported processors/connectors are omitted or replaced with fixed block placement."
+    },
+    {
+      "java_capability": "ManasCore skill storage, mastery points, network packets and skill event lifecycle",
+      "bedrock_limit": "No ManasCore runtime or Java skill-instance implementation exists in Bedrock.",
+      "replacement": "Persistent dynamic-property skill ownership, mastery, horn slot assignments, active/passive loadouts, scripted cooldowns and AP/MP/SP costs. Some passive/AI interactions are approximations."
+    },
+    {
+      "java_capability": "Java custom item NBT/data components and loot functions",
+      "bedrock_limit": "Java item stacks, arbitrary NBT and custom loot functions do not map directly.",
+      "replacement": "Unique Bedrock item identifiers, script-driven manuals/tomes, and Bedrock loot functions. Unsupported Java functions are catalogued with substitutes or omission notes."
+    },
+    {
+      "java_capability": "Java custom UI/container menus and rendering hooks",
+      "bedrock_limit": "Forge screen classes and custom render pipelines cannot be loaded on Bedrock.",
+      "replacement": "Mobile-friendly ActionFormData/ModalFormData menus, item horns/compasses and resource-pack UI/HUD assets."
+    },
+    {
+      "java_capability": "Java entity AI goals, attributes, race interfaces and custom capabilities",
+      "bedrock_limit": "Java AI goal classes and capability interfaces have no direct Bedrock counterpart.",
+      "replacement": "Bedrock behavior components, component groups, events, scripts, effects, health/scale attributes and custom entity state."
+    },
+    {
+      "java_capability": "Java recipe serializers and station-specific recipe logic",
+      "bedrock_limit": "Custom Java serializers are not accepted by Bedrock crafting recipe JSON.",
+      "replacement": "220 native recipes plus five script-backed mobile workstations for 643 custom recipe records."
+    },
+    {
+      "java_capability": "Java advancement/archaeology loot triggers",
+      "bedrock_limit": "Java advancement and archaeology event schemas differ from Bedrock triggers.",
+      "replacement": "Converted loot-table data is retained in Bedrock format; source-specific trigger behavior requires scripted event hooks and is not claimed as one-to-one parity."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:charybdis_scale"
+  },
+  "inputAmount1": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:charybdis_scalemail_chestplate"
+  },
+  "schematics": [
+    "tensura:charybdis_scalemail_gear_schematic"
+  ]
+}

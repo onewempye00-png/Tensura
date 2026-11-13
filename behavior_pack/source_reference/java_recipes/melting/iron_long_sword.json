@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:iron_long_sword"
+  },
+  "primary": "tensura:iron",
+  "primary_count": 1,
+  "smeltTick": 75
+}

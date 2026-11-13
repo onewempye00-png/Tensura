@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:iron_odachi",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/iron_odachi",
+      "minecraft:display_name": {
+        "value": "Iron Odachi"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1200
+      }
+    }
+  }
+}

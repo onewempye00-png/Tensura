@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tool_rack",
+  "key": {
+    "#": {
+      "item": "tensura:palm_slab"
+    },
+    "F": {
+      "item": "tensura:palm_fence"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "F F",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:palm_tool_rack"
+  }
+}

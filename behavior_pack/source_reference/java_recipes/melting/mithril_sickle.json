@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:mithril_sickle"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 2,
+  "smeltTick": 75
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tool_rack",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_slab"
+    },
+    "F": {
+      "item": "minecraft:dark_oak_fence"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "F F",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:dark_oak_tool_rack"
+  }
+}

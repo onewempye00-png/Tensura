@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "c:is_forest",
+      "required": false
+    },
+    {
+      "id": "c:is_mushroom",
+      "required": false
+    },
+    "#minecraft:is_forest",
+    "minecraft:crimson_forest",
+    "minecraft:warped_forest",
+    "minecraft:mushroom_fields"
+  ]
+}

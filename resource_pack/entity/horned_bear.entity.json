@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:horned_bear",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bear/horned_bear"
+      },
+      "geometry": {
+        "default": "geometry.horned_bear"
+      },
+      "animations": {
+        "idle": "animation.horned_bear.idle",
+        "walk": "animation.horned_bear.walk",
+        "run": "animation.horned_bear.run",
+        "bite": "animation.horned_bear.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          },
+          {
+            "run": "query.modified_move_speed >= 0.15"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

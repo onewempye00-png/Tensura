@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#tensura:skill/earth_skill_breakable",
+    "#tensura:skill/easy_to_smelt",
+    "minecraft:sculk",
+    "minecraft:sculk_vein",
+    "minecraft:sculk_sensor",
+    "minecraft:calibrated_sculk_sensor",
+    "minecraft:sculk_catalyst"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/odachi_handheld",
+  "textures": {
+    "layer0": "tensura:item/wooden_odachi"
+  }
+}

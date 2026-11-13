@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#tensura:spiritual",
+    "#tensura:clones",
+    "#minecraft:undead",
+    "#minecraft:arthropod",
+    "#tensura:slimes",
+    "#tensura:non_living",
+    "minecraft:iron_golem",
+    "minecraft:shulker",
+    "minecraft:warden",
+    "tensura:phantaspore",
+    "tensura:charybdis",
+    "tensura:elemental_colossus"
+  ]
+}

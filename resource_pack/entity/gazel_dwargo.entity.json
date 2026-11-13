@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:gazel_dwargo",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/dwarf/gazel_dwargo"
+      },
+      "geometry": {
+        "default": "geometry.gazel_dwargo"
+      },
+      "animations": {
+        "idle": "animation.gazel.idle",
+        "walk": "animation.gazel.walk",
+        "run": "animation.gazel.run"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          },
+          {
+            "run": "query.modified_move_speed >= 0.15"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

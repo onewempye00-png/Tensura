@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tensura:earth_elemental_shard"
+    },
+    "X": {
+      "item": "tensura:element_core_empty"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:element_core_earth"
+  }
+}

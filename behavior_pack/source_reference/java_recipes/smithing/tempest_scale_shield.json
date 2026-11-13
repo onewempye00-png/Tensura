@@ -1,0 +1,19 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:charybdis_scale"
+  },
+  "input2": {
+    "item": "tensura:high_magisteel_ingot"
+  },
+  "inputAmount1": 6,
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:tempest_scale_shield"
+  },
+  "schematics": [
+    "tensura:charybdis_scalemail_gear_schematic",
+    "tensura:shield_schematic"
+  ]
+}

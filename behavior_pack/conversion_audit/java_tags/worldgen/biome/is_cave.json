@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "c:is_cave",
+      "required": false
+    },
+    "minecraft:lush_caves",
+    "minecraft:dripstone_caves"
+  ]
+}

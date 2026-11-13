@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:cattledeer_beef",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/cattledeer_beef",
+      "minecraft:display_name": {
+        "value": "Cattledeer Beef"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

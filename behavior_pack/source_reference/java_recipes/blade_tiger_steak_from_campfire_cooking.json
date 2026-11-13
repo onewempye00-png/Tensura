@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 700,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "tensura:raw_blade_tiger_meat"
+  },
+  "result": {
+    "count": 1,
+    "id": "tensura:blade_tiger_steak"
+  }
+}

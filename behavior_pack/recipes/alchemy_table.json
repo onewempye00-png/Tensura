@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:alchemy_table"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " G ",
+      "BFB",
+      " S "
+    ],
+    "key": {
+      "G": "tensura:hipokute_flower",
+      "B": "minecraft:glass_bottle",
+      "F": "minecraft:crafting_table",
+      "S": "tensura:magicule_crystal"
+    },
+    "result": {
+      "item": "tensura:alchemy_table",
+      "count": 1
+    }
+  }
+}

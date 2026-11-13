@@ -1,0 +1,22 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:orichalcum_ingot"
+  },
+  "input2": {
+    "item": "minecraft:gold_ingot"
+  },
+  "input3": {
+    "item": "tensura:monster_leather_a"
+  },
+  "inputAmount1": 7,
+  "inputAmount2": 3,
+  "inputAmount3": 2,
+  "output": {
+    "count": 1,
+    "id": "tensura:orichalcum_leggings"
+  },
+  "schematics": [
+    "tensura:orichalcum_gear_schematic"
+  ]
+}

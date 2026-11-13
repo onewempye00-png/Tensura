@@ -1,0 +1,1854 @@
+{
+  "source": "tensura-neoforge-2.0.1.5.jar",
+  "definition_count": 162,
+  "definitions": [
+    {
+      "java_file": "data/tensura/worldgen/biome/ancient_forest.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/barren_land.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/desert_of_death.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/miasmic_plains.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/underworld_barrens.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "creature_spawn_probability",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature",
+        "temperature_modifier"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/underworld_red_sands.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "creature_spawn_probability",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/underworld_sands.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "creature_spawn_probability",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/biome/underworld_spikes.json",
+      "type": "biome",
+      "bedrock_target": "No direct custom-biome add-on equivalent; translate surface/feature/spawn profile to supported biome-tagged features",
+      "top_level_keys": [
+        "carvers",
+        "creature_spawn_probability",
+        "downfall",
+        "effects",
+        "features",
+        "has_precipitation",
+        "spawn_costs",
+        "spawners",
+        "temperature",
+        "temperature_modifier"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/baffledil.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/dead_oak.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/floating_debris.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/hell_block_blob.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/hipokute_grass.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/ore_magic.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/ore_magic_buried.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/ore_silver_buried.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/ore_silver_large.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/ore_silver_small.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/palm_tree.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/configured_feature/rock_spike.json",
+      "type": "configured_feature",
+      "bedrock_target": "Bedrock feature JSON (requires block/feature type translation)",
+      "top_level_keys": [
+        "type",
+        "config"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/noise/hell.json",
+      "type": "noise",
+      "bedrock_target": "No direct add-on equivalent; preserve parameters for documented approximation",
+      "top_level_keys": [
+        "amplitudes",
+        "firstOctave"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/noise_settings/hell.json",
+      "type": "noise_settings",
+      "bedrock_target": "No direct add-on equivalent; preserve parameters for documented approximation",
+      "top_level_keys": [
+        "aquifers_enabled",
+        "default_block",
+        "default_fluid",
+        "disable_mob_generation",
+        "legacy_random_source",
+        "noise",
+        "noise_router",
+        "ore_veins_enabled",
+        "sea_level",
+        "spawn_target",
+        "surface_rule"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/baffledil.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/baffledil_common.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/common_brown_mushroom_patches.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/common_fern_patches.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/common_red_mushroom_patches.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/common_tall_grass_patches.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/dead_oak.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/floating_debris.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/hell_block_blob.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/hipokute_grass.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/hipokute_grass_common.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/hipokute_grass_uncommon.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/ore_magic.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/ore_magic_buried.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/ore_magic_extra.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/ore_silver_buried.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/ore_silver_large.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/ore_silver_small.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/palm_tree.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/palm_tree_rare.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/placed_feature/rock_spike.json",
+      "type": "placed_feature",
+      "bedrock_target": "Bedrock feature_rule placement (translate placement modifiers)",
+      "top_level_keys": [
+        "feature",
+        "placement"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ancient_forest/mushroom.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ancient_forest/rock.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ancient_forest/tree.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/charybdis_cave/desert.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/charybdis_cave/ice.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/charybdis_cave/mesa.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/charybdis_cave/plains.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/hell/hell_gate.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "minY",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/hell/red_sand_ruin.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "minY",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/hell/sand_ruin.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "minY",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/labyrinth/labyrinth_tree.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/nests/black_spider.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/nests/giant_ant.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/warp/cold_warp_pad.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/warp/desert_warp_pad.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/warp/mesa_warp_pad.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/warp/plains_warp_pad.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/warp/swamp_warp_pad.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/wizard_tower/buried.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/wizard_tower/burnt.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/wizard_tower/frozen.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/wizard_tower/rotted.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/ruin/wizard_tower/ruined.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/dwarf_village.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/goblin_village/acacia.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/goblin_village/birch.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/goblin_village/jungle.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/goblin_village/oak.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/goblin_village/palm.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/goblin_village/spruce.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/lizardmen_village/tower_short.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/lizardmen_village/tower_tall.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/lizardmen_village/underground.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/lizardmen_village/water.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure/villages/orc_village.json",
+      "type": "structure",
+      "bedrock_target": "Bedrock .mcstructure plus structure feature/feature_rule",
+      "top_level_keys": [
+        "type",
+        "biomes",
+        "liquid_settings",
+        "max_distance_from_center",
+        "project_start_to_heightmap",
+        "size",
+        "spawn_overrides",
+        "start_height",
+        "start_pool",
+        "step",
+        "terrain_adaptation",
+        "use_expansion_hack"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/ancient_forest/decoration.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/ancient_forest/tree.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/charybdis_cave.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/hell/hell_gate.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/hell/red_sand_ruin.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/hell/sand_ruin.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/labyrinth/labyrinth_tree.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/nests/black_spider.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/nests/giant_ant.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/ruin/warp_pads.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/ruin/wizard_tower.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/villages/dwarf_village.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/villages/goblin_village.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/villages/lizardmen_tower.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/villages/lizardmen_village.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/structure_set/villages/orc_village.json",
+      "type": "structure_set",
+      "bedrock_target": "Bedrock structure feature_rule with spacing/chance approximation",
+      "top_level_keys": [
+        "placement",
+        "structures"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ancient_forest/mushroom.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ancient_forest/rock.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ancient_forest/tree.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ant_nest/fallback.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ant_nest/parts.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ant_nest/surface.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/charybdis_cave/rooms.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/charybdis_cave/stairs.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/charybdis_cave/start.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/charybdis_cave/start_desert.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/charybdis_cave/start_ice.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/charybdis_cave/start_mesa.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/dwarf_village/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/dwarf_village/paths.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/dwarf_village/spawn.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/dwarf_village/start.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/acacia/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/acacia/main.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/acacia/streets.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/birch/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/birch/main.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/birch/streets.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/jungle/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/jungle/main.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/jungle/streets.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/oak/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/oak/main.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/oak/streets.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/palm/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/palm/main.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/palm/streets.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/spawn.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/spruce/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/spruce/main.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/goblin_village/spruce/streets.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/hell_gate/base.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/hell_gate/parts.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/hell_ruins/red_sand.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/hell_ruins/sand.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/labyrinth_tree/parts.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/labyrinth_tree/start.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardman_village/spawn.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardman_village/tower_short.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardman_village/tower_tall.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/underground/entrance_stairs.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/underground/fallback.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/underground/hallways.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/underground/rooms.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/underground/surface.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/water/buildings.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/water/paths.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/lizardmen_village/water/surface.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/orc_village/builds.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/orc_village/paths.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/orc_village/spawn.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/orc_village/start.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/warp/cold_warp_pad.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/warp/desert_warp_pad.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/warp/mesa_warp_pad.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/warp/plains_warp_pad.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/warp/swamp_warp_pad.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/wizard_tower/buried.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/wizard_tower/burnt.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/wizard_tower/frozen.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/wizard_tower/rotten.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/ruin/wizard_tower/ruined.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/spider_nest/parts.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    },
+    {
+      "java_file": "data/tensura/worldgen/template_pool/spider_nest/surface.json",
+      "type": "template_pool",
+      "bedrock_target": "Bedrock structure template pool approximation; convert referenced NBT pieces individually",
+      "top_level_keys": [
+        "elements",
+        "fallback"
+      ]
+    }
+  ]
+}

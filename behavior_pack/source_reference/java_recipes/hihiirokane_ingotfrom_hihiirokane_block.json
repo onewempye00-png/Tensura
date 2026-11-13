@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tensura:hihiirokane_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "tensura:hihiirokane_ingot"
+  }
+}

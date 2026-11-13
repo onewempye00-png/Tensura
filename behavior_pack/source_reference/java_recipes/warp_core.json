@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "warp_core",
+  "key": {
+    "C": {
+      "item": "tensura:element_core_space"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "L": {
+      "item": "tensura:low_magisteel_ingot"
+    },
+    "S": {
+      "item": "tensura:magic_stone"
+    }
+  },
+  "pattern": [
+    "ELC",
+    "LSL",
+    "CLE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:warp_core"
+  }
+}

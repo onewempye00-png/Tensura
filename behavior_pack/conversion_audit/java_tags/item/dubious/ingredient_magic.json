@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:golden_apple",
+    "minecraft:golden_carrot",
+    "minecraft:enchanted_golden_apple",
+    "tensura:silver_apple",
+    "tensura:enchanted_silver_apple",
+    "tensura:elemental_essence",
+    "tensura:daemon_essence",
+    "tensura:daemon_core",
+    "tensura:dragon_essence",
+    "tensura:zane_blood",
+    "tensura:royal_blood",
+    "tensura:water_elemental_shard",
+    "tensura:fire_elemental_shard",
+    "tensura:earth_elemental_shard",
+    "tensura:wind_elemental_shard",
+    "tensura:space_elemental_shard"
+  ]
+}

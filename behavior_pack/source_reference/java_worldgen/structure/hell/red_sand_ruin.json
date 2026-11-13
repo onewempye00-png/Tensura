@@ -1,0 +1,17 @@
+{
+  "type": "tensura:jigsaw_min_height",
+  "biomes": "#tensura:has_structure/hell_red_sand_ruin",
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 80,
+  "minY": 10,
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "size": 1,
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 0
+  },
+  "start_pool": "tensura:hell_ruins/red_sand",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": false
+}

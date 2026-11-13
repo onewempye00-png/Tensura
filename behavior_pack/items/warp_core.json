@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:warp_core",
+      "menu_category": {
+        "category": "material"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/warp_core",
+      "minecraft:display_name": {
+        "value": "Warp Core"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

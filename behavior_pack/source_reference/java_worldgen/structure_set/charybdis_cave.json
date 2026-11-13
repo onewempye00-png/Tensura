@@ -1,0 +1,26 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 892014573,
+    "separation": 20,
+    "spacing": 90
+  },
+  "structures": [
+    {
+      "structure": "tensura:charybdis_cave/plains",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:charybdis_cave/desert",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:charybdis_cave/ice",
+      "weight": 1
+    },
+    {
+      "structure": "tensura:charybdis_cave/mesa",
+      "weight": 1
+    }
+  ]
+}

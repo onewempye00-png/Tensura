@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/spatial_blade",
+  "textures": {
+    "layer0": "tensura:item/spatial_blade_hilt"
+  }
+}

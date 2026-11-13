@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:raw_iron"
+  },
+  "primary": "tensura:iron",
+  "primary_count": 9,
+  "smeltTick": 120
+}

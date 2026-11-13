@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:enchantable/bow",
+    "#minecraft:enchantable/crossbow",
+    "#tensura:fist_weapons",
+    "#tensura:shields",
+    "#tensura:pouches",
+    "#tensura:magic_grimoires",
+    "tensura:meat_crusher"
+  ]
+}

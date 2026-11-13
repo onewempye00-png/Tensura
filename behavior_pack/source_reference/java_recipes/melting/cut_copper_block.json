@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:cut_copper"
+  },
+  "primary": "tensura:copper",
+  "primary_count": 81,
+  "smeltTick": 600
+}

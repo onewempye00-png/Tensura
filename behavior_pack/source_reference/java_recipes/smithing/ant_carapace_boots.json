@@ -1,0 +1,18 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:giant_ant_carapace"
+  },
+  "input2": {
+    "item": "minecraft:gold_ingot"
+  },
+  "inputAmount1": 4,
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:ant_carapace_boots"
+  },
+  "schematics": [
+    "tensura:ant_carapace_gear_schematic"
+  ]
+}

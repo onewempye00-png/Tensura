@@ -1,0 +1,17 @@
+{
+  "values": [
+    "tensura:magic_barrier",
+    "tensura:barrier",
+    "tensura:reinforced_barrier",
+    "tensura:reinforcement",
+    "tensura:strength_aspectual",
+    "tensura:agility",
+    "tensura:protection",
+    "tensura:flame_wall",
+    "tensura:confusion",
+    "tensura:invisible",
+    "tensura:healing_rain",
+    "tensura:recovery",
+    "tensura:antidote"
+  ]
+}

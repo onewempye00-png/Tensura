@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "tensura:giant_ant_leg"
+  },
+  "result": {
+    "count": 1,
+    "id": "tensura:cooked_giant_ant_leg"
+  }
+}

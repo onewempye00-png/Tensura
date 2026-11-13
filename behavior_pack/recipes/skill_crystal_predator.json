@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "tensura:skill_crystal_predator"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "tensura:magicule_jewel"
+      },
+      {
+        "item": "minecraft:rotten_flesh"
+      }
+    ],
+    "result": {
+      "item": "tensura:skill_crystal_predator",
+      "count": 1
+    }
+  }
+}

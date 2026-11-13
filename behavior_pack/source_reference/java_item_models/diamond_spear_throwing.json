@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/spear_handheld_throwing",
+  "textures": {
+    "layer0": "tensura:item/diamond_spear"
+  }
+}

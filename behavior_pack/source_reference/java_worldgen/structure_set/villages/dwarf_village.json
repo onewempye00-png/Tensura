@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1174623089,
+    "separation": 10,
+    "spacing": 30
+  },
+  "structures": [
+    {
+      "structure": "tensura:villages/dwarf_village",
+      "weight": 1
+    }
+  ]
+}

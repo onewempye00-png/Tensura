@@ -1,0 +1,20 @@
+{
+  "type": "tensura:mining_station",
+  "ingredient": {
+    "ingredient": {
+      "item": "minecraft:granite"
+    },
+    "quantity": 1
+  },
+  "results": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:red_sand"
+      },
+      "maxAmount": 4,
+      "minAmount": 1
+    }
+  ]
+}

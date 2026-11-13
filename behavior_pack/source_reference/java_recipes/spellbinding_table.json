@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "spellbinding_table",
+  "key": {
+    "#": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "N": {
+      "item": "tensura:magic_stone"
+    },
+    "S": {
+      "item": "tensura:silver_ingot"
+    }
+  },
+  "pattern": [
+    " N ",
+    "S#S",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:spellbinding_table"
+  }
+}

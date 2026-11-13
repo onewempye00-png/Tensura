@@ -1,0 +1,18 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:gold_ingot"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:golden_short_sword"
+  },
+  "schematics": [
+    "tensura:gold_gear_schematic",
+    "tensura:short_sword_schematic"
+  ]
+}

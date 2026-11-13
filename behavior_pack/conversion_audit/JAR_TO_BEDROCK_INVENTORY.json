@@ -1,0 +1,44 @@
+{
+  "jar_file": "tensura-neoforge-2.0.1.5.jar",
+  "counts": {
+    "data/tensura/structure/": 385,
+    "data/tensura/worldgen/": 162,
+    "data/tensura/tags/": 385,
+    "assets/tensura/models/item/": 1313,
+    "assets/tensura/geo/": 123,
+    "assets/tensura/textures/entity/": 644,
+    "assets/tensura/textures/item/": 731,
+    "assets/tensura/particles/": 33,
+    "assets/tensura/sounds/": 113
+  },
+  "entity_textures_added_to_active_resource_pack": 0,
+  "entity_geometries_added_to_active_resource_pack": 0,
+  "skill_tags_converted_to_runtime_js": 62,
+  "race_tags_converted_to_runtime_js": 17,
+  "custom_recipe_catalog_counts": {
+    "kiln": 272,
+    "mining": 28,
+    "mixing": 14,
+    "alchemy": 31,
+    "forge": 298
+  },
+  "additional_native_recipes_added": 200,
+  "native_recipes_skipped_due_to_tag_ingredient_or_unsupported_form": [
+    "dubious_food",
+    "palm_planks"
+  ],
+  "known_not_yet_converted": [
+    "Java structure NBT to Bedrock mcstructure placement",
+    "Java biome/worldgen definitions to Bedrock feature rules",
+    "Java item models to Bedrock attachables/blocks/items",
+    "Java entity classes not represented by existing Bedrock behavior entities",
+    "Java-only custom recipe serializers requiring additional station semantics"
+  ],
+  "native_recipe_source_count": 220,
+  "native_recipes_converted_in_3_1_2": 220,
+  "native_recipe_conversion_unhandled": [],
+  "custom_recipe_source_count": 643,
+  "structure_conversion_status": "not converted: Java NBT requires palette/state conversion into Bedrock .mcstructure",
+  "worldgen_conversion_status": "not converted: Java configured/placed feature and structure-set serializers are not Bedrock feature rules",
+  "item_model_conversion_status": "not converted: Java item-model JSONs need Bedrock item/attachable/render-controller definitions"
+}

@@ -1,0 +1,17 @@
+{
+  "values": [
+    "tensura:anti_magic",
+    "tensura:anti_shock",
+    "tensura:sleep",
+    "tensura:black_burn",
+    "tensura:drowsiness",
+    "tensura:infection",
+    "tensura:infinite_imprisonment",
+    "tensura:mind_control",
+    "tensura:oppression",
+    "tensura:spatial_blockade",
+    "tensura:soul_drain",
+    "tensura:magic_interference",
+    "tensura:movement_interference"
+  ]
+}

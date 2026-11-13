@@ -1,0 +1,23 @@
+{
+  "values": [
+    "tensura:invisible_arrow",
+    "tensura:speared_fin_arrow",
+    "tensura:spatial_arrow",
+    "tensura:spear",
+    "tensura:kunai",
+    "tensura:bullet",
+    "tensura:web_bullet",
+    "tensura:healing_potion",
+    "tensura:holy_water",
+    "tensura:unicorn_horn",
+    "tensura:thrown_item",
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "minecraft:egg",
+    "minecraft:ender_pearl",
+    "minecraft:firework_rocket",
+    "minecraft:snowball",
+    "minecraft:potion",
+    "minecraft:trident"
+  ]
+}

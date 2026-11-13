@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "primary": "tensura:netherite",
+  "primary_count": 1,
+  "secondary": "tensura:gold",
+  "secondary_count": 4,
+  "smeltTick": 75
+}

@@ -1,0 +1,26 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:giant_ant_leg"
+  },
+  "input2": {
+    "item": "tensura:steel_thread"
+  },
+  "input3": {
+    "item": "minecraft:tripwire_hook"
+  },
+  "input4": {
+    "item": "minecraft:iron_ingot"
+  },
+  "inputAmount1": 3,
+  "inputAmount2": 2,
+  "inputAmount3": 1,
+  "inputAmount4": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:ant_crossbow"
+  },
+  "schematics": [
+    "tensura:ant_carapace_gear_schematic"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:high_magisteel_ingot"
+  },
+  "input2": {
+    "item": "minecraft:clay_ball"
+  },
+  "input3": {
+    "item": "minecraft:red_dye"
+  },
+  "input4": {
+    "item": "minecraft:orange_dye"
+  },
+  "input5": {
+    "item": "minecraft:blue_dye"
+  },
+  "inputAmount2": 3,
+  "inputAmount3": 1,
+  "inputAmount4": 1,
+  "inputAmount5": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:angry_pierrot_mask"
+  },
+  "schematics": [
+    "tensura:pierrot_mask_schematic"
+  ]
+}

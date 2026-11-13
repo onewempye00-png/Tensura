@@ -1,0 +1,44 @@
+{
+  "source_tables": 290,
+  "converted": 290,
+  "entries": 843,
+  "expanded_skill_tomes": 25,
+  "tiered_battlewill_manuals": 4,
+  "unsupportedFunctions": {
+    "copy_components": 1,
+    "copy_state": 1,
+    "tensura:increase_by_scale": 2
+  },
+  "unsupportedConditions": {
+    "table_bonus": 2
+  },
+  "unconverted": [],
+  "battlewill_manual_pools": {
+    "low_manual_dwarf_trade": [
+      "aura_sword",
+      "instant_move",
+      "violent_break"
+    ],
+    "medium_manual_dwarf_trade": [
+      "formhide",
+      "aura_slash",
+      "earthshatter_kick"
+    ],
+    "high_manual_dwarf_trade": [
+      "air_flight",
+      "aura_shield",
+      "magic_bullet"
+    ],
+    "rare_manual_dwarf_trade": [
+      "battlewill",
+      "diamond_path"
+    ]
+  },
+  "notes": [
+    "All 290 Java loot-table files are represented by Bedrock-format loot-table files.",
+    "Java apply_skill_data on magic tomes is replaced with weighted alternatives of individual Bedrock skill-book items.",
+    "Java apply_skill_data on Battlewill Manuals is replaced with tag-specific manual items that teach from the original Java tag pool.",
+    "Unsupported Java-only loot functions and conditions are listed for explicit compatibility replacements; see unsupportedFunctions and unsupportedConditions.",
+    "Matching loot tables are connected to matching Bedrock block/entity definitions where those definitions exist."
+  ]
+}

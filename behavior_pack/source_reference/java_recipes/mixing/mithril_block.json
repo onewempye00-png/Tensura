@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_mixing",
+  "left": "tensura:silver",
+  "left_count": 36,
+  "output": {
+    "count": 1,
+    "id": "tensura:mithril_block"
+  },
+  "right": "tensura:magisteel",
+  "right_count": 180
+}

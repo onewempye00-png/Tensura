@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:mithril_ingot"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 20,
+  "secondary": "tensura:silver",
+  "secondary_count": 4,
+  "smeltTick": 300
+}

@@ -1,0 +1,383 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:red_mushroom_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "any_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "tensura:variant_predicate",
+                  "variants": [
+                    "DEFAULT"
+                  ]
+                }
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "tensura:variant_predicate",
+                  "variants": [
+                    "RED"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:red_mushroom",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "any_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "tensura:variant_predicate",
+                  "variants": [
+                    "DEFAULT"
+                  ]
+                }
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "tensura:variant_predicate",
+                  "variants": [
+                    "RED"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:brown_mushroom_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "tensura:variant_predicate",
+              "variants": [
+                "BROWN"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:brown_mushroom",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "tensura:variant_predicate",
+              "variants": [
+                "BROWN"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:crimson_hyphae",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "tensura:variant_predicate",
+              "variants": [
+                "CRIMSON"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:crimson_fungus",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "tensura:variant_predicate",
+              "variants": [
+                "CRIMSON"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_hyphae",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "tensura:variant_predicate",
+              "variants": [
+                "WARPED"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_fungus",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "tensura:variant_predicate",
+              "variants": [
+                "WARPED"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "format_version": "1.20.0"
+}

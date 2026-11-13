@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/armorsaurus_scalemail_boots",
+    "layer1": "minecraft:trims/items/boots_trim_gold"
+  }
+}

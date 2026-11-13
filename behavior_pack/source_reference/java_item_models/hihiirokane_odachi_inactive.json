@@ -1,0 +1,6 @@
+{
+  "parent": "tensura:item/odachi_handheld",
+  "textures": {
+    "layer0": "tensura:item/hihiirokane_odachi_inactive"
+  }
+}

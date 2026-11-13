@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:thatch_slab",
+          "functions": [
+            {
+              "function": "set_count",
+              "add": false,
+              "count": 2,
+              "conditions": [
+                {
+                  "condition": "block_state_property",
+                  "block": "tensura:thatch_slab",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "explosion_decay"
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

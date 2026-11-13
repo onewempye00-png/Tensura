@@ -1,0 +1,10 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:netherite_great_sword"
+  },
+  "primary": "tensura:netherite",
+  "primary_count": 1,
+  "secondary": "tensura:gold",
+  "secondary_count": 4
+}

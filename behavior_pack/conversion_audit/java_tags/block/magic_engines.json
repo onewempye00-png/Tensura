@@ -1,0 +1,22 @@
+{
+  "values": [
+    "tensura:bricks_magic_engine",
+    "tensura:stone_bricks_magic_engine",
+    "tensura:tuff_bricks_magic_engine",
+    "tensura:deepslate_bricks_magic_engine",
+    "tensura:mud_bricks_magic_engine",
+    "tensura:prismarine_bricks_magic_engine",
+    "tensura:nether_bricks_magic_engine",
+    "tensura:red_nether_bricks_magic_engine",
+    "tensura:polished_blackstone_bricks_magic_engine",
+    "tensura:quartz_bricks_magic_engine",
+    "tensura:end_stone_bricks_magic_engine",
+    "tensura:purpur_bricks_magic_engine",
+    "tensura:low_quality_magic_crystal_bricks_magic_engine",
+    "tensura:medium_quality_magic_crystal_bricks_magic_engine",
+    "tensura:high_quality_magic_crystal_bricks_magic_engine",
+    "tensura:labyrinth_bricks_magic_engine",
+    "tensura:cream_labyrinth_bricks_magic_engine",
+    "tensura:dark_labyrinth_bricks_magic_engine"
+  ]
+}

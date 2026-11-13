@@ -1,0 +1,23 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:armorsaurus_shell"
+  },
+  "input2": {
+    "item": "tensura:armorsaurus_scale"
+  },
+  "input3": {
+    "item": "tensura:low_magisteel_ingot"
+  },
+  "inputAmount1": 4,
+  "inputAmount2": 3,
+  "inputAmount3": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:armorsaurus_shield"
+  },
+  "schematics": [
+    "tensura:armorsaurus_scalemail_gear_schematic",
+    "tensura:shield_schematic"
+  ]
+}

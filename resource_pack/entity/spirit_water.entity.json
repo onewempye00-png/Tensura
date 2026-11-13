@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:spirit_water",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/undine/undine"
+      },
+      "geometry": {
+        "default": "geometry.undine"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "animations": {
+        "idle": "animation.undine.idle",
+        "walk": "animation.undine.walk"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "walk": "query.modified_move_speed > 0.02"
+          },
+          {
+            "idle": "query.modified_move_speed <= 0.02"
+          }
+        ]
+      }
+    }
+  }
+}

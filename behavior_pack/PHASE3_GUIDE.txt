@@ -1,0 +1,16 @@
+TENSURA REINCARNATION RPG — PHASE 3.1.2 INCREMENTAL JAR CONVERSION
+
+This build is based on the supplied 3.1.1 add-on and the original tensura-neoforge-2.0.1.5.jar.
+
+New in 3.1.2:
+- Imported missing original entity textures into active Resource Pack texture paths.
+- Imported any missing original entity geometry files into active Resource Pack model paths.
+- Converted original Manascore skill and race tag data into a runtime JavaScript classification module.
+- Rebuilt custom smithing, melting, mixing, refining and mining catalogues from the complete source recipe definitions.
+- Added additional directly convertible vanilla crafting/cooking recipes where source ingredients are representable in Bedrock.
+- Added a machine-readable conversion inventory and retained source tag files for traceability.
+
+IMPORTANT CONVERSION LIMITS:
+Java NBT structures and Java world-generation serializers are not directly loadable by Bedrock. The 382 structure files and worldgen definitions remain source material pending palette/state conversion and Bedrock placement rules. Java item model JSON files likewise require conversion into Bedrock item/attachable/block geometry and render definitions. Java entity classes require independent behavior implementations; they cannot be made into mobs by copying assets alone. The inventory file lists the exact counts and remaining conversion tasks.
+
+Do not replace a working world without backing it up. Static validation is not the same as Android in-game testing.

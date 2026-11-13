@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/sandstone_warp_pad"},"tags":["crafting_table"],"pattern":["SMS","MCM","SMS"],"key":{"C":{"item":"tensura:warp_core"},"M":{"item":"minecraft:cut_sandstone"},"S":{"item":"minecraft:smooth_sandstone"}},"result":{"item":"tensura:sandstone_warp_pad","count":1}}}

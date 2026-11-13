@@ -1,0 +1,7 @@
+{
+  "parent": "tensura:item/warp_pad_large",
+  "textures": {
+    "1": "tensura:block/red_sandstone_warp_pad",
+    "particle": "tensura:block/red_sandstone_warp_pad"
+  }
+}

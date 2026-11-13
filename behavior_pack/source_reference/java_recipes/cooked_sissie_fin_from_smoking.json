@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "tensura:sissie_fin"
+  },
+  "result": {
+    "count": 1,
+    "id": "tensura:cooked_sissie_fin"
+  }
+}

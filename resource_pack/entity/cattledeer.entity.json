@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:cattledeer",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/cattledeer/cattledeer"
+      },
+      "geometry": {
+        "default": "geometry.cattledeer"
+      },
+      "animations": {
+        "idle": "animation.cattledeer.idle",
+        "walk": "animation.cattledeer.walk",
+        "run": "animation.cattledeer.run"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          },
+          {
+            "run": "query.modified_move_speed >= 0.15"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

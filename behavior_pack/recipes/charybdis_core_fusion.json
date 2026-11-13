@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:charybdis_core_fusion"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " C ",
+      "SDS",
+      " C "
+    ],
+    "key": {
+      "C": "tensura:charybdis_core",
+      "S": "tensura:sea_king_scale",
+      "D": "tensura:daemon_core"
+    },
+    "result": {
+      "item": "tensura:charybdis_core_fusion",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#tensura:butcher_storable",
+    "#tensura:farmer_storable",
+    "#tensura:fisherman_storable",
+    "#tensura:guard_storable",
+    "#tensura:lumberjack_storable",
+    "#tensura:shepherd_storable"
+  ]
+}

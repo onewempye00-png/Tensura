@@ -1,0 +1,20 @@
+{
+  "values": [
+    "tensura:coercion",
+    "tensura:corrosion",
+    "tensura:farsight",
+    "tensura:gravity_field",
+    "tensura:gravity_flight",
+    "tensura:hydraulic_propulsion",
+    "tensura:paralysis",
+    "tensura:poison",
+    "tensura:ranged_barrier",
+    "tensura:self_regeneration",
+    "tensura:strength",
+    "tensura:telepathy",
+    "tensura:thought_communication",
+    "tensura:voice_cannon",
+    "tensura:water_blade",
+    "tensura:water_current_control"
+  ]
+}

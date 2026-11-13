@@ -1,0 +1,145 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 15,
+        "min": 5
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 70
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone_block",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spruce_log",
+          "weight": 30
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2,
+        "min": 0
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:netherite_scrap",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "tensura:magic_ore_shard"
+        },
+        {
+          "type": "item",
+          "name": "tensura:daemon_essence"
+        },
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "tensura:skill_book_summon_daemon"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tensura:hell_gate_exploration_map",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "translate": "tensura.map.hell_gate"
+              },
+              "target": "item_name"
+            }
+          ]
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 4,
+        "min": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:skull_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:danger_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:copper_ingot",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 40
+        }
+      ],
+      "bonus_rolls": 0
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 6,
+        "min": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tensura:insanity_stew",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_sand",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_sandstone",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:air",
+          "weight": 50
+        }
+      ],
+      "bonus_rolls": 0
+    }
+  ],
+  "format_version": "1.20.0"
+}

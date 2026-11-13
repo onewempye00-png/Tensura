@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#tensura:is_mental",
+    "#tensura:is_spiritual",
+    "#tensura:bypass_multidimensional_barrier",
+    "tensura:disintegration",
+    "tensura:infection",
+    "tensura:petrification",
+    "tensura:gravity_press",
+    "tensura:gravity_explode",
+    "tensura:death_bless",
+    "tensura:devoured",
+    "tensura:magicule_poison",
+    "tensura:curse",
+    "minecraft:freeze",
+    "minecraft:explosion",
+    "minecraft:player_explosion"
+  ]
+}

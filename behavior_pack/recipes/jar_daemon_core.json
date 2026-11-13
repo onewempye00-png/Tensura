@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_daemon_core"},"tags":["crafting_table"],"pattern":["DDD","DSD","DDD"],"key":{"D":{"item":"tensura:daemon_essence"},"S":{"item":"tensura:magic_stone"}},"unlock":[],"result":{"item":"tensura:daemon_core","count":1}}}

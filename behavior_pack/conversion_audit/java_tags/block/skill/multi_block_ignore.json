@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:doors",
+    "#minecraft:beds",
+    "#minecraft:tall_flowers",
+    "#minecraft:candles",
+    "minecraft:piston_head",
+    "minecraft:moving_piston",
+    "minecraft:sea_pickle"
+  ]
+}

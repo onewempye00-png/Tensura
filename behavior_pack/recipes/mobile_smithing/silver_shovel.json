@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft":{"recipe_shapeless":{"description":{"identifier":"tensura:mobile_smithing_silver_shovel"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:stick"},{"item":"minecraft:stick"},{"item":"tensura:silver_gear_schematic"}],"result":{"item":"tensura:silver_shovel","count":1}}}}

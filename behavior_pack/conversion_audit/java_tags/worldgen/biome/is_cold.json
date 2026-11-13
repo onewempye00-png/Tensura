@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "c:is_cold",
+      "required": false
+    },
+    "#minecraft:has_structure/village_snowy",
+    "minecraft:ice_spikes"
+  ]
+}

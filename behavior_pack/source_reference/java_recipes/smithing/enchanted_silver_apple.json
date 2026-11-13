@@ -1,0 +1,17 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:silver_apple"
+  },
+  "input2": {
+    "item": "tensura:mithril_ingot"
+  },
+  "inputAmount2": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:enchanted_silver_apple"
+  },
+  "schematics": [
+    "tensura:mithril_gear_schematic"
+  ]
+}

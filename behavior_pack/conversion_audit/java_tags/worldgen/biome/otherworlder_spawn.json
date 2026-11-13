@@ -1,0 +1,35 @@
+{
+  "remove": [
+    "tensura:desert_of_death",
+    "tensura:barren_land"
+  ],
+  "values": [
+    {
+      "id": "c:is_plains",
+      "required": false
+    },
+    {
+      "id": "c:is_desert",
+      "required": false
+    },
+    {
+      "id": "c:is_savanna",
+      "required": false
+    },
+    {
+      "id": "c:is_badlands",
+      "required": false
+    },
+    {
+      "id": "c:is_mountain",
+      "required": false
+    },
+    "#tensura:is_desert",
+    "#minecraft:has_structure/village_plains",
+    "#minecraft:has_structure/village_snowy",
+    "#minecraft:is_hill",
+    "#minecraft:is_mountain",
+    "#minecraft:is_savanna",
+    "#minecraft:is_badlands"
+  ]
+}

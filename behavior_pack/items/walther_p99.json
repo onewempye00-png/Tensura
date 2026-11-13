@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:walther_p99",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/walther_p99",
+      "minecraft:display_name": {
+        "value": "Walther P99"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

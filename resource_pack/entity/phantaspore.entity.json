@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:phantaspore",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/phantaspore/phantaspore"
+      },
+      "geometry": {
+        "default": "geometry.phantaspore"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

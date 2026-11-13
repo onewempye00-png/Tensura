@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1603847291,
+    "separation": 50,
+    "spacing": 200
+  },
+  "structures": [
+    {
+      "structure": "tensura:hell/hell_gate",
+      "weight": 1
+    }
+  ]
+}

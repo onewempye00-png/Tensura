@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tensura:pure_magisteel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "tensura:pure_magisteel_ingot"
+  }
+}

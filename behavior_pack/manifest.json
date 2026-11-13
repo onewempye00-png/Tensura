@@ -1,0 +1,58 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Tensura Build 01 • Core, Races & Progression",
+    "description": "Standalone staged package for core identity, reincarnation, race attributes, naming, possession and progression. Bedrock compatibility reconstruction.",
+    "uuid": "730fecad-6ca8-48d7-ade4-ed24d520b7d7",
+    "version": [
+      1,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      60
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "a5b17528-2de2-4880-8626-9e9622d923c4",
+      "version": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "03d517a7-a3b8-4662-8947-38eae85482cd",
+      "version": [
+        1,
+        0,
+        1
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.11.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.3.0"
+    },
+    {
+      "uuid": "9dff9827-2d3c-4ef2-9590-ed2c7a0ed788",
+      "version": [
+        1,
+        0,
+        1
+      ]
+    }
+  ]
+}

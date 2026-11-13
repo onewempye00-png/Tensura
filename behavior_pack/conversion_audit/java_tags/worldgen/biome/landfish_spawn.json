@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "id": "c:is_river",
+      "required": false
+    },
+    {
+      "id": "c:is_beach",
+      "required": false
+    },
+    "#minecraft:is_river",
+    "#minecraft:is_beach"
+  ]
+}

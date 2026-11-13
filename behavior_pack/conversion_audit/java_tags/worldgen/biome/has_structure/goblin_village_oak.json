@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "c:is_forest",
+      "required": false
+    },
+    "minecraft:forest"
+  ]
+}

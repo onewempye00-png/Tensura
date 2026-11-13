@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:chiseled_sarasa_sandstone",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/magicule_crystal",
+      "minecraft:display_name": {
+        "value": "Chiseled Sarasa Sandstone"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer": {
+        "block": "tensura:chiseled_sarasa_sandstone"
+      }
+    }
+  }
+}

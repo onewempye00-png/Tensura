@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "tensura:orichalcum_surface_ore_feature"
+    },
+    "count": 2,
+    "places_block": "tensura:orichalcum_ore",
+    "may_replace": [
+      {
+        "name": "minecraft:stone"
+      },
+      {
+        "name": "minecraft:grass"
+      },
+      {
+        "name": "minecraft:dirt"
+      },
+      {
+        "name": "minecraft:gravel"
+      },
+      {
+        "name": "minecraft:sand"
+      },
+      {
+        "name": "minecraft:deepslate"
+      }
+    ]
+  }
+}

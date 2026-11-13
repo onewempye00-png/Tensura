@@ -1,0 +1,17 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "tensura:magic_stone"
+  },
+  "input2": {
+    "item": "tensura:daemon_essence"
+  },
+  "inputAmount2": 8,
+  "output": {
+    "count": 1,
+    "id": "tensura:daemon_core"
+  },
+  "schematics": [
+    "tensura:low_magisteel_gear_schematic"
+  ]
+}

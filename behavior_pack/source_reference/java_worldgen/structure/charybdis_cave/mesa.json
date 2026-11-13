@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#tensura:has_structure/charybdis_cave_mesa",
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 80,
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "size": 7,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": []
+    }
+  },
+  "start_height": {
+    "absolute": 0
+  },
+  "start_pool": "tensura:charybdis_cave/start_mesa",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_box",
+  "use_expansion_hack": false
+}

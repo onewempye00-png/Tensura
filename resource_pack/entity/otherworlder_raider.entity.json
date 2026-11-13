@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:otherworlder_raider",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/otherworlder/mark_lauren"
+      },
+      "geometry": {
+        "default": "geometry.tensura_goblin"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

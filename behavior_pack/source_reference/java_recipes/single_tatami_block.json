@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "single_tatami_block",
+  "key": {
+    "#": {
+      "item": "tensura:tatami_block"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "tensura:single_tatami_block"
+  }
+}

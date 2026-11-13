@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "nether_brick_warp_pad",
+  "key": {
+    "C": {
+      "item": "tensura:warp_core"
+    },
+    "M": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "MCM",
+    "MMM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:nether_brick_warp_pad"
+  }
+}

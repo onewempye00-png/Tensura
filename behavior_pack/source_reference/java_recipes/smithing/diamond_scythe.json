@@ -1,0 +1,20 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:diamond"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 4,
+  "inputAmount2": 3,
+  "output": {
+    "count": 1,
+    "id": "tensura:diamond_scythe"
+  },
+  "schematics": [
+    "tensura:diamond_gear_schematic",
+    "tensura:great_sword_schematic",
+    "tensura:spear_schematic"
+  ]
+}

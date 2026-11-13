@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_low_quality_magic_crystal_blockfrom_low_quality_magic_crystal"},"tags":["crafting_table"],"pattern":["###","###","###"],"key":{"#":{"item":"tensura:low_quality_magic_crystal"}},"unlock":[],"result":{"item":"tensura:low_quality_magic_crystal_block","count":1}}}

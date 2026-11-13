@@ -1,0 +1,1950 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "tensura.ability.barrier.break": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/barrier_break",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.blood_ray.loop": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/blood_ray",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.breath.fire": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/fire_breath",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.breath.poison": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/poison_breath",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.breath.thunder": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/thunder_breath",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.breath.water": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/water_breath",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.breath.wind": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/wind_breath",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.buff.activate": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/buff_activate",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.buff.deactivate": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/buff_deactivate",
+          "volume": 0.8,
+          "pitch": 0.75
+        }
+      ]
+    },
+    "tensura.ability.cast.dark_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/dark_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.earth_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/earth_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.energy_drain": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/energy_drain",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.fire_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/fire_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.generic": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/generic_cast",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.generic_fail": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/generic_cast_fail",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.generic_heal": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/generic_heal",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.generic_split": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/generic_split",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.generic_uncast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/generic_uncast",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.ice_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/ice_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.light_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/light_cast",
+          "volume": 0.2,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.lightning_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/lightning_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.presence_concealment": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/presence_concealment",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.space_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/space_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.water_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/water_cast",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.cast.wind_cast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/elemental/wind_cast",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.coercion.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/coercion",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.debuff.activate": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/debuff_activate",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.debuff.deactivate": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/debuff_deactivate",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.defence.activate": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/defence_activate",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.defence.deactivate": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/defence_deactivate",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.disintegration.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/magic/disintegration",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.earthshatter_kick.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/battlewill/earthshatter_kick",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.eater.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/eater",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.haki.loop": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/haki_loop",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.haki.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/haki_start",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.instant_move.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/battlewill/instant_move",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.megiddo.shoot": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/magic/megiddo",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.mist.release": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/mist_release",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.music.blast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/musician_blast",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.music.requiem": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/musician_requiem",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.predation.loop": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/predation",
+          "volume": 1.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.reflection.reverse": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/reflection",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.sticky_steel_thread.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/sticky_steel_thread_1",
+          "volume": 0.8,
+          "pitch": 1.0
+        },
+        {
+          "name": "ability/skill/sticky_steel_thread_2",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.storage.open": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/spatial_storage",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.swipe.start": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/magic/swipe",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.transform.beast": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/beast_transform",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.transform.berserker": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/berserker",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.transform.dragon": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/dragon_transform",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.ability.transform.ogre": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "ability/skill/ogre_berserker",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.effect.acid.sizzle": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "effect/acid_sizzle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.armorsaurus.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/dino/armorsaurus_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.armorsaurus.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/dino/armorsaurus_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.armorsaurus.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/dino/armorsaurus_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.barghest.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/barghest/barghest_aggro",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.barghest.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/barghest/barghest_idle",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.barghest.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/barghest/barghest_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.barghest.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/barghest/barghest_hurt",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.basilisk.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/basilisk/basilisk_idle",
+          "volume": 0.46,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/basilisk/basilisk_idle_long",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.basilisk.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/basilisk/basilisk_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.basilisk.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/basilisk/basilisk_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bear.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bear/bear_attack",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bear.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bear/bear_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bear.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bear/bear_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bear.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bear/bear_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bird.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bird/bird_idle",
+          "volume": 0.46,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/bird/bird_idle_2",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bird.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bird/bird_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bird.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bird/bird_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.bite.big": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/evocation_illager/fangs",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.cat.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/cat/cat_aggro",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.cat.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/cat/cat_idle",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.cat.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/cat/cat_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.cat.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/cat/cat_hurt",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.centipede.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/centipede/centipede_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.centipede.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/centipede/centipede_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.centipede.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/centipede/centipede_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.daemon.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/blaze/breathe1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/breathe2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/breathe3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/breathe4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.daemon.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/blaze/death",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.daemon.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/blaze/hit1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/hit2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/hit3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/hit4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.direwolf.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/direwolf/direwolf_aggro",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.direwolf.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/direwolf/direwolf_idle",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.direwolf.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/direwolf/direwolf_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.direwolf.howl": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/direwolf/direwolf_howl",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.direwolf.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/direwolf/direwolf_hurt",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.dog.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/wolf/growl1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/wolf/growl2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/wolf/growl3",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.dog.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/wolf/bark1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/wolf/bark2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/wolf/bark3",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.dog.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/wolf/death",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.dog.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/wolf/hurt1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/wolf/hurt2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/wolf/hurt3",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.fish.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/fish/hurt1",
+          "volume": 1.5,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/hurt2",
+          "volume": 1.5,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/hurt3",
+          "volume": 1.5,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/hurt4",
+          "volume": 1.5,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.fish.flop": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/fish/flop1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/flop2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/flop3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/flop4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.fish.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/fish/hurt1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/hurt2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/hurt3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/fish/hurt4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.generic.splash": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/generic_splash",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.generic.water_jump": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/dolphin/jump1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/dolphin/jump2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/dolphin/jump3",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.gnome.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/gnome/gnome_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.gnome.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/gnome/gnome_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.gnome.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/gnome/gnome_hurt",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.goblin.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/goblin/goblin_aggro",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.goblin.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/goblin/goblin_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        },
+        {
+          "name": "entity/goblin/goblin_idle2",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.goblin.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/goblin/goblin_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.goblin.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/goblin/goblin_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.golem.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/irongolem/walk1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/irongolem/walk2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/irongolem/walk3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/irongolem/walk4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.golem.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/irongolem/death",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.golem.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/irongolem/hit1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/irongolem/hit2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/irongolem/hit3",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.hover_lizard.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_idle",
+          "volume": 0.46,
+          "pitch": 2.0
+        }
+      ]
+    },
+    "tensura.entity.hover_lizard.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_death",
+          "volume": 0.46,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.hover_lizard.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_hurt",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.insect.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/centipede/centipede_idle",
+          "volume": 0.8,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.insect.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/centipede/centipede_death",
+          "volume": 0.8,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.insect.fly": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/bee/loop1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/bee/loop2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/bee/loop3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/bee/loop4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.insect.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/centipede/centipede_hurt",
+          "volume": 0.8,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.leech_lizard.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_idle",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.leech_lizard.attack": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_attack",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.leech_lizard.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.leech_lizard.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_hurt",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.lizardman.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_idle",
+          "volume": 0.3,
+          "pitch": 2.0
+        }
+      ]
+    },
+    "tensura.entity.lizardman.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_death",
+          "volume": 0.24,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.lizardman.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/lizard/lizard_hurt",
+          "volume": 0.24,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.megalodon.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_idle",
+          "volume": 0.46,
+          "pitch": 0.85
+        }
+      ]
+    },
+    "tensura.entity.megalodon.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_death",
+          "volume": 0.46,
+          "pitch": 0.85
+        }
+      ]
+    },
+    "tensura.entity.megalodon.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_hurt",
+          "volume": 0.46,
+          "pitch": 0.85
+        }
+      ]
+    },
+    "tensura.entity.metal_slime.attack": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/slime/metal_slime_attack",
+          "volume": 0.36,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.metal_slime.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/slime/metal_slime_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.metal_slime.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/slime/metal_slime_hurt",
+          "volume": 0.36,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.metal_slime.squish": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/slime/metal_slime_bounce",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.orc.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/piglin_brute/idle1",
+          "volume": 0.66,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/idle2",
+          "volume": 0.66,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/idle3",
+          "volume": 0.66,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/idle4",
+          "volume": 0.66,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/idle5",
+          "volume": 0.66,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.orc.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/piglin_brute/death1",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/death2",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/death3",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.orc.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/piglin_brute/hurt1",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/hurt2",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin_brute/hurt3",
+          "volume": 0.7,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.orc.laugh": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/piglin/celebrate1",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin/celebrate2",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin/celebrate3",
+          "volume": 0.8,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin/celebrate4",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.orc.transform": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/piglin/converted1",
+          "volume": 0.7,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/piglin/converted2",
+          "volume": 0.7,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.owl.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bird/owl_idle",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.owl.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bird/owl_death",
+          "volume": 0.13,
+          "pitch": 1.5
+        }
+      ]
+    },
+    "tensura.entity.owl.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/bird/owl_hurt",
+          "volume": 0.13,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.serpent.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/serpent/serpent_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.serpent.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/serpent/serpent_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.serpent.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/serpent/serpent_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.sissie.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_idle",
+          "volume": 0.8,
+          "pitch": 0.75
+        }
+      ]
+    },
+    "tensura.entity.sissie.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_death",
+          "volume": 0.8,
+          "pitch": 0.75
+        }
+      ]
+    },
+    "tensura.entity.sissie.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_hurt",
+          "volume": 0.8,
+          "pitch": 0.75
+        }
+      ]
+    },
+    "tensura.entity.spear_toro.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_idle",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spear_toro.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_death",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spear_toro.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/sea_monster/sea_monster_hurt",
+          "volume": 0.46,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_flame.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/blaze/breathe1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/breathe2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/breathe3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/breathe4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_flame.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/blaze/death",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_flame.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/blaze/hit1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/hit2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/hit3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/blaze/hit4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_space.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/allay/idle_without_item1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/allay/idle_without_item2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/allay/idle_without_item3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/allay/idle_without_item4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_space.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/allay/death1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/allay/death2",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_space.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/allay/hurt1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/allay/hurt2",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_water.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/guardian/elder_idle1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/guardian/elder_idle2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/guardian/elder_idle3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/guardian/elder_idle4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_water.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/guardian/elder_death",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_water.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/guardian/elder_hit1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/guardian/elder_hit2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/guardian/elder_hit3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/guardian/elder_hit4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_wind.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/breeze/idle_air1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/idle_air2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/idle_air3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/idle_air4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_wind.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/breeze/death1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/death2",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.spirit_wind.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/breeze/hurt1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/hurt2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/hurt3",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.tiger.aggro": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/tiger/tiger_attack",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.tiger.ambient": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/tiger/tiger_idle",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.tiger.death": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/tiger/tiger_death",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.tiger.hurt": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "entity/tiger/tiger_hurt",
+          "volume": 0.8,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.entity.wind.blow": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "mob/breeze/idle1",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/idle2",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/idle3",
+          "volume": 1.0,
+          "pitch": 1.0
+        },
+        {
+          "name": "mob/breeze/idle4",
+          "volume": 1.0,
+          "pitch": 1.0
+        }
+      ]
+    },
+    "tensura.music_disc.nanoda": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "music/nanoda",
+          "volume": 0.5,
+          "pitch": 1.0
+        }
+      ]
+    }
+  }
+}

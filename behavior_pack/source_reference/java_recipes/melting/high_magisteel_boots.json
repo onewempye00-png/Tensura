@@ -1,0 +1,10 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:high_magisteel_boots"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 4,
+  "secondary": "tensura:iron",
+  "secondary_count": 1
+}

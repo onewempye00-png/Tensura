@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#tensura:divine",
+    "#tensura:daemon",
+    "tensura:human_saint",
+    "tensura:elf_saint",
+    "tensura:dwarf_saint",
+    "tensura:merfolk_saint",
+    "tensura:hobgoblin_saint",
+    "tensura:true_dragonewt",
+    "tensura:spirit_beast",
+    "tensura:spirit_bird",
+    "tensura:spirit_boar",
+    "tensura:spirit_oni",
+    "tensura:spirit_skeleton",
+    "tensura:death_oni",
+    "tensura:vampire_lord",
+    "tensura:demon_slime"
+  ]
+}

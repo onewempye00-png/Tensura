@@ -1,0 +1,12 @@
+{
+  "values": [
+    "tensura:training_dummy",
+    "minecraft:item_display",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:block_display",
+    "minecraft:leash_knot",
+    "minecraft:ominous_item_spawner",
+    "minecraft:painting"
+  ]
+}

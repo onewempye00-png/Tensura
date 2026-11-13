@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:spear_toro",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/spear_toro/spear_toro"
+      },
+      "geometry": {
+        "default": "geometry.spear_toro"
+      },
+      "animations": {
+        "idle": "animation.spear_toro.idle",
+        "swim": "animation.spear_toro.swim",
+        "bite": "animation.spear_toro.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

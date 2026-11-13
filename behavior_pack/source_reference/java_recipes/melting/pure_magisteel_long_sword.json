@@ -1,0 +1,9 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:pure_magisteel_long_sword"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 4,
+  "smeltTick": 75
+}

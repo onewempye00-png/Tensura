@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_packed_mud_warp_pad"},"tags":["crafting_table"],"pattern":["SMS","MCM","SMS"],"key":{"C":{"item":"tensura:warp_core"},"M":{"item":"minecraft:mud_bricks"},"S":{"item":"minecraft:packed_mud"}},"unlock":[],"result":{"item":"tensura:packed_mud_warp_pad","count":1}}}

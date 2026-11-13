@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bone_golem",
+  "key": {
+    "B": {
+      "item": "tensura:orichalcum_boots"
+    },
+    "C": {
+      "item": "tensura:orichalcum_chestplate"
+    },
+    "D": {
+      "item": "tensura:daemon_core"
+    },
+    "H": {
+      "item": "tensura:orichalcum_helmet"
+    },
+    "I": {
+      "item": "tensura:pure_magisteel_ingot"
+    },
+    "L": {
+      "item": "tensura:orichalcum_leggings"
+    }
+  },
+  "pattern": [
+    "IHI",
+    "CDL",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:orichalcum_bone_golem"
+  }
+}

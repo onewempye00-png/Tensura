@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:mithril_axe",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/mithril_axe",
+      "minecraft:display_name": {
+        "value": "Mithril Axe"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1200
+      }
+    }
+  }
+}

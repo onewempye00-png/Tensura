@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stone_bricks_magic_engine",
+  "key": {
+    "#": {
+      "item": "minecraft:stone_bricks"
+    },
+    "I": {
+      "item": "tensura:pure_magisteel_ingot"
+    },
+    "S": {
+      "item": "tensura:high_quality_magic_crystal"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:stone_bricks_magic_engine"
+  }
+}

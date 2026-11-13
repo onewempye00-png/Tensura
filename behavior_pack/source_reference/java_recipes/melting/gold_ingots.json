@@ -1,0 +1,8 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "minecraft:gold_ingot"
+  },
+  "primary": "tensura:gold",
+  "primary_count": 9
+}

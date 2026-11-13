@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/tuff_warp_pad"},"tags":["crafting_table"],"pattern":["MMM","MCM","MMM"],"key":{"C":{"item":"tensura:warp_core"},"M":{"item":"minecraft:tuff"}},"result":{"item":"tensura:tuff_warp_pad","count":1}}}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver_chestplate",
+  "key": {
+    "S": {
+      "item": "tensura:silver_ingot"
+    }
+  },
+  "pattern": [
+    "S S",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:silver_chestplate"
+  }
+}

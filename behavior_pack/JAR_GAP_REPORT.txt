@@ -1,0 +1,13 @@
+TENSURA PHASE 3.1.3 CONVERSION REPORT
+
+Java item models: 1313
+Bedrock texture atlas bindings added/resolved: 1009
+Spawn-egg models needing Bedrock entity item equivalents: 70
+Block/model cases needing block geometry: 176
+Other models without direct active item equivalent: 58
+
+Java worldgen definitions inventoried: 162
+Java structure templates inventoried: 382
+Active Bedrock behavior entities currently defined: 68
+
+IMPORTANT: The conversion maps and atlas bindings are real pack changes. This phase does NOT claim that all 382 structures, 162 worldgen definitions, or all Java entity classes have been converted into working in-game features. Java custom biomes, NBT structures, structure pools and Java class logic need dedicated Bedrock runtime equivalents. See the JSON audit files for per-file disposition.

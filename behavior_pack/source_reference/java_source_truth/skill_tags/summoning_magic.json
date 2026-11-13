@@ -1,0 +1,10 @@
+{
+  "values": [
+    "tensura:summon_basilisk",
+    "tensura:summon_daemon",
+    "tensura:summon_hound_dog",
+    "tensura:summon_medium_elemental",
+    "tensura:summon_greater_elemental",
+    "tensura:summon_otherworlder"
+  ]
+}

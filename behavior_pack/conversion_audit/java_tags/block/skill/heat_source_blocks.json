@@ -1,0 +1,29 @@
+{
+  "values": [
+    "#minecraft:fire",
+    "#minecraft:campfires",
+    "#tensura:kilns",
+    "minecraft:blast_furnace",
+    "minecraft:candle",
+    "minecraft:copper_bulb",
+    "minecraft:end_rod",
+    "minecraft:furnace",
+    "minecraft:smoker",
+    "minecraft:glowstone",
+    "minecraft:jack_o_lantern",
+    "minecraft:lantern",
+    "minecraft:lava",
+    "minecraft:lava_cauldron",
+    "minecraft:magma_block",
+    "minecraft:redstone_lamp",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:respawn_anchor",
+    "minecraft:shroomlight",
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch",
+    "tensura:charybdis_core"
+  ]
+}

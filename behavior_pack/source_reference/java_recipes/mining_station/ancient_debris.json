@@ -1,0 +1,20 @@
+{
+  "type": "tensura:mining_station",
+  "ingredient": {
+    "ingredient": {
+      "item": "minecraft:ancient_debris"
+    },
+    "quantity": 1
+  },
+  "results": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "minecraft:netherite_scrap"
+      },
+      "maxAmount": 1,
+      "minAmount": 1
+    }
+  ]
+}

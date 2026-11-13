@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/crimson_tool_rack"},"tags":["crafting_table"],"pattern":["SSS","F F","###"],"key":{"#":{"item":"minecraft:crimson_slab"},"F":{"item":"minecraft:crimson_fence"},"S":{"item":"minecraft:stick"}},"result":{"item":"tensura:crimson_tool_rack","count":1}}}

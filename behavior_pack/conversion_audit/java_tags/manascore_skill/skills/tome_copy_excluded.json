@@ -1,0 +1,10 @@
+{
+  "remove": [
+    "#tensura:necromancy_magic"
+  ],
+  "values": [
+    "#tensura:spiritual_magic",
+    "tensura:summon_medium_elemental",
+    "tensura:summon_greater_elemental"
+  ]
+}

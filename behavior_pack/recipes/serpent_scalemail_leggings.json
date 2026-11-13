@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tensura:serpent_scalemail_leggings"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "MMM",
+      "M M",
+      "M M"
+    ],
+    "key": {
+      "M": "tensura:armorsaurus_shell"
+    },
+    "result": {
+      "item": "tensura:serpent_scalemail_leggings",
+      "count": 1
+    }
+  }
+}

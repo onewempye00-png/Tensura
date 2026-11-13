@@ -1,0 +1,47 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "tensura:hell_red_sand_ruin_feature_rule",
+      "places_feature": "tensura:hell_red_sand_ruin_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "nether"
+        }
+      ],
+      "minecraft:random_block_chance": {
+        "block": "minecraft:netherrack",
+        "chance": 0.0002
+      }
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          32,
+          100
+        ]
+      }
+    }
+  }
+}

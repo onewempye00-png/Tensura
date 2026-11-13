@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tensura:pure_magisteel_sword",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "tensura:item/pure_magisteel_sword",
+      "minecraft:display_name": {
+        "value": "Pure Magisteel Sword"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": 13,
+      "minecraft:durability": {
+        "max_durability": 1500
+      }
+    }
+  }
+}

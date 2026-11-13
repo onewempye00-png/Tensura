@@ -1,0 +1,15 @@
+{
+  "values": [
+    {
+      "id": "c:is_savanna",
+      "required": false
+    },
+    {
+      "id": "c:is_mountain",
+      "required": false
+    },
+    "tensura:desert_of_death",
+    "#minecraft:is_savanna",
+    "#minecraft:is_mountain"
+  ]
+}

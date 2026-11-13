@@ -1,0 +1,11 @@
+{
+  "type": "tensura:kiln_melting",
+  "input": {
+    "item": "tensura:orichalcum_ingot"
+  },
+  "primary": "tensura:magisteel",
+  "primary_count": 20,
+  "secondary": "tensura:gold",
+  "secondary_count": 4,
+  "smeltTick": 300
+}

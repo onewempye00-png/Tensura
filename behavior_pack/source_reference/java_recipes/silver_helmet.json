@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver_helmet",
+  "key": {
+    "S": {
+      "item": "tensura:silver_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:silver_helmet"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "tag": "minecraft:planks"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount1": 4,
+  "inputAmount2": 3,
+  "output": {
+    "count": 1,
+    "id": "tensura:wooden_scythe"
+  },
+  "schematics": [
+    "tensura:great_sword_schematic",
+    "tensura:spear_schematic"
+  ]
+}

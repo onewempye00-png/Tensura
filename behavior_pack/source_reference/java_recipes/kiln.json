@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kiln",
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    },
+    "C": {
+      "item": "minecraft:cauldron"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "#N#",
+    "CBC",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tensura:kiln"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:giant_bear",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bear/giant_bear"
+      },
+      "geometry": {
+        "default": "geometry.giant_bear"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

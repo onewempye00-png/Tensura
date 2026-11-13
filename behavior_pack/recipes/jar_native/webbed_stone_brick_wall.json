@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"tensura:jar_native/webbed_stone_brick_wall"},"tags":["crafting_table"],"pattern":["###","###"],"key":{"#":{"item":"tensura:webbed_stone_bricks"}},"result":{"item":"tensura:webbed_stone_brick_wall","count":6}}}

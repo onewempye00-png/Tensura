@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tensura:item/monster_leather_helmet_d",
+    "layer1": "minecraft:trims/items/helmet_trim_gold"
+  }
+}

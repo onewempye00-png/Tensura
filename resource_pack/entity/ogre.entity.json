@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:ogre",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/tensura/ogre"
+      },
+      "geometry": {
+        "default": "geometry.ogre"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "sound_effects": {
+        "ambient": "tensura.entity.goblin.ambient",
+        "hurt": "tensura.entity.goblin.hurt",
+        "death": "tensura.entity.goblin.death"
+      }
+    }
+  }
+}

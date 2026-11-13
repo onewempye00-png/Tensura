@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tensura:basilisk",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/basilisk/basilisk_chicken"
+      },
+      "geometry": {
+        "default": "geometry.basilisk"
+      },
+      "animations": {
+        "idle": "animation.basilisk.idle",
+        "walk": "animation.basilisk.walk",
+        "bite": "animation.basilisk.bite"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "walk": "query.modified_move_speed >= 0.02"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

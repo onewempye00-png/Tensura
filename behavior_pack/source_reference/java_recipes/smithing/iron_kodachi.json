@@ -1,0 +1,19 @@
+{
+  "type": "tensura:smithing_bench",
+  "input1": {
+    "item": "minecraft:iron_ingot"
+  },
+  "input2": {
+    "item": "minecraft:stick"
+  },
+  "inputAmount2": 1,
+  "output": {
+    "count": 1,
+    "id": "tensura:iron_kodachi"
+  },
+  "schematics": [
+    "tensura:iron_gear_schematic",
+    "tensura:short_sword_schematic",
+    "tensura:japanese_sword_schematic"
+  ]
+}
