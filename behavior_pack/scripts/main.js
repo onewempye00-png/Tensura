@@ -373,7 +373,8 @@ function buildCustomRealm(dim,kind){
     const top=39+relief;
     const ground=kind===0?(Math.sin(x*.19+z*.11)>0.79?"minecraft:soul_sand":Math.cos(z*.17-x*.09)>0.82?"minecraft:magma_block":floor):floor;
     placeBlock(dim,x,top-2,z,kind===0?"minecraft:netherrack":floor);placeBlock(dim,x,top-1,z,ground);placeBlock(dim,x,top,z,ground);
-    if(kind===0&&r>15&&r<radius-8&&Math.sin(x*.13)*Math.cos(z*.12)>0.965)placeBlock(dim,x,top+1,z,"minecraft:lava");
+    if(kind===0&&r>12&&r<radius-6&&Math.sin(x*.13)*Math.cos(z*.12)>0.78)placeBlock(dim,x,top+1,z,"minecraft:lava");
+    if(kind===0)placeBlock(dim,x,70,z,"minecraft:polished_blackstone");
     if(r>=radius-2)for(let y=40;y<=58;y++)placeBlock(dim,x,y,z,wall);
     if(kind===0&&r>20&&r<radius-4&&((x*17+z*31)%97===0)){for(let y=top+1;y<top+7;y++)placeBlock(dim,x,y,z,"minecraft:basalt");}
    }
@@ -395,12 +396,15 @@ function buildHellGatePair(hell){
   if(i>=queue.length){world.setDynamicProperty("ts27_hell_gate_in_hell",true);if(queue.some(q=>q.key==="ts27_hell_gate_overworld"))world.setDynamicProperty("ts27_hell_gate_overworld",true);return;}
   const q=queue[i],x=q.cx-40+q.half*40,area=`ts27_gate_${q.key}_${q.half}`;
   try{try{q.dim.runCommand(`tickingarea add circle ${x+20} ${q.cy+65} ${q.cz+20} 4 ${area} true`);}catch{}const r=q.dim.runCommand(`structure load tensura:hell/gate/split/part_0_${q.half} ${x} ${q.cy} ${q.cz}`);if(r&&typeof r.successCount==="number"&&r.successCount===0)throw new Error("Structure load rejected");try{q.dim.runCommand(`tickingarea remove ${area}`);}catch{}gateAttempts=0;i++;}
-  catch{gateAttempts++;if(gateAttempts<20){system.runTimeout(next,Math.min(100,10+gateAttempts*5));return;}for(let xx=-1;xx<=1;xx++)for(let yy=1;yy<=4;yy++)placeBlock(q.dim,x+40+xx,q.cy+yy,q.cz,"tensura:hell_portal");gateAttempts=0;i++;}
+  catch{gateAttempts++;if(gateAttempts<20){system.runTimeout(next,Math.min(100,10+gateAttempts*5));return;}for(let xx=-1;xx<=1;xx++)for(let yy=1;yy<=4;yy++)placeBlock(q.dim,x+40+xx,q.key==="ts27_hell_gate_in_hell"?40+yy:q.cy+yy,q.cz,"tensura:hell_portal");gateAttempts=0;i++;}
   system.runTimeout(next,10);
  };
  if(queue.length)next();
  // The Hell-side portal surface is kept clickable even if its Java gate structure has unsupported block states.
- for(let x=-1;x<=1;x++)for(let y=1;y<=4;y++)placeBlock(hell,x,21+y,-20,"tensura:hell_portal");
+ for(let x=-1;x<=1;x++)for(let y=1;y<=4;y++)placeBlock(hell,x,40+y,-20,"tensura:hell_portal");
+ // A broad ceiling hides the generated arena boundary; glowstone ribs illuminate the otherwise dark realm.
+ for(let x=-radius;x<=radius;x+=1)for(let z=-radius;z<=radius;z+=1)if(x*x+z*z<=radius*radius)placeBlock(hell,x,70,z,"minecraft:polished_blackstone");
+ for(const [lx,lz] of [[0,0],[-24,-24],[24,-24],[-24,24],[24,24]])for(let y=66;y<=69;y++)placeBlock(hell,lx,y,lz,"minecraft:glowstone");
 }
 
 function buildCaveExitGate(dim){
