@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare Skill Totems
+        run: python3 tools/prepare_build.py
       - name: Validate JSON and JavaScript
         run: |
           python3 - <<'PY'

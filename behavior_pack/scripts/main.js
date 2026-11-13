@@ -179,8 +179,8 @@ function initPlayer(p){
  if(!get(p,"ts27_start_rerolls_granted",false)){give(p,"tensura:unique_skill_reroll",3);set(p,"ts27_start_rerolls_granted",true);set(p,"ts26_start_unique_rerolls",3);set(p,"ts26_start_unique_rerolls_used",0);}
  if(!get(p,"ts26_menu_migrated",false)){
   removeItemById(p,"tensura:reincarnation_compass");removeItemById(p,"tensura:menu_crystal");
-  const c=inv(p);let hasMenu=false,hasMagic=false,hasSkill=false,hasNaming=false,hasTable=false;if(c){for(let i=0;i<c.size;i++){const id=c.getItem(i)?.typeId;if(id==="tensura:tensura_compass")hasMenu=true;if(id==="tensura:magic_horn")hasMagic=true;if(id==="tensura:skill_horn")hasSkill=true;if(id==="tensura:naming_horn")hasNaming=true;if(id==="minecraft:crafting_table")hasTable=true;}}
-  if(!hasMenu)give(p,"tensura:tensura_compass");if(!hasMagic)give(p,"tensura:magic_horn");if(!hasSkill)give(p,"tensura:skill_horn");if(!hasNaming)give(p,"tensura:naming_horn");if(!invCount(p,"tensura:battlewill_horn"))give(p,"tensura:battlewill_horn");if(!hasTable)give(p,"minecraft:crafting_table");
+  const c=inv(p);let hasMenu=false,hasMagic=false,hasSkill=false,hasNaming=false,hasTable=false;if(c){for(let i=0;i<c.size;i++){const id=c.getItem(i)?.typeId;if(id==="tensura:tensura_compass")hasMenu=true;if(id==="tensura:magic_horn")hasMagic=true;if(id==="tensura:skill_horn")hasSkill=true;if(id==="tensura:naming_horn")hasNaming=true;if(id==="tensura:crafting_bench")hasTable=true;}}
+  if(!hasMenu)give(p,"tensura:tensura_compass");if(!hasMagic)give(p,"tensura:magic_horn");if(!hasSkill)give(p,"tensura:skill_horn");if(!hasNaming)give(p,"tensura:naming_horn");if(!invCount(p,"tensura:battlewill_horn"))give(p,"tensura:battlewill_horn");if(!hasTable)give(p,"tensura:crafting_bench");
   set(p,"ts26_menu_migrated",true);
  }
  return true;
@@ -236,7 +236,7 @@ function applyRace(p,race,reset){
  }
  set(p,DP.equipped,race.skills.find(x=>!isMagicSkill(x)&&!PASSIVE_SKILLS.has(x))||"");set(p,DP.treeMode,false);set(p,DP.treeIndex,0);
  removeItemById(p,"tensura:reincarnation_compass");
- if(!get(p,"ts26_starter_items",false)){removeItemById(p,"tensura:menu_crystal");give(p,"tensura:tensura_compass");give(p,"tensura:magic_horn");give(p,"tensura:skill_horn");give(p,"tensura:naming_horn");give(p,"tensura:battlewill_horn");give(p,"minecraft:crafting_table");set(p,"ts26_starter_items",true);}
+ if(!get(p,"ts26_starter_items",false)){removeItemById(p,"tensura:menu_crystal");give(p,"tensura:tensura_compass");give(p,"tensura:magic_horn");give(p,"tensura:skill_horn");give(p,"tensura:naming_horn");give(p,"tensura:battlewill_horn");give(p,"tensura:crafting_bench");set(p,"ts26_starter_items",true);}
  try{p.removeEffect("health_boost");const boost=Math.max(0,Math.ceil((race.hp-20)/4)-1);if(race.hp>20)p.addEffect("health_boost",999999,{amplifier:boost,showParticles:false});p.addEffect("regeneration",200,{amplifier:0,showParticles:false});if(race.id==="slime")p.addEffect("resistance",200,{amplifier:0,showParticles:false});if(race.id==="ogre"||race.id==="orc")p.addEffect("strength",200,{amplifier:0,showParticles:false});}catch{}
  say(p,`§aReincarnation complete. You are now a §d${race.name}§a. Your race choice is permanent. Tensura Menu opens your character profile; sneak-use Magic Horn to equip spells; sneak-use Skill Horn to open the skill tree.`);
  try{p.dimension.playSound("random.levelup",p.location);}catch{}
