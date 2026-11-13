@@ -1224,6 +1224,21 @@ world.afterEvents.entityHurt.subscribe(ev=>{
 });
 
 // Persistent HUD, SP regeneration, MP costs, ritual completion and race-menu recovery.
+function repairTensuraGear(it){
+ if(!it?.typeId?.startsWith("tensura:"))return it;
+ try{
+  const durability=it.getComponent("minecraft:durability");
+  if(!durability)return it;
+  if(durability.damage>0)durability.damage=Math.max(0,durability.damage-1);
+  if(/helmet|chestplate|leggings|boots|sword|katana|spear|axe|bow|crossbow|shield|staff|scythe|sickle|dagger|tachi|odachi|kodachi|gauntlet|knife|trident|pickaxe|shovel|hoe|great_sword|long_sword|short_sword/i.test(it.typeId)){
+   const ep=Number(it.getDynamicProperty("ts26_equipment_ep")||0)+250;
+   it.setDynamicProperty("ts26_equipment_ep",ep);
+   const grade=ep>=100000?"S":ep>=50000?"A":ep>=25000?"B":ep>=10000?"C":"D";
+   it.setLore([`§6Grade ${grade} §7• Equipment EP ${ep}`,"§aMending: active","§8Gains EP through continued use"]);
+  }
+ }catch{}
+ return it;
+}
 system.runInterval(()=>{
  for(const p of world.getPlayers()){
   if(!get(p,DP.raceChosen,false)){if(!raceFormsOpen.has(p.id))showRaceSelection(p);continue;}
@@ -1303,9 +1318,10 @@ system.runInterval(()=>{
    if(remaining===0){try{p.applyDamage(4,{cause:EntityDamageCause.magic});}catch{}say(p,"§cYour unanchored spirit body is collapsing in the Overworld.");}
   }else if(p.dimension.id!=="minecraft:overworld"||get(p,DP.named,false)||get(p,"ts26_physical_body",false)){set(p,DP.spiritBodyTime,12000);}
   if(system.currentTick%20===0){showHud(p);try{const target=getTarget(p,18);if(target){const h=target.getComponent("minecraft:health");if(h&&safeTag(target,"tensura_boss")){p.onScreenDisplay.setTitle(`§4${target.nameTag||target.typeId}  §c${Math.ceil(h.currentValue)}/${Math.ceil(h.effectiveMax)} HP`,{fadeInDuration:0,stayDuration:22,fadeOutDuration:0});}}}catch{}}
-  if(system.currentTick%6000===0){const c=inv(p);if(c){for(let i=0;i<c.size;i++){const it=c.getItem(i);if(!it||!it.typeId.startsWith("tensura:"))continue;try{const dur=it.getComponent("minecraft:durability");if(dur&&dur.damage>0){dur.damage=Math.max(0,dur.damage-1);}
-    if(it.typeId.includes("helmet")||it.typeId.includes("chestplate")||it.typeId.includes("leggings")||it.typeId.includes("boots")||it.typeId.includes("sword")||it.typeId.includes("katana")||it.typeId.includes("spear")){try{const old=Number(it.getDynamicProperty("ts26_equipment_ep")||0),ep=old+250;it.setDynamicProperty("ts26_equipment_ep",ep);const grade=ep>=100000?"S":ep>=50000?"A":ep>=25000?"B":ep>=10000?"C":"D";it.setLore([`§6Grade ${grade} §7• Equipment EP ${ep}`,"§aSelf-repair: active","§8Gains EP through continued use"]);}catch{}}
-    c.setItem(i,it);}catch{}}}}
+  if(system.currentTick%6000===0){
+   const c=inv(p);if(c){for(let i=0;i<c.size;i++){const it=c.getItem(i);if(it?.typeId?.startsWith("tensura:"))c.setItem(i,repairTensuraGear(it));}}
+   try{const eq=p.getComponent("minecraft:equippable");if(eq)for(const slot of [EquipmentSlot.Head,EquipmentSlot.Chest,EquipmentSlot.Legs,EquipmentSlot.Feet,EquipmentSlot.Mainhand,EquipmentSlot.Offhand]){const it=eq.getEquipment(slot);if(it?.typeId?.startsWith("tensura:"))eq.setEquipment(slot,repairTensuraGear(it));}}catch{}
+  }
   if(n(p,DP.demonRitual)>0){const remain=Math.max(0,n(p,DP.demonRitual)-20);set(p,DP.demonRitual,remain);if(remain===0){p.removeEffect("slowness");p.removeEffect("blindness");p.removeEffect("darkness");set(p,DP.race,"majin");set(p,DP.hp,Math.max(80,Math.ceil(n(p,DP.hp,20)*1.4)));set(p,DP.maxMp,n(p,DP.maxMp)+500);set(p,DP.mp,n(p,DP.maxMp));set(p,DP.maxAp,n(p,DP.maxAp)+400);set(p,DP.ap,n(p,DP.maxAp));set(p,DP.maxSp,n(p,DP.maxSp)+400);set(p,DP.sp,n(p,DP.maxSp));set(p,DP.ep,n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp));applyRaceBody(p);try{const h=p.getComponent("minecraft:health");if(h)h.setCurrentValue(h.effectiveMax);}catch{}addSkill(p,"gluttony");addSkill(p,"multilayer_barrier");say(p,"§5DEMON LORD AWAKENING COMPLETE!§r Your race has awakened into a Majin.");try{p.dimension.playSound("random.levelup",p.location);}catch{}}}
   if(get(p,DP.race,"human")==="slime"&&system.currentTick%100===0)effect(p,"regeneration",80,0);
  }
