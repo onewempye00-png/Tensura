@@ -4051,6 +4051,12 @@
     },
     "tensura:item/skill_book_researcher": {
       "textures": "textures/skill/icons/researcher"
+    },
+    "tensura:item/battlewill_horn": {
+      "textures": "textures/skill/icons/battlewill"
+    },
+    "tensura:item/labyrinth_stone": {
+      "textures": "textures/block/labyrinth_stone"
     }
   }
 }

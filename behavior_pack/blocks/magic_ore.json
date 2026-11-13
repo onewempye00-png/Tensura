@@ -39,7 +39,11 @@
           "render_method": "opaque"
         }
       },
-      "minecraft:loot": "loot_tables/blocks/magic_ore.json"
+      "minecraft:loot": "loot_tables/blocks/magic_ore.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3.5
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block"
     }
   }
 }

@@ -11,7 +11,6 @@
       "minecraft:type_family": {
         "family": [
           "tensura",
-          "boss",
           "demon",
           "monster"
         ]
@@ -87,11 +86,6 @@
       },
       "minecraft:knockback_resistance": {
         "value": 0.9
-      },
-      "minecraft:boss": {
-        "name": "Greater Daemon",
-        "should_darken_sky": false,
-        "hud_range": 64
       }
     }
   }

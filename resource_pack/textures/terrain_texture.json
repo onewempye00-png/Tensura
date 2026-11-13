@@ -70,77 +70,11 @@
     "tensura:block/chiseled_sarasa_sandstone": {
       "textures": "textures/block/chiseled_sarasa_sandstone"
     },
-    "tensura:block/cream_labyrinth_brick_warp_pad": {
-      "textures": "textures/block/cream_labyrinth_brick_warp_pad"
-    },
-    "tensura:block/cream_labyrinth_bricks": {
-      "textures": "textures/block/cream_labyrinth_bricks"
-    },
-    "tensura:block/cream_labyrinth_bricks_bl": {
-      "textures": "textures/block/cream_labyrinth_bricks_bl"
-    },
-    "tensura:block/cream_labyrinth_bricks_br": {
-      "textures": "textures/block/cream_labyrinth_bricks_br"
-    },
-    "tensura:block/cream_labyrinth_bricks_tl": {
-      "textures": "textures/block/cream_labyrinth_bricks_tl"
-    },
-    "tensura:block/cream_labyrinth_bricks_tr": {
-      "textures": "textures/block/cream_labyrinth_bricks_tr"
-    },
-    "tensura:block/cream_labyrinth_stone": {
-      "textures": "textures/block/cream_labyrinth_stone"
-    },
-    "tensura:block/cream_labyrinth_stone_bl": {
-      "textures": "textures/block/cream_labyrinth_stone_bl"
-    },
-    "tensura:block/cream_labyrinth_stone_br": {
-      "textures": "textures/block/cream_labyrinth_stone_br"
-    },
-    "tensura:block/cream_labyrinth_stone_tl": {
-      "textures": "textures/block/cream_labyrinth_stone_tl"
-    },
-    "tensura:block/cream_labyrinth_stone_tr": {
-      "textures": "textures/block/cream_labyrinth_stone_tr"
-    },
     "tensura:block/crimson_tool_rack": {
       "textures": "textures/block/crimson_tool_rack"
     },
     "tensura:block/cut_sarasa_sandstone": {
       "textures": "textures/block/cut_sarasa_sandstone"
-    },
-    "tensura:block/dark_labyrinth_brick_warp_pad": {
-      "textures": "textures/block/dark_labyrinth_brick_warp_pad"
-    },
-    "tensura:block/dark_labyrinth_bricks": {
-      "textures": "textures/block/dark_labyrinth_bricks"
-    },
-    "tensura:block/dark_labyrinth_bricks_bl": {
-      "textures": "textures/block/dark_labyrinth_bricks_bl"
-    },
-    "tensura:block/dark_labyrinth_bricks_br": {
-      "textures": "textures/block/dark_labyrinth_bricks_br"
-    },
-    "tensura:block/dark_labyrinth_bricks_tl": {
-      "textures": "textures/block/dark_labyrinth_bricks_tl"
-    },
-    "tensura:block/dark_labyrinth_bricks_tr": {
-      "textures": "textures/block/dark_labyrinth_bricks_tr"
-    },
-    "tensura:block/dark_labyrinth_stone": {
-      "textures": "textures/block/dark_labyrinth_stone"
-    },
-    "tensura:block/dark_labyrinth_stone_bl": {
-      "textures": "textures/block/dark_labyrinth_stone_bl"
-    },
-    "tensura:block/dark_labyrinth_stone_br": {
-      "textures": "textures/block/dark_labyrinth_stone_br"
-    },
-    "tensura:block/dark_labyrinth_stone_tl": {
-      "textures": "textures/block/dark_labyrinth_stone_tl"
-    },
-    "tensura:block/dark_labyrinth_stone_tr": {
-      "textures": "textures/block/dark_labyrinth_stone_tr"
     },
     "tensura:block/dark_oak_tool_rack": {
       "textures": "textures/block/dark_oak_tool_rack"
@@ -255,81 +189,6 @@
     },
     "tensura:block/kiln_top_lit": {
       "textures": "textures/block/kiln_top_lit"
-    },
-    "tensura:block/labyrinth_brick_warp_pad": {
-      "textures": "textures/block/labyrinth_brick_warp_pad"
-    },
-    "tensura:block/labyrinth_bricks": {
-      "textures": "textures/block/labyrinth_bricks"
-    },
-    "tensura:block/labyrinth_bricks_bl": {
-      "textures": "textures/block/labyrinth_bricks_bl"
-    },
-    "tensura:block/labyrinth_bricks_br": {
-      "textures": "textures/block/labyrinth_bricks_br"
-    },
-    "tensura:block/labyrinth_bricks_tl": {
-      "textures": "textures/block/labyrinth_bricks_tl"
-    },
-    "tensura:block/labyrinth_bricks_tr": {
-      "textures": "textures/block/labyrinth_bricks_tr"
-    },
-    "tensura:block/labyrinth_crystal": {
-      "textures": "textures/block/labyrinth_crystal"
-    },
-    "tensura:block/labyrinth_crystal_top": {
-      "textures": "textures/block/labyrinth_crystal_top"
-    },
-    "tensura:block/labyrinth_lamp": {
-      "textures": "textures/block/labyrinth_lamp"
-    },
-    "tensura:block/labyrinth_lamp_bl": {
-      "textures": "textures/block/labyrinth_lamp_bl"
-    },
-    "tensura:block/labyrinth_lamp_br": {
-      "textures": "textures/block/labyrinth_lamp_br"
-    },
-    "tensura:block/labyrinth_lamp_tl": {
-      "textures": "textures/block/labyrinth_lamp_tl"
-    },
-    "tensura:block/labyrinth_lamp_tr": {
-      "textures": "textures/block/labyrinth_lamp_tr"
-    },
-    "tensura:block/labyrinth_light_path": {
-      "textures": "textures/block/labyrinth_light_path"
-    },
-    "tensura:block/labyrinth_lit_lamp": {
-      "textures": "textures/block/labyrinth_lit_lamp"
-    },
-    "tensura:block/labyrinth_lit_lamp_bl": {
-      "textures": "textures/block/labyrinth_lit_lamp_bl"
-    },
-    "tensura:block/labyrinth_lit_lamp_br": {
-      "textures": "textures/block/labyrinth_lit_lamp_br"
-    },
-    "tensura:block/labyrinth_lit_lamp_tl": {
-      "textures": "textures/block/labyrinth_lit_lamp_tl"
-    },
-    "tensura:block/labyrinth_lit_lamp_tr": {
-      "textures": "textures/block/labyrinth_lit_lamp_tr"
-    },
-    "tensura:block/labyrinth_praying_path": {
-      "textures": "textures/block/labyrinth_praying_path"
-    },
-    "tensura:block/labyrinth_stone": {
-      "textures": "textures/block/labyrinth_stone"
-    },
-    "tensura:block/labyrinth_stone_bl": {
-      "textures": "textures/block/labyrinth_stone_bl"
-    },
-    "tensura:block/labyrinth_stone_br": {
-      "textures": "textures/block/labyrinth_stone_br"
-    },
-    "tensura:block/labyrinth_stone_tl": {
-      "textures": "textures/block/labyrinth_stone_tl"
-    },
-    "tensura:block/labyrinth_stone_tr": {
-      "textures": "textures/block/labyrinth_stone_tr"
     },
     "tensura:block/loose_dirt": {
       "textures": "textures/block/loose_dirt"
