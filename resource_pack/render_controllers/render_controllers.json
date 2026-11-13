@@ -11,6 +11,17 @@
       "textures": [
         "Texture.default"
       ]
+    },
+    "controller.render.tensura_armor": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
     }
   }
 }

@@ -38,7 +38,7 @@ const DP = {
   hp: "ts26_hp", mp: "ts26_mp", maxMp: "ts26_max_mp", ap: "ts26_ap", maxAp: "ts26_max_ap",
   sp: "ts26_sp", maxSp: "ts26_max_sp", ep: "ts26_ep", jewels: "ts26_magic_jewels",
   level: "ts26_level", xp: "ts26_xp", skillPoints: "ts26_skill_points", souls: "ts26_souls",
-  skills: "ts26_skills", unique: "ts26_unique_skill", equipped: "ts26_equipped_skill",
+  skills: "ts26_skills", unique: "ts26_unique_skill", equipped: "ts26_equipped_skill", passiveSlots: "ts26_passive_slots",
   equippedMagic: "ts26_equipped_magic", mastery: "ts26_mastery",
   treeMode: "ts26_tree_mode", treeIndex: "ts26_tree_index", class: "ts26_class",
   spiritRanks: "ts26_spirit_ranks", trueHero: "ts26_true_hero", trueDragon: "ts26_true_dragon",
@@ -134,21 +134,33 @@ function evolveSkill(p,from,to){
  const owned=list(p,DP.skills).filter(x=>x!==from);owned.push(to);saveList(p,DP.skills,owned);
  const retired=list(p,"ts26_retired_skills");if(!retired.includes(from))retired.push(from);saveList(p,"ts26_retired_skills",retired);
  if(get(p,DP.equipped,"")===from)set(p,DP.equipped,to);
- if(get(p,DP.equippedMagic,"")===from)set(p,DP.equippedMagic,to);
+ if(get(p,DP.equippedMagic,"")===from)set(p,DP.equippedMagic,to);savePassiveLoadout(p,passiveLoadout(p).map(x=>x===from?to:x));
  for(let i=0;i<9;i++){const k=`ts26_horn_${i}`;if(get(p,k,"")===from)set(p,k,to);}
  const m=masteryData(p);m[to]=Math.max(Number(m[to]||0),Number(m[from]||0));delete m[from];set(p,DP.mastery,JSON.stringify(m));
  say(p,`§dSKILL EVOLUTION§r ${skillName(from)} → ${skillName(to)}. The previous stage is permanently retired.`);return true;
 }
 function bar(v,m,color){const width=12,ratio=Math.max(0,Math.min(1,m>0?v/m:0)),fill=Math.round(ratio*width);return `${color}┌${"─".repeat(width)}┐\n│${color}${"━".repeat(fill)}§8${"━".repeat(width-fill)}§r│`; }
 const PASSIVE_SKILLS = new Set(["great_sage","raphael","ciel","sariel","raguel","gabriel","azrael","astarte","haniel","ultraspeed_regeneration","guardian","universal_perception","thought_acceleration","steel_strength","agility","body_armor","survivor","healer","observer","anti_magic_area","anti_shock_area","poison_resistance","fire_resistance","water_resistance","physical_resistance","mental_resistance","abnormal_condition_nullification","abnormal_condition_resistance","cold_nullification","cold_resistance","corrosion_nullification","corrosion_resistance","danger_sense","darkness_attack_nullification","darkness_attack_resistance","demon_lord_haki","dragon_ear","dragon_eye","dragon_skin","earth_attack_nullification","earth_attack_resistance","electricity_nullification","electricity_resistance","farsight","flame_attack_nullification","flame_attack_resistance","giantification","gravity_attack_nullification","gravity_attack_resistance","haki","heat_nullification","heat_resistance","hero_haki","holy_attack_nullification","holy_attack_resistance","infinite_regeneration","light_attack_nullification","light_attack_resistance","magic_nullification","magic_resistance","magic_sense","majesty","pain_nullification","pain_resistance","paralysis_nullification","paralysis_resistance","physical_attack_nullification","physical_attack_resistance","pierce_nullification","pierce_resistance","poison_nullification","poison_resistance","sacred_haki","self_regeneration","spatial_attack_nullification","spatial_attack_resistance","spiritual_attack_nullification","spiritual_attack_resistance","thermal_fluctuation_nullification","thermal_fluctuation_resistance","titanification","water_attack_nullification","water_attack_resistance","water_breathing","wind_attack_nullification","wind_attack_resistance"]);
+function passiveLoadout(p){
+ const retired=new Set(list(p,"ts26_retired_skills"));
+ const owned=new Set(list(p,DP.skills).filter(id=>PASSIVE_SKILLS.has(id)&&!retired.has(id)));
+ const slots=list(p,DP.passiveSlots).slice(0,3).map(id=>owned.has(id)?id:"");
+ while(slots.length<3)slots.push("");
+ return slots;
+}
+function savePassiveLoadout(p,slots){
+ const retired=new Set(list(p,"ts26_retired_skills"));
+ const owned=new Set(list(p,DP.skills).filter(id=>PASSIVE_SKILLS.has(id)&&!retired.has(id)));
+ const clean=Array.from({length:3},(_,i)=>{const id=String(slots[i]||"");return owned.has(id)&&!slots.slice(0,i).includes(id)?id:"";});
+ set(p,DP.passiveSlots,JSON.stringify(clean));
+}
 const LANDMARKS = {veldora:{name:"Veldora's Cave",x:1500,z:1500},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
-function compassBearing(p){const kind=get(p,"ts26_active_compass","");let t=LANDMARKS[kind];if(kind==="hell_gate"){const sp=world.getDefaultSpawnLocation();t={name:"Hell Gate",x:sp.x+120,z:sp.z+120};}if(!t)return "";const dx=t.x-p.location.x,dz=t.z-p.location.z;const deg=((Math.atan2(dx,dz)*180/Math.PI)+360)%360;const dirs=["N","NE","E","SE","S","SW","W","NW"];return `§e${t.name} ${dirs[Math.round(deg/45)%8]} ${Math.round(Math.hypot(dx,dz))}m§r`;}
+function compassBearing(p){const kind=get(p,"ts26_active_compass","");let t=LANDMARKS[kind];if(!t)return "";const dx=t.x-p.location.x,dz=t.z-p.location.z;const deg=((Math.atan2(dx,dz)*180/Math.PI)+360)%360;const dirs=["N","NE","E","SE","S","SW","W","NW"];return `§e${t.name} ${dirs[Math.round(deg/45)%8]} ${Math.round(Math.hypot(dx,dz))}m§r`;}
 function statsText(p){
  const h=p.getComponent("minecraft:health"),hp=h?Math.ceil(h.currentValue):n(p,DP.hp,20),hm=h?Math.ceil(h.effectiveMax):20;
  const mp=n(p,DP.mp),mm=n(p,DP.maxMp,100),ap=n(p,DP.ap),am=n(p,DP.maxAp,100),sp=n(p,DP.sp),sm=n(p,DP.maxSp,100),ep=n(p,DP.ep),epMax=Math.max(1,n(p,"ts26_max_ep",n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp)));
- const box=(label,v,m,color)=>{const width=8,ratio=Math.max(0,Math.min(1,m>0?v/m:0)),fill=Math.round(ratio*width),digits=`${Math.floor(v)}/${Math.floor(m)}`;return `§7[§f${label} §7|${color}${"━".repeat(fill)}§8${"━".repeat(width-fill)} §f${digits}§7]`;};
- const bearing=compassBearing(p);
- return [`${box("HP",hp,hm,"§c")}  ${box("MP",mp,mm,"§b")}  ${box("AP",ap,am,"§6")}`,`${box("SP",sp,sm,"§a")}  ${box("EP",ep,epMax,"§d")}`,bearing].filter(Boolean).join("\n");
+ const line=(label,v,m,color)=>{const w=7,r=Math.max(0,Math.min(1,m>0?v/m:0)),f=Math.round(r*w),d=Math.floor(v)+"/"+Math.floor(m);return color+label+" §f"+d+" §8["+color+"■".repeat(f)+"§8"+"■".repeat(w-f)+"§8]";};
+ return [line("HP",hp,hm,"§c"),line("MP",mp,mm,"§b"),line("AP",ap,am,"§6"),line("SP",sp,sm,"§a"),line("EP",ep,epMax,"§d")].join("\n");
 }
 function skillName(id){return SKILL_BY_ID.get(id)?.name||id.replaceAll("_"," ");}
 const SKILL_ICON_IDS=new Set(["abnormal_condition_nullification","abnormal_condition_resistance","absolute_severance","absorb_and_dissolve","air_flight","all_seeing_eye","analyst","analytical_appraisal","anti_skill","aura_shield","aura_slash","aura_sword","battlewill","beast_transformation","berserk","berserker","bewilder","black_flame","black_lightning","blood_mist","body_armor","body_double","chant_annulment","charm","chef","chosen_one","coercion","cold_nullification","cold_resistance","commander","cook","corrosion","corrosion_nullification","corrosion_resistance","creator","danger_sense","dark_eight_palms","darkness_attack_nullification","darkness_attack_resistance","darkness_transform","death_march_dance","degenerate","demon_lord_haki","diamond_path","divine_berserker","divine_ki_release","dragon_ear","dragon_eye","dragon_mode","dragon_skin","drain","earth_attack_nullification","earth_attack_resistance","earth_domination","earth_manipulation","earth_transform","earthshatter_kick","eight_petals_flash","electricity_nullification","electricity_resistance","elephant_stampede","engorger","envy","eye_of_truth","falsifier","farsight","fighter","five_petals_thrust","flame_attack_nullification","flame_attack_resistance","flame_breath","flame_domination","flame_manipulation","flame_transform","formhide","fusionist","giantification","gluttony","godly_craftsman","godwolf_sense","gourmand","gourmet","gravity_attack_nullification","gravity_attack_resistance","gravity_domination","gravity_field","gravity_flight","gravity_manipulation","great_sage","greed","guardian","haki","haze","healer","heat_nullification","heat_resistance","heat_wave","heavenly_eye","heavy_slash","hero_haki","holy_attack_nullification","holy_attack_resistance","hydraulic_propulsion","ice_breath","infinite_regeneration","infinity_prison","instant_move","law_manipulation","light_attack_nullification","light_attack_resistance","light_transform","lightning_domination","lightning_manipulation","lust","magic_aura","magic_bullet","magic_darkness_transform","magic_earth_transform","magic_flame_transform","magic_jamming","magic_light_transform","magic_manipulation","magic_nullification","magic_resistance","magic_sense","magic_space_transform","magic_water_transform","magic_wind_transform","majesty","mana_manipulation","martial_master","mathematician","maximum_magic_bullet","merciless","molecular_manipulation","mortal_fear","multilayer_barrier","murderer","musician","observer","ogre_berserker","ogre_flame","ogre_sword_cannon","ogre_sword_guillotine","oppressor","pain_nullification","pain_resistance","paralysing_breath","paralysis","paralysis_nullification","paralysis_resistance","physical_attack_nullification","physical_attack_resistance","pierce_nullification","pierce_resistance","poison","poison_nullification","poison_resistance","poisonous_breath","possession","predator","pride","ranged_barrier","reaper","reflector","researcher","reverser","roaring_lion_punch","royal_beast","sacred_haki","sage","scale_armor","seeker","seer","self_regeneration","sense_heat_source","sense_soundwave","severer","shadow_motion","shadow_striker","sloth","snake_eye","sniper","sound_domination","sound_manipulation","space_transform","spatial_attack_nullification","spatial_attack_resistance","spatial_domination","spatial_manipulation","spatial_motion","spearhead","spiritual_attack_nullification","spiritual_attack_resistance","starved","steel_strength","sticky_steel_thread","strength","strengthen_body","suppressor","survivor","telepathy","thermal_fluctuation_nullification","thermal_fluctuation_resistance","thought_acceleration","thought_communication","thrower","thunder_breath","titanification","traveler","tuner","ultra_instinct","ultrasonic_waves","ultraspeed_regeneration","universal_perception","unpredictability","unyielding","usurper","villain","violent_break","voice_cannon","water_attack_nullification","water_attack_resistance","water_blade","water_breathing","water_current_control","water_domination","water_manipulation","water_transform","weather_domination","weather_manipulation","wind_attack_nullification","wind_attack_resistance","wind_domination","wind_manipulation","wind_transform","wrath"]);
@@ -244,7 +256,7 @@ function applyRace(p,race,reset){
  try{p.dimension.playSound("random.levelup",p.location);}catch{}
  applyRaceBody(p);showHud(p);
 
- if(!reset&&race.id==="demon")system.runTimeout(()=>{if(p?.isValid)enterCustomRealm(p,"tensura:hell","Hell",0);},40);
+ 
 }
 
 function openMagicMenu(p){if(!initPlayer(p)){showRaceSelection(p);return;}if(magicFormsOpen.has(p.id))return;magicFormsOpen.add(p.id);const form=new CustomForm(p,"TENSURA • SPELL EQUIPMENT");try{form.image("textures/gui/magic/magic_gui.png","tensura");}catch{}const known=[...MAGIC_SKILL_IDS].filter(id=>hasSkill(p,id)&&isMagicSkill(id));const size=15,total=Math.ceil(known.length/size),page=Math.max(0,Math.min(total-1,n(p,"ts26_magic_page",0)));form.header(`MAGIC DISCIPLINE • ${page+1}/${Math.max(1,total)}`);form.label(`Equipped: ${skillName(get(p,DP.equippedMagic,"magic_bolt"))}
@@ -287,6 +299,7 @@ function openTensuraMenu(p){
  form.button("CHARACTER STATS & ATTRIBUTES",()=>{try{form.close();}catch{}const f=new CustomForm(p,"TENSURA • CHARACTER STATS");f.header("STATUS & ATTRIBUTES");f.label(statsText(p));f.label(`Race: ${get(p,DP.race,"Unknown")}\nBase race: ${get(p,DP.baseRace,"Unknown")}\nClass: ${get(p,DP.class,"None")}\nUnique Skill: ${get(p,DP.unique,"None")||"None"}`);f.closeButton();f.show().catch(()=>{});});
  form.button("RACE & EVOLUTION",()=>{try{form.close();}catch{}evolutionMenu(p);});
  form.button("SKILL TREE & MASTERY",()=>{try{form.close();}catch{}openSkillTree(p);});
+ form.button("PASSIVE SKILL LOADOUT • 3 SLOTS",()=>{try{form.close();}catch{}passiveMenu(p);});
  if(n(p,DP.level,1)>=10||n(p,DP.ep)>=10000)form.button("BOSS ENCOUNTERS & CONTRACTS",()=>{try{form.close();}catch{}primordialSummonMenu(p);});
  else form.label("§8Boss Encounters unlocks at Level 10 or 10,000 EP.§r");
  if(list(p,"ts26_defeated_bosses").length)form.button("DEFEATED BOSS COMPANIONS",()=>{try{form.close();}catch{}companionContractMenu(p);});
@@ -322,13 +335,12 @@ function explorationMapMenu(p){
 }
 function landmarkCompassMenu(p){
  const f=new CustomForm(p,"TENSURA • CARTOGRAPHER'S COMPASS");f.header("JAVA-DERIVED LANDMARKS");f.label("Choose a destination. Your compass bearing guides you to the Overworld entrance; Veldora's Cave and Charybdis Cave open in their own dimensions.");
- for(const [label,key] of [["Hell Gate","hell_gate"],["Veldora's Cave","veldora"],["Charybdis Cave","charybdis"],["Dwarven Village","dwarf"]])f.button(label,()=>{try{f.close();}catch{}mapDiscovery(p,key);});f.closeButton();f.show().catch(()=>{});
+ for(const [label,key] of [["Veldora's Cave","veldora"],["Charybdis Cave","charybdis"],["Dwarven Village","dwarf"]])f.button(label,()=>{try{f.close();}catch{}mapDiscovery(p,key);});f.closeButton();f.show().catch(()=>{});
 }
 function worldGateMenu(p){
  const form=new CustomForm(p,"TENSURA • DIMENSIONAL GATES");
- form.header("FOUR INDEPENDENT JAVA-INSPIRED REALMS");
- form.label("These destinations are separate custom Bedrock dimensions. None uses the Nether or End dimension or their texture overrides. Each realm is generated and assembled inside its own void dimension.");
- form.button("HELL • UNDERWORLD",()=>{try{form.close();}catch{}enterCustomRealm(p,"tensura:hell","Hell",0);});
+ form.header("TWO JAVA-INSPIRED REALMS");
+ form.label("Choose a supported Tensura realm. Hell has been removed from this build; the Overworld remains your safe home dimension.");
  form.button("CHARYBDIS CAVE",()=>{try{form.close();}catch{}enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);});
  form.button("VELDORA'S CAVE",()=>{try{form.close();}catch{}enterCustomRealm(p,"tensura:veldora_cave","Veldora's Cave",2);});
  form.button("RETURN TO OVERWORLD",()=>{try{form.close();}catch{}travelOverworld(p);});
@@ -354,71 +366,20 @@ function enterCustomRealm(p,id,label,kind){
      };
      loadCharybdisPart();
     }
-    p.teleport({x:0.5,y:42,z:0.5},{dimension:dim,keepVelocity:false});effect(p,"slow_falling",100,0);if(kind===0)effect(p,"fire_resistance",1200,0);
+    p.teleport({x:0.5,y:42,z:0.5},{dimension:dim,keepVelocity:false});effect(p,"slow_falling",100,0);
     say(p,`Entered ${label}. This is its own custom dimension, independent of the Nether and End.`);
    }catch(e){say(p,`${label} build failed: ${String(e).slice(0,180)}`);}
   },20);
  }catch(e){say(p,`${label} could not open: ${String(e).slice(0,180)}`);}
 }
 function buildCustomRealm(dim,kind){
- const key=`ts27_custom_realm_built_${dim.id.replace(/[^a-z0-9]/gi,"_")}`;if(world.getDynamicProperty(key))return;
- const radius=kind===0?62:kind===2?30:kind===3?30:42;
- makeLanding(dim,0,40,0,kind===0?"minecraft:basalt":kind===2?"minecraft:deepslate_bricks":"minecraft:prismarine_bricks");
- const floor=kind===0?"minecraft:basalt":kind===1?"minecraft:polished_deepslate":kind===2?"minecraft:deepslate_bricks":"minecraft:prismarine_bricks";
- const wall=kind===0?"minecraft:blackstone":kind===1?"minecraft:deepslate_bricks":kind===2?"minecraft:obsidian":"minecraft:prismarine_bricks";
- let x=-radius,z=-radius;
- const buildBatch=()=>{
-  let done=0;
-  while(z<=radius&&done<48){
-   const r=Math.sqrt(x*x+z*z);
-   if(r<=radius){
-    const relief=kind===0?Math.max(-7,Math.min(12,Math.floor(4*Math.sin(x*.12)+5*Math.cos(z*.10)+3*Math.sin((x+z)*.08)))):0;
-    const top=39+relief;
-    const ground=kind===0?(Math.sin(x*.19+z*.11)>0.79?"minecraft:soul_sand":Math.cos(z*.17-x*.09)>0.82?"minecraft:magma_block":floor):floor;
-    placeBlock(dim,x,top-2,z,kind===0?"minecraft:netherrack":floor);placeBlock(dim,x,top-1,z,ground);placeBlock(dim,x,top,z,ground);
-    if(kind===0&&r>10&&r<radius-5&&Math.sin(x*.13)*Math.cos(z*.12)>0.34)placeBlock(dim,x,top+1,z,"minecraft:lava");
-    if(kind===0)placeBlock(dim,x,70,z,"minecraft:polished_blackstone");
-    if(r>=radius-2)for(let y=40;y<=58;y++)placeBlock(dim,x,y,z,wall);
-    if(kind===0&&r>20&&r<radius-4&&((x*17+z*31)%97===0)){for(let y=top+1;y<top+7;y++)placeBlock(dim,x,y,z,"minecraft:basalt");}
-   }
-   x++;if(x>radius){x=-radius;z++;}done++;
-  }
-  if(z<=radius){system.runTimeout(buildBatch,1);return;}
-  world.setDynamicProperty(key,true);
-  if(kind===0)buildHellGatePair(dim);
-  if(kind===0)spawnHellResidents(dim);
-  try{dim.runCommand(`tickingarea remove ts27_${kind}_build`);}catch{}
- };
+ const key="ts27_custom_realm_built_"+dim.id.replace(/[^a-z0-9]/gi,"_");if(world.getDynamicProperty(key))return;
+ const radius=42;makeLanding(dim,0,40,0,"minecraft:polished_deepslate");
+ const floor="minecraft:polished_deepslate",wall="minecraft:deepslate_bricks";let x=-radius,z=-radius;
+ const buildBatch=()=>{let done=0;while(z<=radius&&done<48){const r=Math.sqrt(x*x+z*z);if(r<=radius){placeBlock(dim,x,37,z,floor);placeBlock(dim,x,38,z,floor);placeBlock(dim,x,39,z,floor);if(r>=radius-2)for(let y=40;y<=58;y++)placeBlock(dim,x,y,z,wall);}x++;if(x>radius){x=-radius;z++;}done++;}if(z<=radius){system.runTimeout(buildBatch,1);return;}world.setDynamicProperty(key,true);try{dim.runCommand("tickingarea remove ts27_"+kind+"_build");}catch{}};
  buildBatch();
 }
-function buildHellGatePair(hell){
- const queue=[];
- if(!world.getDynamicProperty("ts27_hell_gate_in_hell"))for(let half=0;half<2;half++)queue.push({dim:hell,cx:0,cy:20,cz:-20,half,key:"ts27_hell_gate_in_hell"});
- try{const ow=world.getDimension("minecraft:overworld"),sp=world.getDefaultSpawnLocation();if(!world.getDynamicProperty("ts27_hell_gate_overworld"))for(let half=0;half<2;half++)queue.push({dim:ow,cx:Math.floor(sp.x+120),cy:Math.max(-40,Math.floor(sp.y-35)),cz:Math.floor(sp.z+120),half,key:"ts27_hell_gate_overworld"});}catch{}
- let i=0,gateAttempts=0;const next=()=>{
-  if(i>=queue.length){world.setDynamicProperty("ts27_hell_gate_in_hell",true);if(queue.some(q=>q.key==="ts27_hell_gate_overworld"))world.setDynamicProperty("ts27_hell_gate_overworld",true);return;}
-  const q=queue[i],x=q.cx-40+q.half*40,area=`ts27_gate_${q.key}_${q.half}`;
-  try{try{q.dim.runCommand(`tickingarea add circle ${x+20} ${q.cy+65} ${q.cz+20} 4 ${area} true`);}catch{}const r=q.dim.runCommand(`structure load tensura:hell/gate/split/part_0_${q.half} ${x} ${q.cy} ${q.cz}`);if(r&&typeof r.successCount==="number"&&r.successCount===0)throw new Error("Structure load rejected");try{q.dim.runCommand(`tickingarea remove ${area}`);}catch{}gateAttempts=0;i++;}
-  catch{gateAttempts++;if(gateAttempts<20){system.runTimeout(next,Math.min(100,10+gateAttempts*5));return;}for(let xx=-1;xx<=1;xx++)for(let yy=1;yy<=4;yy++)placeBlock(q.dim,x+40+xx,q.key==="ts27_hell_gate_in_hell"?40+yy:q.cy+yy,q.cz,"tensura:hell_portal");gateAttempts=0;i++;}
-  system.runTimeout(next,10);
- };
- if(queue.length)next();
- // The Hell-side portal surface is kept clickable even if its Java gate structure has unsupported block states.
- for(let x=-1;x<=1;x++)for(let y=1;y<=4;y++)placeBlock(hell,x,40+y,-20,"tensura:hell_portal");
- // Broad glowstone columns provide a visible light source beneath the ceiling built with the terrain batches.
- for(const [lx,lz] of [[0,0],[-24,-24],[24,-24],[-24,24],[24,24]])for(let y=66;y<=69;y++)placeBlock(hell,lx,y,lz,"minecraft:glowstone");
-}
 
-function buildCaveExitGate(dim){
- for(let x=-2;x<=2;x++)for(let y=0;y<=5;y++)placeBlock(dim,x,39+y,-24,(Math.abs(x)===2||y===0||y===5)?"minecraft:obsidian":"tensura:hell_portal");
-}
-
-function spawnHellResidents(dim){
- if(world.getDynamicProperty("ts27_hell_initial_spawns"))return;
- const seeds=[["tensura:greater_daemon",-18,-18],["tensura:lesser_daemon",18,-18],["tensura:greater_daemon",-18,18],["tensura:lesser_daemon",18,18],["tensura:hell_moth",0,-24],["tensura:hell_caterpillar",24,0]];
- let n=0;for(const [id,x,z] of seeds)try{const y=findSurfaceY(dim,x,z);dim.spawnEntity(id,{x:x+0.5,y:y+0.2,z:z+0.5});n++;}catch{}
- if(n>=4)world.setDynamicProperty("ts27_hell_initial_spawns",true);
-}
 function buildVeldoraVoidCave(dim,p){
  const key="ts27_veldora_void_cave_built";if(world.getDynamicProperty(key))return;
  makeLanding(dim,0,40,0,"minecraft:deepslate_bricks");
@@ -706,13 +667,14 @@ function openSkillNode(p,id){
  const owned=hasSkill(p,id),retired=list(p,"ts26_retired_skills").includes(id),mastery=masteryLevel(p,id),req=node.req.length?node.req.map(skillName).join(" + "):"No prerequisites";
  const desc=SKILL_BY_ID.get(id)?.description||"A learnable Tensura ability.";
  form.label(`${desc}\n\nSTATUS: ${owned?"UNLOCKED":retired?"EVOLVED / RETIRED":"LOCKED"}\nMASTERY: ${mastery} uses\nCOST: ${node.cost} Skill Points  •  ${node.ep} EP\nREQUIRES: ${req}`);
- if(owned&&get(p,DP.equipped,"")===id)form.button("UNEQUIP THIS SKILL",()=>{try{form.close();}catch{}set(p,DP.equipped,"");say(p,`${skillName(id)} unequipped. Select another learned skill to equip it.`);});
+ if(owned&&PASSIVE_SKILLS.has(id))form.button("ASSIGN TO PASSIVE SLOT",()=>{try{form.close();}catch{}openPassiveSkillSlotPicker(p,id);},skillIcon(id));
+ else if(owned&&get(p,DP.equipped,"")===id)form.button("UNEQUIP THIS SKILL",()=>{try{form.close();}catch{}set(p,DP.equipped,"");say(p,`${skillName(id)} unequipped. Select another learned skill to equip it.`);});
  else if(owned)form.button("EQUIP THIS SKILL",()=>{try{form.close();}catch{}set(p,DP.equipped,id);say(p,`${skillName(id)} equipped. Use Skill Horn normally to activate it.`);},skillIcon(id));
  else if(retired)form.label("This evolution stage has been permanently replaced. It cannot be learned or equipped again.");else form.button("UNLOCK SKILL",()=>{try{form.close();}catch{}if(!node.req.every(x=>hasSkill(p,x))){say(p,`Locked: unlock ${req} first.`);return;}if(n(p,DP.skillPoints)<node.cost||n(p,DP.ep)<node.ep){say(p,`Insufficient requirements: ${node.cost} Skill Points and ${node.ep} EP needed.`);return;}set(p,DP.skillPoints,n(p,DP.skillPoints)-node.cost);if(id==="raphael"&&hasSkill(p,"great_sage"))evolveSkill(p,"great_sage","raphael");else if(id==="beelzebuth"&&hasSkill(p,"gluttony"))evolveSkill(p,"gluttony","beelzebuth");else if(id==="ciel"&&hasSkill(p,"raphael"))evolveSkill(p,"raphael","ciel");else addSkill(p,id);say(p,`§a${skillName(id)} unlocked!§r Open the node again to equip it.`);openSkillTree(p);});
  form.button("BACK TO SKILL TREE",()=>{try{form.close();}catch{}openSkillTree(p);});form.closeButton();form.show().catch(()=>{});
 }
-function openSkillTree(p){if(!initPlayer(p)){showRaceSelection(p);return;}const form=new CustomForm(p,"TENSURA • SKILL TREE");try{form.image("textures/gui/background/tr_menu.png","tensura");}catch{}const groups=[["ROOT • CORE",TREE.filter(x=>x.tier===0)],["ELEMENTAL ARTS",TREE.filter(x=>treeBranch(x.id)==="ELEMENTAL ARTS")],["SUPPORT & DEFENCE",TREE.filter(x=>treeBranch(x.id)==="SUPPORT & DEFENCE")],["COMBAT & BODY",TREE.filter(x=>treeBranch(x.id)==="COMBAT & BODY")],["UNIQUE & ANALYSIS",TREE.filter(x=>treeBranch(x.id)==="UNIQUE & ANALYSIS")],["ULTIMATE SKILLS",TREE.filter(x=>treeBranch(x.id)==="ULTIMATE SKILLS")],["GENERAL / SPECIAL",TREE.filter(x=>x.tier!==0&&treeBranch(x.id)==="GENERAL / SPECIAL")]];const flat=[];for(const [title,nodes] of groups)for(const node of nodes)if(!PASSIVE_SKILLS.has(node.id)&&!isMagicSkill(node.id)&&!list(p,"ts26_retired_skills").includes(node.id))flat.push({title,node});const size=20,total=Math.ceil(flat.length/size),page=Math.max(0,Math.min(total-1,n(p,"ts26_skill_page",0))),slice=flat.slice(page*size,(page+1)*size);form.header(`✦ SKILL TREE • ${page+1}/${Math.max(1,total)} ✦`);form.label(`Skill Points: ${n(p,DP.skillPoints)} • EP: ${n(p,DP.ep)} • Equipped: ${get(p,DP.equipped,"")?skillName(get(p,DP.equipped,"")):"None"}
-${flat.length} active skills • Passives are managed separately • Magic arts are equipped through the Magic Horn.`);let last="";for(const entry of slice){if(entry.title!==last){last=entry.title;form.divider();form.header(last);}const node=entry.node,owned=hasSkill(p,node.id),mark=owned?"§a◆ LEARNED":"§8◇ LOCKED",master=masteryLevel(p,node.id);form.button(`${mark} ${skillName(node.id)} • ${node.cost} SP / ${node.ep} EP • M${master}`,()=>{set(p,"ts26_skill_page",page);try{form.close();}catch{}openSkillNode(p,node.id);},skillIcon(node.id));}if(page>0)form.button("← PREVIOUS SKILLS",()=>{set(p,"ts26_skill_page",page-1);try{form.close();}catch{}openSkillTree(p);});if(page+1<total)form.button("NEXT SKILLS →",()=>{set(p,"ts26_skill_page",page+1);try{form.close();}catch{}openSkillTree(p);});form.closeButton();form.show().catch(()=>{});}
+function openSkillTree(p){if(!initPlayer(p)){showRaceSelection(p);return;}const form=new CustomForm(p,"TENSURA • SKILL TREE");try{form.image("textures/gui/background/tr_menu.png","tensura");}catch{}const groups=[["ROOT • CORE",TREE.filter(x=>x.tier===0)],["ELEMENTAL ARTS",TREE.filter(x=>treeBranch(x.id)==="ELEMENTAL ARTS")],["SUPPORT & DEFENCE",TREE.filter(x=>treeBranch(x.id)==="SUPPORT & DEFENCE")],["COMBAT & BODY",TREE.filter(x=>treeBranch(x.id)==="COMBAT & BODY")],["UNIQUE & ANALYSIS",TREE.filter(x=>treeBranch(x.id)==="UNIQUE & ANALYSIS")],["ULTIMATE SKILLS",TREE.filter(x=>treeBranch(x.id)==="ULTIMATE SKILLS")],["GENERAL / SPECIAL",TREE.filter(x=>x.tier!==0&&treeBranch(x.id)==="GENERAL / SPECIAL")]];const flat=[];for(const [title,nodes] of groups)for(const node of nodes)if(!PASSIVE_SKILLS.has(node.id)&&!isMagicSkill(node.id)&&!list(p,"ts26_retired_skills").includes(node.id))flat.push({title,node});const size=20,total=Math.ceil(flat.length/size),page=Math.max(0,Math.min(total-1,n(p,"ts26_skill_page",0))),slice=flat.slice(page*size,(page+1)*size);form.header(`✦ SKILL TREE • ${page+1}/${Math.max(1,total)} ✦`);form.button("MANAGE PASSIVE SKILL SLOTS",()=>{try{form.close();}catch{}passiveMenu(p);});form.label(`Skill Points: ${n(p,DP.skillPoints)} • EP: ${n(p,DP.ep)} • Equipped: ${get(p,DP.equipped,"")?skillName(get(p,DP.equipped,"")):"None"}
+${flat.length} active skills • 3 passive slots are managed separately • Magic arts are equipped through the Magic Horn.`);let last="";for(const entry of slice){if(entry.title!==last){last=entry.title;form.divider();form.header(last);}const node=entry.node,owned=hasSkill(p,node.id),mark=owned?"§a◆ LEARNED":"§8◇ LOCKED",master=masteryLevel(p,node.id);form.button(`${mark} ${skillName(node.id)} • ${node.cost} SP / ${node.ep} EP • M${master}`,()=>{set(p,"ts26_skill_page",page);try{form.close();}catch{}openSkillNode(p,node.id);},skillIcon(node.id));}if(page>0)form.button("← PREVIOUS SKILLS",()=>{set(p,"ts26_skill_page",page-1);try{form.close();}catch{}openSkillTree(p);});if(page+1<total)form.button("NEXT SKILLS →",()=>{set(p,"ts26_skill_page",page+1);try{form.close();}catch{}openSkillTree(p);});form.closeButton();form.show().catch(()=>{});}
 
 function hornKey(p){return `ts26_horn_${p.selectedSlotIndex}`;}
 function skillHornUse(p){
@@ -723,7 +685,32 @@ function skillHornUse(p){
  if(!assigned||isMagicSkill(assigned)){say(p,"No non-magical skill is assigned to this Skill Horn. Choose a skill or Battlewill technique first.");assignSkillToHeldHorn(p);return;}
  castSkill(p,assigned);
 }
-function passiveMenu(p){say(p,"Passive skills follow the original skill ownership/activation rules; the custom three-slot loadout has been removed.");}
+function passiveMenu(p){
+ if(!initPlayer(p)){showRaceSelection(p);return;}
+ const slots=passiveLoadout(p),retired=new Set(list(p,"ts26_retired_skills")),owned=list(p,DP.skills).filter(id=>PASSIVE_SKILLS.has(id)&&!retired.has(id));
+ const form=new CustomForm(p,"TENSURA • PASSIVE SKILLS");
+ form.header("THREE PASSIVE SKILL SLOTS");
+ form.label("Equip up to three learned passive skills. Only the skills in these slots are active.");
+ for(let i=0;i<3;i++)form.button("SLOT "+(i+1)+" • "+(slots[i]?skillName(slots[i]):"EMPTY"),()=>{try{form.close();}catch{}openPassiveSlotMenu(p,i);},slots[i]?skillIcon(slots[i]):undefined);
+ form.divider();form.label("Learned passive skills: "+owned.length);
+ if(!owned.length)form.label("No passive skills learned yet. Great Sage and other passives appear here once learned.");
+ form.closeButton();form.show().catch(()=>{});
+}
+function openPassiveSlotMenu(p,index){
+ const slots=passiveLoadout(p),retired=new Set(list(p,"ts26_retired_skills")),owned=list(p,DP.skills).filter(id=>PASSIVE_SKILLS.has(id)&&!retired.has(id)).sort((a,b)=>skillName(a).localeCompare(skillName(b)));
+ const form=new CustomForm(p,"TENSURA • PASSIVE SLOT "+(index+1));
+ form.header("CHOOSE PASSIVE FOR SLOT "+(index+1));
+ form.label("Select a learned passive skill. A skill can occupy only one slot.");
+ if(slots[index])form.button("CLEAR THIS SLOT",()=>{try{form.close();}catch{}slots[index]="";savePassiveLoadout(p,slots);say(p,"Passive slot "+(index+1)+" cleared.");passiveMenu(p);});
+ for(const id of owned)form.button((slots[index]===id?"§a◆ EQUIPPED ":"§f◇ ")+skillName(id),()=>{try{form.close();}catch{}const next=passiveLoadout(p).map(x=>x===id?"":x);next[index]=id;savePassiveLoadout(p,next);say(p,skillName(id)+" equipped in passive slot "+(index+1)+".");passiveMenu(p);},skillIcon(id));
+ form.button("BACK",()=>{try{form.close();}catch{}passiveMenu(p);});form.closeButton();form.show().catch(()=>{});
+}
+function openPassiveSkillSlotPicker(p,id){
+ const slots=passiveLoadout(p),form=new CustomForm(p,"TENSURA • EQUIP PASSIVE");
+ form.header("EQUIP "+skillName(id).toUpperCase());
+ for(let i=0;i<3;i++)form.button("SLOT "+(i+1)+" • "+(slots[i]?skillName(slots[i]):"EMPTY"),()=>{try{form.close();}catch{}const next=passiveLoadout(p).map(x=>x===id?"":x);next[i]=id;savePassiveLoadout(p,next);say(p,skillName(id)+" equipped in passive slot "+(i+1)+".");passiveMenu(p);});
+ form.closeButton();form.show().catch(()=>{});
+}
 
 
 function assignSkillToHeldHorn(p){
@@ -807,9 +794,9 @@ function useSkillTome(p,id){
 function countItem(p,id){const c=inv(p);if(!c)return 0;let total=0;for(let i=0;i<c.size;i++){const it=c.getItem(i);if(it?.typeId===id)total+=it.amount;}return total;}
 function takeItems(p,id,amount){const c=inv(p);if(!c||countItem(p,id)<amount)return false;let left=amount;for(let i=0;i<c.size&&left>0;i++){const it=c.getItem(i);if(it?.typeId!==id)continue;const take=Math.min(left,it.amount);left-=take;c.setItem(i,it.amount>take?new ItemStack(id,it.amount-take):undefined);}return left===0;}
 function mapDiscovery(p,kind){
- const sp=world.getDefaultSpawnLocation();const targets={hell_gate:{name:"Hell Gate",x:sp.x+120,z:sp.z+120},veldora:{name:"Veldora's Cave",x:1500,z:1500},tree:{name:"Great World Tree",x:1000,z:1000},demon:{name:"Demon Realm Ruins",x:3000,z:3000},spirit:{name:"Spirit Sanctuary",x:4000,z:4000},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
+ const targets={veldora:{name:"Veldora's Cave",x:1500,z:1500},tree:{name:"Great World Tree",x:1000,z:1000},demon:{name:"Demon Realm Ruins",x:3000,z:3000},spirit:{name:"Spirit Sanctuary",x:4000,z:4000},charybdis:{name:"Charybdis Cave",x:5000,z:5000},dwarf:{name:"Dwarven Village",x:6000,z:6000}};
  const t=targets[kind];if(!t)return;if(p.dimension.id!=="minecraft:overworld"){say(p,"These exploration maps are charted from the Overworld. Return there to read the map.");return;}
- set(p,"ts26_pending_landmark",kind);set(p,"ts26_active_compass",kind);if(kind==="hell_gate"){try{const hd=world.getDimension("tensura:hell");try{hd.runCommand("tickingarea add circle 0 40 0 4 ts27_0_build true");}catch{}buildCustomRealm(hd,0);}catch{}}give(p,"minecraft:compass");try{p.dimension.playSound("tensura.phase3.cave_rumble",p.location);}catch{}say(p,`§eA ${t.name} compass bearing is now active. Follow the direction beneath your status bars.§r`);const dx=t.x-p.location.x,dz=t.z-p.location.z,dist=Math.round(Math.sqrt(dx*dx+dz*dz));const bearing=((Math.atan2(dx,dz)*180/Math.PI)+360)%360;
+ set(p,"ts26_pending_landmark",kind);set(p,"ts26_active_compass",kind);give(p,"minecraft:compass");try{p.dimension.playSound("tensura.phase3.cave_rumble",p.location);}catch{}say(p,`§eA ${t.name} compass bearing is now active. Follow the direction beneath your status bars.§r`);const dx=t.x-p.location.x,dz=t.z-p.location.z,dist=Math.round(Math.sqrt(dx*dx+dz*dz));const bearing=((Math.atan2(dx,dz)*180/Math.PI)+360)%360;
  say(p,`§6EXPLORATION MAP: ${t.name}§r\nBearing ${Math.round(bearing)}° • approximately ${dist} blocks away. Travel there on foot. The landmark will form when you reach the site; the map does not teleport you.`);
 }
 
@@ -921,6 +908,19 @@ function itemUse(ev){
  if(id==="tensura:magic_kiln"){processingMenu(p,"kiln");return;}
  if(id==="tensura:alchemy_table"){processingMenu(p,"alchemy");return;}
  if(id==="tensura:companion_contract"){companionContractMenu(p);return;}
+ if(id==="tensura:charybdis_core"){
+  try{
+   const nearby=p.dimension.getEntities({location:p.location,maxDistance:64}).some(e=>e.typeId==="tensura:charybdis"&&e.isValid);
+   if(nearby){say(p,"A Charybdis is already present nearby. Defeat it before using another Core.");return;}
+   const rot=p.getRotation(),yaw=rot.y*Math.PI/180,pos={x:p.location.x-Math.sin(yaw)*8,y:p.location.y+1,z:p.location.z+Math.cos(yaw)*8};
+   const boss=p.dimension.spawnEntity("tensura:charybdis",pos);
+   if(!consumeHeld(p,id)){try{boss.remove();}catch{}return;}
+   boss.addTag("tensura_boss");boss.nameTag="Charybdis • Catastrophe Dragon";
+   try{p.dimension.playSound("tensura.phase3.boss_aura",pos);}catch{}
+   say(p,"§4CHARYBDIS HAS AWAKENED!§r The Charybdis Core shattered as the Catastrophe Dragon manifested.");
+  }catch(e){say(p,"Charybdis could not be summoned here: "+String(e).slice(0,120));}
+  return;
+ }
  if(id==="tensura:charybdis_core_fusion"){if(n(p,DP.ep)<30000||n(p,DP.mp)<5000||invCount(p,"tensura:charybdis_core")<1||invCount(p,"tensura:sea_king_scale")<3){say(p,"Charybdis fusion requires 30,000 EP, 5,000 MP, one Charybdis Core and three Sea King Scales.");return;}if(!consumeHeld(p,id)||!invConsume(p,"tensura:charybdis_core",1)||!invConsume(p,"tensura:sea_king_scale",3))return;set(p,DP.mp,n(p,DP.mp)-5000);if(Math.random()<0.65){addSkill(p,"water_domination");addSkill(p,"spatial_domination");give(p,"tensura:charybdis_scalemail_chestplate");try{p.dimension.playSound("tensura.phase3.fusion",p.location);}catch{}say(p,"§bCHARYBDIS CORE FUSION SUCCESSFUL!§r The abyssal core has fused with your soul. New domination skills awakened.");}else{set(p,DP.mp,n(p,DP.mp)+2500);say(p,"§cCharybdis fusion failed. The core shattered; half the MP cost was refunded.§r");}return;}
  if(id==="tensura:spirit_fusion_seal"){const ranks=list(p,DP.spiritRanks);const elements=[...new Set(ranks.map(x=>x.split(":").slice(1).join(":").toLowerCase()))];if(elements.length<2||n(p,DP.ep)<5000||n(p,DP.mp)<1200){say(p,"Spirit fusion requires contracts with two different elemental spirits, 5,000 EP and 1,200 MP.");return;}if(!consumeHeld(p,id))return;set(p,DP.mp,n(p,DP.mp)-1200);if(Math.random()<0.72){const fused=`Fused:${elements.slice(-2).join("+")}`;set(p,"ts26_integrated_spirit",fused);addSkill(p,"elemental_domination");addSkill(p,"magic_sense");try{p.dimension.playSound("tensura.phase3.fusion",p.location);}catch{}say(p,`§bSPIRIT FUSION SUCCESSFUL!§r You fused ${elements.slice(-2).join(" and ")} into a dual-element contract.`);}else{const next=ranks.slice(0,-1);saveList(p,DP.spiritRanks,next);say(p,"§cSpirit fusion failed. The newest spirit contract dissipated.§r");}return;}
  if(id==="tensura:demon_lord_summoning_seal"){primordialSummonMenu(p);return;}
@@ -975,7 +975,7 @@ function itemUse(ev){
  if(id==="tensura:naming_scroll"){const target=getTarget(p,8);if(target&&target.typeId!=="minecraft:player"){if(!consumeHeld(p,id))return;const h=target.getComponent("minecraft:health"),cost=Math.max(25,Math.ceil((h?.effectiveMax||100)*0.8));if(n(p,DP.mp)<cost){give(p,id);say(p,`Naming this creature requires ${cost} MP. Your current MP is ${n(p,DP.mp)}.`);return;}set(p,DP.mp,n(p,DP.mp)-cost);try{target.addTag("tensura_named");target.addTag("tensura_companion");target.addTag(`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`);target.nameTag=`Named ${target.typeId.replace("tensura:","").replaceAll("_"," ")}`;const hp=target.getComponent("minecraft:health");if(hp)hp.setCurrentValue(Math.min(hp.effectiveMax*1.5,hp.currentValue+hp.effectiveMax*0.5));target.addEffect("strength",12000,{amplifier:0,showParticles:false});target.addEffect("resistance",12000,{amplifier:0,showParticles:false});}catch{}set(p,DP.ep,n(p,DP.ep)+cost);say(p,`§dNAMING SUCCESSFUL§r. ${target.nameTag} has received a name and a strengthened soul.`);return;}openNamingMenu(p);return;}
  if(id==="tensura:demon_possession_seal"){
   const race=get(p,DP.race,get(p,DP.baseRace,"human")),baseRace=get(p,DP.baseRace,race);
-  if(baseRace==="demon"&&!get(p,"ts26_demon_escaped",false)&&!get(p,"ts26_named_by","")){say(p,"As a Demon, first find a Hell Gate and escape to the Overworld, or receive a name from a master.");return;}
+  
   const target=getTarget(p,6);if(!target){say(p,"Look directly at a nearby creature to bind it as your vessel.");return;}if(target.typeId==="minecraft:player"){say(p,"Player possession requires explicit consent and is not available through the vessel seal.");return;}
   if(!consumeHeld(p,id))return;const h=target.getComponent("minecraft:health"),vesselHp=Math.max(20,Math.min(400,Math.ceil(h?.effectiveMax||40)));let vesselScale=1;try{vesselScale=target.getComponent("minecraft:scale")?.value||1;}catch{}
   set(p,"ts26_physical_body",true);set(p,"ts26_vessel_type",target.typeId);set(p,DP.spiritBodyTime,12000);set(p,DP.hp,vesselHp);
@@ -1015,18 +1015,18 @@ function getNamingTarget(p,range=16,includePlayers=true,eligible=null){
 }
 async function nameTargetWithHorn(p){
  // Java NameCommand toggles IExistence.nameable. Mobile equivalent: sneak-use the Naming Horn.
- if(p.isSneaking){
+ if(p.isSneaking&&!getNamingTarget(p,16,false,e=>!!e.getComponent("minecraft:health"))){
   const enabled=!p.hasTag("tensura_nameable");
   try{if(enabled)p.addTag("tensura_nameable");else p.removeTag("tensura_nameable");}catch{}
   set(p,"ts26_nameable",enabled);
   say(p,`Player naming ${enabled?"enabled":"disabled"}. ${enabled?"Other players may now submit a naming offer.":"Other players can no longer name you."}`);
   return;
  }
- const target=getNamingTarget(p,16,true,e=>e.typeId==="minecraft:player"||(JAR_NAMEABLE_ENTITY_IDS.has(e.typeId)&&!!e.getComponent("minecraft:health")));
+ const target=getNamingTarget(p,16,true,e=>e.typeId==="minecraft:player"||!!e.getComponent("minecraft:health"));
  if(!target){say(p,"No valid target. Aim at a living mob or a consenting player within 16 blocks, then use the Naming Horn.");return;}
  const isPlayer=target.typeId==="minecraft:player";
  if(isPlayer&&target.id===p.id){say(p,"You cannot name yourself.");return;}
- if(!isPlayer&&!JAR_NAMEABLE_ENTITY_IDS.has(target.typeId)){say(p,`${target.typeId} is not included in the Java can_be_named entity tag.`);return;}
+ 
  if(isPlayer&&!target.hasTag("tensura_nameable")&&!get(target,"ts26_nameable",false)){say(p,`${target.name} has not enabled naming. They must sneak-use their Naming Horn first.`);return;}
  if(target.hasTag("tensura_named")||get(target,DP.named,false)||target.hasTag("tensura_named_by_other")){say(p,"This target already has a naming bond.");return;}
  if(!isPlayer&&target.getComponent("minecraft:tameable")?.isTamed){say(p,"This creature already belongs to another owner and cannot be named again.");return;}
@@ -1036,7 +1036,7 @@ async function nameTargetWithHorn(p){
  const curHp=Math.max(0,Number(hp.currentValue||0));
  const creative=(()=>{try{return String(p.getGameMode?.()||"").toLowerCase()==="creative";}catch{return false;}})();
  // Java PlayerConfig.Naming.lowHPToName defaults to 25 percent.
- if(!creative&&curHp>maxHp*0.25){say(p,`Weaken ${target.nameTag||target.typeId} to 25% health or lower before naming it (${Math.ceil(curHp)}/${Math.ceil(maxHp)} HP).`);return;}
+ if(isPlayer&&!creative&&curHp>maxHp*0.25){say(p,`Weaken ${target.nameTag||target.typeId} to 25% health or lower before naming it (${Math.ceil(curHp)}/${Math.ceil(maxHp)} HP).`);return;}
  // Java canName rejects a target whose max EP is equal to or above the namer's base max EP.
  const namerMaxMp=n(p,DP.maxMp,100),namerMaxAp=n(p,DP.maxAp,100),namerMaxSp=n(p,DP.maxSp,100);
  const namerMaxEP=namerMaxMp+namerMaxAp+namerMaxSp;
@@ -1060,12 +1060,12 @@ async function nameTargetWithHorn(p){
   }
   // Decompiled Java RequestNamingMenuPacket.name(): gain = (target max aura + target max magicule) × configured multiplier.
   // PlayerConfig defaults: 0.5 / 1.5 / 9.0; maxEPGain=1,000,000; maxCost=3,000,000.
-  const targetPower=(targetMaxMp+targetMaxAp)>0?(targetMaxMp+targetMaxAp):Math.max(1,maxHp*10);
+  const targetPower=(targetMaxMp+targetMaxAp)>0?(targetMaxMp+targetMaxAp):Math.max(1,maxHp*2);
   const gain=Math.min(1000000,targetPower*[0.5,1.5,9.0][mode]);
   const cost=Math.min(3000000,gain);
   const currentMp=n(p,DP.mp,namerMaxMp),currentAp=n(p,DP.ap,namerMaxAp),currentSp=n(p,DP.sp,namerMaxSp);
   // Java requires max magicule above cost and sufficient current existence energy; it spends magicule first, then aura.
-  if(!creative&&(namerMaxMp<=cost||(currentMp+currentAp)<cost)){
+  if(!creative&&((isPlayer&&namerMaxMp<=cost)||(currentMp+currentAp)<cost)){
    say(p,`Naming needs ${Math.ceil(cost)} energy. Your maximum MP must exceed the cost and your current MP + AP must cover it. Current MP: ${Math.floor(currentMp)}; AP: ${Math.floor(currentAp)}.`);return;
   }
   if(!creative){
@@ -1158,7 +1158,8 @@ function chestReward(ev){
  if(seen.includes(key))return;
  const c=b.getComponent("minecraft:inventory")?.container;if(!c)return;
  const roll=Math.random();let reward;
- if(roll<0.04)reward="tensura:battlewill_manual";
+ if(roll<0.000002)reward="tensura:character_reset_scroll";
+ else if(roll<0.04)reward="tensura:battlewill_manual";
  else if(roll<0.16){const pool=DROP_SKILLS.filter(s=>SKILL_ICON_IDS.has(s));if(!pool.length)return;const sid=pool[Math.floor(Math.random()*pool.length)];reward=`tensura:skill_icon_${sid}`;}
  else if(roll<0.26)reward="tensura:magicule_crystal";
  else if(roll<0.32)reward="tensura:spirit_prayer";
@@ -1176,6 +1177,7 @@ world.afterEvents.playerSpawn.subscribe(ev=>{
  const p=ev.player;if(!p)return;
  system.runTimeout(()=>{
   if(!p.isValid)return;
+  if(p.dimension.id==="tensura:hell"){travelOverworld(p);say(p,"Hell has been removed from this build. You have been returned to the Overworld.");}
   if(!get(p,DP.raceChosen,false)){
    say(p,"§l§bWELCOME TO THE TENSURA WORLD§r\nYour reincarnation begins now. Choose your race to determine your starting attributes and racial abilities.");
    try{p.onScreenDisplay.setTitle("§bTENSURA",{fadeInDuration:5,stayDuration:50,fadeOutDuration:10});}catch{}
@@ -1196,12 +1198,7 @@ const craftingMenuTick=new Map();
 world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{
  const p=ev.player,b=ev.block;if(!p?.isValid||!b)return;
  if(b.typeId==="minecraft:lectern"&&isVillageChurchAltar(p,b)){openSpiritPrayer(p);return;}
- if(b.typeId!=="tensura:hell_portal")return;
- const now=system.currentTick,last=Number(get(p,"ts27_gate_cooldown",0));if(now-last<40)return;set(p,"ts27_gate_cooldown",now);
- if(p.dimension.id==="tensura:hell"||p.dimension.id==="tensura:veldora_cave"||p.dimension.id==="tensura:charybdis_cave"){
-  const from=p.dimension.id;if(from==="tensura:hell")set(p,"ts26_demon_escaped",true);
-  const d=world.getDimension("minecraft:overworld"),sp=world.getDefaultSpawnLocation();p.teleport({x:sp.x+8.5,y:sp.y+2,z:sp.z+8.5},{dimension:d,keepVelocity:false});say(p,from==="tensura:hell"?"The Hell Gate returned you to the Overworld.":"You returned to the Overworld.");
- }else{const d=world.getDimension("tensura:hell");p.teleport({x:0.5,y:42,z:-38.5},{dimension:d,keepVelocity:false});say(p,"The Hell Gate carried you into the Underworld.");}
+ 
 }catch(e){try{ev.player?.sendMessage(`§cPortal error: ${String(e).slice(0,120)}`);}catch{}}});
 
 world.afterEvents.entityDie.subscribe(ev=>{
@@ -1243,6 +1240,7 @@ function repairTensuraGear(it){
 }
 system.runInterval(()=>{
  for(const p of world.getPlayers()){
+  if(p.dimension.id==="tensura:hell"){travelOverworld(p);say(p,"Hell has been removed from this build. You have been returned to the Overworld.");continue;}
   if(!get(p,DP.raceChosen,false)){if(!raceFormsOpen.has(p.id))showRaceSelection(p);continue;}
   initPlayer(p);
   const magicules=n(p,DP.mp);
@@ -1256,20 +1254,13 @@ system.runInterval(()=>{
   }
   if(system.currentTick%20===0){try{const ownerTag=`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`;const owned=p.dimension.getEntities({location:p.location,maxDistance:96}).filter(e=>e.isValid&&safeTag(e,"tensura_companion")&&safeTag(e,ownerTag));for(const pet of owned){const d=dist(p.location,pet.location);if(d>12){const rot=p.getRotation(),yaw=rot.y*Math.PI/180;const pos={x:p.location.x-Math.sin(yaw)*2,y:p.location.y,z:p.location.z+Math.cos(yaw)*2};try{pet.teleport(pos,{dimension:p.dimension,keepVelocity:false});}catch{}}}const allies=p.dimension.getEntities({location:p.location,maxDistance:24}).filter(e=>e.isValid&&safeTag(e,"tensura_companion"));for(const ally of allies){if(n(ally,"ts26_companion_attack_tick",0)>system.currentTick)continue;const candidates=ally.dimension.getEntities({location:ally.location,maxDistance:10}).filter(e=>e.isValid&&e.id!==ally.id&&e.typeId!=="minecraft:player"&&e.typeId!=="minecraft:item"&&e.typeId!=="minecraft:xp_orb"&&!safeTag(e,"tensura_companion")&&!safeTag(e,"tensura_vessel")&&!safeTag(e,"tensura_boss")&&(e.typeId.startsWith("tensura:")||/minecraft:(zombie|skeleton|creeper|spider|witch|pillager|vindicator|ravager|guardian|drowned|husk|stray|phantom|slime|magma_cube|enderman|blaze|ghast|wither_skeleton|warden|silverfish|endermite)/.test(e.typeId)));const target=candidates.sort((a,b)=>dist(ally.location,a.location)-dist(ally.location,b.location))[0];if(target){try{target.applyDamage(22,{cause:EntityDamageCause.entityAttack,damagingEntity:ally});}catch{try{target.applyDamage(22);}catch{}}set(ally,"ts26_companion_attack_tick",system.currentTick+20);}}}catch{}}
   if(system.currentTick%20===0)applyRaceBody(p);
-  if(system.currentTick%200===0){
-   try{
-    if(p.dimension.id==="tensura:hell"){
-     const nearby=p.dimension.getEntities({location:p.location,maxDistance:48}).filter(e=>["tensura:greater_daemon","tensura:lesser_daemon","tensura:hell_moth","tensura:hell_caterpillar"].includes(e.typeId));
-     if(nearby.length<8){const pool=["tensura:greater_daemon","tensura:lesser_daemon","tensura:hell_moth","tensura:hell_caterpillar"];const id=pool[Math.floor(Math.random()*pool.length)],a=Math.random()*Math.PI*2,r=12+Math.random()*20;try{const sx=Math.floor(p.location.x+Math.cos(a)*r),sz=Math.floor(p.location.z+Math.sin(a)*r),sy=findSurfaceY(p.dimension,sx,sz);p.dimension.spawnEntity(id,{x:sx+0.5,y:sy+0.2,z:sz+0.5});}catch{}}
-    }else if(p.dimension.id==="minecraft:overworld"){ensureVillageChurch(p);}
-   }catch{}
-  }
+  if(system.currentTick%200===0&&p.dimension.id==="minecraft:overworld"){try{ensureVillageChurch(p);}catch{}}
   set(p,"ts26_max_ep",Math.max(1,Math.floor(n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp))));
   set(p,DP.ep,Math.max(0,Math.floor(n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp))));
   const pending=get(p,"ts26_pending_landmark","");
   if(pending&&p.dimension.id==="minecraft:overworld"){
-   const sp=world.getDefaultSpawnLocation();const coords=pending==="hell_gate"?[sp.x+120,sp.z+120]:({veldora:[1500,1500],tree:[1000,1000],demon:[3000,3000],spirit:[4000,4000],charybdis:[5000,5000],dwarf:[6000,6000]}[pending]);
-   if(coords&&Math.hypot(p.location.x-coords[0],p.location.z-coords[1])<90){set(p,"ts26_pending_landmark","");if(pending==="hell_gate")say(p,"You found the Java-derived Hell Gate. Interact with the glowing portal blocks to enter the Underworld.");else if(pending==="veldora")enterCustomRealm(p,"tensura:veldora_cave","Veldora’s Cave",2);else if(pending==="tree")buildWorldTreeSite(p);else if(pending==="demon")buildDemonRealmSite(p);else if(pending==="spirit")buildSpiritSanctuarySite(p);else if(pending==="charybdis")enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);else if(pending==="dwarf")buildStructureLandmark(p,"tensura:dwarf_village/complete",6000,6000,"Dwarven Village",0);}
+   const coords=({veldora:[1500,1500],tree:[1000,1000],demon:[3000,3000],spirit:[4000,4000],charybdis:[5000,5000],dwarf:[6000,6000]}[pending]);
+   if(coords&&Math.hypot(p.location.x-coords[0],p.location.z-coords[1])<90){set(p,"ts26_pending_landmark","");if(pending==="veldora")enterCustomRealm(p,"tensura:veldora_cave","Veldora’s Cave",2);else if(pending==="tree")buildWorldTreeSite(p);else if(pending==="demon")buildDemonRealmSite(p);else if(pending==="spirit")buildSpiritSanctuarySite(p);else if(pending==="charybdis")enterCustomRealm(p,"tensura:charybdis_cave","Charybdis Cave",1);else if(pending==="dwarf")buildStructureLandmark(p,"tensura:dwarf_village/complete",6000,6000,"Dwarven Village",0);}
   }
   if(system.currentTick%40===0&&n(p,DP.sp)<n(p,DP.maxSp)&&n(p,DP.mp)>=1){set(p,DP.sp,n(p,DP.sp)+1);set(p,DP.mp,n(p,DP.mp)-1);}
   if(system.currentTick%100===0&&n(p,DP.mp)<n(p,DP.maxMp)&&n(p,"ts26_mp_zero_since",-1)<0){set(p,DP.mp,n(p,DP.mp)+1);}
@@ -1282,7 +1273,7 @@ system.runInterval(()=>{
    // EP is derived from the three combat pools; the display and progression use the same value.
    set(p,"ts26_max_ep",Math.max(1,Math.floor(n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp))));
    set(p,DP.ep,Math.floor(n(p,DP.mp)+n(p,DP.ap)+n(p,DP.sp)));
-   const equipped=list(p,DP.skills).filter(x=>PASSIVE_SKILLS.has(x));
+   const equipped=passiveLoadout(p).filter(Boolean);
    const title=get(p,"ts26_active_title","");if(title==="Monster Hunter"||title==="Boss Slayer")effect(p,"strength",30,0);if(title==="Storm Dragon Challenger")effect(p,"fire_resistance",30,0);if(title==="Abyss Conqueror")effect(p,"water_breathing",30,0);if(title==="Skill Collector")set(p,DP.mp,Math.min(n(p,DP.maxMp),n(p,DP.mp)+1));
    if(equipped.includes("great_sage")){set(p,DP.mp,Math.min(n(p,DP.maxMp),n(p,DP.mp)+2));set(p,DP.skillPoints,Math.max(0,n(p,DP.skillPoints)));}
    if(equipped.includes("ultraspeed_regeneration")){try{const h=p.getComponent("minecraft:health");if(h&&h.currentValue<h.effectiveMax)p.addEffect("regeneration",30,{amplifier:0,showParticles:false});}catch{}}

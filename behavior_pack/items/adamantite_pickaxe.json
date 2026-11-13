@@ -12,7 +12,26 @@
       "minecraft:display_name": {
         "value": "Adamantite Pickaxe"
       },
-      "minecraft:max_stack_size": 1
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1000
+      },
+      "minecraft:enchantable": {
+        "slot": "pickaxe",
+        "value": 18
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "q.any_tag('stone', 'metal')"
+            },
+            "speed": 10
+          }
+        ]
+      }
     }
   }
 }

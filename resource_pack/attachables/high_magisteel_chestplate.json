@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "tensura:high_magisteel_chestplate",
+      "materials": {
+        "default": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/high_magisteel"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.armor.chestplate"
+      },
+      "render_controllers": [
+        "controller.render.tensura_armor"
+      ]
+    }
+  }
+}

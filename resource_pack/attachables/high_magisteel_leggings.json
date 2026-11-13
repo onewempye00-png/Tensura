@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "tensura:high_magisteel_leggings",
+      "materials": {
+        "default": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/high_magisteel"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.armor.leggings"
+      },
+      "render_controllers": [
+        "controller.render.tensura_armor"
+      ]
+    }
+  }
+}
