@@ -1244,7 +1244,7 @@ world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{
 
 world.afterEvents.entityDie.subscribe(ev=>{
  const source=ev.damageSource?.damagingEntity,dead=ev.deadEntity;
- if(dead?.typeId?.startsWith("tensura:")){const dim=dead.dimension,loc={x:dead.location.x,y:dead.location.y,z:dead.location.z};system.runTimeout(()=>{try{for(const item of dim.getEntities({type:"minecraft:item",location:loc,maxDistance:2.5})){const stack=item.getComponent("minecraft:item")?.itemStack;if(stack&&!stack.typeId.startsWith("tensura:"))item.remove();}}catch{}},1);}
+ if(dead?.typeId?.startsWith("tensura:")){const dim=dead.dimension,loc={x:dead.location.x,y:dead.location.y,z:dead.location.z};system.runTimeout(()=>{try{for(const item of dim.getEntities({type:"minecraft:item",location:loc,maxDistance:2.5})){const stack=item.getComponent("minecraft:item")?.itemStack;if(stack&&stack.typeId!=="tensura:monster_leather_c")item.remove();}}catch{}},1);}
  let killer=source;
  // Resolve projectile ownership so bow, trident and other projectile kills award normal progression.
  try{if(killer&&killer.typeId!=="minecraft:player"){const projectile=killer.getComponent("minecraft:projectile");if(projectile?.owner?.typeId==="minecraft:player")killer=projectile.owner;}}catch{}
