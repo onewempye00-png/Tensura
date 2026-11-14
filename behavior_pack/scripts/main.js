@@ -925,6 +925,7 @@ function itemUse(ev){
  }
  if(id==="tensura:reincarnation_compass"){removeItemById(p,id);say(p,"The Reincarnation Compass is no longer used. Your race choice is permanent; use Tensura Menu for your character profile.");return;}
  if(id==="tensura:menu_crystal"||id==="tensura:tensura_compass"){openTensuraMenu(p);return;}
+ if(id==="tensura:naming_horn"){nameTargetWithHorn(p).catch(e=>say(p,"Naming menu failed: "+String(e).slice(0,100)));return;}
  if(id==="tensura:landmark_compass"){landmarkCompassMenu(p);return;}
  
  if(id==="tensura:forge_hammer"){forgeMenu(p);return;}
@@ -1147,30 +1148,38 @@ function openNamingMenu(p){
 
 function addLootForKill(killer,dead){
  const id=dead?.typeId||"",tag=(dead?.nameTag||"").toLowerCase();
+ if(!id.startsWith("tensura:"))return;
  const boss=dead?.typeId==="tensura:greater_daemon"?false:(/boss|orc_disaster|orc_lord|charybdis|ifrit|veldora|primordial/i.test(id+" "+tag)||safeTag(dead,"tensura_boss"));
  const elemental=/elemental|undine|sylphide|ifrit|spirit|gnome/i.test(id+" "+tag);
  const otherworlder=/otherworlder|summoned_human|mercenary/i.test(id+" "+tag)||safeTag(dead,"tensura_otherworlder");
- const creature=/tensura:|slime|orc|ogre|goblin|lizard|direwolf|bear|spider|rabbit|monster/i.test(id);
- if(elemental&&Math.random()<0.25)give(killer,"tensura:spiritual_essence",1);
- // Rare material recovery from creatures supplements missing ore generation without flooding inventories.
- if(boss)give(killer,"tensura:magic_ore_shard",3+Math.floor(Math.random()*4));
- else if(creature&&Math.random()<0.025)give(killer,"tensura:magic_ore_shard",1);
- if(/dwarf|armorsaurus|orc_lord|orc_disaster|golem/i.test(id+" "+tag)&&Math.random()<0.035)give(killer,"tensura:raw_mithril",1);
- if(/lizard|serpent|dragon|megalodon|charybdis/i.test(id+" "+tag)&&Math.random()<0.04)give(killer,"tensura:raw_silver",1);
- if(id.includes("sky_wyvern")||id.includes("dragon_peacock")||id.includes("veldora")){give(killer,"tensura:dragon_scale",Math.random()<0.4?3:1);}
- if(id.includes("giant_cod")||id.includes("giant_salmon")||id.includes("megalodon")){give(killer,"tensura:sea_king_scale",Math.random()<0.4?3:1);}
- if(id.includes("charybdis")){give(killer,"tensura:charybdis_core");}
- if(id.includes("lizardman")||id.includes("hover_lizard")){give(killer,"tensura:lizard_scale",1+Math.floor(Math.random()*2));}
- if(boss&&Math.random()<0.12)give(killer,"tensura:majesty_elementite_ingot");
- if((boss||/ogre|orc|greater_daemon|lesser_daemon|dojo|warrior/i.test(id+" "+tag))&&Math.random()<(boss?0.22:0.06)){give(killer,"tensura:battlewill_manual");say(killer,"§6Battlewill Manual recovered. Study it to learn an aura technique that consumes AP.§r");}
- let chance=boss?0.75:otherworlder?0.45:elemental?0.35:creature?0.08:0.025;
- if(Math.random()<chance){const pool=otherworlder?DROP_SKILLS.filter(s=>["great_sage","chosen_one","survivor","degenerate","greed","guardian","investigator","usurper","traveler","raphael"].includes(s)):boss?DROP_SKILLS.filter(s=>["gluttony","beelzebuth","raphael","uriel","michael","azathoth","absolute_severance","multilayer_barrier","black_flame"].includes(s)):elemental?DROP_SKILLS.filter(s=>["fireball","water_blade","wind_blade","lightning_spear","ice_lance","earth_spike","healing","universal_perception","spatial_motion"].includes(s)):DROP_SKILLS;
-  const skill=pool[Math.floor(Math.random()*pool.length)];give(killer,`tensura:skill_book_${skill}`);say(killer,`§dSkill Tome dropped: ${skillName(skill)}§r.`);}
- if(boss){set(killer,"ts26_last_boss_defeated",id.replace("tensura:",""));const defeated=list(killer,"ts26_defeated_bosses");const defeatedId=id.replace("tensura:","");if(!defeated.includes(defeatedId)){defeated.push(defeatedId);saveList(killer,"ts26_defeated_bosses",defeated);give(killer,"tensura:companion_contract");say(killer,"§dA Demon Lord Companion Contract was acquired. You may now summon this defeated boss as an ally.§r");}set(killer,DP.souls,n(killer,DP.souls)+100);set(killer,DP.ep,n(killer,DP.ep)+1500);set(killer,DP.skillPoints,n(killer,DP.skillPoints)+5);set(killer,DP.bossKills,n(killer,DP.bossKills)+1);say(killer,"§6Boss defeated!§r +100 souls, +1500 EP, +5 Skill Points.");if(id.includes("orc_disaster")&&!get(killer,"ts26_orc_disaster_seed",false)){set(killer,"ts26_orc_disaster_seed",true);set(killer,"ts26_seed_awarded",true);say(killer,"§5The Orc Disaster awakened a Demon Lord Seed within your soul.§r");}else if(Math.random()<0.25&&!get(killer,"ts26_seed_awarded",false)){set(killer,"ts26_seed_awarded",true);say(killer,"§5A Demon Lord Seed awakened within your soul.§r");}}
- else if(otherworlder){set(killer,DP.souls,n(killer,DP.souls)+10);set(killer,DP.ep,n(killer,DP.ep)+250);}
- else if(elemental&&Math.random()<0.22){give(killer,"tensura:spirit_prayer");say(killer,"An elemental dropped a Spirit Prayer Seal.");}
+ // Every Tensura creature guarantees monster leather. All additional item rewards use a 10% roll.
+ give(killer,"tensura:monster_leather_c",1);
+ const drops=boss?["tensura:magic_ore_shard","tensura:raw_mithril","tensura:raw_silver","tensura:majesty_elementite_ingot","tensura:charybdis_core","tensura:companion_contract"]:
+  /dwarf|armorsaurus|orc_lord|orc_disaster|golem/i.test(id+" "+tag)?["tensura:raw_mithril","tensura:magic_ore_shard"]:
+  /lizard|serpent|dragon|megalodon|charybdis/i.test(id+" "+tag)?["tensura:raw_silver","tensura:dragon_scale","tensura:sea_king_scale","tensura:magic_ore_shard"]:
+  ["tensura:magic_ore_shard","tensura:raw_mithril","tensura:raw_silver","tensura:magicule_jewel","tensura:spiritual_essence"];
+ if(elemental)drops.push("tensura:spiritual_essence","tensura:spirit_prayer");
+ if(id.includes("charybdis"))drops.push("tensura:charybdis_core");
+ if(id.includes("lizardman")||id.includes("hover_lizard"))drops.push("tensura:lizard_scale");
+ if(id.includes("sky_wyvern")||id.includes("dragon_peacock")||id.includes("veldora"))drops.push("tensura:dragon_scale");
+ if(id.includes("giant_cod")||id.includes("giant_salmon")||id.includes("megalodon"))drops.push("tensura:sea_king_scale");
+ if(Math.random()<0.10){const reward=drops[Math.floor(Math.random()*drops.length)];if(reward)give(killer,reward,1);}
+ if(Math.random()<0.10){
+  const pool=otherworlder?DROP_SKILLS.filter(x=>["great_sage","chosen_one","survivor","degenerate","greed","guardian","investigator","usurper","traveler","raphael"].includes(x)):boss?DROP_SKILLS.filter(x=>["gluttony","beelzebuth","raphael","uriel","michael","azathoth","absolute_severance","multilayer_barrier","black_flame"].includes(x)):elemental?DROP_SKILLS.filter(x=>["fireball","water_blade","wind_blade","lightning_spear","ice_lance","earth_spike","healing","universal_perception","spatial_motion"].includes(x)):DROP_SKILLS;
+  if(pool.length){const skill=pool[Math.floor(Math.random()*pool.length)];give(killer,`tensura:skill_book_${skill}`);}
+ }
+ if(Math.random()<0.10&&(boss||/ogre|orc|greater_daemon|lesser_daemon|dojo|warrior/i.test(id+" "+tag)))give(killer,"tensura:battlewill_manual");
+ if(boss){
+  set(killer,"ts26_last_boss_defeated",id.replace("tensura:",""));
+  const defeated=list(killer,"ts26_defeated_bosses"),defeatedId=id.replace("tensura:","");
+  if(!defeated.includes(defeatedId)){defeated.push(defeatedId);saveList(killer,"ts26_defeated_bosses",defeated);if(Math.random()<0.10)give(killer,"tensura:companion_contract");}
+  set(killer,DP.souls,n(killer,DP.souls)+100);set(killer,DP.ep,n(killer,DP.ep)+1500);set(killer,DP.skillPoints,n(killer,DP.skillPoints)+5);set(killer,DP.bossKills,n(killer,DP.bossKills)+1);say(killer,"§6Boss defeated!§r +100 souls, +1500 EP, +5 Skill Points.");
+  if(id.includes("orc_disaster")&&!get(killer,"ts26_orc_disaster_seed",false)){set(killer,"ts26_orc_disaster_seed",true);set(killer,"ts26_seed_awarded",true);say(killer,"§5The Orc Disaster awakened a Demon Lord Seed within your soul.§r");}
+  else if(Math.random()<0.25&&!get(killer,"ts26_seed_awarded",false)){set(killer,"ts26_seed_awarded",true);say(killer,"§5A Demon Lord Seed awakened within your soul.§r");}
+ }else if(otherworlder){set(killer,DP.souls,n(killer,DP.souls)+10);set(killer,DP.ep,n(killer,DP.ep)+250);}
  if(!boss){const soulGain=Math.max(1,Math.floor((Number(get(dead,"ts26_ep_value",50))||50)/1000));set(killer,DP.souls,n(killer,DP.souls)+soulGain);}
- set(killer,DP.kills,n(killer,DP.kills)+1);if(n(killer,DP.kills)>=50)addTitle(killer,"Monster Hunter");if(n(killer,DP.bossKills)>=5)addTitle(killer,"Boss Slayer");if(list(killer,DP.skills).length>=25)addTitle(killer,"Skill Collector");if(id.includes("veldora"))addTitle(killer,"Storm Dragon Challenger");if(id.includes("charybdis"))addTitle(killer,"Abyss Conqueror");set(killer,DP.xp,n(killer,DP.xp)+(boss?500:otherworlder?120:25));set(killer,DP.ep,n(killer,DP.ep)+(boss?0:otherworlder?120:15));
+ set(killer,DP.kills,n(killer,DP.kills)+1);if(n(killer,DP.kills)>=50)addTitle(killer,"Monster Hunter");if(n(killer,DP.bossKills)>=5)addTitle(killer,"Boss Slayer");if(list(killer,DP.skills).length>=25)addTitle(killer,"Skill Collector");if(id.includes("veldora"))addTitle(killer,"Storm Dragon Challenger");if(id.includes("charybdis"))addTitle(killer,"Abyss Conqueror");
+ set(killer,DP.xp,n(killer,DP.xp)+(boss?500:otherworlder?120:25));set(killer,DP.ep,n(killer,DP.ep)+(boss?0:otherworlder?120:15));
  let level=n(killer,DP.level,1),xp=n(killer,DP.xp);while(xp>=level*100){xp-=level*100;level++;set(killer,DP.level,level);set(killer,DP.skillPoints,n(killer,DP.skillPoints)+1);set(killer,DP.maxMp,n(killer,DP.maxMp)+10);set(killer,DP.mp,Math.min(n(killer,DP.maxMp),n(killer,DP.mp)+10));say(killer,`§eLevel ${level}!§r +1 Skill Point and +10 max MP.`);}set(killer,DP.xp,xp);
 }
 function safeTag(e,t){try{return e.hasTag(t);}catch{return false;}}
@@ -1227,6 +1236,7 @@ world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{
 
 world.afterEvents.entityDie.subscribe(ev=>{
  const source=ev.damageSource?.damagingEntity,dead=ev.deadEntity;
+ if(dead?.typeId?.startsWith("tensura:")){const dim=dead.dimension,loc={x:dead.location.x,y:dead.location.y,z:dead.location.z};system.runTimeout(()=>{try{for(const item of dim.getEntities({type:"minecraft:item",location:loc,maxDistance:2.5})){const stack=item.getComponent("minecraft:item")?.itemStack;if(stack&&!stack.typeId.startsWith("tensura:"))item.remove();}}catch{}},1);}
  let killer=source;
  // Resolve projectile ownership so bow, trident and other projectile kills award normal progression.
  try{if(killer&&killer.typeId!=="minecraft:player"){const projectile=killer.getComponent("minecraft:projectile");if(projectile?.owner?.typeId==="minecraft:player")killer=projectile.owner;}}catch{}
