@@ -161,8 +161,9 @@ function compassBearing(p){const kind=get(p,"ts26_active_compass","");let t=LAND
 function statsText(p){
  const h=p.getComponent("minecraft:health"),hp=h?Math.ceil(h.currentValue):n(p,DP.hp,20),hm=h?Math.ceil(h.effectiveMax):20;
  const mp=n(p,DP.mp),mm=n(p,DP.maxMp,100),ap=n(p,DP.ap),am=n(p,DP.maxAp,100),sp=n(p,DP.sp),sm=n(p,DP.maxSp,100),ep=n(p,DP.ep),epMax=Math.max(1,n(p,"ts26_max_ep",n(p,DP.maxMp)+n(p,DP.maxAp)+n(p,DP.maxSp)));
- const line=(label,v,m,color)=>{const w=7,r=Math.max(0,Math.min(1,m>0?v/m:0)),f=Math.round(r*w),d=Math.floor(v)+"/"+Math.floor(m);return color+label+" §f"+d+" §8["+color+"■".repeat(f)+"§8"+"■".repeat(w-f)+"§8]";};
- return [line("HP",hp,hm,"§c"),line("MP",mp,mm,"§b"),line("AP",ap,am,"§6"),line("SP",sp,sm,"§a"),line("EP",ep,epMax,"§d")].join("\n");
+ const line=(label,v,m,color)=>{const w=8,r=Math.max(0,Math.min(1,m>0?v/m:0)),f=Math.round(r*w),d=Math.floor(v)+"/"+Math.floor(m);return color+label+" §f"+d+" §8["+color+"■".repeat(f)+"§8"+"■".repeat(w-f)+"§8]";};
+ const passives=passiveLoadout(p);const passiveLine=passives.map((id,i)=>id?( `§d[${i+1}]§r ${skillName(id)}`):`§8[${i+1}] Empty`).join("  ");
+ return [line("HP",hp,hm,"§c"),line("MP",mp,mm,"§b"),line("AP",ap,am,"§6"),line("SP",sp,sm,"§a"),line("EP",ep,epMax,"§d"),"§5PASSIVES§r "+passiveLine].join("\n");
 }
 function skillName(id){return SKILL_BY_ID.get(id)?.name||id.replaceAll("_"," ");}
 const SKILL_ICON_IDS=new Set(["abnormal_condition_nullification","abnormal_condition_resistance","absolute_severance","absorb_and_dissolve","air_flight","all_seeing_eye","analyst","analytical_appraisal","anti_skill","aura_shield","aura_slash","aura_sword","battlewill","beast_transformation","berserk","berserker","bewilder","black_flame","black_lightning","blood_mist","body_armor","body_double","chant_annulment","charm","chef","chosen_one","coercion","cold_nullification","cold_resistance","commander","cook","corrosion","corrosion_nullification","corrosion_resistance","creator","danger_sense","dark_eight_palms","darkness_attack_nullification","darkness_attack_resistance","darkness_transform","death_march_dance","degenerate","demon_lord_haki","diamond_path","divine_berserker","divine_ki_release","dragon_ear","dragon_eye","dragon_mode","dragon_skin","drain","earth_attack_nullification","earth_attack_resistance","earth_domination","earth_manipulation","earth_transform","earthshatter_kick","eight_petals_flash","electricity_nullification","electricity_resistance","elephant_stampede","engorger","envy","eye_of_truth","falsifier","farsight","fighter","five_petals_thrust","flame_attack_nullification","flame_attack_resistance","flame_breath","flame_domination","flame_manipulation","flame_transform","formhide","fusionist","giantification","gluttony","godly_craftsman","godwolf_sense","gourmand","gourmet","gravity_attack_nullification","gravity_attack_resistance","gravity_domination","gravity_field","gravity_flight","gravity_manipulation","great_sage","greed","guardian","haki","haze","healer","heat_nullification","heat_resistance","heat_wave","heavenly_eye","heavy_slash","hero_haki","holy_attack_nullification","holy_attack_resistance","hydraulic_propulsion","ice_breath","infinite_regeneration","infinity_prison","instant_move","law_manipulation","light_attack_nullification","light_attack_resistance","light_transform","lightning_domination","lightning_manipulation","lust","magic_aura","magic_bullet","magic_darkness_transform","magic_earth_transform","magic_flame_transform","magic_jamming","magic_light_transform","magic_manipulation","magic_nullification","magic_resistance","magic_sense","magic_space_transform","magic_water_transform","magic_wind_transform","majesty","mana_manipulation","martial_master","mathematician","maximum_magic_bullet","merciless","molecular_manipulation","mortal_fear","multilayer_barrier","murderer","musician","observer","ogre_berserker","ogre_flame","ogre_sword_cannon","ogre_sword_guillotine","oppressor","pain_nullification","pain_resistance","paralysing_breath","paralysis","paralysis_nullification","paralysis_resistance","physical_attack_nullification","physical_attack_resistance","pierce_nullification","pierce_resistance","poison","poison_nullification","poison_resistance","poisonous_breath","possession","predator","pride","ranged_barrier","reaper","reflector","researcher","reverser","roaring_lion_punch","royal_beast","sacred_haki","sage","scale_armor","seeker","seer","self_regeneration","sense_heat_source","sense_soundwave","severer","shadow_motion","shadow_striker","sloth","snake_eye","sniper","sound_domination","sound_manipulation","space_transform","spatial_attack_nullification","spatial_attack_resistance","spatial_domination","spatial_manipulation","spatial_motion","spearhead","spiritual_attack_nullification","spiritual_attack_resistance","starved","steel_strength","sticky_steel_thread","strength","strengthen_body","suppressor","survivor","telepathy","thermal_fluctuation_nullification","thermal_fluctuation_resistance","thought_acceleration","thought_communication","thrower","thunder_breath","titanification","traveler","tuner","ultra_instinct","ultrasonic_waves","ultraspeed_regeneration","universal_perception","unpredictability","unyielding","usurper","villain","violent_break","voice_cannon","water_attack_nullification","water_attack_resistance","water_blade","water_breathing","water_current_control","water_domination","water_manipulation","water_transform","weather_domination","weather_manipulation","wind_attack_nullification","wind_attack_resistance","wind_domination","wind_manipulation","wind_transform","wrath"]);
@@ -733,24 +734,31 @@ function ensureVillageChurch(p){
  if(!p?.isValid||p.dimension.id!=="minecraft:overworld")return;
  const villagers=p.dimension.getEntities({location:p.location,maxDistance:80}).filter(e=>e.typeId==="minecraft:villager");
  if(villagers.length<2)return;
- const x=Math.floor(villagers.reduce((a,e)=>a+e.location.x,0)/villagers.length)+12;
- const z=Math.floor(villagers.reduce((a,e)=>a+e.location.z,0)/villagers.length)+12;
- const y=findSurfaceY(p.dimension,x,z),churches=getVillageChurches();
- if(churches.some(c=>c.dimension===p.dimension.id&&Math.hypot(c.x-x,c.z-z)<64))return;
- const d=p.dimension;
- for(let dx=-4;dx<=4;dx++)for(let dz=-4;dz<=4;dz++)placeBlock(d,x+dx,y,z+dz,"minecraft:stone_bricks");
- for(let yy=1;yy<=4;yy++)for(let dx=-4;dx<=4;dx++)for(let dz=-4;dz<=4;dz++){
-  if(Math.abs(dx)!==4&&Math.abs(dz)!==4)continue;
-  if(dz===4&&dx===0&&yy<=2)continue;
-  const window=(Math.abs(dx)===4&&yy===2&&Math.abs(dz)===1)||(Math.abs(dz)===4&&yy===2&&Math.abs(dx)===2);
-  placeBlock(d,x+dx,y+yy,z+dz,window?"minecraft:glass_pane":"minecraft:spruce_planks");
+ const cx=Math.floor(villagers.reduce((a,e)=>a+e.location.x,0)/villagers.length),cz=Math.floor(villagers.reduce((a,e)=>a+e.location.z,0)/villagers.length);
+ const churches=getVillageChurches();if(churches.some(c=>c.dimension===p.dimension.id&&Math.hypot(c.vx-cx,c.vz-cz)<48))return;
+ const d=p.dimension,baseY=findSurfaceY(d,cx,cz);let altar;
+ // Locate the brewing stand inside the vanilla village church building.
+ for(let x=cx-24;x<=cx+24&&!altar;x++)for(let z=cz-24;z<=cz+24&&!altar;z++)for(let y=baseY-3;y<=baseY+8;y++){
+  try{if(d.getBlock({x,y,z})?.typeId==="minecraft:brewing_stand"){altar={x,y,z};break;}}catch{}
  }
- for(let dx=-5;dx<=5;dx++)for(let dz=-5;dz<=5;dz++)placeBlock(d,x+dx,y+5,z+dz,"minecraft:spruce_planks");
- for(let yy=1;yy<=6;yy++)placeBlock(d,x,y+yy,z-2,"minecraft:spruce_planks");
- placeBlock(d,x,y+1,z-2,"minecraft:enchanting_table");placeBlock(d,x+2,y+1,z-2,"minecraft:bell");
- churches.push({dimension:p.dimension.id,x,y:y+1,z:z-2});
+ if(!altar)return;
+ const kind=((Math.floor(cx/64)+Math.floor(cz/64))&1)===0?"spirit":"demon";
+ churches.push({dimension:d.id,x:altar.x,y:altar.y,z:altar.z,vx:cx,vz:cz,kind});
  world.setDynamicProperty("ts27_village_churches",JSON.stringify(churches.slice(-128)));
- say(p,"§eA village chapel and Spirit Prayer Altar have been built nearby. Bring a Spirit Prayer Seal and interact with the altar.§r");
+ say(p,kind==="spirit"?"§eVillage church found: its brewing stand is a Spirit Prayer Altar.§r":"§cVillage church found: its brewing stand is a Demon Summoning Altar.§r");
+}
+function openDemonSummoning(p){
+ if(!initPlayer(p))return;
+ const form=new CustomForm(p,"TENSURA • DEMON SUMMONING");
+ form.header("CHURCH RITUAL • DEMON CONTRACT");
+ form.label("Offer your magicules and aura to call a demon. Summoned demons become bound companions.");
+ const choices=[["Lesser Demon","tensura:lesser_daemon",100,50],["Greater Demon","tensura:greater_daemon",1000,500],["Arch Demon","tensura:arch_daemon",5000,2500]];
+ for(const [name,id,mp,ap] of choices)form.button(`${name} • ${mp} MP / ${ap} AP`,()=>{
+  try{form.close();}catch{}
+  if(n(p,DP.mp)<mp||n(p,DP.ap)<ap){say(p,`Summoning ${name} requires ${mp} MP and ${ap} AP.`);return;}
+  try{const r=p.getRotation(),yaw=r.y*Math.PI/180,pos={x:p.location.x-Math.sin(yaw)*3,y:p.location.y,z:p.location.z+Math.cos(yaw)*3};const demon=p.dimension.spawnEntity(id,pos);demon.addTag("tensura_companion");demon.addTag("tensura_summoned_demon");demon.addTag(`tensura_owner_${p.id.replace(/[^a-zA-Z0-9_]/g,"_")}`);set(p,DP.mp,n(p,DP.mp)-mp);set(p,DP.ap,n(p,DP.ap)-ap);say(p,`§c${name} answered the church summoning ritual and is bound to you.§r`);}catch(e){say(p,"Demon summoning failed: "+String(e).slice(0,100));}
+ });
+ form.closeButton();form.show().catch(()=>{});
 }
 function openSpiritPrayer(p){
  if(!isNearVillageChurch(p)){say(p,"Spirits can only be acquired by praying at a village church altar. Bring a Spirit Prayer Seal to a chapel in a naturally generated village.");return;}
@@ -913,7 +921,7 @@ function openBattlewillHorn(p){
  form.header("AURA TECHNIQUES");
  form.label(`Select a learned Battlewill technique. Every technique consumes AP. Current AP: ${n(p,DP.ap)}/${n(p,DP.maxAp)}.`);
  if(!learned.length)form.label("No Battlewill techniques learned yet. Study a Battlewill Manual to learn one.");
- for(const id of learned)form.button(`${skillName(id)} • ${skillCost(id)} AP`,()=>{try{form.close();}catch{}castSkill(p,id);});
+ for(const id of learned){const desc=SKILL_BY_ID.get(id)?.description||"Battlewill technique: an aura-based combat art.";form.label(`${skillName(id)} — ${desc}`);form.button(`${skillName(id)} • ${skillCost(id)} AP`,()=>{try{form.close();}catch{}castSkill(p,id);},skillIcon(id));}
  form.closeButton();form.show().catch(()=>{});
 }
 function itemUse(ev){
@@ -1230,7 +1238,7 @@ world.afterEvents.itemUse.subscribe(itemUse);
 const craftingMenuTick=new Map();
 world.afterEvents.playerInteractWithBlock.subscribe(ev=>{try{
  const p=ev.player,b=ev.block;if(!p?.isValid||!b)return;
- if(b.typeId==="minecraft:enchanting_table"&&isVillageChurchAltar(p,b)){openSpiritPrayer(p);return;}
+ if(b.typeId==="minecraft:brewing_stand"&&isVillageChurchAltar(p,b)){const church=getVillageChurches().find(c=>c.dimension===p.dimension.id&&c.x===b.location.x&&c.y===b.location.y&&c.z===b.location.z);if(church?.kind==="demon")openDemonSummoning(p);else openSpiritPrayer(p);return;}
  
 }catch(e){try{ev.player?.sendMessage(`§cPortal error: ${String(e).slice(0,120)}`);}catch{}}});
 
